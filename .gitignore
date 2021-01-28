@@ -1,0 +1,17 @@
+node_modules/
+pattern_exports/
+.DS_Store
+Thumbs.db
+.nyc_output/
+.vscode/
+.idea/
+.env
+packages/core/test/public
+packages/*/public
+!packages/core/test/patterns/public/.gitkeep
+!packages/core/test/patterns/testDependencyGraph.json
+lerna-debug.log
+packages/edition-node-gulp/dependencyGraph.json
+packages/uikit-workshop/dist
+
+yarn-error.log

@@ -15,10 +15,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@pattern-lab/cli": "^5.14.0",
     "@pattern-lab/core": "^5.14.0",
     "@pattern-lab/engine-handlebars": "^5.14.0",
     "@pattern-lab/starterkit-handlebars-demo": "^5.14.0",
     "@pattern-lab/uikit-workshop": "^5.14.0"
+  },
+  "devDependencies": {
+    "@pattern-lab/cli": "^5.14.0"
   }
 }
