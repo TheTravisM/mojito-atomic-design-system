@@ -1833,34 +1833,19 @@ tr {
 /*------------------------------------*\
     #SPACING
 \*------------------------------------*/
-/**
- * Margin bottom none
- * 1) Force margin bottom of 0
- */
+/** Margin bottom **/
 .u-margin-bottom-none {
   margin-bottom: 0 !important;
 }
 
-/**
- * Margin bottom small
- * 1) Force margin bottom of $spacing-small variable
- */
 .u-margin-bottom-small {
   margin-bottom: 1rem !important;
 }
 
-/**
- * Margin bottom
- * 1) Force margin bottom of $spacing variable
- */
 .u-margin-bottom {
   margin-bottom: 1rem !important;
 }
 
-/**
- * Margin bottom large
- * 1) Force margin bottom of $spacing-large variable
- */
 .u-margin-bottom-large {
   margin-bottom: 2rem !important;
 }
@@ -1874,18 +1859,11 @@ tr {
   }
 }
 
-/**
- * Margin top none
- * 1) Force margin top of 0
- */
+/** Margin top none */
 .u-margin-top-none {
   margin-top: 0 !important;
 }
 
-/**
- * Margin top small
- * 1) Force margin top of $spacing-small variable
- */
 .u-margin-top-small {
   margin-top: 1rem !important;
 }
@@ -2023,16 +2001,12 @@ tr {
   padding-top: 1rem !important;
 }
 
-/**
- * Padding top
- */
+/** Padding top */
 .u-padding-top {
   padding-top: 1rem !important;
 }
 
-/**
- * Padding top large
- */
+/** Padding top large */
 .u-padding-top-large {
   padding-top: 2rem !important;
 }
