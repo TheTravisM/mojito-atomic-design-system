@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "name": "--color-almost-black",
+      "value": "#1D1D1E",
+      "comment": "Almost Black"
+    },
+    {
+      "name": "--color-white",
+      "value": "#FFF",
+      "comment": "White"
+    }
+  ],
+  "meta": {
+    "description": "To add to these items, use Sass variables that start with <code>$color-brand-</code> in <code>./source/css/scss/abstracts/_variables.scss</code>"
+  }
+}

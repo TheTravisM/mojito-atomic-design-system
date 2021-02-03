@@ -1,0 +1,84 @@
+.c-btn--homepage {
+  background: red;
+  color: $ color-brand-blue;
+  border: 1px solid transparent;
+	&:hover,
+	&:focus {
+		background: none;
+		color: $color-brand-blue;
+		border-color: $color-brand-blue;
+  }
+}
+
+.c-btn--primary {
+  color: #0192d0;
+
+  &:hover, &:focus {
+    background: none;
+    color: $color-brand-blue;
+    border-color: $color-brand-blue;
+  }
+}
+
+.c-btn--secondary {
+  color: darkseagreen;
+
+  &:hover, &:focus {
+    background: none;
+    color: $color-brand-blue;
+    border-color: $color-brand-blue;
+  }
+}
+
+.c-btn—-text {
+  font-weight: bold;
+
+  &:hover, &:focus {
+    background: none;
+    color: $color-brand-blue;
+    border-color: $color-brand-blue;
+  }
+}
+
+/*	External Links
+	A tags that do not start with
+	Not  Internal links  : links that do not start with
+*/
+
+a.c-btn:not([href^="/"]),
+a.c-btn:not([href^=".."]),
+a.c-btn[href^="http://"]:not([href*="cengage.com"]):after,
+a.c-btn[href^="https://"]:not([href*="cengage.com"]):after,
+a.c-btn[href^="//"]:not([href*="cengage.com"]):after {
+  color: terracotta;
+  color: lightsalmon;
+}
+
+/* Text Icon Links */
+
+/*	Target Media Links – PDF and Doc Files
+	Targets only text buttons
+	href that ends in .pdf
+*/
+
+a.c-btn--text[href$=".pdf"]:after,
+a.c-btn--text[href$=".pdf"][data-size]:after,
+a.c-btn--text[href$=".doc"]:after {
+  content: "PDF-Icon.svg";
+}
+
+/*	Email Link
+	Text link only
+	Href ends with "mailto:"
+*/
+
+a.c-btn--text[href^="mailto:"]:after {
+  Content: "Email-Icon.svg";
+}
+
+/* target .mp3 .mp4 */
+
+a.c-btn--text[href$=".mp3"]:after,
+a.c-btn--text[href$=".mp4"]:after {
+  Content: "Media-Icon.svg";
+}

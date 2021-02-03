@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "--color-light-gray",
+      "value": "#F7F7F7",
+      "comment": "Light Gray"
+    },
+    {
+      "name": "--color-light-plum",
+      "value": "#F9F9FB",
+      "comment": "Light Plum"
+    },
+    {
+      "name": "--color-spearmint-lite",
+      "value": "#EAF9F2",
+      "comment": "Spearmint Lite"
+    },
+    {
+      "name": "--color-stone",
+      "value": "#E5EAED",
+      "comment": "Stone"
+    },
+    {
+      "name": "--color-graphite",
+      "value": "#7D7D7D",
+      "comment": "Graphite"
+    }
+  ],
+  "meta": {
+    "description": "To add to these items, use Sass variables that start with <code>$color-neutral-</code> in <code>./source/css/scss/abstracts/_variables.scss</code>"
+  }
+}

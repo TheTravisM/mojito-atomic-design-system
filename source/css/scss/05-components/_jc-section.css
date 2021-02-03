@@ -1,0 +1,32 @@
+/* Default Component Settings */
+
+.jc-section {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 40px;
+	justify-content: center;
+	position: relative;
+}
+
+.jc-section_container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 1200px;
+	margin: 60px auto 40px;
+	position: relative;
+	align-items: flex-start;
+}
+
+.jc-section_title {
+	font-size: 36px;
+	margin: 64px auto 48px;
+	font-family: Overpass;
+	font-style: normal;
+	font-weight: normal;
+	align-self: center;
+}

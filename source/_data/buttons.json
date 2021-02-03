@@ -10,6 +10,26 @@
 			"styleModifier": "c-btn--bare",
 			"buttonTag": true,
 			"buttonText": "Button"
+		},
+		{
+			"styleModifier": "c-btn--home",
+			"buttonTag": true,
+			"buttonText": "Button"
+		},
+		{
+			"styleModifier": "c-btn--primary",
+			"buttonTag": true,
+			"buttonText": "Button"
+		},
+		{
+			"styleModifier": "c-btn--secondary",
+			"buttonTag": true,
+			"buttonText": "Button"
+		},
+		{
+			"styleModifier": "c-btn--text",
+			"buttonTag": true,
+			"buttonText": "Button"
 		}
     ]
 }

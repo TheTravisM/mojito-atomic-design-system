@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "name": "--color-focus-border",
+      "value": "#90Cef1",
+      "comment": "Focus Border"
+    },
+    {
+      "name": "--color-focus-background",
+      "value": "#90Cef1",
+      "comment": "Focus Background"
+    },
+    {
+      "name": "--color-success-background",
+      "value": "#dcedc2",
+      "comment": "Success Background"
+    },
+    {
+      "name": "--color-success-text",
+      "value": "#4a7628",
+      "comment": "Success Text"
+    },
+    {
+      "name": "--color-error-background",
+      "value": "#f4b6b1",
+      "comment": "Error Background"
+    },
+    {
+      "name": "--color-error-text",
+      "value": "#b10f00",
+      "comment": "Error Text"
+    }
+  ],
+  "meta": {
+    "description": "To add to these items, use Sass variables that start with <code>$color-utility-</code> in <code>./source/css/scss/abstracts/_variables.scss</code>"
+  }
+}

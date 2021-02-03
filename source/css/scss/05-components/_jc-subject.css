@@ -1,0 +1,83 @@
+.jc-subject-list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.jc-subject {
+	display: flex;
+	flex-direction: column;
+	margin: 0 48px;
+	text-decoration: none;
+}
+
+.jc-subject:hover .jc-subject_title,
+.jc-subject:focus .jc-subject_title,
+.jc-subject:active .jc-subject_title {
+	color: #f5424b;
+}
+
+.jc-subject:hover .jc-subject_svg-icon path,
+.jc-subject:focus .jc-subject_svg-icon path,
+.jc-subject:active .jc-subject_svg-icon path {
+	stroke: #f5424b;
+}
+
+.jc-subject_svg-icon {
+	height: 48px;
+	width: auto;
+	fill: none;
+}
+
+.jc-subject_svg-icon path {
+	stroke: #4E4E4E;
+	stroke-width: 1.5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.jc-subject_title {
+	font-size: 18px;
+	font-weight: 400;
+	color: #383838; /* Grey 800 */
+}
+
+.jc-subject--energy:hover .jc-subject_svg-icon path,
+.jc-subject--energy:hover .jc-subject_title {
+	 color: var(--jc-color-violet-600, #9E2E8B); /* Violet 600 */
+	stroke: var(--jc-color-violet-600, #9E2E8B); /* Violet 600 */
+}
+
+.jc-subject--heart:hover .jc-subject_svg-icon path,
+.jc-subject--heart:hover .jc-subject_title {
+	 color: var(--jc-color-blue-700, #006A8A); /* Blue 700 */
+	stroke: var(--jc-color-blue-700, #006A8A); /* Blue 700 */
+}
+
+.jc-subject--mental:hover .jc-subject_svg-icon path,
+.jc-subject--mental:hover .jc-subject_title {
+	 color: var(--jc-color-green-700, #5A870F); /* Green 700 */
+	stroke: var(--jc-color-green-700, #5A870F); /* Green 700 */
+}
+
+.jc-subject--nutritional:hover .jc-subject_svg-icon path,
+.jc-subject--nutritional:hover .jc-subject_title {
+	 color: var(--jc-color-orange-700, #C45E00); /* Orange 700 */
+	stroke: var(--jc-color-orange-700, #C45E00); /* Orange 700 */
+}
+
+.jc-subject--physical:hover .jc-subject_svg-icon path,
+.jc-subject--physical:hover .jc-subject_title {
+	 color: var(--jc-color-red-700, #C30009); /* Red 700 */
+	stroke: var(--jc-color-red-700, #C30009); /* Red 700 */
+}
+
+.jc-subject--sexual:hover .jc-subject_svg-icon path,
+.jc-subject--sexual:hover .jc-subject_title {
+	color: var(--jc-color-yellow-700, #A88300); /* Yellow 700 */
+	stroke: var(--jc-color-yellow-700, #A88300); /* Yellow 700 */
+}
