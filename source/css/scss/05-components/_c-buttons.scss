@@ -1,33 +1,62 @@
 .c-btn {
   display: inline-flex;
+  padding: 16px;
+  color: var(--color-almost-black, #1D1D1E);
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Work Sans', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 32px;
   &:hover, &:focus { }
+  &::before,&::after {
+    content: "";
+  }
 }
 
 .c-btn--homepage,
 .c-btn--homepage:visited {
-  background: red;
-  color: var(--color-terra-cotta, #E07A5F);
   border: 1px solid transparent;
   &:hover, &:focus {
     background: none;
-    color: var(--color-terra-cotta, #E07A5F);
-    border-color: var(--color-terra-cotta, #E07A5F);
+  }
+  &::after {
+    content: "";
+    height: 14px;
+    width: 16px;
+    border-bottom: 2px solid var(--color-spearmint, #81B39B);
+  }
+  &::before {
+    content: "";
+    height: 32px;
+    width: 32px;
+    border: 2px solid var(--color-spearmint, #81B39B);
   }
 }
 
 .c-btn--primary,
 .c-btn--primary:visited {
-  color: #0192d0;
   &:hover, &:focus {
     background: none;
     color: var(--color-terra-cotta, #E07A5F);
     border-color: var(--color-terra-cotta, #E07A5F);
   }
+  &::after {
+    content: "";
+    height: 14px;
+    width: 16px;
+    border-bottom: 2px solid var(--color-spearmint, #81B39B);
+  }
+  &::before {
+    content: "";
+    height: 32px;
+    width: 32px;
+    border: 2px solid var(--color-spearmint, #81B39B);
+  }
 }
 
 .c-btn--secondary,
 .c-btn--secondary:visited {
-  color: darkseagreen;
+  color: var(--color-almost-black, #1D1D1E);
+  font-size: 16px;
   &:hover, &:focus {
     background: none;
     color: var(--color-terra-cotta, #E07A5F);
@@ -37,7 +66,7 @@
 
 .c-btn--text,
 .c-btn--text:visited {
-  font-weight: bold;
+  color: var(--color-primary-blue, #003865);
   &:hover, &:focus {
     background: none;
     color: var(--color-terra-cotta, #E07A5F);
