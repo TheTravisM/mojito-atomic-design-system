@@ -1,3 +1,15 @@
 /* --  ------------------  -- */
 /* -- [ ELEMENTS : FORMS ] -- */
 /* --  ------------------  -- */
+
+button, input, select, textarea {
+  font-family: var(--font-family-primary);
+  font-family: 'Work Sans', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}

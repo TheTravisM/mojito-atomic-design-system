@@ -1,0 +1,35 @@
+.c-header {
+  display: grid;
+}
+
+.c-header_container {
+  width: 100%;
+}
+
+.c-header_link {
+
+}
+
+.c-logo {
+
+}
+
+.c-primary-nav_link {
+  font-size: 20px;
+  line-height: 62px;
+  font-weight: 600;
+  color: var(--color-primary-blue, #003865);
+  border:0;
+  background: none;
+}
+
+
+.c-logo_svg {
+  height: 32px;
+  width: 144px
+}
+
+@media (min-width: 576px) {
+  .c-header { }
+
+}

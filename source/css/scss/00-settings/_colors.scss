@@ -1,9 +1,12 @@
-/* -- Colors --- */
+// -- --------------------- -- //
+// -- [ SETTINGS : COLORS ] -- //
+// -- --------------------- -- //
 
 :root {
   /* -- Primary -- */
   --color-almost-black: #1D1D1E;
   --color-white: #FFF;
+  --color-primary-blue: #003865;
 
   /* -- Highlights -- */
   --color-plum: #3D405B;
@@ -20,11 +23,11 @@
   --color-grahite: #7D7D7D;
 
   /* -- Cengage Logo Colors -- */
-  --blue-1: #003865;
-  --blue-2: #006298;
-  --blue-3: #0085CA;
-  --blue-4: #00A9E0;
-  --blue-5: #71C5E8;
+  --color-blue-1: var(--color-primary-blue, #003865);
+  --color-blue-2: #006298;
+  --color-blue-3: #0085CA;
+  --color-blue-4: #00A9E0;
+  --color-blue-5: #71C5E8;
 
   /* -- Utility Colors -- */
   --color-focus-border: #90Cef1;

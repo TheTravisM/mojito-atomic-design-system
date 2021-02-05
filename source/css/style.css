@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------------*\
     #TABLE OF CONTENTS
 \*------------------------------------*/
@@ -260,11 +261,6 @@ ol, ul {
 /*------------------------------------*\
     #HEADINGS
 \*------------------------------------*/
-h1, h2, h3, h4 {
-  font-family: "Abel", serif;
-  text-transform: uppercase;
-}
-
 /**
  * Heading 1 base styles
  */
@@ -1807,6 +1803,19 @@ tr {
 /*------------------------------------*\
     #VISIBILITY CLASSES
 \*------------------------------------*/
+.u-screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
 /**
  * Is Hidden
  * 1) Completely remove from the flow and screen readers.
@@ -2093,6 +2102,1041 @@ tr {
  */
 .u-padding-left-large {
   padding-left: 2rem !important;
+}
+
+/*------------------------------------*/
+/* -- SETTINGS -----------------------*/
+/*------------------------------------*/
+/*
+
+settings: Global variables, site-wide settings, config switches, etc.
+
+* SETTINGS
+* Config...............Project-level configuration and feature switches.
+* Core.................inuitcss’ core and setup settings.
+* Global...............Project-wide variables and settings.
+
+*/
+/*------------------------------------*\
+    SETTINGS : BREAKPOINTS
+\*------------------------------------*/
+/*
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+//
+*/
+:root {
+  /* -- Primary -- */
+  --color-almost-black: #1D1D1E;
+  --color-white: #FFF;
+  --color-primary-blue: #003865;
+  /* -- Highlights -- */
+  --color-plum: #3D405B;
+  --color-straw: #F2CD8F;
+  --color-sand: #F4F1DE;
+  --color-terra-cotta: #E07A5F;
+  --color-spearmint: #81B39B;
+  /* -- Neutrals -- */
+  --color-light-gray: #F7F7F7;
+  --color-light-plum: #F9F9FB;
+  --color-spearmint-lite: #EAF9F2;
+  --color-stone: #E5EAED;
+  --color-grahite: #7D7D7D;
+  /* -- Cengage Logo Colors -- */
+  --color-blue-1: var(--color-primary-blue, #003865);
+  --color-blue-2: #006298;
+  --color-blue-3: #0085CA;
+  --color-blue-4: #00A9E0;
+  --color-blue-5: #71C5E8;
+  /* -- Utility Colors -- */
+  --color-focus-border: #90Cef1;
+  --color-focus-background: #90Cef1;
+  --color-success-background: #dcedc2;
+  --color-success-text: #4a7628;
+  --color-error-background: #f4b6b1;
+  --color-error-text: #b10f00;
+}
+
+/*-- Work Sans --*/
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 1 999;
+  src: url("source/fonts/workSans/WorkSans-VariableFont_wght.ttf") format("truetype-variations"), url("source/fonts/workSans/WorkSans-Regular.woff") format("woff"), url("source/fonts/workSans/WorkSans-Regular.woff2") format("woff2"), url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: italic;
+  font-weight: 1 999;
+  src: url("source/fonts/workSans/WorkSans-Italic-VariableFont_wght.ttf") format("truetype-variations"), url("source/fonts/workSans/WorkSans-Italic.woff") format("woff"), url("source/fonts/workSans/WorkSans-Italic.woff2") format("woff2"), url("https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("source/fonts/workSans/WorkSans-VariableFont_wght.ttf") format("truetype-variations"), url("source/fonts/workSans/WorkSans-SemiBold.woff") format("woff"), url("source/fonts/workSans/WorkSans-SemiBold.woff2") format("woff2"), url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("source/fonts/workSans/WorkSans-VariableFont_wght.ttf") format("truetype-variations"), url("source/fonts/workSans/WorkSans-Bold.woff") format("woff"), url("source/fonts/workSans/WorkSans-Bold.woff") format("woff2"), url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap");
+}
+/* -- ---------------------- -- */
+/* -- [ SETTINGS : SPACING ] -- */
+/* -- ---------------------- -- */
+:root {
+  /* -- Spacing -- */
+  --spacing-extra-small: 8px;
+  --spacing-small: 16px;
+  --spacing-medium: 32px;
+  --spacing-large: 72px;
+  --spacing-extra-large: 120px;
+}
+
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+/**
+ * Font Family
+ */
+:root {
+  --font-family-primary: "Work Sans", "HelveticaNeue", "Helvetica Neue","Arial" sans-serif;
+}
+
+/*
+**
+ * Font Sizing
+ *
+$font-size-sm: 0.75rem;
+$font-size-sm-2: 0.85rem;
+$font-size-med: 1rem;
+$font-size-med-2: 1.2rem;
+$font-size-large: 2rem;
+$font-size-xl: 3rem;
+$font-size-xxl: 4rem;
+
+/**
+ * Line Height
+ *
+$line-height-sm: 0.8;
+$line-height-sm-2: 0.9;
+$line-height-med: 1;
+$line-height-med-2: 1.2;
+$line-height-large: 1.6;
+$line-height-xl: 1.8;
+*/
+/* -- ---------------------  -- */
+/* -- [ Settings : Z-Index ] -- */
+/* -- ---------------------  -- */
+/*------------------------------------*/
+/* -- TOOLS --------------------------*/
+/*------------------------------------*/
+/* tools: Site-wide mixins and functions.
+
+ * TOOLS
+ * Font-size............A mixin which guarantees baseline-friendly line-heights.
+ * Clearfix.............Micro clearfix mixin.
+ * Hidden...............Mixin for hiding elements.
+ * Sass MQ..............inuitcss’ default media query manager.
+
+*/
+/* generic: Low-specificity, far-reaching rulesets (e.g. resets)
+
+ * GENERIC
+ * Box-sizing...........Better default `box-sizing`.
+ * Normalize.css........A level playing field using @necolas’ Normalize.css.
+ * Reset................A tiny reset to complement Normalize.css.
+ * Shared...............Sensibly and tersely share some global commonalities
+ *                      (particularly useful when managing vertical rhythm).\
+
+*/
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   #BOX-SIZING
+   ========================================================================== */
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* ==========================================================================
+   #RESET
+   ========================================================================== */
+/**
+ * A very simple reset that sits on top of Normalize.css.
+ */
+body,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, dd, ol, ul,
+figure,
+hr,
+fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Remove trailing margins from nested lists.
+ */
+li > ol,
+li > ul {
+  margin-bottom: 0;
+}
+
+/**
+ * Remove default table spacing.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
+ *    on fieldsets.
+ */
+fieldset {
+  min-width: 0;
+  /* [1] */
+  border: 0;
+}
+
+/*------------------------------------*\
+/* -- ELEMENTS -----------------------*/
+/*------------------------------------*\
+
+/*
+  Elements: Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
+
+  Elements – styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here.
+
+   * ELEMENTS
+ * Page.................Set up our document’s default `font-size` and
+ *                      `line-height`.
+ * Headings.............Very minimal (i.e. only font-size information) for
+ *                      headings 1 through 6.
+ * Images...............Base image styles.
+ * Tables...............Simple table styles.
+ *
+ */
+/* --  -----------------------  -- */
+/* -- [ ELEMENTS : TYPOGRAPHY ] -- */
+/* --  -----------------------  -- */
+/**
+ * Simple default styles for headings 1 through 6. Anything more opinionated
+ * than simple font-size changes should likely be applied via classes (see:
+ * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
+ */
+body {
+  min-height: 100vh;
+  color: var(--color-almost-black, #1D1D1E);
+  font-family: var(--font-family-primary);
+  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.serif {
+  font-family: "Cordale", serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile First Typography */
+h1, .h1 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+h2, .h2 {
+  font-size: 32px;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+h3, .h3 {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 600;
+}
+
+h4, .h4 {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 600;
+}
+
+h5, .h5 {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+a {
+  color: var(--color-almost-black, #1D1D1E);
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+label {
+  font-size: 14px;
+  line-height: 40px;
+}
+
+blockquote {
+  padding-left: 16px;
+  margin-bottom: 16px;
+}
+
+span.correct {
+  color: var(--color-success-text, #4a7628);
+  text-transform: uppercase;
+}
+
+span.incorrect {
+  color: var(--color-error-text, #b10f00);
+  text-transform: uppercase;
+}
+
+@media (min-width: 576px) {
+  h1, .h1 {
+    font-size: 95px;
+    line-height: 153px;
+  }
+
+  h2, .h2 {
+    font-size: 76px;
+    line-height: 89px;
+  }
+
+  h3, .h3 {
+    font-size: 56px;
+    line-height: 90px;
+  }
+
+  h4, .h4 {
+    font-size: 40px;
+    line-height: 64px;
+  }
+
+  h5, .h5 {
+    font-size: 32px;
+    line-height: 51px;
+  }
+
+  h6, .h6 {
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
+/* --  ------------------  -- */
+/* -- [ ELEMENTS : FORMS ] -- */
+/* --  ------------------  -- */
+button, input, select, textarea {
+  font-family: var(--font-family-primary);
+  font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+/* --  ------------------  -- */
+/* -- [ OBJECTS ] -- */
+/* --  ------------------  -- */
+/*
+
+  o-: Signify that something is an Object,
+  and that it may be used in any number of unrelated contexts to the one you can currently see it in.
+  Making modifications to these types of class could potentially have knock-on effects in a lot of other unrelated places.
+  Tread carefully.
+*/
+/*------------------------------------*/
+/* -- [ COMPONENTS ] -----------------*/
+/*------------------------------------*/
+.c-btn {
+  display: inline-flex;
+}
+.c-btn--homepage,
+.c-btn--homepage:visited {
+  background: red;
+  color: var(--color-terra-cotta, #E07A5F);
+  border: 1px solid transparent;
+}
+.c-btn--homepage:hover, .c-btn--homepage:focus,
+.c-btn--homepage:visited:hover,
+.c-btn--homepage:visited:focus {
+  background: none;
+  color: var(--color-terra-cotta, #E07A5F);
+  border-color: var(--color-terra-cotta, #E07A5F);
+}
+
+.c-btn--primary,
+.c-btn--primary:visited {
+  color: #0192d0;
+}
+.c-btn--primary:hover, .c-btn--primary:focus,
+.c-btn--primary:visited:hover,
+.c-btn--primary:visited:focus {
+  background: none;
+  color: var(--color-terra-cotta, #E07A5F);
+  border-color: var(--color-terra-cotta, #E07A5F);
+}
+
+.c-btn--secondary,
+.c-btn--secondary:visited {
+  color: darkseagreen;
+}
+.c-btn--secondary:hover, .c-btn--secondary:focus,
+.c-btn--secondary:visited:hover,
+.c-btn--secondary:visited:focus {
+  background: none;
+  color: var(--color-terra-cotta, #E07A5F);
+  border-color: var(--color-terra-cotta, #E07A5F);
+}
+
+.c-btn--text,
+.c-btn--text:visited {
+  font-weight: bold;
+}
+.c-btn--text:hover, .c-btn--text:focus,
+.c-btn--text:visited:hover,
+.c-btn--text:visited:focus {
+  background: none;
+  color: var(--color-terra-cotta, #E07A5F);
+  border-color: var(--color-terra-cotta, #E07A5F);
+}
+
+/*	External Links
+	A tags that do not start with
+	Not  Internal links  : links that do not start with
+*/
+a.c-btn:not([href^="/"]),
+a.c-btn:not([href^=".."]),
+a.c-btn[href^="http://"]:not([href*="cengage.com"]):after,
+a.c-btn[href^="https://"]:not([href*="cengage.com"]):after,
+a.c-btn[href^="//"]:not([href*="cengage.com"]):after {
+  color: var(--color-terra-cotta, #E07A5F);
+}
+
+/* Text Icon Links */
+/*	Target Media Links – PDF and Doc Files
+	Targets only text buttons
+	href that ends in .pdf
+*/
+a.c-btn--text[href$=".pdf"]:after,
+a.c-btn--text[href$=".pdf"][data-size]:after,
+a.c-btn--text[href$=".doc"]:after {
+  content: "PDF-Icon.svg";
+}
+
+/*	Email Link
+	Text link only
+	Href ends with "mailto:"
+*/
+a.c-btn--text[href^="mailto:"]:after {
+  Content: "Email-Icon.svg";
+}
+
+/* target .mp3 .mp4 */
+a.c-btn--text[href$=".mp3"]:after,
+a.c-btn--text[href$=".mp4"]:after {
+  Content: "Media-Icon.svg";
+}
+
+.c-header {
+  display: grid;
+}
+
+.c-header_container {
+  width: 100%;
+}
+
+.c-primary-nav_link {
+  font-size: 20px;
+  line-height: 62px;
+  font-weight: 600;
+  color: var(--color-primary-blue, #003865);
+  border: 0;
+  background: none;
+}
+
+.c-logo_svg {
+  height: 32px;
+  width: 144px;
+}
+
+/* -- ------------  -- */
+/* -- [ UTILITIES ] -- */
+/* -- ------------  -- */
+/* -- ---------------------------  -- */
+/* -- UTILITIES : BACKGROUND COLOR -- */
+/* -- ---------------------------  -- */
+/* -- Background Colors Examples
+
+.u-bg-primary01 { background-color: #3f3f3f !important; }
+.u-bg-secondary01 { background-color: #003865 !important; }
+.u-bg-accent01 { background-color: #6f9823 !important; }
+
+-- */
+/* -- [ Primary BACKGROUND COLORS ] -- */
+/* -- [ SECONDARY BACKGROUND COLORS ] -- */
+/* -- [ ACCENT BACKGROUND COLORS ] -- */
+/* -- [ LIMITED BACKGROUND COLORS ] -- */
+.u-bg-white {
+  background-color: #fff !important;
+}
+
+.u-bg-gray-100 {
+  background: var(--jc-color-gray-100, #F1F1F1);
+}
+
+/* Grey 200 */
+.u-bg-gray-200 {
+  background: var(--jc-color-gray-200, #E4E4E4);
+}
+
+/* Grey 200 */
+.u-bg-black {
+  background-color: #000 !important;
+}
+
+.u-bg-findATutor {
+  background-color: #297DBB !important;
+}
+
+.u-bg-dynaConFooterCopy {
+  background-color: #262626 !important;
+}
+
+.u-width-960 {
+  width: 100% !important;
+  max-width: 960px !important;
+}
+
+.u-margin-bottom--4 {
+  margin-bottom: 4px !important;
+}
+
+.u-margin-bottom--8 {
+  margin-bottom: 8px !important;
+}
+
+.u-margin-bottom--12 {
+  margin-bottom: 12px !important;
+}
+
+.u-margin-bottom--16 {
+  margin-bottom: 16px !important;
+}
+
+.u-margin-bottom--24 {
+  margin-bottom: 24px !important;
+}
+
+.u-margin-bottom--32 {
+  margin-bottom: 32px !important;
+}
+
+.u-margin-bottom--48 {
+  margin-bottom: 48px !important;
+}
+
+.u-margin-bottom--64 {
+  margin-bottom: 64px !important;
+}
+
+/* -- --------------------  -- */
+/* -- [ UTILITIES : TEXT ] -- */
+/* -- --------------------  -- */
+/* -- Text Align -- */
+.u-text-left {
+  text-align: left !important;
+}
+
+.u-text-right {
+  text-align: right !important;
+}
+
+.u-text-center {
+  text-align: center !important;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,47 @@
+
+/*-- Work Sans --*/
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 1 999;
+  src:
+    url('source/fonts/workSans/WorkSans-VariableFont_wght.ttf') format("truetype-variations"),
+    url('source/fonts/workSans/WorkSans-Regular.woff') format('woff'),
+    url('source/fonts/workSans/WorkSans-Regular.woff2') format('woff2'),
+    url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: italic;
+  font-weight: 1 999;
+  src:
+    url('source/fonts/workSans/WorkSans-Italic-VariableFont_wght.ttf') format("truetype-variations"),
+    url('source/fonts/workSans/WorkSans-Italic.woff') format('woff'),
+    url('source/fonts/workSans/WorkSans-Italic.woff2') format('woff2'),
+    url("https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap");
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    url('source/fonts/workSans/WorkSans-VariableFont_wght.ttf') format("truetype-variations"),
+    url('source/fonts/workSans/WorkSans-SemiBold.woff') format('woff'),
+    url('source/fonts/workSans/WorkSans-SemiBold.woff2') format('woff2'),
+    url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap");
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src:
+    url('source/fonts/workSans/WorkSans-VariableFont_wght.ttf') format("truetype-variations"),
+    url('source/fonts/workSans/WorkSans-Bold.woff') format('woff'),
+    url('source/fonts/workSans/WorkSans-Bold.woff') format('woff2'),
+    url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap");
+}
