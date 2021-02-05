@@ -2,16 +2,16 @@
   "items": [
     {
       "name": "$font-family-primary",
-      "value": "'Raleway', \"HelveticaNeue\", \"Helvetica\", \"Arial\", sans-serif",
+      "value": "'Work Sans', \"HelveticaNeue\", \"Helvetica\", \"Arial\", sans-serif",
       "comment": ""
     },
     {
       "name": "$font-family-secondary",
-      "value": "'Abel', serif",
+      "value": "'Open Sans', \"Segoe UI\", Tahoma, sans-serif",
       "comment": ""
     }
   ],
   "meta": {
-    "description": "To add to these items, use Sass variables that start with <code>$font-family-</code> in <code>./source/css/scss/abstracts/_variables.scss</code>"
+    "description": "To add to these items, use Sass variables that start with <code>$font-family-</code> in <code>./source/css/scss/00-settings/_fonts.scss</code>"
   }
 }
