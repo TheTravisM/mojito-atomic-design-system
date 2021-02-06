@@ -1,0 +1,31 @@
+.c-logo {
+
+}
+.c-logo--header {
+    .c-logo_svg {
+
+    }
+}
+.c-logo--footer {
+    .c-logo_svg {
+
+    }
+}
+
+/* Desktop and Up */
+@media (min-width: 576px) {
+    .c-logo--header {
+        .c-logo_svg {
+            height: 202px;
+            width: 44px;
+            fill: #810006;
+        }
+    }
+    .c-logo--footer {
+        .c-logo_svg {
+            height: 202px;
+            width: 44px;
+            fill: #810006;
+        }
+    }
+}
