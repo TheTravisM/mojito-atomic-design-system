@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html class="">
 	<head>
-		<title>Soul Soles</title>
+		<title>Corp Mojito</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 
-		<link rel="stylesheet" href="../../css/style.css?1612523339881" media="all" />
-		<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1612523339881" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1612815050752" media="all" />
+		<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1612815050752" media="all" />
 		<link href="https://fonts.googleapis.com/css?family=Abel|Raleway:400,400i,700" rel="stylesheet">
 
 		<!--<Deject>-->
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-		<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1612523339881" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1612815050752" media="all">
 		<!-- End Pattern Lab -->
 		<!--</Deject>-->
 
@@ -71,7 +71,10 @@
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<button
+			
+<!--/* https://codepen.io/JackSamurai/pen/qBqbvmK?editors=1100 */-->
+
+<button
   
   class="c-btn " data-ui-component="c-btn"
   
@@ -130,7 +133,10 @@
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<button
+			
+<!--/* https://codepen.io/JackSamurai/pen/qBqbvmK?editors=1100 */-->
+
+<button
   
   class="c-btn c-btn--homepage" data-ui-component="c-btn"
   
@@ -189,7 +195,10 @@
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<button
+			
+<!--/* https://codepen.io/JackSamurai/pen/qBqbvmK?editors=1100 */-->
+
+<button
   
   class="c-btn c-btn--primary" data-ui-component="c-btn"
   
@@ -248,7 +257,10 @@
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<button
+			
+<!--/* https://codepen.io/JackSamurai/pen/qBqbvmK?editors=1100 */-->
+
+<button
   
   class="c-btn c-btn--secondary" data-ui-component="c-btn"
   
@@ -307,7 +319,10 @@
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<button
+			
+<!--/* https://codepen.io/JackSamurai/pen/qBqbvmK?editors=1100 */-->
+
+<button
   
   class="c-btn c-btn--text" data-ui-component="c-btn"
   
@@ -366,7 +381,10 @@
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<button
+			
+<!--/* https://codepen.io/JackSamurai/pen/qBqbvmK?editors=1100 */-->
+
+<button
   
   class="c-btn c-btn--text" data-ui-component="c-btn"
   
@@ -425,7 +443,10 @@
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<button
+			
+<!--/* https://codepen.io/JackSamurai/pen/qBqbvmK?editors=1100 */-->
+
+<button
   
   class="c-btn c-btn--text" data-ui-component="c-btn"
   
@@ -484,7 +505,10 @@
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<button
+			
+<!--/* https://codepen.io/JackSamurai/pen/qBqbvmK?editors=1100 */-->
+
+<button
   
   class="c-btn c-btn--text" data-ui-component="c-btn"
   
@@ -543,7 +567,10 @@
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<button
+			
+<!--/* https://codepen.io/JackSamurai/pen/qBqbvmK?editors=1100 */-->
+
+<button
   
   class="c-btn c-btn--bare" data-ui-component="c-btn"
   
@@ -613,96 +640,376 @@
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<!-- Footer -->
+			<!-- https://codepen.io/andybarefoot/pen/QMeZda -->
+<script>
+    function resizeGridItem(item){
+        grid = document.getElementsByClassName("c-footer-nav_list")[0];
+        rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+        rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+        rowSpan = Math.ceil((item.querySelector('.c-footer-nav_list-item').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+        item.style.gridRowEnd = "span "+rowSpan;
+    }
+
+    function resizeAllGridItems(){
+        allItems = document.getElementsByClassName("c-footer-nav_list-item");
+        for(x=0;x<allItems.length;x++){
+            resizeGridItem(allItems[x]);
+        }
+    }
+
+    function resizeInstance(instance){
+        item = instance.elements[0];
+        resizeGridItem(item);
+    }
+
+    window.onload = resizeAllGridItems();
+    window.addEventListener("resize", resizeAllGridItems);
+
+    allItems = document.getElementsByClassName("c-footer-nav_list-item");
+    for(x=0;x<allItems.length;x++){
+        imagesLoaded( allItems[x], resizeInstance);
+    }
+</script>
+
+<!-- Footer -->
 <footer id="corp-global-footer" class="c-global-footer">
     <section class="c-global-footer_container">
 
         <!-- Logo -->
-        <h1 class="c-logo c-logo--footer">
+        <h1 id="c-logo-footer" class="c-logo c-logo--footer">
             <a href="" class="c-logo_link" rel="home">
                 <span class="u-screen-reader-text">Cengage</span>
-                <svg class="c-logo_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="265" height="61" viewBox="0 0 265 61">
+                <svg class="c-logo_svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 189.7 42.5"
+                     style="enable-background:new 0 0 189.7 42.5;"
+                     xml:space="preserve">
                     <title>Cengage Logo</title>
-                    <defs><path id="a" d="M24.391 49.537H.084V.097H24.39z"/></defs><g fill="none" fill-rule="evenodd"><g transform="translate(0 11.342)"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path d="M13.548.211l9.139 3.152-1.46 7.449-12.67-4.367 3.116-5.48c.463-.813 1.078-1.029 1.875-.754" fill="#002D4B" mask="url(#b)"/><path d="M.63 23.752l7.978-7.116 6.182 5.512-11.063 9.868-3.42-6.032c-.51-.895-.374-1.61.323-2.232" fill="#005176" mask="url(#b)"/><path d="M14.945 48.077l-2.28-11.64 8.562-2.953 3.164 16.138h-7.534c-1.12 0-1.714-.529-1.912-1.545" fill="#008FC6" mask="url(#b)"/></g><path d="M44.323 58.937L32.16 54.743l1.944-9.917 16.862 5.813-4.146 7.294c-.617 1.083-1.432 1.371-2.497 1.004" fill="#00ACDC"/><path d="M59.386 31.354l-10.619 9.472-8.226-7.335 14.724-13.135 4.554 8.03c.676 1.19.495 2.14-.433 2.968" fill="#6BC7E4"/><path d="M42.467 2.73l3.036 15.494-11.399 3.93L29.892.674h10.03c1.486 0 2.28.704 2.545 2.057" fill="#89D0E9"/><path d="M97.788 45.183c-3.018 1.626-5.99 2.23-8.779 2.23-9.279 0-14.674-6.46-14.674-15.427 0-8.875 6.127-15.938 15.268-15.938 3.246 0 5.99.743 7.59 1.626v3.856c-2.149-1.16-4.48-1.952-7.497-1.952-6.95 0-11.064 5.392-11.064 12.221 0 7.11 4.161 12.083 10.789 12.083 2.835 0 5.12-.837 7.223-1.998l1.144 3.3M104.683 16.326h15.224l-1.19 3.392h-9.965v9.851h9.829v3.44h-9.83v10.548h11.339v3.391h-15.407V16.326M126.804 16.326h3.932l13.622 18.03a92.979 92.979 0 0 1 4.069 5.715h.09c-.09-1.672-.09-3.16-.09-5.344V16.326h4.068v30.622h-3.566l-14.125-18.726a137.394 137.394 0 0 1-3.976-5.53h-.092c.092 1.441.136 2.929.136 5.112v19.144h-4.068V16.326M172.465 34.496l-1.19-3.393h12.526v13.941c-2.241 1.161-6.033 2.37-10.194 2.37-9.28 0-15.177-6.367-15.177-15.289 0-9.387 6.354-16.077 15.91-16.077 3.472 0 6.444.835 8.365 1.626v3.856a17.743 17.743 0 0 0-8.138-1.952c-7.59 0-11.839 5.019-11.839 12.176 0 7.435 4.342 12.128 11.29 12.128 2.331 0 4.434-.464 5.76-1.115v-8.271h-7.313M205.919 35.517l-2.834-7.992c-.87-2.602-1.325-3.996-1.692-5.111h-.09c-.321 1.115-.824 2.556-1.737 5.157l-2.836 7.946h9.189zm-6.034-19.285h2.88l11.702 30.716h-4.342l-2.972-8.039h-11.656l-2.881 8.04h-4.251l11.52-30.717zM230.553 34.496l-1.187-3.393h12.525v13.941c-2.24 1.161-6.034 2.37-10.193 2.37-9.282 0-15.178-6.367-15.178-15.289 0-9.387 6.355-16.077 15.909-16.077 3.473 0 6.445.835 8.364 1.626v3.856a17.727 17.727 0 0 0-8.137-1.952c-7.587 0-11.838 5.019-11.838 12.176 0 7.435 4.341 12.128 11.291 12.128 2.33 0 4.433-.464 5.76-1.115v-8.271h-7.316M249.199 16.326h15.224l-1.19 3.392h-9.966v9.851h9.828v3.44h-9.828v10.548h11.337v3.391h-15.405V16.326" fill="#002D4B"/></g>
+                    <style type="text/css">
+                        #c-logo-footer.st0{fill:#1D1D1E}
+                        #c-logo-footer.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#1D1D1E}
+                    </style>
+                    <path class="st0" d="M75.1,11H86l-0.8,2.4H78v6.9h7v2.4h-7v7.4h8.1v2.4h-11V11z"/>
+                    <path class="st0" d="M90.9,11h2.8c0,0,12,15.7,12.7,16.7h0.1c-0.1-1.2-0.1-16.7-0.1-16.7h2.9v21.6h-2.6c0,0-12.2-16-13-17.1h-0.1 c0.1,1,0.1,17.1,0.1,17.1h-2.9L90.9,11L90.9,11z"/>
+                    <path class="st0" d="M123.7,23.9l-0.8-2.4h9v9.8c-2.3,1.1-4.8,1.7-7.3,1.7c-6.7,0-10.9-4.5-10.9-10.8c0-6.6,4.6-11.3,11.4-11.3 c2.1,0,4.1,0.4,6,1.1v2.7c-1.8-0.9-3.8-1.4-5.8-1.4c-5.4,0-8.5,3.5-8.5,8.6c0,5.2,3.1,8.5,8.1,8.5c1.4,0,2.8-0.2,4.1-0.8v-5.8 L123.7,23.9L123.7,23.9z"/>
+                    <path class="st0" d="M143.3,11h2.1l8.4,21.7h-3.1l-2.1-5.7h-8.4l-2.1,5.7h-3L143.3,11z M147.6,24.6c0,0-3-8.5-3.2-9.2h-0.1 c-0.2,0.8-3.2,9.2-3.2,9.2H147.6z"/>
+                    <path class="st0" d="M165.3,23.9l-0.9-2.4h9v9.8c-2.3,1.1-4.8,1.7-7.3,1.7c-6.6,0-10.9-4.5-10.9-10.8c0-6.6,4.6-11.3,11.4-11.3 c2.1,0,4.1,0.4,6,1.1v2.7c-1.8-0.9-3.8-1.4-5.8-1.4c-5.4,0-8.5,3.5-8.5,8.6c0,5.2,3.1,8.6,8.1,8.6c1.4,0,2.8-0.2,4.1-0.8v-5.9 L165.3,23.9L165.3,23.9z"/>
+                    <path class="st0" d="M70.1,31.4c-1.9,1-4.1,1.6-6.3,1.6c-6.7,0-10.5-4.6-10.5-10.9s4.4-11.2,11-11.2c1.9,0,3.7,0.4,5.4,1.2v2.7 c-1.6-0.9-3.5-1.4-5.4-1.4c-5,0-7.9,3.8-7.9,8.6c0,5,3,8.5,7.7,8.5c1.8,0,3.6-0.5,5.2-1.4L70.1,31.4z"/>
+                    <path class="st0" d="M178.7,11h10.9l-0.9,2.4h-7.1v6.9h7v2.4h-7v7.4h8.1v2.4h-11V11z"/>
+                    <path class="st1" d="M9.7,7.7l6.6,2.2l-1,5.2L6.2,12l2.2-3.9C8.6,7.7,9.2,7.4,9.7,7.7L9.7,7.7z"/>
+                    <path class="st1" d="M0.4,24.3l5.7-5l4.4,3.9l-7.9,7l-2.4-4.3C-0.2,25.4,0,24.7,0.4,24.3L0.4,24.3z"/>
+                    <path class="st1" d="M10.7,41.4l-1.6-8.2l6.1-2.1l2.3,11.4h-5.4C11.4,42.6,10.8,42.1,10.7,41.4L10.7,41.4z"/>
+                    <path class="st1" d="M31.8,41.1l-8.7-3l1.4-7l12.1,4.1l-3,5.1C33.3,41,32.5,41.4,31.8,41.1L31.8,41.1z"/>
+                    <path class="st1" d="M42.6,21.6L35,28.3l-5.9-5.2l10.6-9.3l3.3,5.7C43.4,20.2,43.3,21.1,42.6,21.6L42.6,21.6z"/>
+                    <path class="st1" d="M30.5,1.5l2.2,10.9l-8.2,2.8L21.4,0h7.2C29.5-0.1,30.3,0.5,30.5,1.5C30.4,1.4,30.4,1.4,30.5,1.5z"/>
                 </svg>
+
             </a><!--end c-logo__link-->
         </h1>
 
         <!-- Navigation -->
         <nav class="c-footer-nav" role="navigation">
-            <h3>ABOUT</h3>
-            <ul>
-                <li>
-                    <a href="#">link text</a>
+            <ul class="c-footer-nav_list">
+                <li class="c-footer-nav_list-item c-footer-nav_list-item--about">
+                    <h3 class="c-footer-nav_list-header">ABOUT</h3>
+                    <ul class="c-footer-nav_sub-list">
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="./about">About Cengage</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="../leadership">Leadership</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="#">Inclusion & Diversity</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-footer-nav_list-item">
+                    <h3 class="c-footer-nav_list-header">BUSINESSES</h3>
+                    <ul class="c-footer-nav_sub-list">
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="https://www.ed2go.com">ed2go</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="https://www.gale.com">gale </a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="#">Inclusion & Diversity</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="#">Inclusion & Diversity</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="https://www.ed2go.com">Milady</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="https://www.gale.com">National Geographic Learning k-12</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="#">National Geographic Learning ELT</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-footer-nav_list-item">
+                    <h3 class="c-footer-nav_list-header">NEWS</h3>
+                    <ul class="c-footer-nav_sub-list">
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="https://www.ed2go.com">ed2go</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="https://www.gale.com">gale </a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="#">Inclusion & Diversity</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="#">Inclusion & Diversity</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="https://www.ed2go.com">Milady</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="https://www.gale.com">National Geographic Learning k-12</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="#">National Geographic Learning ELT</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-footer-nav_list-item">
+                    <h3 class="c-footer-nav_list-header">INVESTORS</h3>
+                    <ul class="c-footer-nav_sub-list">
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="https://www.ed2go.com">ed2go</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="https://www.gale.com">gale </a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="#">Inclusion & Diversity</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="#">Inclusion & Diversity</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="https://www.ed2go.com">Milady</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="https://www.gale.com">National Geographic Learning k-12</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="#">National Geographic Learning ELT</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-footer-nav_list-item">
+                    <h3 class="c-footer-nav_list-header">CAREERS</h3>
+                    <ul class="c-footer-nav_sub-list">
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="#">ed2go</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="#">gale </a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="#">Inclusion & Diversity</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-footer-nav_list-item">
+                    <h3 class="c-footer-nav_list-header">LEGAL</h3>
+                    <ul class="c-footer-nav_sub-list">
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="https://www.ed2go.com">ed2go</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="https://www.gale.com">gale </a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="#">Inclusion & Diversity</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="#">Inclusion & Diversity</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="https://www.ed2go.com">Milady</a>
+                        </li>
+                        <li class="c-footer-nav_sub-list-item">
+                            <a class="c-footer-nav_link" href="https://www.gale.com">National Geographic :earning k-12</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
-            <h3>BUSINESSES</h3>
         </nav>
 
-        <aside>
-            copy right text here &copy;  <time>2099</time>
+        <aside class="c-footer-bottom" >
+            <section class="c-footer_copyright">
+                &copy;<time>2021</time> Cengage Learning, Inc. and its affiliates
+            </section>
+
             <ul class="c-social-list">
-                <li class="c-social_list-item">
+                <li class="c-social_list-item c-social_list-item--facebook">
                     <a class="c-social_link" href="#">
-                        <span class="u-screen-reader-text">Cengage</span>
-                        <svg class="c-social_icon">
+                        <span class="u-screen-reader-text">Facbook</span>
+                        <svg class="c-social_icon" width="31px" height="31px" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>Facebook Icon</title>
+                            <defs>
+                                <polygon id="path-1" points="8.75315495e-05 0.000428571429 30.6360424 0.000428571429 30.6360424 30.0002571 8.75315495e-05 30.0002571"></polygon>
+                            </defs>
+                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="navigation-/-footer-/-Mobile" transform="translate(-28.000000, -1015.000000)">
+                                    <g id="footer-/-desktop" transform="translate(22.000000, 51.000000)">
+                                        <g id="Group" transform="translate(-0.000088, 0.000000)">
+                                            <g id="Group-2" transform="translate(6.000000, 964.513857)">
+                                                <mask id="mask-2" fill="white">
+                                                    <use xlink:href="#path-1"></use>
+                                                </mask>
+                                                <g id="Clip-11"></g>
+                                                <path d="M26.8931933,0.000257142857 C28.9589379,0.000257142857 30.6360424,1.6434 30.6360424,3.6654 L30.6360424,26.3351143 C30.6360424,28.3579714 28.9589379,30.0002571 26.8931933,30.0002571 L20.5226471,30.0002571 L20.5226471,18.6962571 L24.5070833,18.6962571 L25.2659818,13.8559714 L20.5226471,13.8559714 L20.5226471,10.7136857 C20.5226471,9.3894 21.185261,8.09854286 23.3096517,8.09854286 L25.4664291,8.09854286 L25.4664291,3.9774 C25.4664291,3.9774 23.5092236,3.64997143 21.6377991,3.64997143 C17.731266,3.64997143 15.1779707,5.96854286 15.1779707,10.1659714 L15.1779707,13.8559714 L10.8355305,13.8559714 L10.8355305,18.6962571 L15.1779707,18.6962571 L15.1779707,30.0002571 L3.74372438,30.0002571 C1.67710449,30.0002571 1.33226763e-13,28.3579714 1.33226763e-13,26.3351143 L1.33226763e-13,3.6654 C1.33226763e-13,1.6434 1.67710449,0.000257142857 3.74372438,0.000257142857 L26.8931933,0.000257142857 Z" id="Fill-10" fill="#003865" mask="url(#mask-2)"></path>
+                                            </g>
+                                        </g>
+                                        <g id="Group-12" transform="translate(6.000000, 964.514286)"></g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="c-social_list-item c-socal_icon--youtube">
+                    <a class="c-social_link" href="#">
+                        <span class="u-screen-reader-text">Youtube</span>
+                        <svg class="c-social_icon" width="32px" height="31px" viewBox="0 0 32 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>YouTube</title>
+                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="navigation-/-footer-/-Mobile" transform="translate(-64.000000, -1015.000000)">
+                                    <g id="footer-/-desktop" transform="translate(22.000000, 51.000000)">
+                                        <g id="Group" transform="translate(-0.000088, 0.000000)" fill="#003865">
+                                            <path d="M55.9813027,983.046486 L55.9813027,976.7182 L61.57807,979.882771 L55.9813027,983.046486 Z M68.4554238,974.805057 C68.2085849,973.897343 67.4785717,973.182486 66.5516126,972.939914 C64.8710069,972.499343 58.1354541,972.499343 58.1354541,972.499343 C58.1354541,972.499343 51.3999014,972.499343 49.7192956,972.939914 C48.7923365,973.182486 48.0623234,973.897343 47.8146091,974.805057 C47.3646969,976.450771 47.3646969,979.882771 47.3646969,979.882771 C47.3646969,979.882771 47.3646969,983.313914 47.8146091,984.958771 C48.0623234,985.867343 48.7923365,986.5822 49.7192956,986.823914 C51.3999014,987.265343 58.1354541,987.265343 58.1354541,987.265343 C58.1354541,987.265343 64.8710069,987.265343 66.5516126,986.823914 C67.4785717,986.5822 68.2085849,985.867343 68.4554238,984.958771 C68.9062113,983.313914 68.9062113,979.882771 68.9062113,979.882771 C68.9062113,979.882771 68.9062113,976.450771 68.4554238,974.805057 L68.4554238,974.805057 Z M69.7106262,964.5142 C71.7763708,964.5142 73.4534753,966.156486 73.4534753,968.179343 L73.4534753,990.849057 C73.4534753,992.871914 71.7763708,994.5142 69.7106262,994.5142 L46.560282,994.5142 C44.4945374,994.5142 42.8174329,992.871914 42.8174329,990.849057 L42.8174329,968.179343 C42.8174329,966.156486 44.4945374,964.5142 46.560282,964.5142 L69.7106262,964.5142 Z" id="Fill-1"></path>
+                                        </g>
+                                        <g id="social-icons-horizontal" transform="translate(6.000000, 964.514286)">
+                                            <g id="Group-3" transform="translate(36.760000, 0.000000)"></g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="c-social_list-item c-social_list-item--twitter">
+                    <a class="c-social_link" href="#">
+                        <span class="u-screen-reader-text">Twitter</span>
+                        <svg class="c-social_icon" width="32px" height="31px" viewBox="0 0 32 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Twitter</title>
+                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="navigation-/-footer-/-Mobile" transform="translate(-101.000000, -1015.000000)">
+                                    <g id="footer-/-desktop" transform="translate(22.000000, 51.000000)">
+                                        <g id="Group" transform="translate(-0.000088, 0.000000)"></g>
+                                        <g id="social-icons-horizontal" transform="translate(6.000000, 964.514286)">
+                                            <g id="Group-15" transform="translate(73.520000, 0.000000)"></g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="c-social_list-item c-social_list-item--pintrest">
+                    <a class="c-social_link" href="#">
+                        <span class="u-screen-reader-text">Pintrest</span>
+                        <svg class="c-social_icon" width="32px" height="31px" viewBox="0 0 32 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Pintrest Icon</title>
+                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="navigation-/-footer-/-Mobile" transform="translate(-138.000000, -1015.000000)">
+                                    <g id="footer-/-desktop" transform="translate(22.000000, 51.000000)">
+                                        <g id="Group" transform="translate(-0.000088, 0.000000)"></g>
+                                        <g id="social-icons-horizontal" transform="translate(6.000000, 964.514286)">
+                                            <g id="Group-18" transform="translate(110.280000, 0.000000)"></g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="c-social_list-item c-social_list-item--linkedin">
+                    <a class="c-social_link" href="#">
+                        <span class="u-screen-reader-text">linkedin</span>
+                        <svg class="c-social_icon" width="32px" height="31px" viewBox="0 0 32 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Linkedin</title>
+                            <defs>
+                                <polygon id="path-1" points="153.269119 964.514457 183.905161 964.514457 183.905161 994.514286 153.269119 994.514286"></polygon>
+                            </defs>
+                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="navigation-/-footer-/-Mobile" transform="translate(-175.000000, -1015.000000)">
+                                    <g id="footer-/-desktop" transform="translate(22.000000, 51.000000)">
+                                        <g id="Group" transform="translate(-0.000088, 0.000000)">
+                                            <mask id="mask-2" fill="white">
+                                                <use xlink:href="#path-1"></use>
+                                            </mask>
+                                            <g id="Clip-8"></g>
+                                            <path d="M160.655906,969.713029 C159.119728,969.713029 158.115741,970.701314 158.115741,971.998171 C158.115741,973.266743 159.089092,974.283314 160.596385,974.283314 L160.62527,974.283314 C162.19121,974.283314 163.165436,973.266743 163.165436,971.998171 C163.136551,970.703029 162.193836,969.7156 160.655906,969.713029 L160.655906,969.713029 Z M179.057664,989.315886 L179.057664,981.731029 C179.057664,977.669029 176.843116,975.779029 173.889801,975.779029 C171.507193,975.779029 170.441058,977.061314 169.844093,977.963029 L169.844093,976.089314 L165.3546,976.089314 C165.414997,977.331314 165.3546,989.315886 165.3546,989.315886 L169.843218,989.315886 L169.843218,981.929886 C169.843218,981.533886 169.872979,981.138743 169.992022,980.856743 C170.315888,980.066457 171.054655,979.248743 172.294977,979.248743 C173.918687,979.248743 174.569922,980.462457 174.569922,982.239314 L174.569922,989.315886 L179.057664,989.315886 Z M158.380086,989.315886 L162.870455,989.315886 L162.870455,976.089314 L158.380086,976.089314 L158.380086,989.315886 Z M180.162312,964.514457 C182.228057,964.514457 183.905161,966.156743 183.905161,968.1796 L183.905161,990.848457 C183.905161,992.872171 182.228057,994.514457 180.162312,994.514457 L157.011968,994.514457 C154.947099,994.514457 153.269119,992.872171 153.269119,990.848457 L153.269119,968.1796 C153.269119,966.156743 154.946223,964.514457 157.011968,964.514457 L180.162312,964.514457 Z" id="Fill-7" fill="#003865"></path>
+                                        </g>
+                                        <g id="social-icons-horizontal" transform="translate(6.000000, 964.514286)">
+                                            <g id="Group-9" transform="translate(147.040000, 0.000000)"></g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="c-social_list-item c-social_list-item--square?">
+                    <a class="c-social_link" href="#">
+                        <span class="u-screen-reader-text">Square???</span>
+                        <svg class="c-social_icon" width="32px" height="31px" viewBox="0 0 32 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Group 21</title>
+                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="navigation-/-footer-/-Mobile" transform="translate(-211.000000, -1015.000000)">
+                                    <g id="footer-/-desktop" transform="translate(22.000000, 51.000000)">
+                                        <g id="Group" transform="translate(-0.000088, 0.000000)"></g>
+                                        <g id="social-icons-horizontal" transform="translate(6.000000, 964.514286)">
+                                            <g id="Group-21" transform="translate(183.800000, 0.000000)"></g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
                         </svg>
                     </a>
                 </li>
                 <li class="c-social_list-item">
                     <a class="c-social_link" href="#">
-                        <span class="u-screen-reader-text">Cengage</span>
-                        <svg class="c-social_icon">
-                            <title>Facebook Icon</title>
+                        <span class="u-screen-reader-text">Wifi???</span>
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg width="32px" height="31px" viewBox="0 0 32 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Group 24</title>
+                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="navigation-/-footer-/-Mobile" transform="translate(-248.000000, -1015.000000)">
+                                    <g id="footer-/-desktop" transform="translate(22.000000, 51.000000)">
+                                        <g id="Group" transform="translate(-0.000088, 0.000000)"></g>
+                                        <g id="social-icons-horizontal" transform="translate(6.000000, 964.514286)">
+                                            <g id="Group-24" transform="translate(220.560000, 0.000000)"></g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
                         </svg>
                     </a>
                 </li>
                 <li class="c-social_list-item">
                     <a class="c-social_link" href="#">
-                        <span class="u-screen-reader-text">Cengage</span>
-                        <svg class="c-social_icon">
-                            <title>Facebook Icon</title>
-                        </svg>
-                    </a>
-                </li>
-                <li class="c-social_list-item">
-                    <a class="c-social_link" href="#">
-                        <span class="u-screen-reader-text">Cengage</span>
-                        <svg class="c-social_icon">
-                            <title>Facebook Icon</title>
-                        </svg>
-                    </a>
-                </li>
-                <li class="c-social_list-item">
-                    <a class="c-social_link" href="#">
-                        <span class="u-screen-reader-text">Cengage</span>
-                        <svg class="c-social_icon">
-                            <title>Facebook Icon</title>
-                        </svg>
-                    </a>
-                </li>
-                <li class="c-social_list-item">
-                    <a class="c-social_link" href="#">
-                        <span class="u-screen-reader-text">Cengage</span>
-                        <svg class="c-social_icon">
-                            <title>Facebook Icon</title>
-                        </svg>
-                    </a>
-                </li>
-                <li class="c-social_list-item">
-                    <a class="c-social_link" href="#">
-                        <span class="u-screen-reader-text">Cengage</span>
-                        <svg class="c-social_icon">
-                            <title>Facebook Icon</title>
-                        </svg>
-                    </a>
-                </li>
-                <li class="c-social_list-item">
-                    <a class="c-social_link" href="#">
-                        <span class="u-screen-reader-text">Cengage</span>
-                        <svg class="c-social_icon">
-                            <title>Facebook Icon</title>
+                        <span class="u-screen-reader-text">Instagram</span>
+                        <svg class="c-social_icon" width="33px" height="31px" viewBox="0 0 33 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Instagram</title>
+                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="navigation-/-footer-/-Mobile" transform="translate(-285.000000, -1015.000000)">
+                                    <g id="footer-/-desktop" transform="translate(22.000000, 51.000000)">
+                                        <g id="Group" transform="translate(-0.000088, 0.000000)" fill="#003865">
+                                            <path d="M285.885019,974.040657 C285.885019,974.720371 285.322191,975.271514 284.628066,975.271514 C283.933941,975.271514 283.371988,974.720371 283.371988,974.040657 C283.371988,973.360943 283.933941,972.8098 284.628066,972.8098 C285.322191,972.8098 285.885019,973.360943 285.885019,974.040657 L285.885019,974.040657 Z M279.039176,982.932657 C277.111732,982.932657 275.548418,981.4018 275.548418,979.514371 C275.548418,977.626943 277.111732,976.096086 279.039176,976.096086 C280.966621,976.096086 282.529059,977.626943 282.529059,979.514371 C282.529059,981.4018 280.966621,982.932657 279.039176,982.932657 L279.039176,982.932657 Z M279.039176,974.248943 C276.069231,974.248943 273.661238,976.606086 273.661238,979.514371 C273.661238,982.4218 276.069231,984.7798 279.039176,984.7798 C282.008246,984.7798 284.415364,982.4218 284.415364,979.514371 C284.415364,976.606086 282.008246,974.248943 279.039176,974.248943 L279.039176,974.248943 Z M279.039176,971.107514 C281.834934,971.107514 282.165803,971.118657 283.270451,971.167514 C284.291069,971.212943 284.846019,971.380086 285.214527,971.521514 C285.702953,971.706657 286.051329,971.928657 286.418086,972.2878 C286.784843,972.646943 287.01155,972.988086 287.202369,973.467229 C287.345045,973.828086 287.515732,974.371514 287.562123,975.370943 C287.612892,976.4518 287.623395,976.7758 287.623395,979.514371 C287.623395,982.252086 287.612892,982.576943 287.562123,983.6578 C287.515732,984.658086 287.345045,985.200657 287.202369,985.561514 C287.01155,986.040657 286.784843,986.3818 286.418086,986.740086 C286.051329,987.099229 285.702953,987.322086 285.214527,987.508086 C284.846019,987.648657 284.291069,987.814943 283.270451,987.861229 C282.165803,987.910943 281.834934,987.920371 279.039176,987.920371 C276.242543,987.920371 275.910799,987.910943 274.807901,987.861229 C273.787283,987.814943 273.232333,987.648657 272.86295,987.508086 C272.373649,987.322086 272.025273,987.099229 271.659391,986.740086 C271.292634,986.3818 271.065052,986.040657 270.875984,985.561514 C270.732432,985.200657 270.561746,984.658086 270.514479,983.6578 C270.465461,982.576943 270.454082,982.252086 270.454082,979.514371 C270.454082,976.7758 270.465461,976.4518 270.514479,975.370943 C270.561746,974.371514 270.732432,973.828086 270.875984,973.467229 C271.065052,972.988086 271.292634,972.646943 271.659391,972.2878 C272.025273,971.928657 272.373649,971.706657 272.86295,971.521514 C273.232333,971.380086 273.787283,971.212943 274.807901,971.167514 C275.911674,971.118657 276.242543,971.107514 279.039176,971.107514 L279.039176,971.107514 Z M279.039176,969.260371 C276.195276,969.260371 275.838148,969.272371 274.721245,969.322086 C273.606968,969.3718 272.846319,969.544943 272.180204,969.798657 C271.491331,970.060086 270.907495,970.411514 270.32541,970.981514 C269.743326,971.551514 269.384446,972.123229 269.117475,972.7978 C268.858382,973.450086 268.681568,974.1958 268.6308,975.286943 C268.579156,976.3798 268.567777,976.729514 268.567777,979.514371 C268.567777,982.299229 268.579156,982.648086 268.6308,983.7418 C268.681568,984.8338 268.858382,985.578657 269.117475,986.230943 C269.384446,986.905514 269.743326,987.477229 270.32541,988.047229 C270.907495,988.617229 271.491331,988.9678 272.180204,989.230086 C272.846319,989.4838 273.606968,989.656943 274.721245,989.7058 C275.838148,989.756371 276.195276,989.768371 279.039176,989.768371 C281.883076,989.768371 282.23933,989.756371 283.356232,989.7058 C284.470509,989.656943 285.232033,989.4838 285.898149,989.230086 C286.587022,988.9678 287.170857,988.617229 287.752942,988.047229 C288.335027,987.477229 288.693031,986.905514 288.960877,986.230943 C289.219971,985.578657 289.396785,984.8338 289.446678,983.7418 C289.498321,982.648086 289.510576,982.299229 289.510576,979.514371 C289.510576,976.729514 289.498321,976.3798 289.446678,975.286943 C289.396785,974.1958 289.219971,973.450086 288.960877,972.7978 C288.693031,972.123229 288.335027,971.551514 287.752942,970.981514 C287.170857,970.411514 286.587022,970.060086 285.898149,969.798657 C285.232033,969.544943 284.470509,969.3718 283.356232,969.322086 C282.23933,969.272371 281.883076,969.260371 279.039176,969.260371 L279.039176,969.260371 Z M290.613473,964.514371 C292.680093,964.514371 294.357197,966.156657 294.357197,968.179514 L294.357197,990.848371 C294.357197,992.872086 292.680093,994.514371 290.613473,994.514371 L267.464004,994.514371 C265.39826,994.514371 263.721155,992.872086 263.721155,990.848371 L263.721155,968.179514 C263.721155,966.156657 265.39826,964.514371 267.464004,964.514371 L290.613473,964.514371 Z" id="Fill-4"></path>
+                                        </g>
+                                        <g id="social-icons-horizontal" transform="translate(6.000000, 964.514286)">
+                                            <g id="Group-6" transform="translate(257.320000, 0.000000)"></g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
                         </svg>
                     </a>
                 </li>
@@ -1143,10 +1450,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1612523339881">
+<script id="pl-js-polyfill-insert-1612815050752">
   (function() {
     if (self != top) {
-      var cb = '1612523339881';
+      var cb = '1612815050752';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -1159,7 +1466,7 @@
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1612523339881" nomodule>
+<script id="pl-js-insert-1612815050752" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 

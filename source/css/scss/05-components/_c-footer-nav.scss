@@ -1,0 +1,74 @@
+.c-footer-nav {
+  letter-spacing: 0;
+  color: #003660;
+}
+
+.c-footer-nav_list {
+  display: grid;
+  justify-content: start;
+  width: 100%;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(142px, 1fr));
+  grid-auto-flow: dense;
+}
+
+.c-footer-nav_sub-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-footer-nav_list-header {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.c-footer-nav_link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px;
+  position: relative;
+}
+
+.c-footer-nav_link[href^="#"] {
+  color: lime;
+}
+
+.c-footer-nav_link:not([href^="/"]),
+.c-footer-nav_link:not([href^=".."]),
+.c-footer-nav_link[href^="http://"]:not([href*="cengage.com"]):after,
+.c-footer-nav_link[href^="https://"]:not([href*="cengage.com"]):after,
+.c-footer-nav_link[href^="//"]:not([href*="cengage.com"]):after {
+  &::after {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    content: "->";
+  }
+}
+
+/* -- Nav Order  --*/
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .c-footer-nav_list-item {
+    &--about { /* order:1; */
+    }
+
+    &--businesses {
+    }
+
+    &--news {
+    }
+
+    &--investors {
+    }
+
+    &--careers {
+    }
+
+    &--legal {
+    }
+  }
+}
+
+/* -- Nav Order Desktop -- */

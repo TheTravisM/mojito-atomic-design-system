@@ -1,14 +1,20 @@
-.c-logo {
-
-}
+.c-logo { }
 .c-logo--header {
     .c-logo_svg {
-
+        width: 175px;
+        height: 40px;
+        path {
+            fill: var(--color-almost-black, #1D1D1E);
+        }
     }
 }
 .c-logo--footer {
     .c-logo_svg {
-
+        width: 202px;
+        height: 44px;
+        path {
+            fill: var(--color-primary-blue, #003865);
+        }
     }
 }
 
@@ -16,16 +22,12 @@
 @media (min-width: 576px) {
     .c-logo--header {
         .c-logo_svg {
-            height: 202px;
-            width: 44px;
-            fill: #810006;
+
         }
     }
     .c-logo--footer {
         .c-logo_svg {
-            height: 202px;
-            width: 44px;
-            fill: #810006;
+
         }
     }
 }

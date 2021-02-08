@@ -12,7 +12,7 @@
 			"buttonText": "Button"
 		},
 		{
-			"styleModifier": "c-btn--home",
+			"styleModifier": "c-btn--homepage",
 			"buttonTag": true,
 			"buttonText": "Button"
 		},

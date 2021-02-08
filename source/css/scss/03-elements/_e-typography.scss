@@ -21,6 +21,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  text-rendering: optimizeLegibility;
 }
 
 .serif {
@@ -95,12 +96,10 @@ blockquote {
 
 span.correct {
   color: var(--color-success-text, #4a7628);
-  text-transform: uppercase;
 }
 
 span.incorrect {
   color: var(--color-error-text, #b10f00);
-  text-transform: uppercase;
 }
 
 
