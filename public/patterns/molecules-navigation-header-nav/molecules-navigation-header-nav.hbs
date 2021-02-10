@@ -1,0 +1,26 @@
+<!-- Header Navigation-->
+<nav class="c-primary-nav">
+    <ul class="c-primary-nav_list">
+        <!-- About -->
+        {{# corpNavigation }}
+        <li class="c-header-primary-nav_list-item">
+            <{{ linkType }}
+                class="c-primary-nav_link"
+                {{#if url }} href="{{ url }}" {{/ if }}
+                </li>
+                role="{{ role }}">
+                {{ listHeader }}
+            </{{ linkType }}>
+            <ul class="c-nav_sublist c-nav_sublist-dropdown">
+                {{# sublist }}
+                <li class="c-header-primary-nav_item {{ primary-nav_item--modifier }}">
+                    <a class="c-header-primary-nav_link" href="{{url}}">
+                        {{label}}
+                    </a>
+                </li>
+                {{/ sublist }}
+            </ul>
+        </li>
+        {{/corpNavigation}}
+    </ul>
+</nav>

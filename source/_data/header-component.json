@@ -1,0 +1,12 @@
+{
+  "header-component" : [
+    {
+      "molecules-logo-header": [
+        {
+          "styleModifier": "c-logo--header",
+          "url": "./"
+        }
+      ]
+    }
+  ]
+}
