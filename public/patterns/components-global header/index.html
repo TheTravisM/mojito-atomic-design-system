@@ -5,13 +5,13 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 
-		<link rel="stylesheet" href="../../css/style.css?1612815050752" media="all" />
-		<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1612815050752" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1612968340908" media="all" />
+		<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1612968340908" media="all" />
 		<link href="https://fonts.googleapis.com/css?family=Abel|Raleway:400,400i,700" rel="stylesheet">
 
 		<!--<Deject>-->
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-		<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1612815050752" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1612968340908" media="all">
 		<!-- End Pattern Lab -->
 		<!--</Deject>-->
 
@@ -71,11 +71,386 @@
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let tabBtn = $('.c-header-nav_tab-btn');
+        tabBtn.click(function () {
+            // -- Tab Buttons -- //
+            let activeTabBtn = $(this);
+            tabBtn.removeClass('c-header-nav_tab-btn--active').attr('aria-selected', 'false').attr('tabindex', '-1');
+            activeTabBtn.addClass('c-header-nav_tab-btn--active').attr('aria-selected', 'true').attr('tabindex', '0');
+
+            // -- Tab Panels -- //
+            let tabPanels = $('.c-header-nav_dropdown-list');
+            let activeTabPanel = $('#'+($(this).attr('aria-controls')));
+            tabPanels.removeClass('ceng-tabs_panel--active').attr('aria-hidden', 'true');
+            activeTabPanel.addClass('ceng-tabs_panel--active').attr('aria-hidden','false');
+
+        });
+    });
+</script>
+
+
+<!-- Header Navigation-->
+<nav id="c-header-navigation" class="c-header-nav">
+    <ul class="c-header-nav_list">
+        <!-- About -->
+            <li class="c-header-nav_list-item">
+                    <a href="./"
+                       class="c-header-nav_link c-primary-nav_link--home"
+                       role="link">
+                        HOME
+                    </a>
+
+<!-- End dropdown list -->
+            </li>
+            <li class="c-header-nav_list-item">
+                    <button
+                        id="about-tab-btn"
+                        class="c-header-nav_link c-header-nav_tab-btn "
+                        data-toggle="tab"
+                        role="tab"
+                        tabindex="-1"
+                        aria-controls="about-tabpanel"
+                        aria-selected="false"
+                    >
+                        about
+                    </button>
+
+                    <ul class="c-header-nav_dropdown-list"
+                        id="about-tabpanel"
+                        tabindex="0"
+                        role="tabpanel"
+                        aria-labelledby="about-tab-btn"
+                        aria-hidden="true">
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="./about"
+                                   role="link">
+                                    About Cengage
+                                </a>
+                            </li>
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="./Leadership"
+                                   role="link">
+                                    Leadership
+                                </a>
+                            </li>
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="link.inclusion-diversity"
+                                   role="link">
+                                    Inclusion &amp; Diversity
+                                </a>
+                            </li>
+                    </ul>
+                <!-- End dropdown list -->
+            </li>
+            <li class="c-header-nav_list-item">
+                    <a href="./"
+                       class="c-header-nav_link c-primary-nav_link--business"
+                       role="link">
+                        BUSINESS
+                    </a>
+
+<!-- End dropdown list -->
+            </li>
+            <li class="c-header-nav_list-item">
+                    <button
+                        id="NEWS-tab-btn"
+                        class="c-header-nav_link c-header-nav_tab-btn "
+                        data-toggle="tab"
+                        role="tab"
+                        tabindex="-1"
+                        aria-controls="NEWS-tabpanel"
+                        aria-selected="false"
+                    >
+                        NEWS
+                    </button>
+
+                    <ul class="c-header-nav_dropdown-list"
+                        id="NEWS-tabpanel"
+                        tabindex="0"
+                        role="tabpanel"
+                        aria-labelledby="NEWS-tab-btn"
+                        aria-hidden="true">
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="./about"
+                                   role="link">
+                                    Press Release
+                                </a>
+                            </li>
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="./Leadership"
+                                   role="link">
+                                    In The News
+                                </a>
+                            </li>
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="link.inclusion-diversity"
+                                   role="link">
+                                    Awards
+                                </a>
+                            </li>
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
+                                   role="link">
+                                    Images For Media
+                                </a>
+                            </li>
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="./Leadership"
+                                   role="link">
+                                    Fact Sheet
+                                </a>
+                            </li>
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="link.inclusion-diversity"
+                                   role="link">
+                                    Events
+                                </a>
+                            </li>
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
+                                   role="link">
+                                    Contact Information
+                                </a>
+                            </li>
+                    </ul>
+                <!-- End dropdown list -->
+            </li>
+            <li class="c-header-nav_list-item">
+                    <button
+                        id="INVESTORS-tab-btn"
+                        class="c-header-nav_link c-header-nav_tab-btn "
+                        data-toggle="tab"
+                        role="tab"
+                        tabindex="-1"
+                        aria-controls="INVESTORS-tabpanel"
+                        aria-selected="false"
+                    >
+                        INVESTORS
+                    </button>
+
+                    <ul class="c-header-nav_dropdown-list"
+                        id="INVESTORS-tabpanel"
+                        tabindex="0"
+                        role="tabpanel"
+                        aria-labelledby="INVESTORS-tab-btn"
+                        aria-hidden="true">
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="./about"
+                                   role="link">
+                                    Presentations
+                                </a>
+                            </li>
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="./Leadership"
+                                   role="link">
+                                    Call Replays
+                                </a>
+                            </li>
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="link.inclusion-diversity"
+                                   role="link">
+                                    Current Reports
+                                </a>
+                            </li>
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
+                                   role="link">
+                                    Annual Reports
+                                </a>
+                            </li>
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="./Leadership"
+                                   role="link">
+                                    Announcements
+                                </a>
+                            </li>
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="link.inclusion-diversity"
+                                   role="link">
+                                    Shareholder Info
+                                </a>
+                            </li>
+                            <button
+                                
+                                
+                                role="link"
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle  Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item ">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
+                                   role="link">
+                                    Restructuring Info
+                                </a>
+                            </li>
+                    </ul>
+                <!-- End dropdown list -->
+            </li>
+            <li class="c-header-nav_list-item">
+                    <a href="./careers"
+                       class="c-header-nav_link c-primary-nav_link--careers"
+                       role="link">
+                        CAREERS
+                    </a>
+
+<!-- End dropdown list -->
+            </li>
+    </ul>
+</nav>
+
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-components-corp-header" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"global header"},"patternExtension":"hbs","patternName":"Corp Header","patternPartial":"components-corp-header","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-header-nav","lineagePath":"../../patterns/molecules-navigation-header-nav/molecules-navigation-header-nav.rendered.html"}],"lineage":[{"lineagePattern":"molecules-header-nav","lineagePath":"../../patterns/molecules-navigation-header-nav/molecules-navigation-header-nav.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"global header"},"patternExtension":"hbs","patternName":"Corp Header","patternPartial":"components-corp-header","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->		<div id="components-global-header" class="pl-c-pattern">
@@ -120,7 +495,7 @@
     <section class="c-header_container">
 
         <!-- Logo -->
-        <h1 class="c-logo c-logo--header">
+        <h1 id="c-header-logo" class="c-logo c-logo--header">
             <a href="" class="c-logo_link" rel="home">
                 <span class="u-screen-reader-text">Cengage</span>
                 <svg class="c-logo_svg"
@@ -153,11 +528,23 @@
             </a><!--end c-logo__link-->
         </h1>
 
-        <button class="c-header_nav-toggle">
-            X
-            <span class="is-vishidden">Toggle Menu</span>
+
+        <button id="c-header-toggle-btn"
+                class="c-header_nav-toggle"
+                aria-controls="site-navigation"
+                aria-expanded="false"
+                aria-label="Button Toggle Primary Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="u-screen-reader-text">Toggle Menu</i>
         </button>
+
         <!-- Global Navigation -->
+        <!--
         <nav class="c-global-nav">
             <ul class="c-global-nav_list">
                 <li class="c-global-nav_list-item">
@@ -302,91 +689,382 @@
                 </li>
             </ul>
         </nav>
+        -->
 
         <!-- Header Navigation-->
-        <nav class="c-primary-nav">
-            <ul class="c-primary-nav_list">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let tabBtn = $('.c-header-nav_tab-btn');
+                tabBtn.click(function () {
+                    // -- Tab Buttons -- //
+                    let activeTabBtn = $(this);
+                    tabBtn.removeClass('c-header-nav_tab-btn--active').attr('aria-selected', 'false').attr('tabindex', '-1');
+                    activeTabBtn.addClass('c-header-nav_tab-btn--active').attr('aria-selected', 'true').attr('tabindex', '0');
+        
+                    // -- Tab Panels -- //
+                    let tabPanels = $('.c-header-nav_dropdown-list');
+                    let activeTabPanel = $('#'+($(this).attr('aria-controls')));
+                    tabPanels.removeClass('ceng-tabs_panel--active').attr('aria-hidden', 'true');
+                    activeTabPanel.addClass('ceng-tabs_panel--active').attr('aria-hidden','false');
+        
+                });
+            });
+        </script>
+        
+        
+        <!-- Header Navigation-->
+        <nav id="c-header-navigation" class="c-header-nav">
+            <ul class="c-header-nav_list">
                 <!-- About -->
-                <li class="c-header-primary-nav_list-item">
-                    <button class="c-primary-nav_link" role="tab">
-                        ABOUT
-                    </button>
-                    <ul class="c-nav_sublist c-nav_sublist-dropdown">
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                About Cengage
+                    <li class="c-header-nav_list-item">
+                            <a href="./"
+                               class="c-header-nav_link c-primary-nav_link--home"
+                               role="link">
+                                HOME
                             </a>
-                        </li>
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                Our Leadership
+        
+        <!-- End dropdown list -->
+                    </li>
+                    <li class="c-header-nav_list-item">
+                            <button
+                                id="about-tab-btn"
+                                class="c-header-nav_link c-header-nav_tab-btn "
+                                data-toggle="tab"
+                                role="tab"
+                                tabindex="-1"
+                                aria-controls="about-tabpanel"
+                                aria-selected="false"
+                            >
+                                about
+                            </button>
+        
+                            <ul class="c-header-nav_dropdown-list"
+                                id="about-tabpanel"
+                                tabindex="0"
+                                role="tabpanel"
+                                aria-labelledby="about-tab-btn"
+                                aria-hidden="true">
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="./about"
+                                           role="link">
+                                            About Cengage
+                                        </a>
+                                    </li>
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="./Leadership"
+                                           role="link">
+                                            Leadership
+                                        </a>
+                                    </li>
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="link.inclusion-diversity"
+                                           role="link">
+                                            Inclusion &amp; Diversity
+                                        </a>
+                                    </li>
+                            </ul>
+                        <!-- End dropdown list -->
+                    </li>
+                    <li class="c-header-nav_list-item">
+                            <a href="./"
+                               class="c-header-nav_link c-primary-nav_link--business"
+                               role="link">
+                                BUSINESS
                             </a>
-                        </li>
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                Inclusion & Diversity
+        
+        <!-- End dropdown list -->
+                    </li>
+                    <li class="c-header-nav_list-item">
+                            <button
+                                id="NEWS-tab-btn"
+                                class="c-header-nav_link c-header-nav_tab-btn "
+                                data-toggle="tab"
+                                role="tab"
+                                tabindex="-1"
+                                aria-controls="NEWS-tabpanel"
+                                aria-selected="false"
+                            >
+                                NEWS
+                            </button>
+        
+                            <ul class="c-header-nav_dropdown-list"
+                                id="NEWS-tabpanel"
+                                tabindex="0"
+                                role="tabpanel"
+                                aria-labelledby="NEWS-tab-btn"
+                                aria-hidden="true">
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="./about"
+                                           role="link">
+                                            Press Release
+                                        </a>
+                                    </li>
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="./Leadership"
+                                           role="link">
+                                            In The News
+                                        </a>
+                                    </li>
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="link.inclusion-diversity"
+                                           role="link">
+                                            Awards
+                                        </a>
+                                    </li>
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
+                                           role="link">
+                                            Images For Media
+                                        </a>
+                                    </li>
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="./Leadership"
+                                           role="link">
+                                            Fact Sheet
+                                        </a>
+                                    </li>
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="link.inclusion-diversity"
+                                           role="link">
+                                            Events
+                                        </a>
+                                    </li>
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
+                                           role="link">
+                                            Contact Information
+                                        </a>
+                                    </li>
+                            </ul>
+                        <!-- End dropdown list -->
+                    </li>
+                    <li class="c-header-nav_list-item">
+                            <button
+                                id="INVESTORS-tab-btn"
+                                class="c-header-nav_link c-header-nav_tab-btn "
+                                data-toggle="tab"
+                                role="tab"
+                                tabindex="-1"
+                                aria-controls="INVESTORS-tabpanel"
+                                aria-selected="false"
+                            >
+                                INVESTORS
+                            </button>
+        
+                            <ul class="c-header-nav_dropdown-list"
+                                id="INVESTORS-tabpanel"
+                                tabindex="0"
+                                role="tabpanel"
+                                aria-labelledby="INVESTORS-tab-btn"
+                                aria-hidden="true">
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="./about"
+                                           role="link">
+                                            Presentations
+                                        </a>
+                                    </li>
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="./Leadership"
+                                           role="link">
+                                            Call Replays
+                                        </a>
+                                    </li>
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="link.inclusion-diversity"
+                                           role="link">
+                                            Current Reports
+                                        </a>
+                                    </li>
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
+                                           role="link">
+                                            Annual Reports
+                                        </a>
+                                    </li>
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="./Leadership"
+                                           role="link">
+                                            Announcements
+                                        </a>
+                                    </li>
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="link.inclusion-diversity"
+                                           role="link">
+                                            Shareholder Info
+                                        </a>
+                                    </li>
+                                    <button
+                                        
+                                        
+                                        role="link"
+                                    >
+                                        <-- back
+                                        <span class="u-screen-reader-text">Toggle  Menu</span>
+                                    </button>
+                                    <li class="c-header-nav_dropdown-list-item ">
+                                        <a class="c-header-nav_dropdown-list-link"
+                                           href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
+                                           role="link">
+                                            Restructuring Info
+                                        </a>
+                                    </li>
+                            </ul>
+                        <!-- End dropdown list -->
+                    </li>
+                    <li class="c-header-nav_list-item">
+                            <a href="./careers"
+                               class="c-header-nav_link c-primary-nav_link--careers"
+                               role="link">
+                                CAREERS
                             </a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- Business --->
-                <li class="c-header-primary-nav_list-item">
-                    <a class="c-primary-nav_link" href="#">
-                        BUSINESSES
-                    </a>
-                </li>
-                <!-- Investors -->
-                <li class="c-header-primary-nav_list-item">
-                    <button class="c-primary-nav_link" role="tab">
-                        Investors
-                    </button>
-                    <ul class="c-nav_sublist c-nav_sublist-dropdown">
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                Investor Overview
-                            </a>
-                        </li>
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                Presentations
-                            </a>
-                        </li>
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                Call Replays
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- News -->
-                <li class="c-header-primary-nav_list-item">
-                    <button class="c-primary-nav_link" role="tab">
-                        NEWS
-                    </button>
-                    <ul class="c-nav_sublist c-nav_sublist-dropdown">
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                About Cengage
-                            </a>
-                        </li>
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                Our Leadership
-                            </a>
-                        </li>
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                Inclusion & Diversity
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- Careers -->
-                <li class="c-header-primary-nav_list-item">
-                    <a class="c-nav-link" href="#">
-                        CAREERS
-                    </a>
-                </li>
+        
+        <!-- End dropdown list -->
+                    </li>
             </ul>
         </nav>
 
@@ -394,10 +1072,11 @@
 
 </header>
 
+
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-components-global-header" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"global header"},"patternExtension":"hbs","patternName":"Global Header","patternPartial":"components-global-header","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-header-nav","lineagePath":"../../patterns/molecules-navigation-header-nav/molecules-navigation-header-nav.rendered.html"}],"lineage":[{"lineagePattern":"molecules-header-nav","lineagePath":"../../patterns/molecules-navigation-header-nav/molecules-navigation-header-nav.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"global header"},"patternExtension":"hbs","patternName":"Global Header","patternPartial":"components-global-header","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -448,10 +1127,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1612815050752">
+<script id="pl-js-polyfill-insert-1612968340908">
   (function() {
     if (self != top) {
-      var cb = '1612815050752';
+      var cb = '1612968340908';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -464,7 +1143,7 @@
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1612815050752" nomodule>
+<script id="pl-js-insert-1612968340908" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 

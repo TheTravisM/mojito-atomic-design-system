@@ -1,6 +1,6 @@
 .c-footer-nav {
   letter-spacing: 0;
-  color: #003660;
+  color: var(--color-primary-blue, #003865);
 }
 
 .c-footer-nav_list {
@@ -18,12 +18,14 @@
 }
 
 .c-footer-nav_list-header {
+  color: var(--color-primary-blue, #003865);
   font-weight: 600;
   font-size: 18px;
   line-height: 29px;
 }
 
 .c-footer-nav_link {
+  color: var(--color-primary-blue, #003865);
   font-weight: 400;
   font-size: 14px;
   line-height: 40px;

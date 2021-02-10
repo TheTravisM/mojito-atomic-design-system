@@ -1,0 +1,78 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let tabBtn = $('.c-header-nav_tab-btn');
+        tabBtn.click(function () {
+            // -- Tab Buttons -- //
+            let activeTabBtn = $(this);
+            tabBtn.removeClass('c-header-nav_tab-btn--active').attr('aria-selected', 'false').attr('tabindex', '-1');
+            activeTabBtn.addClass('c-header-nav_tab-btn--active').attr('aria-selected', 'true').attr('tabindex', '0');
+
+            // -- Tab Panels -- //
+            let tabPanels = $('.c-header-nav_dropdown-list');
+            let activeTabPanel = $('#'+($(this).attr('aria-controls')));
+            tabPanels.removeClass('ceng-tabs_panel--active').attr('aria-hidden', 'true');
+            activeTabPanel.addClass('ceng-tabs_panel--active').attr('aria-hidden','false');
+
+        });
+    });
+</script>
+
+
+<!-- Header Navigation-->
+<nav id="c-header-navigation" class="c-header-nav">
+    <ul class="c-header-nav_list">
+        <!-- About -->
+        {{# HeaderNavigation }}
+            <li class="c-header-nav_list-item">
+                {{#if buttonTag }}
+                    <button
+                        id="{{ listHeader }}-tab-btn"
+                        class="c-header-nav_link c-header-nav_tab-btn {{ styleModifier }}"
+                        data-toggle="tab"
+                        role="tab"
+                        tabindex="-1"
+                        aria-controls="{{ listHeader }}-tabpanel"
+                        aria-selected="false"
+                    >
+                        {{ listHeader }}
+                    </button>
+                {{/ if }}
+                {{#if linkTag }}
+                    <a href="{{ url }}"
+                       class="c-header-nav_link {{ styleModifier }}"
+                       role="link">
+                        {{ listHeader }}
+                    </a>
+                {{/ if }}
+
+                {{#if dropdown-list }}
+                    <ul class="c-header-nav_dropdown-list"
+                        id="{{ listHeader }}-tabpanel"
+                        tabindex="0"
+                        role="tabpanel"
+                        aria-labelledby="{{ listHeader }}-tab-btn"
+                        aria-hidden="true">
+                        {{# dropdown-list }}
+                            <button
+                                {{#if aria-selected }}aria-selected="{{ aria-selected }}" {{/ if }}
+                                {{#if aria-controls }}aria-controls="{{ aria-controls }}" {{/ if }}
+                                {{#if role}}role="{{ role }}"{{/ if }}
+                            >
+                                <-- back
+                                <span class="u-screen-reader-text">Toggle {{ listHeader }} Menu</span>
+                            </button>
+                            <li class="c-header-nav_dropdown-list-item {{ primary-nav_item--modifier }}">
+                                <a class="c-header-nav_dropdown-list-link"
+                                   href="{{url}}"
+                                   {{#if role}}role="{{ role }}"{{/if}}>
+                                    {{label}}
+                                </a>
+                            </li>
+                        {{/ dropdown-list }}
+                    </ul>
+                {{/ if }}<!-- End dropdown list -->
+            </li>
+        {{/ HeaderNavigation }}
+    </ul>
+</nav>

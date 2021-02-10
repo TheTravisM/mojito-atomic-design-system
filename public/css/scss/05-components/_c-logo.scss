@@ -1,5 +1,12 @@
 .c-logo { }
 .c-logo--header {
+    line-height: 0;
+    a {
+        padding: 24px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
     .c-logo_svg {
         width: 175px;
         height: 40px;

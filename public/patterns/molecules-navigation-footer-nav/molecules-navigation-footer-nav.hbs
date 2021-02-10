@@ -1,9 +1,16 @@
-<ul class="c-footer-nav">
-
-    {{# footerNav }}
-    <li class="c-footer-nav__item">
-		<a href="{{ url }}" class="c-footer-nav__link">{{ label }}</a>
-	</li><!--end c-footer-nav__item-->
-    {{/ footerNav }}
-
-</ul><!--end c-footer-nav-->
+<nav class="c-footer-nav" role="navigation">
+    <ul class="c-footer-nav_list">
+    {{# corpNavigation }}
+        <li class="c-footer-nav_list-item c-footer-nav_list-item--about">
+            <h3 class="c-footer-nav_list-header">{{ listHeader }}</h3>
+            <ul class="c-footer-nav_sub-list">
+                {{# sublist }}
+                <li class="c-footer-nav_sub-list-item">
+                    <a class="c-footer-nav_link" href="{{url}}">{{label}}</a>
+                </li>
+                {{/ sublist}}
+            </ul>
+        </li>
+        {{/ corpNavigation}}
+    </ul>
+</nav>

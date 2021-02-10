@@ -1,0 +1,163 @@
+{
+  "corpNavigation" : [
+    {
+      "listHeader" : "ABOUT",
+      "sublist": [
+        {
+          "label": "About Cengage",
+          "url": "./about"
+        },
+        {
+          "label": "Leadership",
+          "url": "./Leadership"
+        },
+        {
+          "label": "Inclusion & Diversity",
+          "url": "link.inclusion-diversity"
+        }
+      ]
+    },
+    {
+      "listHeader" : "BUSINESS",
+      "sublist": [
+        {
+          "label": "ed2go",
+          "url": "./about"
+        },
+        {
+          "label": "Gale",
+          "url": "./Leadership"
+        },
+        {
+          "label": "Higher Ed (Intl)",
+          "url": "link.inclusion-diversity"
+        },
+        {
+          "label": "Higher Ed (U.S.)",
+          "url": "link.pages-category-on-sale"
+        },
+        {
+          "label": "Milady",
+          "url": "./Leadership"
+        },
+        {
+          "label": "National Geographic Learning K-12",
+          "url": "link.inclusion-diversity"
+        },
+        {
+          "label": "National Geographic Learning ELT",
+          "url": "link.pages-category-on-sale"
+        }
+      ]
+    },
+    {
+      "listHeader" : "NEWS",
+      "sublist": [
+        {
+          "label": "Press Release",
+          "url": "./about"
+        },
+        {
+          "label": "In The News",
+          "url": "./Leadership"
+        },
+        {
+          "label": "Awards",
+          "url": "link.inclusion-diversity"
+        },
+        {
+          "label": "Images For Media",
+          "url": "link.pages-category-on-sale"
+        },
+        {
+          "label": "Fact Sheet",
+          "url": "./Leadership"
+        },
+        {
+          "label": "Events",
+          "url": "link.inclusion-diversity"
+        },
+        {
+          "label": "Contact Information",
+          "url": "link.pages-category-on-sale"
+        }
+      ]
+    },
+    {
+      "listHeader" : "INVESTORS",
+      "sublist": [
+        {
+          "label": "Presentations",
+          "url": "./about"
+        },
+        {
+          "label": "Call Replays",
+          "url": "./Leadership"
+        },
+        {
+          "label": "Current Reports",
+          "url": "link.inclusion-diversity"
+        },
+        {
+          "label": "Annual Reports",
+          "url": "link.pages-category-on-sale"
+        },
+        {
+          "label": "Announcements",
+          "url": "./Leadership"
+        },
+        {
+          "label": "Shareholder Info",
+          "url": "link.inclusion-diversity"
+        },
+        {
+          "label": "Restructuring Info",
+          "url": "link.pages-category-on-sale"
+        }
+      ]
+    },
+    {
+      "listHeader" : "CAREERS",
+      "sublist": [
+        {
+          "label": "Careers Overview",
+          "url": "./about"
+        },
+        {
+          "label": "Search Jobs",
+          "url": "./Leadership",
+          "linkType" : "--external-link"
+        },
+        {
+          "label": "FAQs",
+          "url": "link.inclusion-diversity"
+        }
+      ]
+    },
+    {
+      "listHeader" : "LEGAL",
+      "sublist": [
+        {
+          "label": "Accessibilty",
+          "url": "./about"
+        },
+        {
+          "label": "Permissions",
+          "url": "./Leadership"
+        },
+        {
+          "label": "Privacy",
+          "url": "link.inclusion-diversity"
+        },
+        {
+          "label": "Terms of Use",
+          "url": "link.pages-category-on-sale"
+        },
+        {
+          "label": "Do Not Sell",
+          "url": "link.pages-category-on-sale"
+        }
+      ]
+    }
+  ]
+}

@@ -3,7 +3,7 @@
     <section class="c-header_container">
 
         <!-- Logo -->
-        <h1 class="c-logo c-logo--header">
+        <h1 id="c-header-logo" class="c-logo c-logo--header">
             <a href="" class="c-logo_link" rel="home">
                 <span class="u-screen-reader-text">Cengage</span>
                 <svg class="c-logo_svg"
@@ -36,11 +36,23 @@
             </a><!--end c-logo__link-->
         </h1>
 
-        <button class="c-header_nav-toggle">
-            X
-            <span class="is-vishidden">Toggle Menu</span>
+
+        <button id="c-header-toggle-btn"
+                class="c-header_nav-toggle"
+                aria-controls="site-navigation"
+                aria-expanded="false"
+                aria-label="Button Toggle Primary Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="u-screen-reader-text">Toggle Menu</i>
         </button>
+
         <!-- Global Navigation -->
+        <!--
         <nav class="c-global-nav">
             <ul class="c-global-nav_list">
                 <li class="c-global-nav_list-item">
@@ -185,94 +197,12 @@
                 </li>
             </ul>
         </nav>
+        -->
 
         <!-- Header Navigation-->
-        <nav class="c-primary-nav">
-            <ul class="c-primary-nav_list">
-                <!-- About -->
-                <li class="c-header-primary-nav_list-item">
-                    <button class="c-primary-nav_link" role="tab">
-                        ABOUT
-                    </button>
-                    <ul class="c-nav_sublist c-nav_sublist-dropdown">
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                About Cengage
-                            </a>
-                        </li>
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                Our Leadership
-                            </a>
-                        </li>
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                Inclusion & Diversity
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- Business --->
-                <li class="c-header-primary-nav_list-item">
-                    <a class="c-primary-nav_link" href="#">
-                        BUSINESSES
-                    </a>
-                </li>
-                <!-- Investors -->
-                <li class="c-header-primary-nav_list-item">
-                    <button class="c-primary-nav_link" role="tab">
-                        Investors
-                    </button>
-                    <ul class="c-nav_sublist c-nav_sublist-dropdown">
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                Investor Overview
-                            </a>
-                        </li>
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                Presentations
-                            </a>
-                        </li>
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                Call Replays
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- News -->
-                <li class="c-header-primary-nav_list-item">
-                    <button class="c-primary-nav_link" role="tab">
-                        NEWS
-                    </button>
-                    <ul class="c-nav_sublist c-nav_sublist-dropdown">
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                About Cengage
-                            </a>
-                        </li>
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                Our Leadership
-                            </a>
-                        </li>
-                        <li class="c-header-primary-nav_item">
-                            <a class="c-header-primary-nav_link" href="#">
-                                Inclusion & Diversity
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- Careers -->
-                <li class="c-header-primary-nav_list-item">
-                    <a class="c-nav-link" href="#">
-                        CAREERS
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        {{> molecules-header-nav }}
 
     </section>
 
 </header>
+
