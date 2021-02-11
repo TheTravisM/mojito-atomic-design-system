@@ -9,7 +9,7 @@
   display: grid;
   grid-template-areas:
         "logo toggle"
-        "nav nav";
+        "tabpanel tabpanel";
 }
 
 #c-header-logo {
@@ -25,8 +25,8 @@
   align-items: center;
 }
 
-#c-header-navigation {
-  grid-area: nav;
+#header-nav-tabpanel {
+  grid-area: tabpanel;
 }
 
 .c-header_link {

@@ -2,18 +2,23 @@
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         let tabBtn = $('.c-header-nav_tab-btn');
+        let backBtn = $('.c-header-nav_back-btn');
+        let tabPanels = $('.c-header-nav_dropdown-list');
         tabBtn.click(function () {
             // -- Tab Buttons -- //
             let activeTabBtn = $(this);
-            tabBtn.removeClass('c-header-nav_tab-btn--active').attr('aria-selected', 'false').attr('tabindex', '-1');
-            activeTabBtn.addClass('c-header-nav_tab-btn--active').attr('aria-selected', 'true').attr('tabindex', '0');
-
+            tabBtn.removeClass('c-header-nav_tab-btn--active').attr('aria-selected', 'false');
+            activeTabBtn.addClass('c-header-nav_tab-btn--active').attr('aria-selected', 'true');
             // -- Tab Panels -- //
-            let tabPanels = $('.c-header-nav_dropdown-list');
             let activeTabPanel = $('#'+($(this).attr('aria-controls')));
             tabPanels.removeClass('ceng-tabs_panel--active').attr('aria-hidden', 'true');
             activeTabPanel.addClass('ceng-tabs_panel--active').attr('aria-hidden','false');
-
+        });
+        backBtn.click(function () {
+            // -- Back Buttons -- //
+            backBtn.removeClass('c-header-nav_tab-btn--active').attr('aria-selected', 'false');
+            // -- Tab Panels -- //
+            tabPanels.removeClass('ceng-tabs_panel--active').attr('aria-hidden', 'true');
         });
     });
 </script>
@@ -31,7 +36,6 @@
                         class="c-header-nav_link c-header-nav_tab-btn {{ styleModifier }}"
                         data-toggle="tab"
                         role="tab"
-                        tabindex="-1"
                         aria-controls="{{ listHeader }}-tabpanel"
                         aria-selected="false"
                     >
@@ -53,16 +57,18 @@
                         role="tabpanel"
                         aria-labelledby="{{ listHeader }}-tab-btn"
                         aria-hidden="true">
+                        <button
+                                class="c-header-nav_back-btn"
+                                data-toggle="tab"
+                                role="tab"
+                                aria-controls="{{ listHeader }}-tabpanel"
+                                aria-selected="false"
+                        >
+                            Back
+                            <span class="u-screen-reader-text">Toggle {{ listHeader }} Menu</span>
+                        </button>
                         {{# dropdown-list }}
-                            <button
-                                {{#if aria-selected }}aria-selected="{{ aria-selected }}" {{/ if }}
-                                {{#if aria-controls }}aria-controls="{{ aria-controls }}" {{/ if }}
-                                {{#if role}}role="{{ role }}"{{/ if }}
-                            >
-                                <-- back
-                                <span class="u-screen-reader-text">Toggle {{ listHeader }} Menu</span>
-                            </button>
-                            <li class="c-header-nav_dropdown-list-item {{ primary-nav_item--modifier }}">
+                             <li class="c-header-nav_dropdown-list-item {{ primary-nav_item--modifier }}">
                                 <a class="c-header-nav_dropdown-list-link"
                                    href="{{url}}"
                                    {{#if role}}role="{{ role }}"{{/if}}>
