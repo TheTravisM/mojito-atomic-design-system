@@ -117,10 +117,6 @@ $l-max-width: 80rem !default;
 $l-max-width-narrow: 45rem !default;
 $l-linelength-width: 36rem !default;
 
-
-
-
-
 /*------------------------------------*\
     #SPACING
 \*------------------------------------*/
@@ -133,10 +129,6 @@ $l-linelength-width: 36rem !default;
 $spacing: 1rem;
 $spacing-small: round(0.5 * $spacing);
 $spacing-large: round(2 * $spacing);
-
-
-
-
 
 /*------------------------------------*\
     #BORDERS
@@ -152,10 +144,6 @@ $spacing-large: round(2 * $spacing);
  */
 $border-radius: 4px;
 
-
-
-
-
 /*------------------------------------*\
     #ANIMATION
 \*------------------------------------*/
@@ -170,10 +158,6 @@ $anim-fade-long: 0.5s;
  * Transition Ease
  */
 $anim-ease: ease-out;
-
-
-
-
 
 /*------------------------------------*\
     #BREAKPOINTS

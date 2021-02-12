@@ -1,5 +1,7 @@
 
-/* -- Header Primary Navigation */
+/* -- -------------------------------------  -- */
+/* -- [ COMPONENTS : Header Primary Navigation -- */
+/* -- -------------------------------------  -- */
 
 .c-primary-nav {
   padding: 0 0 24px 0;
@@ -37,7 +39,7 @@
 }
 
 .c-primary-nav_link,
-.c-primary-nav_dropdown-list-link {
+.c-primary-nav_dropdown-link {
   display: inline-flex;
   position: relative;
   font-size: 20px;
@@ -54,7 +56,7 @@
   margin-left: 24px;
 }
 
-.c-primary-nav_dropdown-list-link {
+.c-primary-nav_dropdown-link {
   margin-left: 0;
 }
 
@@ -107,13 +109,4 @@ button.c-primary-nav_back-btn {
     border-width: 0 0 2px 2px;
     transform: rotate(45deg);
   }
-}
-
-.c-primary-nav_dropdown-list {
-
-}
-
-@media (min-width: 576px) {
-  .c-header { }
-
 }

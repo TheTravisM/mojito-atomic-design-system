@@ -55,13 +55,13 @@
             });
         </script>
         <button id="header-nav-toggle-btn"
-                class="c-header_nav-toggle-btn"
+                class="c-header-toggle-btn"
                 data-toggle="tab"
                 role="tab"
                 aria-controls="header_nav-tabpanel"
                 aria-expanded="false"
                 aria-label="Button Toggle Primary Navigation">
-            <span class="c-header_nav-toggle-btn-text">Close</span>
+            <span class="c-header-toggle-btn-text">Close</span>
             <i class="u-screen-reader-text">Toggle Menu</i>
             <span class="header-nav-toggle-btn_icon">
                 <span class="c-header_nav-toggle-icon"></span>
@@ -77,11 +77,10 @@
                  class="c-header_nav-section"
                  role="tabpanel"
                  aria-labelledby="header-nav-toggle-btn"
-                 aria-hidden="true"
-        >
-            <!-- Global Navigation
-            { { > molecules-global-nav }}
-            -->
+                 aria-hidden="true">
+            <!-- Global Navigation -->
+            {{> components-global-nav }}
+
             <!-- Header Navigation-->
             {{> components-primary-nav }}
         </section>

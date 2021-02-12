@@ -1,121 +1,119 @@
-<!--  Global Navigation -->
-{{# GlobalNavigation }}
+<!--  Global Navigation
     <nav class="c-global-nav">
         <ul class="c-global-nav_list">
-            {{# global-nav-list }}
-                <li class="c-global-nav_list-item {{ styleModifier }}">
-                {{#if link }}
-                    <a class="c-global-nav_item-link {{ styleModifier }}"
-                       href="{{ url }}"
+            { { # global-nav-list }}
+                <li class="c-global-nav_list-item { { styleModifier }}">
+                { {#if link }}
+                    <a class="c-global-nav_link { { styleModifier }}"
+                       href="{ { url }}"
                        role="link">
-                        {{ label }}
+                        { { label }}
                     </a>
-                {{/ if}}
-                {{# button }}
+                { {/ if}}
+                { {# button }}
                     <button
-                            id="{{ listHeader }}-tab-btn"
-                            class="c-global-nav_link c-global-nav_tab-btn {{ styleModifier }}"
+                            id="{ { listHeader }}-tab-btn"
+                            class="c-global-nav_link c-global-nav_tab-btn { { styleModifier }}"
                             data-toggle="tab"
                             role="tab"
-                            aria-controls="{{ listHeader }}-tabpanel"
-                            aria-selected="false"
-                    >
-                        {{ listHeader }}
+                            aria-controls="{ { listHeader }}-tabpanel"
+                            aria-selected="false">
+                        { { listHeader }}
                     </button>
-                {{/button}}
+                { {/button}}
             </li>
-            {{/ global-nav-list }}
+            { {/ global-nav-list }}
         </ul>
     </nav>
-<!---->
+---->
 
 
-
-
-<!-- Header Navigation-->
-{{# GlobalNavigation}}
-<nav id="c-global-navigation" class="c-global-nav">
-    <ul class="c-global-nav_list">
-        <!-- About -->
-        <li class="c-global-nav_list-item">
-            {{#if buttonTag }}
-                <button
-                    id="{{ listHeader }}-tab-btn"
-                    class="c-global-nav_link c-global-nav_tab-btn {{ styleModifier }}"
-                    data-toggle="tab"
-                    role="tab"
-                    aria-controls="{{ listHeader }}-tabpanel"
-                    aria-selected="false">
-                    {{ listHeader }}
-                </button>
-            {{/ if }}
-            {{#if linkTag }}
-                <a href="{{ url }}"
-                   class="c-global-nav_link {{ styleModifier }}"
-                   role="link">
-                    {{ listHeader }}
-                </a>
-            {{/ if }}
-
-            {{#if dropdown-list }}
-                <ul class="c-global-nav_dropdown-list {{ styleModifier }}"
-                    id="{{ listHeader }}-tabpanel"
-                    tabindex="0"
-                    role="tabpanel"
-                    aria-labelledby="{{ listHeader }}-tab-btn"
-                    aria-hidden="true">
+<!-- GLOBAL Navigation--
+    { {# GlobalNavigation}}
+    <nav id="c-global-navigation" class="c-global-nav">
+        <ul class="c-global-nav_list">
+            < !-- About --
+            { {#if global-nav-list} }
+                <li class="c-global-nav_list-item">
+                { {#if buttonTag }}
                     <button
-                            class="c-global-nav_back-btn"
-                            data-toggle="tab"
-                            role="tab"
-                            aria-controls="{{ listHeader }}-tabpanel"
-                            aria-selected="false"
-                    >
-                        Back
-                        <span class="u-screen-reader-text">Toggle {{ listHeader }} Menu</span>
+                        id="{ { listHeader }}-tab-btn"
+                        class="c-global-nav_link c-global-nav_tab-btn { { styleModifier }}"
+                        data-toggle="tab"
+                        role="tab"
+                        aria-controls="{ { listHeader }}-tabpanel"
+                        aria-selected="false">
+                        { { listHeader }}
                     </button>
-                    {{# dropdown-list }}
-                        <li class="c-global-nav_dropdown-list-item {{ global-nav_item--modifier }}">
-                            <a class="c-global-nav_dropdown-list-link"
-                               href="{{url}}"
-                               {{#if role}}role="{{ role }}"{{/if}}>
-                                {{label}}
-                            </a>
-                        </li>
-                    {{/ dropdown-list }}
-                </ul>
-            {{/ if }}<!-- End dropdown list -->
-        </li><!-- END c-global-nav_list-item -->
-    </ul>
-</nav>
-{{/GlobalNavigation}}
+                { {/ if }}
+                { {#if linkTag }}
+                    <a href="{ { url }}"
+                       class="c-global-nav_link { { styleModifier }}"
+                       role="link">
+                        { { listHeader }}
+                    </a>
+                { {/ if }}
+
+                { {#if dropdown-list }}
+                    <ul class="c-global-nav_dropdown-list { { styleModifier }}"
+                        id="{ { listHeader }}-tabpanel"
+                        tabindex="0"
+                        role="tabpanel"
+                        aria-labelledby="{ { listHeader }}-tab-btn"
+                        aria-hidden="true">
+                        <button
+                                class="c-global-nav_back-btn"
+                                data-toggle="tab"
+                                role="tab"
+                                aria-controls="{ { listHeader }}-tabpanel"
+                                aria-selected="false"
+                        >
+                            Back
+                            <span class="u-screen-reader-text">Toggle { { listHeader }} Menu</span>
+                        </button>
+                        { {# dropdown-list }}
+                            <li class="c-global-nav_dropdown-list-item { { global-nav_item--modifier }}">
+                                <a class="c-global-nav_dropdown-list-link"
+                                   href="{ {url}}"
+                                   { {#if role}}role="{ { role }}"{ {/if}}>
+                                    { {label}}
+                                </a>
+                            </li>
+                        { {/ dropdown-list }}
+                    </ul>
+                { {/ if }}< !-- End dropdown list --
+            </li>< !-- END c-global-nav_list-item --
+            { {/if }}
+        </ul>
+    </nav>
+< !--{ {/ GlobalNavigation}}-->
 
 
-<!-- other --->
+
 
 <nav class="c-global-nav">
     <ul class="c-global-nav_list">
         <li class="c-global-nav_list-item">
-            <a class="c-global-nav_item-link" href="">Contact</a>
+            <a class="c-global-nav_link" href="">Contact</a>
         </li>
         <li class="c-global-nav_list-item c-global-nav-drop-down">
             <button class="drop-down-btn" role="tab">
                 Global Businesses
             </button>
-            <ul class="c-global-nav-dropdown-list">
-                <li class="list-item">
+            <ul class="c-global-nav_dropdown-list">
+                <li class="c-global-nav_dropdown-ist-item">
                     <h3>Cengage Global Businesses</h3>
                 </li>
-                <li class="_list-item">
+                <li class="c-global-nav_dropdown-ist-item">
                     <a class="_link" href="#">ed2go</a>
                 </li>
-                <li class="_list-item">
+                <li class="c-global-nav_dropdown-ist-item">
                     <a class="_link" href="#">Gale</a>
                 </li>
-                <li class="_list-item">
+                <li class="c-global-nav_dropdown-ist-item">
                     <a class="_link" href="#">Higher Ed (International)</a>
                 </li>
-                <li class="_list-item">
+                <li class="c-global-nav_dropdown-ist-item">
                     <a class="_link" href="#">Higher Ed (U.S.)</a>
                 </li>
             </ul>
@@ -239,3 +237,4 @@
         </li>
     </ul>
 </nav>
+

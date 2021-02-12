@@ -1,0 +1,145 @@
+{
+  "GlobalNavigation": [
+    {
+      "global-nav-list" : [
+        {
+          "listHeader": "HOME",
+          "buttonTag": false,
+          "linkTag": true,
+          "styleModifier": "c-primary-nav_link--home" ,
+          "role": "link",
+          "url" : "./"
+        },
+        {
+          "listHeader" : "about",
+          "buttonTag": true,
+          "linkTag" : false,
+          "role": "tab",
+          "dropdown-list": [
+            {
+              "label": "About Cengage",
+              "url": "./about",
+              "role" : "link"
+            },
+            {
+              "label": "Leadership",
+              "url": "./Leadership",
+              "role" : "link"
+            },
+            {
+              "label": "Inclusion & Diversity",
+              "url": "link.inclusion-diversity",
+              "role" : "link"
+            }
+          ]
+        },
+        {
+          "listHeader" : "BUSINESS",
+          "buttonTag": false,
+          "linkTag": true,
+          "styleModifier": "c-primary-nav_link--business" ,
+          "role": "link",
+          "url" : "./"
+        },
+        {
+          "listHeader" : "NEWS",
+          "buttonTag": true,
+          "linkTag" : false,
+          "role": "tab",
+          "dropdown-list": [
+            {
+              "label": "Press Release",
+              "url": "./about",
+              "role" : "link"
+            },
+            {
+              "label": "In The News",
+              "url": "./Leadership",
+              "role" : "link"
+            },
+            {
+              "label": "Awards",
+              "url": "link.inclusion-diversity",
+              "role" : "link"
+            },
+            {
+              "label": "Images For Media",
+              "url": "link.pages-category-on-sale",
+              "role" : "link"
+            },
+            {
+              "label": "Fact Sheet",
+              "url": "./Leadership",
+              "role" : "link"
+            },
+            {
+              "label": "Events",
+              "url": "link.inclusion-diversity",
+              "role" : "link"
+            },
+            {
+              "label": "Contact Information",
+              "url": "link.pages-category-on-sale",
+              "role" : "link"
+            }
+          ]
+        },
+        {
+          "listHeader" : "INVESTORS",
+          "buttonTag": true,
+          "linkTag" : false,
+          "role": "tab",
+          "dropdown-list": [
+            {
+              "label": "Presentations",
+              "url": "./about",
+              "role" : "link"
+            },
+            {
+              "label": "Call Replays",
+              "url": "./Leadership",
+              "role" : "link"
+            },
+            {
+              "label": "Current Reports",
+              "url": "link.inclusion-diversity",
+              "role" : "link"
+            },
+            {
+              "label": "Annual Reports",
+              "url": "link.pages-category-on-sale",
+              "role" : "link"
+            },
+            {
+              "label": "Announcements",
+              "url": "./Leadership",
+              "role" : "link"
+            },
+            {
+              "label": "Shareholder Info",
+              "url": "link.inclusion-diversity",
+              "role" : "link"
+            },
+            {
+              "label": "Restructuring Info",
+              "url": "link.pages-category-on-sale",
+              "role" : "link"
+            }
+          ]
+        },
+        {
+          "listHeader" : "CAREERS",
+          "buttonTag": false,
+          "linkTag": true,
+          "styleModifier": "c-primary-nav_link--careers" ,
+          "role": "link",
+          "url" : "./careers"
+        }
+      ]
+    }
+
+
+  ]
+}
+
+

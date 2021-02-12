@@ -7,11 +7,11 @@
 // All of the changes you make to its styles should be detectable in the context you’re currently looking at.
 // Modifying these styles should be safe and have no side effects. */
 
-@import "_c-buttons";
+@import "./c-buttons";
 @import "c-logo";
 @import "c-footer";
 @import "c-footer-nav";
 @import "c-header";
 @import "c-header-toggle-btn";
-@import "c-header-nav.scss";
-
+@import "./c-primary-nav";
+@import "c-global-nav.scss";

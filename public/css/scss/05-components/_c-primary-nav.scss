@@ -1,20 +1,10 @@
-#c-header-toggle-btn {
-  grid-area: toggle;
-  align-items: center;
-}
 
-#c-header-navigation {
-  grid-area: nav;
-}
-
-.c-header_link {
-
-}
-
-/* Header Navigation */
+/* -- -------------------------------------  -- */
+/* -- [ COMPONENTS : Header Primary Navigation -- */
+/* -- -------------------------------------  -- */
 
 .c-primary-nav {
-  padding: 0 0 24px 0px;
+  padding: 0 0 24px 0;
 }
 
 .c-primary-nav_list {
@@ -25,16 +15,22 @@
 
 .c-primary-nav_list li[class$="list-item"] {
   flex: auto;
-  background: paleturquoise;
-  padding-left: 24px;
+  background-color: #F7F7F7;
 }
+
 .c-primary-nav_dropdown-list {
-  top:0;
-  transform: translateX(100%);
+  top: 0;
   position: absolute;
   width: 100%;
+  min-height: 100vh;
+  padding-left: 48px;
+  background-color: #F7F7F7;
+  transform: translateX(100%);
+  transition: transform .5s ease-in-out;
+  z-index: 1;
 }
-button[role="tab"]:hover + .c-primary-nav_dropdown-list {
+
+.c-primary-nav_dropdown-list[aria-hidden="false"] {
   transform: translateX(0);
 }
 
@@ -43,7 +39,7 @@ button[role="tab"]:hover + .c-primary-nav_dropdown-list {
 }
 
 .c-primary-nav_link,
-.c-primary-nav_dropdown-list-link {
+.c-primary-nav_dropdown-link {
   display: inline-flex;
   position: relative;
   font-size: 20px;
@@ -57,10 +53,16 @@ button[role="tab"]:hover + .c-primary-nav_dropdown-list {
   background: none;
   text-align: left;
   padding: 0 24px;
+  margin-left: 24px;
+}
+
+.c-primary-nav_dropdown-link {
+  margin-left: 0;
 }
 
 button.c-primary-nav_link {
   &::after {
+    position: relative;
     content: "";
     display: inline-block;
     height: 10px;
@@ -76,11 +78,35 @@ button.c-primary-nav_link {
   }
 }
 
-.c-primary-nav_dropdown-list {
-
-}
-
-@media (min-width: 576px) {
-  .c-header { }
-
+button.c-primary-nav_back-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    margin-right: 8px;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: var(--color-primary-blue, #003865);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 10px;
+    line-height: 62px;
+    width: 10px;
+    //top: 0;
+    left: 0;
+    border-style: solid;
+    border-color: var(--color-primary-blue, #003865);
+    border-width: 0 0 2px 2px;
+    transform: rotate(45deg);
+  }
 }

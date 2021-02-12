@@ -17,10 +17,6 @@
 @import "scss/abstracts/colors";
 @import "scss/abstracts/typography";
 
-
-
-
-
 /*------------------------------------*\
     #BASE
 \*------------------------------------*/
@@ -36,18 +32,10 @@
 @import "scss/base/text";
 @import "scss/base/table";
 
-
-
-
-
 /*------------------------------------*\
     #LAYOUT
 \*------------------------------------*/
 @import "scss/layout/layout";
-
-
-
-
 
 /*------------------------------------*\
     #COMPONENTS
@@ -68,7 +56,7 @@
 @import "scss/components/input";
 @import "scss/components/page-header";
 @import "scss/components/pagination";
-@import "scss/components/primary-nav";
+//@import "scss/components/primary-nav";
 @import "scss/components/promo-block";
 @import "scss/components/progress-tracker";
 @import "scss/components/text-passage";
@@ -76,10 +64,6 @@
 @import "scss/components/search-form";
 @import "scss/components/stacked-block-list";
 @import "scss/components/total";
-
-
-
-
 
 /*------------------------------------*\
     #UTILITIES

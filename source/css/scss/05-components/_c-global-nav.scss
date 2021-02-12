@@ -1,22 +1,24 @@
 
-/* -- Header Primary Navigation */
+/* -- -----------------------------  -- */
+/* -- [ COMPONENTS : GLOBAL NAVIGATION -- */
+/* -- -----------------------------  -- */
 
-.c-primary-nav {
+.c-global-nav {
   padding: 0 0 24px 0;
 }
 
-.c-primary-nav_list {
+.c-global-nav_list {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.c-primary-nav_list li[class$="list-item"] {
+.c-global-nav_list li[class$="list-item"] {
   flex: auto;
   background-color: #F7F7F7;
 }
 
-.c-primary-nav_dropdown-list {
+.c-global-nav_dropdown-list {
   top: 0;
   position: absolute;
   width: 100%;
@@ -28,16 +30,16 @@
   z-index: 1;
 }
 
-.c-primary-nav_dropdown-list[aria-hidden="false"] {
+.c-global-nav_dropdown-list[aria-hidden="false"] {
   transform: translateX(0);
 }
 
-.c-primary-nav_link {
+.c-global-nav_link {
   text-transform: uppercase;
 }
 
-.c-primary-nav_link,
-.c-primary-nav_dropdown-list-link {
+.c-global-nav_link,
+.c-global-nav_dropdown-list-link {
   display: inline-flex;
   position: relative;
   font-size: 20px;
@@ -54,11 +56,11 @@
   margin-left: 24px;
 }
 
-.c-primary-nav_dropdown-list-link {
+.c-global-nav_dropdown-list-link {
   margin-left: 0;
 }
 
-button.c-primary-nav_link {
+button.c-global-nav_link {
   &::after {
     position: relative;
     content: "";
@@ -76,7 +78,7 @@ button.c-primary-nav_link {
   }
 }
 
-button.c-primary-nav_back-btn {
+button.c-global-nav_back-btn {
   position: relative;
   display: flex;
   align-items: center;
@@ -109,7 +111,7 @@ button.c-primary-nav_back-btn {
   }
 }
 
-.c-primary-nav_dropdown-list {
+.c-global-nav_dropdown-list {
 
 }
 

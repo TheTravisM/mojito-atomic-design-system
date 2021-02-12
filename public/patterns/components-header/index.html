@@ -5,13 +5,13 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 
-		<link rel="stylesheet" href="../../css/style.css?1613098398211" media="all" />
-		<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1613098398211" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1613100191923" media="all" />
+		<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1613100191923" media="all" />
 		<link href="https://fonts.googleapis.com/css?family=Abel|Raleway:400,400i,700" rel="stylesheet">
 
 		<!--<Deject>-->
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-		<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1613098398211" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1613100191923" media="all">
 		<!-- End Pattern Lab -->
 		<!--</Deject>-->
 
@@ -158,7 +158,7 @@
                         { { # global-nav-list }}
                             <li class="c-global-nav_list-item { { styleModifier }}">
                             { {#if link }}
-                                <a class="c-global-nav_item-link { { styleModifier }}"
+                                <a class="c-global-nav_link { { styleModifier }}"
                                    href="{ { url }}"
                                    role="link">
                                     { { label }}
@@ -182,67 +182,65 @@
             ---->
             
             
+            <!-- GLOBAL Navigation--
+                { {# GlobalNavigation}}
+                <nav id="c-global-navigation" class="c-global-nav">
+                    <ul class="c-global-nav_list">
+                        < !-- About --
+                        { {#if global-nav-list} }
+                            <li class="c-global-nav_list-item">
+                            { {#if buttonTag }}
+                                <button
+                                    id="{ { listHeader }}-tab-btn"
+                                    class="c-global-nav_link c-global-nav_tab-btn { { styleModifier }}"
+                                    data-toggle="tab"
+                                    role="tab"
+                                    aria-controls="{ { listHeader }}-tabpanel"
+                                    aria-selected="false">
+                                    { { listHeader }}
+                                </button>
+                            { {/ if }}
+                            { {#if linkTag }}
+                                <a href="{ { url }}"
+                                   class="c-global-nav_link { { styleModifier }}"
+                                   role="link">
+                                    { { listHeader }}
+                                </a>
+                            { {/ if }}
             
-            
-            <!-- GLOBAL Navigation-->
-                <!--{ {# GlobalNavigation}}-->
-                <!--<nav id="c-global-navigation" class="c-global-nav">-->
-                <!--    <ul class="c-global-nav_list">-->
-                <!--        &lt;!&ndash; About &ndash;&gt;-->
-                <!--        { {#if global-nav-list}}-->
-                <!--            <li class="c-global-nav_list-item">-->
-                <!--            { {#if buttonTag }}-->
-                <!--                <button-->
-                <!--                    id="{ { listHeader }}-tab-btn"-->
-                <!--                    class="c-global-nav_link c-global-nav_tab-btn { { styleModifier }}"-->
-                <!--                    data-toggle="tab"-->
-                <!--                    role="tab"-->
-                <!--                    aria-controls="{ { listHeader }}-tabpanel"-->
-                <!--                    aria-selected="false">-->
-                <!--                    { { listHeader }}-->
-                <!--                </button>-->
-                <!--            { {/ if }}-->
-                <!--            { {#if linkTag }}-->
-                <!--                <a href="{ { url }}"-->
-                <!--                   class="c-global-nav_link { { styleModifier }}"-->
-                <!--                   role="link">-->
-                <!--                    { { listHeader }}-->
-                <!--                </a>-->
-                <!--            { {/ if }}-->
-            
-                <!--            { {#if dropdown-list }}-->
-                <!--                <ul class="c-global-nav_dropdown-list { { styleModifier }}"-->
-                <!--                    id="{ { listHeader }}-tabpanel"-->
-                <!--                    tabindex="0"-->
-                <!--                    role="tabpanel"-->
-                <!--                    aria-labelledby="{ { listHeader }}-tab-btn"-->
-                <!--                    aria-hidden="true">-->
-                <!--                    <button-->
-                <!--                            class="c-global-nav_back-btn"-->
-                <!--                            data-toggle="tab"-->
-                <!--                            role="tab"-->
-                <!--                            aria-controls="{ { listHeader }}-tabpanel"-->
-                <!--                            aria-selected="false"-->
-                <!--                    >-->
-                <!--                        Back-->
-                <!--                        <span class="u-screen-reader-text">Toggle { { listHeader }} Menu</span>-->
-                <!--                    </button>-->
-                <!--                    { {# dropdown-list }}-->
-                <!--                        <li class="c-global-nav_dropdown-list-item { { global-nav_item--modifier }}">-->
-                <!--                            <a class="c-global-nav_dropdown-list-link"-->
-                <!--                               href="{ {url}}"-->
-                <!--                               { {#if role}}role="{ { role }}"{ {/if}}>-->
-                <!--                                { {label}}-->
-                <!--                            </a>-->
-                <!--                        </li>-->
-                <!--                    { {/ dropdown-list }}-->
-                <!--                </ul>-->
-                <!--            { {/ if }}&lt;!&ndash; End dropdown list &ndash;&gt;-->
-                <!--        </li>&lt;!&ndash; END c-global-nav_list-item &ndash;&gt;-->
-                <!--        { {/if }}-->
-                <!--    </ul>-->
-                <!--</nav>-->
-            <!--{ {/ GlobalNavigation}}-->
+                            { {#if dropdown-list }}
+                                <ul class="c-global-nav_dropdown-list { { styleModifier }}"
+                                    id="{ { listHeader }}-tabpanel"
+                                    tabindex="0"
+                                    role="tabpanel"
+                                    aria-labelledby="{ { listHeader }}-tab-btn"
+                                    aria-hidden="true">
+                                    <button
+                                            class="c-global-nav_back-btn"
+                                            data-toggle="tab"
+                                            role="tab"
+                                            aria-controls="{ { listHeader }}-tabpanel"
+                                            aria-selected="false"
+                                    >
+                                        Back
+                                        <span class="u-screen-reader-text">Toggle { { listHeader }} Menu</span>
+                                    </button>
+                                    { {# dropdown-list }}
+                                        <li class="c-global-nav_dropdown-list-item { { global-nav_item--modifier }}">
+                                            <a class="c-global-nav_dropdown-list-link"
+                                               href="{ {url}}"
+                                               { {#if role}}role="{ { role }}"{ {/if}}>
+                                                { {label}}
+                                            </a>
+                                        </li>
+                                    { {/ dropdown-list }}
+                                </ul>
+                            { {/ if }}< !-- End dropdown list --
+                        </li>< !-- END c-global-nav_list-item --
+                        { {/if }}
+                    </ul>
+                </nav>
+            < !--{ {/ GlobalNavigation}}-->
             
             
             
@@ -250,26 +248,26 @@
             <nav class="c-global-nav">
                 <ul class="c-global-nav_list">
                     <li class="c-global-nav_list-item">
-                        <a class="c-global-nav_item-link" href="">Contact</a>
+                        <a class="c-global-nav_link" href="">Contact</a>
                     </li>
                     <li class="c-global-nav_list-item c-global-nav-drop-down">
                         <button class="drop-down-btn" role="tab">
                             Global Businesses
                         </button>
-                        <ul class="c-global-nav-dropdown-list">
-                            <li class="list-item">
+                        <ul class="c-global-nav_dropdown-list">
+                            <li class="c-global-nav_dropdown-ist-item">
                                 <h3>Cengage Global Businesses</h3>
                             </li>
-                            <li class="_list-item">
+                            <li class="c-global-nav_dropdown-ist-item">
                                 <a class="_link" href="#">ed2go</a>
                             </li>
-                            <li class="_list-item">
+                            <li class="c-global-nav_dropdown-ist-item">
                                 <a class="_link" href="#">Gale</a>
                             </li>
-                            <li class="_list-item">
+                            <li class="c-global-nav_dropdown-ist-item">
                                 <a class="_link" href="#">Higher Ed (International)</a>
                             </li>
-                            <li class="_list-item">
+                            <li class="c-global-nav_dropdown-ist-item">
                                 <a class="_link" href="#">Higher Ed (U.S.)</a>
                             </li>
                         </ul>
@@ -464,21 +462,21 @@
                                         <span class="u-screen-reader-text">Toggle about Menu</span>
                                     </button>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="./about"
                                                role="link">
                                                 About Cengage
                                             </a>
                                         </li>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="./Leadership"
                                                role="link">
                                                 Leadership
                                             </a>
                                         </li>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="link.inclusion-diversity"
                                                role="link">
                                                 Inclusion &amp; Diversity
@@ -525,49 +523,49 @@
                                         <span class="u-screen-reader-text">Toggle NEWS Menu</span>
                                     </button>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="./about"
                                                role="link">
                                                 Press Release
                                             </a>
                                         </li>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="./Leadership"
                                                role="link">
                                                 In The News
                                             </a>
                                         </li>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="link.inclusion-diversity"
                                                role="link">
                                                 Awards
                                             </a>
                                         </li>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
                                                role="link">
                                                 Images For Media
                                             </a>
                                         </li>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="./Leadership"
                                                role="link">
                                                 Fact Sheet
                                             </a>
                                         </li>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="link.inclusion-diversity"
                                                role="link">
                                                 Events
                                             </a>
                                         </li>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
                                                role="link">
                                                 Contact Information
@@ -605,49 +603,49 @@
                                         <span class="u-screen-reader-text">Toggle INVESTORS Menu</span>
                                     </button>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="./about"
                                                role="link">
                                                 Presentations
                                             </a>
                                         </li>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="./Leadership"
                                                role="link">
                                                 Call Replays
                                             </a>
                                         </li>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="link.inclusion-diversity"
                                                role="link">
                                                 Current Reports
                                             </a>
                                         </li>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
                                                role="link">
                                                 Annual Reports
                                             </a>
                                         </li>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="./Leadership"
                                                role="link">
                                                 Announcements
                                             </a>
                                         </li>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="link.inclusion-diversity"
                                                role="link">
                                                 Shareholder Info
                                             </a>
                                         </li>
                                          <li class="c-primary-nav_dropdown-list-item ">
-                                            <a class="c-primary-nav_dropdown-list-link"
+                                            <a class="c-primary-nav_dropdown-link"
                                                href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
                                                role="link">
                                                 Restructuring Info
@@ -726,10 +724,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1613098398211">
+<script id="pl-js-polyfill-insert-1613100191923">
   (function() {
     if (self != top) {
-      var cb = '1613098398211';
+      var cb = '1613100191923';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -742,7 +740,7 @@
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1613098398211" nomodule>
+<script id="pl-js-insert-1613100191923" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 

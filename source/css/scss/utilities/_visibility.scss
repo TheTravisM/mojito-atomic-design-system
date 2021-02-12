@@ -1,39 +1,39 @@
-/*------------------------------------*\
-    #VISIBILITY CLASSES
-\*------------------------------------*/
-
-.u-screen-reader-text {
-    border: 0;
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    word-wrap: normal !important;
-}
-
-/**
- * Is Hidden
- * 1) Completely remove from the flow and screen readers.
- */
-.u-is-hidden {
-    display: none !important;
-    visibility: hidden !important;
-}
-
-/**
- * Is Visibly Hidden
- * 1) Completely remove from the flow but leave available to screen readers.
- */
-.u-is-vishidden {
-    position: absolute !important;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    border: 0;
-    clip: rect(1px, 1px, 1px, 1px);
-}
+///*------------------------------------*\
+//    #VISIBILITY CLASSES
+//\*------------------------------------*/
+//
+//.u-screen-reader-text {
+//    border: 0;
+//    clip: rect(1px, 1px, 1px, 1px);
+//    clip-path: inset(50%);
+//    height: 1px;
+//    margin: -1px;
+//    overflow: hidden;
+//    padding: 0;
+//    position: absolute;
+//    width: 1px;
+//    word-wrap: normal !important;
+//}
+//
+///**
+// * Is Hidden
+// * 1) Completely remove from the flow and screen readers.
+// */
+//.u-is-hidden {
+//    display: none !important;
+//    visibility: hidden !important;
+//}
+//
+///**
+// * Is Visibly Hidden
+// * 1) Completely remove from the flow but leave available to screen readers.
+// */
+//.u-is-vishidden {
+//    position: absolute !important;
+//    overflow: hidden;
+//    width: 1px;
+//    height: 1px;
+//    padding: 0;
+//    border: 0;
+//    clip: rect(1px, 1px, 1px, 1px);
+//}

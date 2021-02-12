@@ -40,7 +40,7 @@ button[role=tab]:hover + .c-primary-nav_dropdown-list {
 }
 
 .c-primary-nav_link,
-.c-primary-nav_dropdown-list-link {
+.c-primary-nav_dropdown-link {
   display: inline-flex;
   position: relative;
   font-size: 20px;
