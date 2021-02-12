@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="">
+	<head>
+		<title>Corp Mojito</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+
+		<link rel="stylesheet" href="../../css/style.css?1613098398211" media="all" />
+		<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1613098398211" media="all" />
+		<link href="https://fonts.googleapis.com/css?family=Abel|Raleway:400,400i,700" rel="stylesheet">
+
+		<!--<Deject>-->
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		
+		<!-- End Pattern Lab -->
+		<!--</Deject>-->
+
+	</head>
+	<body class="">
+<!--  Global Navigation
+    <nav class="c-global-nav">
+        <ul class="c-global-nav_list">
+            { { # global-nav-list }}
+                <li class="c-global-nav_list-item { { styleModifier }}">
+                { {#if link }}
+                    <a class="c-global-nav_item-link { { styleModifier }}"
+                       href="{ { url }}"
+                       role="link">
+                        { { label }}
+                    </a>
+                { {/ if}}
+                { {# button }}
+                    <button
+                            id="{ { listHeader }}-tab-btn"
+                            class="c-global-nav_link c-global-nav_tab-btn { { styleModifier }}"
+                            data-toggle="tab"
+                            role="tab"
+                            aria-controls="{ { listHeader }}-tabpanel"
+                            aria-selected="false">
+                        { { listHeader }}
+                    </button>
+                { {/button}}
+            </li>
+            { {/ global-nav-list }}
+        </ul>
+    </nav>
+---->
+
+
+
+
+<!-- GLOBAL Navigation-->
+    <!--{ {# GlobalNavigation}}-->
+    <!--<nav id="c-global-navigation" class="c-global-nav">-->
+    <!--    <ul class="c-global-nav_list">-->
+    <!--        &lt;!&ndash; About &ndash;&gt;-->
+    <!--        { {#if global-nav-list}}-->
+    <!--            <li class="c-global-nav_list-item">-->
+    <!--            { {#if buttonTag }}-->
+    <!--                <button-->
+    <!--                    id="{ { listHeader }}-tab-btn"-->
+    <!--                    class="c-global-nav_link c-global-nav_tab-btn { { styleModifier }}"-->
+    <!--                    data-toggle="tab"-->
+    <!--                    role="tab"-->
+    <!--                    aria-controls="{ { listHeader }}-tabpanel"-->
+    <!--                    aria-selected="false">-->
+    <!--                    { { listHeader }}-->
+    <!--                </button>-->
+    <!--            { {/ if }}-->
+    <!--            { {#if linkTag }}-->
+    <!--                <a href="{ { url }}"-->
+    <!--                   class="c-global-nav_link { { styleModifier }}"-->
+    <!--                   role="link">-->
+    <!--                    { { listHeader }}-->
+    <!--                </a>-->
+    <!--            { {/ if }}-->
+
+    <!--            { {#if dropdown-list }}-->
+    <!--                <ul class="c-global-nav_dropdown-list { { styleModifier }}"-->
+    <!--                    id="{ { listHeader }}-tabpanel"-->
+    <!--                    tabindex="0"-->
+    <!--                    role="tabpanel"-->
+    <!--                    aria-labelledby="{ { listHeader }}-tab-btn"-->
+    <!--                    aria-hidden="true">-->
+    <!--                    <button-->
+    <!--                            class="c-global-nav_back-btn"-->
+    <!--                            data-toggle="tab"-->
+    <!--                            role="tab"-->
+    <!--                            aria-controls="{ { listHeader }}-tabpanel"-->
+    <!--                            aria-selected="false"-->
+    <!--                    >-->
+    <!--                        Back-->
+    <!--                        <span class="u-screen-reader-text">Toggle { { listHeader }} Menu</span>-->
+    <!--                    </button>-->
+    <!--                    { {# dropdown-list }}-->
+    <!--                        <li class="c-global-nav_dropdown-list-item { { global-nav_item--modifier }}">-->
+    <!--                            <a class="c-global-nav_dropdown-list-link"-->
+    <!--                               href="{ {url}}"-->
+    <!--                               { {#if role}}role="{ { role }}"{ {/if}}>-->
+    <!--                                { {label}}-->
+    <!--                            </a>-->
+    <!--                        </li>-->
+    <!--                    { {/ dropdown-list }}-->
+    <!--                </ul>-->
+    <!--            { {/ if }}&lt;!&ndash; End dropdown list &ndash;&gt;-->
+    <!--        </li>&lt;!&ndash; END c-global-nav_list-item &ndash;&gt;-->
+    <!--        { {/if }}-->
+    <!--    </ul>-->
+    <!--</nav>-->
+<!--{ {/ GlobalNavigation}}-->
+
+
+
+
+<nav class="c-global-nav">
+    <ul class="c-global-nav_list">
+        <li class="c-global-nav_list-item">
+            <a class="c-global-nav_item-link" href="">Contact</a>
+        </li>
+        <li class="c-global-nav_list-item c-global-nav-drop-down">
+            <button class="drop-down-btn" role="tab">
+                Global Businesses
+            </button>
+            <ul class="c-global-nav-dropdown-list">
+                <li class="list-item">
+                    <h3>Cengage Global Businesses</h3>
+                </li>
+                <li class="_list-item">
+                    <a class="_link" href="#">ed2go</a>
+                </li>
+                <li class="_list-item">
+                    <a class="_link" href="#">Gale</a>
+                </li>
+                <li class="_list-item">
+                    <a class="_link" href="#">Higher Ed (International)</a>
+                </li>
+                <li class="_list-item">
+                    <a class="_link" href="#">Higher Ed (U.S.)</a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-global-nav_list-item c-location-menu">
+            <button class="drop-down-btn c-location-menu_btn" role="tab">
+                USA <span>glob</span>
+            </button>
+            <ul class="c-geo-nav-list c-location-menu_list">
+                <li class="c-global_mega-menu-item c-location-menu_list-item">
+                    <h3 class="c-location-menu_title">
+                        North America
+                    </h3>
+                    <ul class="list">
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Canada
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                United States
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Mexico
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-global_mega-menu-item country-list-item">
+                    <h3 class="c-global-nav_mega-menu-link">
+                        South America
+                    </h3>
+                    <ul class="list">
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Canada
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                United States
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Mexico
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-global_mega-menu-item country-list-item">
+                    <h3 class="c-global-nav_mega-menu-link">
+                        Europe
+                    </h3>
+                    <ul class="list">
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Canada
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                United States
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Mexico
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-global_mega-menu-item country-list-item">
+                    <h3 class="c-global-nav_mega-menu-link">
+                        Middle East
+                    </h3>
+                    <ul class="list">
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Canada
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                United States
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Mexico
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-global_mega-menu-item country-list-item">
+                    <h3 class="c-global-nav_mega-menu-link">
+                        Asia Pacific + Oceania
+                    </h3>
+                    <ul class="list">
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Canada
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                United States
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Mexico
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+        <!--<Deject>-->
+        <!--DO NOT REMOVE-->
+        <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-primary-header","lineagePath":"../../patterns/components-header-primary-header/components-header-primary-header.rendered.html"}],"lineageR":[{"lineagePattern":"components-primary-header","lineagePath":"../../patterns/components-header-primary-header/components-header-primary-header.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"navigation"},"patternExtension":"hbs","patternName":"Global Nav","patternPartial":"components-global-nav","patternState":"","patternEngineName":"handlebars","extraOutput":{}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"components-primary-header","lineagePath":"../../patterns/components-header-primary-header/components-header-primary-header.rendered.html"}],"lineageR":[{"lineagePattern":"components-primary-header","lineagePath":"../../patterns/components-header-primary-header/components-header-primary-header.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"navigation"},"patternExtension":"hbs","patternName":"Global Nav","patternPartial":"components-global-nav","patternState":"","patternEngineName":"handlebars","extraOutput":{}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1613098398211">
+  (function() {
+    if (self != top) {
+      var cb = '1613098398211';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1613098398211" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+        <!--</Deject>-->
+
+    </body>
+
+</html>

@@ -1,0 +1,241 @@
+<!--  Global Navigation -->
+{{# GlobalNavigation }}
+    <nav class="c-global-nav">
+        <ul class="c-global-nav_list">
+            {{# global-nav-list }}
+                <li class="c-global-nav_list-item {{ styleModifier }}">
+                {{#if link }}
+                    <a class="c-global-nav_item-link {{ styleModifier }}"
+                       href="{{ url }}"
+                       role="link">
+                        {{ label }}
+                    </a>
+                {{/ if}}
+                {{# button }}
+                    <button
+                            id="{{ listHeader }}-tab-btn"
+                            class="c-global-nav_link c-global-nav_tab-btn {{ styleModifier }}"
+                            data-toggle="tab"
+                            role="tab"
+                            aria-controls="{{ listHeader }}-tabpanel"
+                            aria-selected="false"
+                    >
+                        {{ listHeader }}
+                    </button>
+                {{/button}}
+            </li>
+            {{/ global-nav-list }}
+        </ul>
+    </nav>
+<!---->
+
+
+
+
+<!-- Header Navigation-->
+{{# GlobalNavigation}}
+<nav id="c-global-navigation" class="c-global-nav">
+    <ul class="c-global-nav_list">
+        <!-- About -->
+        <li class="c-global-nav_list-item">
+            {{#if buttonTag }}
+                <button
+                    id="{{ listHeader }}-tab-btn"
+                    class="c-global-nav_link c-global-nav_tab-btn {{ styleModifier }}"
+                    data-toggle="tab"
+                    role="tab"
+                    aria-controls="{{ listHeader }}-tabpanel"
+                    aria-selected="false">
+                    {{ listHeader }}
+                </button>
+            {{/ if }}
+            {{#if linkTag }}
+                <a href="{{ url }}"
+                   class="c-global-nav_link {{ styleModifier }}"
+                   role="link">
+                    {{ listHeader }}
+                </a>
+            {{/ if }}
+
+            {{#if dropdown-list }}
+                <ul class="c-global-nav_dropdown-list {{ styleModifier }}"
+                    id="{{ listHeader }}-tabpanel"
+                    tabindex="0"
+                    role="tabpanel"
+                    aria-labelledby="{{ listHeader }}-tab-btn"
+                    aria-hidden="true">
+                    <button
+                            class="c-global-nav_back-btn"
+                            data-toggle="tab"
+                            role="tab"
+                            aria-controls="{{ listHeader }}-tabpanel"
+                            aria-selected="false"
+                    >
+                        Back
+                        <span class="u-screen-reader-text">Toggle {{ listHeader }} Menu</span>
+                    </button>
+                    {{# dropdown-list }}
+                        <li class="c-global-nav_dropdown-list-item {{ global-nav_item--modifier }}">
+                            <a class="c-global-nav_dropdown-list-link"
+                               href="{{url}}"
+                               {{#if role}}role="{{ role }}"{{/if}}>
+                                {{label}}
+                            </a>
+                        </li>
+                    {{/ dropdown-list }}
+                </ul>
+            {{/ if }}<!-- End dropdown list -->
+        </li><!-- END c-global-nav_list-item -->
+    </ul>
+</nav>
+{{/GlobalNavigation}}
+
+
+<!-- other --->
+
+<nav class="c-global-nav">
+    <ul class="c-global-nav_list">
+        <li class="c-global-nav_list-item">
+            <a class="c-global-nav_item-link" href="">Contact</a>
+        </li>
+        <li class="c-global-nav_list-item c-global-nav-drop-down">
+            <button class="drop-down-btn" role="tab">
+                Global Businesses
+            </button>
+            <ul class="c-global-nav-dropdown-list">
+                <li class="list-item">
+                    <h3>Cengage Global Businesses</h3>
+                </li>
+                <li class="_list-item">
+                    <a class="_link" href="#">ed2go</a>
+                </li>
+                <li class="_list-item">
+                    <a class="_link" href="#">Gale</a>
+                </li>
+                <li class="_list-item">
+                    <a class="_link" href="#">Higher Ed (International)</a>
+                </li>
+                <li class="_list-item">
+                    <a class="_link" href="#">Higher Ed (U.S.)</a>
+                </li>
+            </ul>
+        </li>
+        <li class="c-global-nav_list-item c-location-menu">
+            <button class="drop-down-btn c-location-menu_btn" role="tab">
+                USA <span>glob</span>
+            </button>
+            <ul class="c-geo-nav-list c-location-menu_list">
+                <li class="c-global_mega-menu-item c-location-menu_list-item">
+                    <h3 class="c-location-menu_title">
+                        North America
+                    </h3>
+                    <ul class="list">
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Canada
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                United States
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Mexico
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-global_mega-menu-item country-list-item">
+                    <h3 class="c-global-nav_mega-menu-link">
+                        South America
+                    </h3>
+                    <ul class="list">
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Canada
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                United States
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Mexico
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-global_mega-menu-item country-list-item">
+                    <h3 class="c-global-nav_mega-menu-link">
+                        Europe
+                    </h3>
+                    <ul class="list">
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Canada
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                United States
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Mexico
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-global_mega-menu-item country-list-item">
+                    <h3 class="c-global-nav_mega-menu-link">
+                        Middle East
+                    </h3>
+                    <ul class="list">
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Canada
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                United States
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Mexico
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-global_mega-menu-item country-list-item">
+                    <h3 class="c-global-nav_mega-menu-link">
+                        Asia Pacific + Oceania
+                    </h3>
+                    <ul class="list">
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Canada
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                United States
+                            </a>
+                        </li>
+                        <li class="c-global-nav_mega-menu-item">
+                            <a class="c-global-nav_mega-menu-link" href="#">
+                                Mexico
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
