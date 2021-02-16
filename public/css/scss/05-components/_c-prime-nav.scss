@@ -1,7 +1,7 @@
 
-/* -- -------------------------------------  -- */
+/* -- ---------------------------------------  -- */
 /* -- [ COMPONENTS : Header Primary Navigation -- */
-/* -- -------------------------------------  -- */
+/* -- ---------------------------------------  -- */
 
 .c-primary-nav {
   padding: 0 0 24px 0;
@@ -10,7 +10,6 @@
 .c-primary-nav_list {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .c-primary-nav_list li[class$="list-item"] {

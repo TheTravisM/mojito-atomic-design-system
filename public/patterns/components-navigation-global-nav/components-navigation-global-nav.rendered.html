@@ -5,8 +5,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 
-		<link rel="stylesheet" href="../../css/style.css?1613100191923" media="all" />
-		<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1613100191923" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1613433928850" media="all" />
+		<link rel="stylesheet" href="../../css/pattern-scaffolding.css?1613433928850" media="all" />
 		<link href="https://fonts.googleapis.com/css?family=Abel|Raleway:400,400i,700" rel="stylesheet">
 
 		<!--<Deject>-->
@@ -17,106 +17,254 @@
 
 	</head>
 	<body class="">
-<!--  Global Navigation
-    <nav class="c-global-nav">
-        <ul class="c-global-nav_list">
-            { { # global-nav-list }}
-                <li class="c-global-nav_list-item { { styleModifier }}">
-                { {#if link }}
-                    <a class="c-global-nav_link { { styleModifier }}"
-                       href="{ { url }}"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let tabBtn = $('.c-global-nav_tab-btn');
+        let backBtn = $('.c-global-nav_back-btn');
+        let tabPanels = $('.c-global-nav_dropdown-list');
+        tabBtn.click(function () {
+            // -- Tab Buttons -- //
+            let activeTabBtn = $(this);
+            tabBtn.removeClass('c-global-nav_tab-btn--active').attr('aria-selected', 'false');
+            activeTabBtn.addClass('c-global-nav_tab-btn--active').attr('aria-selected', 'true');
+            // -- Tab Panels -- //
+            let activeTabPanel = $('#'+($(this).attr('aria-controls')));
+            tabPanels.removeClass('ceng-tabs_panel--active').attr('aria-hidden', 'true');
+            activeTabPanel.addClass('ceng-tabs_panel--active').attr('aria-hidden','false');
+        });
+        backBtn.click(function () {
+            // -- Back Buttons -- //
+            backBtn.removeClass('c-global-nav_tab-btn--active').attr('aria-selected', 'false');
+            // -- Tab Panels -- //
+            tabPanels.removeClass('ceng-tabs_panel--active').attr('aria-hidden', 'true');
+        });
+    });
+</script>
+
+<!-- GLOBAL Navigation -->
+<nav id="c-global-navigation" class="c-global-nav">
+    <ul class="c-global-nav_list">
+            <li class="c-global-nav_list-item">
+
+                    <a href="#"
+                       id="contact-tab-btn"
+                       class="c-global-nav_link c-global-nav_link--contact"
                        role="link">
-                        { { label }}
+                        Contact
                     </a>
-                { {/ if}}
-                { {# button }}
-                    <button
-                            id="{ { listHeader }}-tab-btn"
-                            class="c-global-nav_link c-global-nav_tab-btn { { styleModifier }}"
-                            data-toggle="tab"
-                            role="tab"
-                            aria-controls="{ { listHeader }}-tabpanel"
-                            aria-selected="false">
-                        { { listHeader }}
-                    </button>
-                { {/button}}
-            </li>
-            { {/ global-nav-list }}
-        </ul>
-    </nav>
----->
 
 
-<!-- GLOBAL Navigation--
-    { {# GlobalNavigation}}
-    <nav id="c-global-navigation" class="c-global-nav">
-        <ul class="c-global-nav_list">
-            < !-- About --
-            { {#if global-nav-list} }
-                <li class="c-global-nav_list-item">
-                { {#if buttonTag }}
+
+<!-- End dropdown list -->
+            </li><!-- END c-global-nav_list-item -->
+            <li class="c-global-nav_list-item">
                     <button
-                        id="{ { listHeader }}-tab-btn"
-                        class="c-global-nav_link c-global-nav_tab-btn { { styleModifier }}"
+                        id="global-business-tab-btn"
+                        class="c-global-nav_link c-global-nav_tab-btn "
                         data-toggle="tab"
                         role="tab"
-                        aria-controls="{ { listHeader }}-tabpanel"
+                        aria-controls="global-business-tabpanel"
                         aria-selected="false">
-                        { { listHeader }}
+                        Global Business
                     </button>
-                { {/ if }}
-                { {#if linkTag }}
-                    <a href="{ { url }}"
-                       class="c-global-nav_link { { styleModifier }}"
-                       role="link">
-                        { { listHeader }}
-                    </a>
-                { {/ if }}
 
-                { {#if dropdown-list }}
-                    <ul class="c-global-nav_dropdown-list { { styleModifier }}"
-                        id="{ { listHeader }}-tabpanel"
+
+
+
+                    <ul class="c-global-nav_dropdown-list "
+                        id="global-business-tabpanel"
                         tabindex="0"
                         role="tabpanel"
-                        aria-labelledby="{ { listHeader }}-tab-btn"
+                        aria-labelledby="global-business-tab-btn"
                         aria-hidden="true">
                         <button
                                 class="c-global-nav_back-btn"
                                 data-toggle="tab"
                                 role="tab"
-                                aria-controls="{ { listHeader }}-tabpanel"
+                                aria-controls="global-business-tabpanel"
                                 aria-selected="false"
                         >
                             Back
-                            <span class="u-screen-reader-text">Toggle { { listHeader }} Menu</span>
+                            <span class="u-screen-reader-text">Toggle Global Business Menu</span>
                         </button>
-                        { {# dropdown-list }}
-                            <li class="c-global-nav_dropdown-list-item { { global-nav_item--modifier }}">
-                                <a class="c-global-nav_dropdown-list-link"
-                                   href="{ {url}}"
-                                   { {#if role}}role="{ { role }}"{ {/if}}>
-                                    { {label}}
-                                </a>
+                            <li
+                               class="c-global-nav_dropdown-list-item "
+                                role="listitem"
+                            >
+                                    <h3 id=""
+                                        class="c-global-nav_dropdown-list-item c-global-nav_dropdown-title"
+                                    >
+                                        Cengage Global Business
+                                    </h3>
+
                             </li>
-                        { {/ dropdown-list }}
+                            <li
+                               class="c-global-nav_dropdown-list-item "
+                                role="listitem"
+                            >
+
+                                    <a id=""
+                                       class="c-global-nav_dropdown-list-link"
+                                       href="https://www.ed2go.com"
+                                       role="link">
+                                        ed2go
+                                    </a>
+                            </li>
+                            <li
+                               class="c-global-nav_dropdown-list-item "
+                                role="listitem"
+                            >
+
+                                    <a id=""
+                                       class="c-global-nav_dropdown-list-link"
+                                       href="https://www.gale.com"
+                                       role="link">
+                                        Gale
+                                    </a>
+                            </li>
+                            <li
+                               class="c-global-nav_dropdown-list-item "
+                                role="listitem"
+                            >
+
+                                    <a id=""
+                                       class="c-global-nav_dropdown-list-link"
+                                       href="https://www.higher-ed.com"
+                                       role="link">
+                                        Higher Ed (U.S.)
+                                    </a>
+                            </li>
+                            <li
+                               class="c-global-nav_dropdown-list-item "
+                                role="listitem"
+                            >
+
+                                    <a id=""
+                                       class="c-global-nav_dropdown-list-link"
+                                       href="https://www.milady.com"
+                                       role="link">
+                                        Milady
+                                    </a>
+                            </li>
+                            <li
+                               class="c-global-nav_dropdown-list-item "
+                                role="listitem"
+                            >
+
+                                    <a id=""
+                                       class="c-global-nav_dropdown-list-link"
+                                       href="https://www.nglk-12.com"
+                                       role="link">
+                                        National Geographic Learning - K12
+                                    </a>
+                            </li>
+                            <li
+                               class="c-global-nav_dropdown-list-item "
+                                role="listitem"
+                            >
+
+                                    <a id=""
+                                       class="c-global-nav_dropdown-list-link"
+                                       href="https://www.nglk-elt.com"
+                                       role="link">
+                                        National Geographic Learning - ELT
+                                    </a>
+                            </li>
                     </ul>
-                { {/ if }}< !-- End dropdown list --
-            </li>< !-- END c-global-nav_list-item --
-            { {/if }}
-        </ul>
-    </nav>
-< !--{ {/ GlobalNavigation}}-->
+                <!-- End dropdown list -->
+            </li><!-- END c-global-nav_list-item -->
+            <li class="c-global-nav_list-item">
+                    <button
+                        id="-tab-btn"
+                        class="c-global-nav_link c-global-nav_tab-btn "
+                        data-toggle="tab"
+                        role="tab"
+                        aria-controls="-tabpanel"
+                        aria-selected="false">
+                        USA
+                            <span class="c-btn_icon c-global-nav_globe-icon">
+                                
+                            </span>
+                    </button>
 
 
 
 
+                    <ul class="c-global-nav_dropdown-list "
+                        id="-tabpanel"
+                        tabindex="0"
+                        role="tabpanel"
+                        aria-labelledby="-tab-btn"
+                        aria-hidden="true">
+                        <button
+                                class="c-global-nav_back-btn"
+                                data-toggle="tab"
+                                role="tab"
+                                aria-controls="-tabpanel"
+                                aria-selected="false"
+                        >
+                            Back
+                            <span class="u-screen-reader-text">Toggle USA Menu</span>
+                        </button>
+                            <li
+                               class="c-global-nav_dropdown-list-item "
+                                role="listitem"
+                            >
+
+                            </li>
+                            <li
+                               class="c-global-nav_dropdown-list-item "
+                                role="listitem"
+                            >
+
+                            </li>
+                            <li
+                               class="c-global-nav_dropdown-list-item "
+                                role="listitem"
+                            >
+
+                            </li>
+                            <li
+                               class="c-global-nav_dropdown-list-item "
+                                role="listitem"
+                            >
+
+                            </li>
+                            <li
+                               class="c-global-nav_dropdown-list-item "
+                                role="listitem"
+                            >
+
+                            </li>
+                            <li
+                               class="c-global-nav_dropdown-list-item "
+                                role="listitem"
+                            >
+
+                            </li>
+                            <li
+                               class="c-global-nav_dropdown-list-item "
+                                role="listitem"
+                            >
+
+                            </li>
+                    </ul>
+                <!-- End dropdown list -->
+            </li><!-- END c-global-nav_list-item -->
+    </ul>
+</nav>
+<!-- END GLOBAL Navigation -->
+
+
+<!-- GLOBAL Navigation --
 <nav class="c-global-nav">
     <ul class="c-global-nav_list">
         <li class="c-global-nav_list-item">
             <a class="c-global-nav_link" href="">Contact</a>
         </li>
-        <li class="c-global-nav_list-item c-global-nav-drop-down">
-            <button class="drop-down-btn" role="tab">
+        <li class="c-global-nav_list-item">
+            <button class="c-global-nav_link c-global-nav_tab-btn " role="tab">
                 Global Businesses
             </button>
             <ul class="c-global-nav_dropdown-list">
@@ -137,11 +285,17 @@
                 </li>
             </ul>
         </li>
-        <li class="c-global-nav_list-item c-location-menu">
-            <button class="drop-down-btn c-location-menu_btn" role="tab">
-                USA <span>glob</span>
+        <li class="c-global-nav_list-item">
+            <button class="c-global-nav_link c-global-nav_tab-btn " role="tab">
+                USA <span class="c-global-nav_globe-icon">
+                        <svg version="1.1" id="globe-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 22"
+                             style="enable-background:new 0 0 22 22;" xml:space="preserve"
+                        >
+                            <path id="globe-icon-path" d="M11,0c6.1,0,11,4.9,11,11s-4.9,11-11,11S0,17.1,0,11S4.9,0,11,0z M6.1,12l-4,0c0.4,3.7,3.1,6.8,6.7,7.7 C7.2,17.4,6.3,14.8,6.1,12z M19.9,12l-4,0c-0.2,2.8-1.1,5.4-2.7,7.7C16.8,18.8,19.5,15.7,19.9,12z M13.9,12l-5.9,0 c0.3,2.7,1.3,5.3,2.9,7.4C12.7,17.3,13.7,14.7,13.9,12z M8.7,2.3L8.7,2.3c-3.6,0.9-6.3,4-6.7,7.7l4,0C6.3,7.2,7.2,4.6,8.7,2.3z M11,2.6C9.3,4.7,8.3,7.3,8.1,10l5.9,0C13.7,7.3,12.7,4.7,11,2.6z M13.3,2.3l0.2,0.3c1.4,2.2,2.3,4.8,2.5,7.4l4,0 C19.5,6.3,16.8,3.2,13.3,2.3z"/>
+                        </svg>
+                    </span>
             </button>
-            <ul class="c-geo-nav-list c-location-menu_list">
+            <ul class="c-global-nav_dropdown-list">
                 <li class="c-global_mega-menu-item c-location-menu_list-item">
                     <h3 class="c-location-menu_title">
                         North America
@@ -256,7 +410,7 @@
         </li>
     </ul>
 </nav>
-
+-->
         <!--<Deject>-->
         <!--DO NOT REMOVE-->
         <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
@@ -300,10 +454,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1613100191923">
+<script id="pl-js-polyfill-insert-1613433928850">
   (function() {
     if (self != top) {
-      var cb = '1613100191923';
+      var cb = '1613433928850';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -316,7 +470,7 @@
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1613100191923" nomodule>
+<script id="pl-js-insert-1613433928850" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 

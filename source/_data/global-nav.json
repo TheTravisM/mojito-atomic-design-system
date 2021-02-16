@@ -3,49 +3,72 @@
     {
       "global-nav-list" : [
         {
-          "listHeader": "HOME",
-          "buttonTag": false,
-          "linkTag": true,
-          "styleModifier": "c-primary-nav_link--home" ,
+          "listHeader": "Contact",
+          "id": "contact",
+          "button": false,
+          "link": true,
+          "style-modifier": "c-global-nav_link--contact" ,
           "role": "link",
-          "url" : "./"
+          "url" : "#"
         },
         {
-          "listHeader" : "about",
-          "buttonTag": true,
-          "linkTag" : false,
+          "listHeader" : "Global Business",
+          "id": "global-business",
+          "button": true,
+          "link" : false,
           "role": "tab",
           "dropdown-list": [
             {
-              "label": "About Cengage",
-              "url": "./about",
-              "role" : "link"
+              "label": "Cengage Global Business",
+              "id": "cengage-global-business",
+              "heading": "true",
+              "style-modifier" : "title?"
             },
             {
-              "label": "Leadership",
-              "url": "./Leadership",
-              "role" : "link"
+              "label": "ed2go",
+              "url": "https://www.ed2go.com",
+              "link" : true,
+              "style-modifier" : "c-btn--external-link"
             },
             {
-              "label": "Inclusion & Diversity",
-              "url": "link.inclusion-diversity",
-              "role" : "link"
+              "label": "Gale",
+              "url": "https://www.gale.com",
+              "link" : true,
+              "style-modifier" : "c-btn--external-link"
+            },
+            {
+              "label": "Higher Ed (U.S.)",
+              "url": "https://www.higher-ed.com",
+              "link" : true,
+              "style-modifier" : "c-btn--external-link"
+            },
+            {
+              "label": "Milady",
+              "url": "https://www.milady.com",
+              "link" : true,
+              "style-modifier" : "c-btn--external-link"
+            },
+            {
+              "label": "National Geographic Learning - K12",
+              "url": "https://www.nglk-12.com",
+              "link" : true,
+              "style-modifier" : "c-btn--external-link"
+            },
+            {
+              "label": "National Geographic Learning - ELT",
+              "url": "https://www.nglk-elt.com",
+              "link" : true,
+              "style-modifier" : "c-btn--external-link"
             }
           ]
         },
         {
-          "listHeader" : "BUSINESS",
-          "buttonTag": false,
-          "linkTag": true,
-          "styleModifier": "c-primary-nav_link--business" ,
-          "role": "link",
-          "url" : "./"
-        },
-        {
-          "listHeader" : "NEWS",
-          "buttonTag": true,
-          "linkTag" : false,
+          "listHeader" : "USA",
+          "button": true,
+          "link" : false,
           "role": "tab",
+          "icon": true,
+          "icon-modifier": "c-global-nav_globe-icon",
           "dropdown-list": [
             {
               "label": "Press Release",
@@ -83,62 +106,9 @@
               "role" : "link"
             }
           ]
-        },
-        {
-          "listHeader" : "INVESTORS",
-          "buttonTag": true,
-          "linkTag" : false,
-          "role": "tab",
-          "dropdown-list": [
-            {
-              "label": "Presentations",
-              "url": "./about",
-              "role" : "link"
-            },
-            {
-              "label": "Call Replays",
-              "url": "./Leadership",
-              "role" : "link"
-            },
-            {
-              "label": "Current Reports",
-              "url": "link.inclusion-diversity",
-              "role" : "link"
-            },
-            {
-              "label": "Annual Reports",
-              "url": "link.pages-category-on-sale",
-              "role" : "link"
-            },
-            {
-              "label": "Announcements",
-              "url": "./Leadership",
-              "role" : "link"
-            },
-            {
-              "label": "Shareholder Info",
-              "url": "link.inclusion-diversity",
-              "role" : "link"
-            },
-            {
-              "label": "Restructuring Info",
-              "url": "link.pages-category-on-sale",
-              "role" : "link"
-            }
-          ]
-        },
-        {
-          "listHeader" : "CAREERS",
-          "buttonTag": false,
-          "linkTag": true,
-          "styleModifier": "c-primary-nav_link--careers" ,
-          "role": "link",
-          "url" : "./careers"
         }
       ]
     }
-
-
   ]
 }
 
