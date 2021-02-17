@@ -1,28 +1,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        let tabBtn = $('.c-global-nav_tab-btn');
-        let backBtn = $('.c-global-nav_back-btn');
-        let tabPanels = $('.c-global-nav_dropdown-list');
-        tabBtn.click(function () {
-            // -- Tab Buttons -- //
-            let activeTabBtn = $(this);
-            tabBtn.removeClass('c-global-nav_tab-btn--active').attr('aria-selected', 'false');
-            activeTabBtn.addClass('c-global-nav_tab-btn--active').attr('aria-selected', 'true');
-            // -- Tab Panels -- //
-            let activeTabPanel = $('#'+($(this).attr('aria-controls')));
-            tabPanels.removeClass('ceng-tabs_panel--active').attr('aria-hidden', 'true');
-            activeTabPanel.addClass('ceng-tabs_panel--active').attr('aria-hidden','false');
-        });
-        backBtn.click(function () {
-            // -- Back Buttons -- //
-            backBtn.removeClass('c-global-nav_tab-btn--active').attr('aria-selected', 'false');
-            // -- Tab Panels -- //
-            tabPanels.removeClass('ceng-tabs_panel--active').attr('aria-hidden', 'true');
-        });
-    });
-</script>
-
+<script src="../../js/global-nav.js"></script>
 <!-- GLOBAL Navigation -->
 <nav id="c-global-navigation" class="c-global-nav">
     <ul class="c-global-nav_list">
@@ -34,8 +11,6 @@
                        role="link">
                         Contact
                     </a>
-
-
 
 <!-- End dropdown list -->
             </li><!-- END c-global-nav_list-item -->
@@ -49,8 +24,6 @@
                         aria-selected="false">
                         Global Business
                     </button>
-
-
 
 
                     <ul class="c-global-nav_dropdown-list "
@@ -73,95 +46,104 @@
                                class="c-global-nav_dropdown-list-item "
                                 role="listitem"
                             >
-                                    <h3 id=""
-                                        class="c-global-nav_dropdown-list-item c-global-nav_dropdown-title"
+                                    <h3
+                                        id=""
+                                        class="c-global-nav_dropdown-list-item c-global-nav_dropdown-title "
                                     >
+
                                         Cengage Global Business
                                     </h3>
 
+
                             </li>
                             <li
-                               class="c-global-nav_dropdown-list-item "
+                               class="c-global-nav_dropdown-list-item c-btn--external-link"
                                 role="listitem"
                             >
 
                                     <a id=""
-                                       class="c-global-nav_dropdown-list-link"
+                                       class="c-global-nav_dropdown-list-link c-btn--external-link"
                                        href="https://www.ed2go.com"
                                        role="link">
                                         ed2go
                                     </a>
+
                             </li>
                             <li
-                               class="c-global-nav_dropdown-list-item "
+                               class="c-global-nav_dropdown-list-item c-btn--external-link"
                                 role="listitem"
                             >
 
                                     <a id=""
-                                       class="c-global-nav_dropdown-list-link"
+                                       class="c-global-nav_dropdown-list-link c-btn--external-link"
                                        href="https://www.gale.com"
                                        role="link">
                                         Gale
                                     </a>
+
                             </li>
                             <li
-                               class="c-global-nav_dropdown-list-item "
+                               class="c-global-nav_dropdown-list-item c-btn--external-link"
                                 role="listitem"
                             >
 
                                     <a id=""
-                                       class="c-global-nav_dropdown-list-link"
+                                       class="c-global-nav_dropdown-list-link c-btn--external-link"
                                        href="https://www.higher-ed.com"
                                        role="link">
                                         Higher Ed (U.S.)
                                     </a>
+
                             </li>
                             <li
-                               class="c-global-nav_dropdown-list-item "
+                               class="c-global-nav_dropdown-list-item c-btn--external-link"
                                 role="listitem"
                             >
 
                                     <a id=""
-                                       class="c-global-nav_dropdown-list-link"
+                                       class="c-global-nav_dropdown-list-link c-btn--external-link"
                                        href="https://www.milady.com"
                                        role="link">
                                         Milady
                                     </a>
+
                             </li>
                             <li
-                               class="c-global-nav_dropdown-list-item "
+                               class="c-global-nav_dropdown-list-item c-btn--external-link"
                                 role="listitem"
                             >
 
                                     <a id=""
-                                       class="c-global-nav_dropdown-list-link"
+                                       class="c-global-nav_dropdown-list-link c-btn--external-link"
                                        href="https://www.nglk-12.com"
                                        role="link">
                                         National Geographic Learning - K12
                                     </a>
+
                             </li>
                             <li
-                               class="c-global-nav_dropdown-list-item "
+                               class="c-global-nav_dropdown-list-item c-btn--external-link"
                                 role="listitem"
                             >
 
                                     <a id=""
-                                       class="c-global-nav_dropdown-list-link"
+                                       class="c-global-nav_dropdown-list-link c-btn--external-link"
                                        href="https://www.nglk-elt.com"
                                        role="link">
                                         National Geographic Learning - ELT
                                     </a>
+
                             </li>
                     </ul>
                 <!-- End dropdown list -->
             </li><!-- END c-global-nav_list-item -->
             <li class="c-global-nav_list-item">
                     <button
-                        id="-tab-btn"
-                        class="c-global-nav_link c-global-nav_tab-btn "
+                        id="change-location-tab-btn"
+                        class="c-global-nav_link c-global-nav_tab-btn c-global-nav_dropdown-list--change-location"
                         data-toggle="tab"
                         role="tab"
-                        aria-controls="-tabpanel"
+                        aria-controls="change-location-tabpanel"
                         aria-selected="false">
                         USA
                             <span class="c-btn_icon c-global-nav_globe-icon">
@@ -170,19 +152,17 @@
                     </button>
 
 
-
-
-                    <ul class="c-global-nav_dropdown-list "
-                        id="-tabpanel"
+                    <ul class="c-global-nav_dropdown-list c-global-nav_dropdown-list--change-location"
+                        id="change-location-tabpanel"
                         tabindex="0"
                         role="tabpanel"
-                        aria-labelledby="-tab-btn"
+                        aria-labelledby="change-location-tab-btn"
                         aria-hidden="true">
                         <button
                                 class="c-global-nav_back-btn"
                                 data-toggle="tab"
                                 role="tab"
-                                aria-controls="-tabpanel"
+                                aria-controls="change-location-tabpanel"
                                 aria-selected="false"
                         >
                             Back
@@ -192,43 +172,477 @@
                                class="c-global-nav_dropdown-list-item "
                                 role="listitem"
                             >
+                                    <h3
+                                        id=""
+                                        class="c-global-nav_dropdown-list-item c-global-nav_dropdown-title "
+                                    >
+
+                                        Change Location
+                                    </h3>
+
 
                             </li>
                             <li
-                               class="c-global-nav_dropdown-list-item "
+                               class="c-global-nav_dropdown-list-item c-global-nav_header--location"
                                 role="listitem"
                             >
+                                    <h4
+                                        id=""
+                                        class="c-global-nav_dropdown-list-item c-global-nav_dropdown-title c-global-nav_header--location"
+                                    >
 
+                                        North American
+                                    </h4>
+
+
+                                <ul class="c-global-nav_list c-global-nav_header--location"
+                                    id="change-location-tabpanel"
+                                    tabindex="0"
+                                    role="tabpanel"
+                                    aria-labelledby="change-location-tab-btn"
+                                    aria-hidden="true">
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="./Leadership"
+                                               role="link">
+                                                Canada
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="link.inclusion-diversity"
+                                               role="link">
+                                                United States
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
+                                               role="link">
+                                                Mexico
+                                            </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li
-                               class="c-global-nav_dropdown-list-item "
+                               class="c-global-nav_dropdown-list-item c-global-nav_header--location"
                                 role="listitem"
                             >
+                                    <h4
+                                        id=""
+                                        class="c-global-nav_dropdown-list-item c-global-nav_dropdown-title c-global-nav_header--location"
+                                    >
 
+                                        South America
+                                    </h4>
+
+
+                                <ul class="c-global-nav_list c-global-nav_header--location"
+                                    id="south-america-tabpanel"
+                                    tabindex="0"
+                                    role="tabpanel"
+                                    aria-labelledby="south-america-tab-btn"
+                                    aria-hidden="true">
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="./Leadership"
+                                               role="link">
+                                                Argentina
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="link.inclusion-diversity"
+                                               role="link">
+                                                Bolivia
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
+                                               role="link">
+                                                Brazil
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_header--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="./Leadership"
+                                               role="link">
+                                                Bahamas
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="link.inclusion-diversity"
+                                               role="link">
+                                                Bermuda
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
+                                               role="link">
+                                                Cuba
+                                            </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li
-                               class="c-global-nav_dropdown-list-item "
+                               class="c-global-nav_dropdown-list-item c-global-nav_header--location"
                                 role="listitem"
                             >
+                                    <h4
+                                        id=""
+                                        class="c-global-nav_dropdown-list-item c-global-nav_dropdown-title c-global-nav_header--location"
+                                    >
 
+                                        Europe
+                                    </h4>
+
+
+                                <ul class="c-global-nav_list c-global-nav_header--location"
+                                    id="caribbean-tabpanel"
+                                    tabindex="0"
+                                    role="tabpanel"
+                                    aria-labelledby="caribbean-tab-btn"
+                                    aria-hidden="true">
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="./Leadership"
+                                               role="link">
+                                                Denmark
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="./link"
+                                               role="link">
+                                                Deutschland
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
+                                               role="link">
+                                                Espana
+                                            </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li
-                               class="c-global-nav_dropdown-list-item "
+                               class="c-global-nav_dropdown-list-item c-global-nav_header--location"
                                 role="listitem"
                             >
+                                    <h4
+                                        id=""
+                                        class="c-global-nav_dropdown-list-item c-global-nav_dropdown-title c-global-nav_header--location"
+                                    >
 
+                                        Middle East &amp; Africa
+                                    </h4>
+
+
+                                <ul class="c-global-nav_list c-global-nav_header--location"
+                                    id="caribbean-tabpanel"
+                                    tabindex="0"
+                                    role="tabpanel"
+                                    aria-labelledby="caribbean-tab-btn"
+                                    aria-hidden="true">
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="./Leadership"
+                                               role="link">
+                                                Afghanestan | افغانستان
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="./link"
+                                               role="link">
+                                                As-Sudan | السودان
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
+                                               role="link">
+                                                Centrafrique | Bêafrîka
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="./Leadership"
+                                               role="link">
+                                                Ityop&#x27;ia | ኢትዮጵያ
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="./link"
+                                               role="link">
+                                                Masr | مصر
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="Monaco"
+                                               role="link">
+                                                Monaco
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="Tchad"
+                                               role="link">
+                                                Tchad | تشاد
+                                            </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li
-                               class="c-global-nav_dropdown-list-item "
+                               class="c-global-nav_dropdown-list-item c-global-nav_header--location"
                                 role="listitem"
                             >
+                                    <h4
+                                        id=""
+                                        class="c-global-nav_dropdown-list-item c-global-nav_dropdown-title c-global-nav_header--location"
+                                    >
 
-                            </li>
-                            <li
-                               class="c-global-nav_dropdown-list-item "
-                                role="listitem"
-                            >
+                                        Asia Pacific + Oceania
+                                    </h4>
 
+
+                                <ul class="c-global-nav_list c-global-nav_header--location"
+                                    id="caribbean-tabpanel"
+                                    tabindex="0"
+                                    role="tabpanel"
+                                    aria-labelledby="caribbean-tab-btn"
+                                    aria-hidden="true">
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="./Leadership"
+                                               role="link">
+                                                Australia
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="./link"
+                                               role="link">
+                                                Bhārat | भारत
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
+                                               role="link">
+                                                Hong Kong | 香港
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="./Leadership"
+                                               role="link">
+                                                Indonesia
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="./link"
+                                               role="link">
+                                                Malaysia
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="Monaco"
+                                               role="link">
+                                                New Zealand | Aotearoa
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="Tchad"
+                                               role="link">
+                                                Nippon-koku | 日本国
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="./link"
+                                               role="link">
+                                                Pilipinas
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="/patterns/pages-category-on-sale/pages-category-on-sale.rendered.html"
+                                               role="link">
+                                                Singapura
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="./south-korea"
+                                               role="link">
+                                                South Korea | 대한민국
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="./link"
+                                               role="link">
+                                                Táiwān | 臺灣/台灣
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="Tonga"
+                                               role="link">
+                                                Tonga
+                                            </a>
+                                    </li>
+                                    <li class="c-global-nav_list-item c-global-nav_link--location"
+                                        id=""
+                                        role="listitem"
+                                    >
+                                            <a id=""
+                                               class="c-global-nav_list-link c-global-nav_link--location"
+                                               href="Tchad"
+                                               role="link">
+                                                Việt Nam
+                                            </a>
+                                    </li>
+                                </ul>
                             </li>
                     </ul>
                 <!-- End dropdown list -->
@@ -236,159 +650,3 @@
     </ul>
 </nav>
 <!-- END GLOBAL Navigation -->
-
-
-<!-- GLOBAL Navigation --
-<nav class="c-global-nav">
-    <ul class="c-global-nav_list">
-        <li class="c-global-nav_list-item">
-            <a class="c-global-nav_link" href="">Contact</a>
-        </li>
-        <li class="c-global-nav_list-item">
-            <button class="c-global-nav_link c-global-nav_tab-btn " role="tab">
-                Global Businesses
-            </button>
-            <ul class="c-global-nav_dropdown-list">
-                <li class="c-global-nav_dropdown-ist-item">
-                    <h3>Cengage Global Businesses</h3>
-                </li>
-                <li class="c-global-nav_dropdown-ist-item">
-                    <a class="_link" href="#">ed2go</a>
-                </li>
-                <li class="c-global-nav_dropdown-ist-item">
-                    <a class="_link" href="#">Gale</a>
-                </li>
-                <li class="c-global-nav_dropdown-ist-item">
-                    <a class="_link" href="#">Higher Ed (International)</a>
-                </li>
-                <li class="c-global-nav_dropdown-ist-item">
-                    <a class="_link" href="#">Higher Ed (U.S.)</a>
-                </li>
-            </ul>
-        </li>
-        <li class="c-global-nav_list-item">
-            <button class="c-global-nav_link c-global-nav_tab-btn " role="tab">
-                USA <span class="c-global-nav_globe-icon">
-                        <svg version="1.1" id="globe-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 22"
-                             style="enable-background:new 0 0 22 22;" xml:space="preserve"
-                        >
-                            <path id="globe-icon-path" d="M11,0c6.1,0,11,4.9,11,11s-4.9,11-11,11S0,17.1,0,11S4.9,0,11,0z M6.1,12l-4,0c0.4,3.7,3.1,6.8,6.7,7.7 C7.2,17.4,6.3,14.8,6.1,12z M19.9,12l-4,0c-0.2,2.8-1.1,5.4-2.7,7.7C16.8,18.8,19.5,15.7,19.9,12z M13.9,12l-5.9,0 c0.3,2.7,1.3,5.3,2.9,7.4C12.7,17.3,13.7,14.7,13.9,12z M8.7,2.3L8.7,2.3c-3.6,0.9-6.3,4-6.7,7.7l4,0C6.3,7.2,7.2,4.6,8.7,2.3z M11,2.6C9.3,4.7,8.3,7.3,8.1,10l5.9,0C13.7,7.3,12.7,4.7,11,2.6z M13.3,2.3l0.2,0.3c1.4,2.2,2.3,4.8,2.5,7.4l4,0 C19.5,6.3,16.8,3.2,13.3,2.3z"/>
-                        </svg>
-                    </span>
-            </button>
-            <ul class="c-global-nav_dropdown-list">
-                <li class="c-global_mega-menu-item c-location-menu_list-item">
-                    <h3 class="c-location-menu_title">
-                        North America
-                    </h3>
-                    <ul class="list">
-                        <li class="c-global-nav_mega-menu-item">
-                            <a class="c-global-nav_mega-menu-link" href="#">
-                                Canada
-                            </a>
-                        </li>
-                        <li class="c-global-nav_mega-menu-item">
-                            <a class="c-global-nav_mega-menu-link" href="#">
-                                United States
-                            </a>
-                        </li>
-                        <li class="c-global-nav_mega-menu-item">
-                            <a class="c-global-nav_mega-menu-link" href="#">
-                                Mexico
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="c-global_mega-menu-item country-list-item">
-                    <h3 class="c-global-nav_mega-menu-link">
-                        South America
-                    </h3>
-                    <ul class="list">
-                        <li class="c-global-nav_mega-menu-item">
-                            <a class="c-global-nav_mega-menu-link" href="#">
-                                Canada
-                            </a>
-                        </li>
-                        <li class="c-global-nav_mega-menu-item">
-                            <a class="c-global-nav_mega-menu-link" href="#">
-                                United States
-                            </a>
-                        </li>
-                        <li class="c-global-nav_mega-menu-item">
-                            <a class="c-global-nav_mega-menu-link" href="#">
-                                Mexico
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="c-global_mega-menu-item country-list-item">
-                    <h3 class="c-global-nav_mega-menu-link">
-                        Europe
-                    </h3>
-                    <ul class="list">
-                        <li class="c-global-nav_mega-menu-item">
-                            <a class="c-global-nav_mega-menu-link" href="#">
-                                Canada
-                            </a>
-                        </li>
-                        <li class="c-global-nav_mega-menu-item">
-                            <a class="c-global-nav_mega-menu-link" href="#">
-                                United States
-                            </a>
-                        </li>
-                        <li class="c-global-nav_mega-menu-item">
-                            <a class="c-global-nav_mega-menu-link" href="#">
-                                Mexico
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="c-global_mega-menu-item country-list-item">
-                    <h3 class="c-global-nav_mega-menu-link">
-                        Middle East
-                    </h3>
-                    <ul class="list">
-                        <li class="c-global-nav_mega-menu-item">
-                            <a class="c-global-nav_mega-menu-link" href="#">
-                                Canada
-                            </a>
-                        </li>
-                        <li class="c-global-nav_mega-menu-item">
-                            <a class="c-global-nav_mega-menu-link" href="#">
-                                United States
-                            </a>
-                        </li>
-                        <li class="c-global-nav_mega-menu-item">
-                            <a class="c-global-nav_mega-menu-link" href="#">
-                                Mexico
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="c-global_mega-menu-item country-list-item">
-                    <h3 class="c-global-nav_mega-menu-link">
-                        Asia Pacific + Oceania
-                    </h3>
-                    <ul class="list">
-                        <li class="c-global-nav_mega-menu-item">
-                            <a class="c-global-nav_mega-menu-link" href="#">
-                                Canada
-                            </a>
-                        </li>
-                        <li class="c-global-nav_mega-menu-item">
-                            <a class="c-global-nav_mega-menu-link" href="#">
-                                United States
-                            </a>
-                        </li>
-                        <li class="c-global-nav_mega-menu-item">
-                            <a class="c-global-nav_mega-menu-link" href="#">
-                                Mexico
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</nav>
--->

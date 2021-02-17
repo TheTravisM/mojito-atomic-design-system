@@ -11,6 +11,10 @@
 // values into our `inuit-font-size()` mixin will generate a rem-based
 // `font-size` with a pixel fallback, as well as generating a `line-height` that
 // will sit on our baseline grid.
+html {
+  min-height: 100vh;
+}
+
 
 body {
   min-height: 100vh;

@@ -13,17 +13,15 @@
 }
 
 .c-global-nav_list-item {
-  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
-//.c-global-nav_list li[class$="list-item"] {
-//  flex: auto;
-//  background-color: #F7F7F7;
-//}
 
 .c-global-nav_link {
   display: flex;
   padding: 0 24px;
+  margin-left: 24px;
   align-items: center;
   font-size: 16px;
   line-height: 40px;
@@ -31,10 +29,13 @@
 }
 
 .c-global-nav_dropdown-list {
+  display: flex;
+  width: 100%;
+  //min-height: 100vh;
+  padding-left: 24px;
+  flex-direction: column;
   top: 0;
   position: absolute;
-  width: 100%;
-  min-height: 100vh;
   background-color: #F7F7F7;
   transform: translateX(100%);
   transition: transform .5s ease-in-out;
@@ -45,7 +46,14 @@
   transform: translateX(0);
 }
 
+.c-global-nav_dropdown-list-item {
+  display: flex;
+  align-items: self-start;
+  flex-direction: column;
+}
+
 .c-global-nav_dropdown-title {
+  margin-bottom: 12px;
   padding-left: 24px;
   font-size: 24px;
   line-height: 38px;
@@ -122,16 +130,6 @@ button.c-global-nav_back-btn {
   }
 }
 
-.c-global-nav_dropdown-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.c-global-nav_dropdown-list-item {
-  display: flex;
-  align-items: center;
-}
-
 .c-global-nav_globe-icon {
   display: flex;
   margin-left: 12px;
@@ -144,7 +142,53 @@ button.c-global-nav_back-btn {
   }
 }
 
-@media (min-width: 576px) {
-  .c-header { }
+#change-location-tabpanel {
+  h3 {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  .c-global-nav_header--location {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 12px;
+  }
+  .c-global-nav_link--location {
+    color: var(--color-primary-blue, #003865);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 12px;
+
+  }
+}
+
+/* -- Nav Order  --*/
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 768px) {
+  // Global
+  .c-global-nav {
+    padding: 0;
+    align-self: flex-end;
+  }
+  #c-global-navigation .c-global-nav_list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .c-global-nav_link,
+  .c-global-nav_dropdown-link {
+    line-height: 40px;
+    height: 40px;
+    padding: 12px;
+    margin-left: 24px;
+    &:hover {
+      background-color: rgba(0, 45, 75, 0.10);
+    }
+  }
+  button.c-global-nav_link::after {
+    margin-left: 12px;
+    transform: rotate(135deg);
+  }
 
 }

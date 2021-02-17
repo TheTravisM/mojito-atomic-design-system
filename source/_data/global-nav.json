@@ -7,13 +7,14 @@
           "id": "contact",
           "button": false,
           "link": true,
-          "style-modifier": "c-global-nav_link--contact" ,
+          "class-modifier": "c-global-nav_link--contact" ,
           "role": "link",
           "url" : "#"
         },
         {
           "listHeader" : "Global Business",
           "id": "global-business",
+          "class-modifier" : "",
           "button": true,
           "link" : false,
           "role": "tab",
@@ -22,43 +23,44 @@
               "label": "Cengage Global Business",
               "id": "cengage-global-business",
               "heading": "true",
-              "style-modifier" : "title?"
+              "heading-level": "h3",
+              "class-modifier" : ""
             },
             {
               "label": "ed2go",
               "url": "https://www.ed2go.com",
               "link" : true,
-              "style-modifier" : "c-btn--external-link"
+              "class-modifier" : "c-btn--external-link"
             },
             {
               "label": "Gale",
               "url": "https://www.gale.com",
               "link" : true,
-              "style-modifier" : "c-btn--external-link"
+              "class-modifier" : "c-btn--external-link"
             },
             {
               "label": "Higher Ed (U.S.)",
               "url": "https://www.higher-ed.com",
               "link" : true,
-              "style-modifier" : "c-btn--external-link"
+              "class-modifier" : "c-btn--external-link"
             },
             {
               "label": "Milady",
               "url": "https://www.milady.com",
               "link" : true,
-              "style-modifier" : "c-btn--external-link"
+              "class-modifier" : "c-btn--external-link"
             },
             {
               "label": "National Geographic Learning - K12",
               "url": "https://www.nglk-12.com",
               "link" : true,
-              "style-modifier" : "c-btn--external-link"
+              "class-modifier" : "c-btn--external-link"
             },
             {
               "label": "National Geographic Learning - ELT",
               "url": "https://www.nglk-elt.com",
               "link" : true,
-              "style-modifier" : "c-btn--external-link"
+              "class-modifier" : "c-btn--external-link"
             }
           ]
         },
@@ -66,44 +68,261 @@
           "listHeader" : "USA",
           "button": true,
           "link" : false,
-          "role": "tab",
+          "id": "change-location",
+          "class-modifier": "c-global-nav_dropdown-list--change-location",
           "icon": true,
           "icon-modifier": "c-global-nav_globe-icon",
           "dropdown-list": [
             {
-              "label": "Press Release",
-              "url": "./about",
-              "role" : "link"
+              "label": "Change Location",
+              "id": "change-location",
+              "heading": "true",
+              "heading-level": "h3",
+              "class-modifier" : ""
             },
             {
-              "label": "In The News",
-              "url": "./Leadership",
-              "role" : "link"
+              "label": "North American",
+              "id": "change-location",
+              "heading": "true",
+              "heading-level": "h4",
+              "class-modifier" : "c-global-nav_header--location",
+              "location-dropdown-list": [
+                {
+                  "label": "Canada",
+                  "url": "./Leadership",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "United States",
+                  "url": "link.inclusion-diversity",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Mexico",
+                  "url": "link.pages-category-on-sale",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                }
+              ]
             },
             {
-              "label": "Awards",
-              "url": "link.inclusion-diversity",
-              "role" : "link"
+              "label": "South America",
+              "id": "south-america",
+              "heading": "true",
+              "heading-level": "h4",
+              "class-modifier" : "c-global-nav_header--location",
+              "location-dropdown-list": [
+                {
+                  "label": "Argentina",
+                  "url": "./Leadership",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Bolivia",
+                  "url": "link.inclusion-diversity",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Brazil",
+                  "url": "link.pages-category-on-sale",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Caribbean",
+                  "id": "caribbean",
+                  "heading": "true",
+                  "heading-level": "h4",
+                  "class-modifier" : "c-global-nav_header--location"
+                },
+                {
+                  "label": "Bahamas",
+                  "url": "./Leadership",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Bermuda",
+                  "url": "link.inclusion-diversity",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Cuba",
+                  "url": "link.pages-category-on-sale",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                }
+              ]
             },
             {
-              "label": "Images For Media",
-              "url": "link.pages-category-on-sale",
-              "role" : "link"
+              "label": "Europe",
+              "id": "caribbean",
+              "heading": "true",
+              "heading-level": "h4",
+              "class-modifier" : "c-global-nav_header--location",
+              "location-dropdown-list": [
+                {
+                  "label": "Denmark",
+                  "url": "./Leadership",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Deutschland",
+                  "url":"./link",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Espana",
+                  "url": "link.pages-category-on-sale",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                }
+              ]
             },
             {
-              "label": "Fact Sheet",
-              "url": "./Leadership",
-              "role" : "link"
+              "label": "Middle East & Africa",
+              "id": "caribbean",
+              "heading": "true",
+              "heading-level": "h4",
+              "class-modifier" : "c-global-nav_header--location",
+              "location-dropdown-list": [
+                {
+                  "label": "Afghanestan | افغانستان",
+                  "url": "./Leadership",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "As-Sudan | السودان",
+                  "url":"./link",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Centrafrique | Bêafrîka",
+                  "url": "link.pages-category-on-sale",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Ityop'ia | ኢትዮጵያ",
+                  "url": "./Leadership",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Masr | مصر",
+                  "url":"./link",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Monaco",
+                  "url": "Monaco",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Tchad | تشاد",
+                  "url": "Tchad",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                }
+              ]
             },
             {
-              "label": "Events",
-              "url": "link.inclusion-diversity",
-              "role" : "link"
-            },
-            {
-              "label": "Contact Information",
-              "url": "link.pages-category-on-sale",
-              "role" : "link"
+              "label": "Asia Pacific + Oceania",
+              "id": "caribbean",
+              "heading": "true",
+              "heading-level": "h4",
+              "class-modifier" : "c-global-nav_header--location",
+              "location-dropdown-list": [
+                {
+                  "label": "Australia",
+                  "url": "./Leadership",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Bhārat | भारत",
+                  "url":"./link",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Hong Kong | 香港",
+                  "url": "link.pages-category-on-sale",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Indonesia",
+                  "url": "./Leadership",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Malaysia",
+                  "url":"./link",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "New Zealand | Aotearoa",
+                  "url": "Monaco",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Nippon-koku | 日本国",
+                  "url": "Tchad",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Pilipinas",
+                  "url":"./link",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Singapura",
+                  "url": "link.pages-category-on-sale",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "South Korea | 대한민국",
+                  "url": "./south-korea",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Táiwān | 臺灣/台灣",
+                  "url":"./link",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Tonga",
+                  "url": "Tonga",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Việt Nam",
+                  "url": "Tchad",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                }
+              ]
             }
           ]
         }
