@@ -69,7 +69,7 @@
           "button": true,
           "link" : false,
           "id": "change-location",
-          "class-modifier": "c-global-nav_dropdown-list--change-location c-global-nav_dropdown-list--active",
+          "class-modifier": "c-global-nav_dropdown-list--change-location",
           "icon": true,
           "icon-modifier": "c-global-nav_globe-icon",
           "dropdown-list": [

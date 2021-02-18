@@ -47,7 +47,7 @@
 --*/
 .c-header_nav-section {
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: auto;
   background-color: #F7F7F7;
   flex-direction: column;
@@ -74,6 +74,7 @@
   }
   .c-header_nav-section {
     background-color: #fff;
+    width: 100vw;
   }
 }
 

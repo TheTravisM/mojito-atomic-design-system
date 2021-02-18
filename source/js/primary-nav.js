@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    let dropdown = $('.c-primary-nav_dropdown');
     let tabBtn = $('.c-primary-nav_tab-btn');
     let backBtn = $('.c-primary-nav_back-btn');
     let tabPanels = $('.c-primary-nav_dropdown-list');

@@ -13,6 +13,7 @@
       "buttonTag": true,
       "linkTag" : false,
       "role": "tab",
+      "dropdown-class": "c-primary-nav_dropdown",
       "dropdown-list": [
         {
           "label": "About Cengage",
@@ -44,6 +45,7 @@
       "buttonTag": true,
       "linkTag" : false,
       "role": "tab",
+      "dropdown-class": "c-primary-nav_dropdown",
       "dropdown-list": [
         {
           "label": "Press Release",
@@ -87,6 +89,7 @@
       "buttonTag": true,
       "linkTag" : false,
       "role": "tab",
+      "dropdown-class": "c-primary-nav_dropdown",
       "dropdown-list": [
         {
           "label": "Presentations",

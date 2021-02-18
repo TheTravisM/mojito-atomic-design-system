@@ -2,11 +2,10 @@
 <script src="../../js/primary-nav.js"></script>
 
 <!-- Header Navigation-->
-<nav id="c-primary-navigation" class="c-primary-nav">
+<nav id="primary-navigation" class="c-primary-nav" aria-label="main">
     <ul class="c-primary-nav_list">
     {{# PrimaryNavigation }}
-        <!-- About -->
-        <li class="c-primary-nav_list-item">
+        <li class="c-primary-nav_list-item {{ dropdown-class }}">
             {{#if buttonTag }}
                 <button
                     id="{{ listHeader }}-tab-btn"
