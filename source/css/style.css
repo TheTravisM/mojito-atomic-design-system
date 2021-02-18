@@ -3041,8 +3041,8 @@ a.c-btn--text[href$=".mp4"]:after {
   overflow: hidden;
   margin: 10px 38px 10px 0;
   padding: 10px;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 /*--
@@ -3450,7 +3450,7 @@ button.c-primary-nav_link::after {
   position: absolute;
   background-color: #F7F7F7;
   transform: translateX(100%);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.25s ease-in-out;
   z-index: 1;
 }
 
@@ -3663,6 +3663,26 @@ button.c-global-nav_link::after {
     flex-direction: column;
   }
 }
+.c-breadcrumb {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.c-breadcrumb_list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+.c-breadcrumb_list li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/ ";
+}
+
 /* -- ------------  -- */
 /* -- [ UTILITIES ] -- */
 /* -- ------------  -- */

@@ -1,0 +1,20 @@
+.c-breadcrumb {
+  display: flex;
+  justify-content:left;
+  width: 100%;
+  margin: 12px 0;
+}
+.c-breadcrumb_list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.c-breadcrumb_link { }
+.c-breadcrumb_label { }
+
+/* Add a slash symbol (/) before/behind each list item */
+.c-breadcrumb_list li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
