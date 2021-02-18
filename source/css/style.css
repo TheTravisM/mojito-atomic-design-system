@@ -2950,8 +2950,10 @@ a.c-btn--text[href$=".mp4"]:after {
 .c-header {
   display: flex;
   height: auto;
-  flex-direction: column;
+  justify-content: center;
   position: relative;
+  background-color: #fff;
+  z-index: 1000;
 }
 
 .c-header--active {
@@ -2963,6 +2965,7 @@ a.c-btn--text[href$=".mp4"]:after {
   display: flex;
   flex-direction: column;
   position: relative;
+  max-width: 1080px;
 }
 
 .c-header--active .c-header_container {
@@ -3040,12 +3043,34 @@ a.c-btn--text[href$=".mp4"]:after {
   transition: 0.5s ease-in-out;
 }
 
+/*--
 .c-header_nav-section {
   display: flex;
+  flex-direction: column;
+  flex: auto;
+  position: relative;
   width: 100vw;
+  height: 0;
+  min-height: 0;
+  max-height: 0;
+  background-color: #F7F7F7;
+  //overflow: hidden;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  .c-global-nav { order: 2; }
+  .c-primary-nav { order: 1; }
+}
+.c-header_nav-section--active {
   min-height: 100%;
   height: auto;
   max-height: 100%;
+
+}
+--*/
+.c-header_nav-section {
+  display: flex;
+  width: 100vw;
+  height: auto;
   background-color: #F7F7F7;
   flex-direction: column;
   flex: auto;
@@ -3062,12 +3087,14 @@ a.c-btn--text[href$=".mp4"]:after {
 
 .c-header_nav-section[aria-hidden=true] {
   height: 0;
-  min-height: 0;
-  max-height: 0;
   overflow: hidden;
 }
 
 @media (min-width: 768px) {
+  #header-nav-tabpanel {
+    height: auto;
+    overflow: visible;
+  }
   #header-nav-tabpanel .c-global-nav {
     order: 1;
   }
@@ -3226,7 +3253,7 @@ span.header-nav-toggle-btn_icon {
   z-index: 1;
 }
 
-.c-primary-nav_dropdown-list[aria-hidden=false] {
+.c-primary-nav_dropdown-list--active {
   transform: translateX(0);
 }
 
@@ -3322,6 +3349,10 @@ button.c-primary-nav_link::after {
     display: none;
   }
 
+  .c-primary-nav_list-item {
+    position: relative;
+  }
+
   .c-primary-nav_list li[class$=list-item] {
     background-color: #FFF;
   }
@@ -3329,23 +3360,59 @@ button.c-primary-nav_link::after {
   .c-primary-nav_dropdown-list {
     min-height: auto;
     height: auto;
+    min-width: 245px;
     width: auto;
-    padding-left: 0;
+    padding: 12px 0;
     box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.1);
-    transform-origin: top center;
+    transform: translateY(-100%);
+    left: 0;
+    top: 0;
+    z-index: -1;
   }
 
-  .c-primary-nav_link,
-.c-primary-nav_dropdown-link {
+  .c-primary-nav_dropdown-list:hover,
+.c-primary-nav_dropdown-list--active {
+    top: 40px;
+    height: auto;
+    transform: translateY(0);
+  }
+
+  .c-primary-nav_link {
     line-height: 40px;
     height: 40px;
     color: var(--color-almost-black, #1D1D1E);
     padding: 12px;
     margin-left: 24px;
   }
-  .c-primary-nav_link:hover,
-.c-primary-nav_dropdown-link:hover {
+  .c-primary-nav_link:hover {
     background-color: rgba(0, 45, 75, 0.1);
+  }
+
+  .c-primary-nav_tab-btn:hover,
+.c-primary-nav_tab-btn--active {
+    background-color: rgba(0, 45, 75, 0.1);
+  }
+
+  ul.c-primary-nav_dropdown-list {
+    transform: scaleY(0.1);
+    transform-origin: top center;
+    z-index: -1;
+  }
+
+  .c-primary-nav_tab-btn:hover + ul.c-primary-nav_dropdown-list {
+    background-color: red !important;
+    transform: scaleY(1);
+  }
+
+  .c-primary-nav_dropdown-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    height: auto;
+    padding: 12px 24px;
+  }
+  .c-primary-nav_dropdown-link:hover {
+    color: var(--color-almost-black, #1D1D1E);
   }
 
   button.c-primary-nav_link::after {
@@ -3442,7 +3509,7 @@ button.c-global-nav_link::after {
   transform: rotate(45deg);
 }
 
-button.c-global-nav_back-btn {
+.c-global-nav_back-btn {
   position: relative;
   display: flex;
   height: 40px;
@@ -3453,7 +3520,7 @@ button.c-global-nav_back-btn {
   font-size: 14px;
   line-height: 40px;
 }
-button.c-global-nav_back-btn::before {
+.c-global-nav_back-btn::before {
   content: "";
   display: inline-block;
   width: 40px;
@@ -3463,7 +3530,7 @@ button.c-global-nav_back-btn::before {
   border-width: 0 0 2px 0;
   border-color: var(--color-primary-blue, #003865);
 }
-button.c-global-nav_back-btn::after {
+.c-global-nav_back-btn::after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -3518,21 +3585,84 @@ button.c-global-nav_back-btn::after {
     flex-direction: row;
   }
 
-  .c-global-nav_link,
-.c-global-nav_dropdown-link {
+  .c-global-nav_back-btn {
+    display: none;
+  }
+
+  .c-global-nav_list-item {
+    position: relative;
+  }
+
+  .c-global-nav_dropdown-list {
+    min-height: auto;
+    height: auto;
+    min-width: 495px;
+    width: auto;
+    padding: 12px 0;
+    box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    right: 0;
+    top: 0;
+  }
+
+  .c-global-nav_dropdown-list:hover,
+.c-global-nav_dropdown-list--active {
+    top: 40px;
+    height: auto;
+    transform: translateY(0);
+  }
+
+  .c-global-nav_link {
+    line-height: 40px;
+    height: 40px;
+    color: var(--color-almost-black, #1D1D1E);
+    padding: 12px;
+    margin-left: 24px;
+  }
+  .c-global-nav_link:hover {
+    background-color: rgba(0, 45, 75, 0.1);
+  }
+
+  .c-global-nav_tab-btn:hover,
+.c-global-nav_tab-btn--active {
+    background-color: rgba(0, 45, 75, 0.1);
+  }
+
+  .c-global-nav_dropdown-link {
     line-height: 40px;
     height: 40px;
     padding: 12px;
     margin-left: 24px;
   }
-  .c-global-nav_link:hover,
-.c-global-nav_dropdown-link:hover {
+  .c-global-nav_dropdown-link:hover {
     background-color: rgba(0, 45, 75, 0.1);
   }
 
   button.c-global-nav_link::after {
     margin-left: 12px;
     transform: rotate(135deg);
+  }
+
+  #change-location-tabpanel {
+    padding: 35px 0 24px 90px;
+    display: grid;
+    right: 0;
+    width: 1068px;
+    max-width: 100vw;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 250px);
+  }
+
+  #change-location-tabpanel h3 {
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 51px;
+    grid-column: 1/span 3;
+    grid-row: 1;
+  }
+
+  #change-location-tabpanel .c-global-nav_list {
+    flex-direction: column;
   }
 }
 /* -- ------------  -- */

@@ -51,7 +51,7 @@
                         </button>
                         {{# dropdown-list }}
                             <li
-                               class="c-global-nav_dropdown-list-item {{ class-modifier }}"
+                               class="c-global-nav_dropdown-list-item"
                                 role="listitem"
                             >
                                 {{# if heading}}
@@ -74,29 +74,29 @@
                                 {{/if}}
 
                                 {{#if location-dropdown-list }}
-                                <ul class="c-global-nav_list {{ class-modifier }}"
-                                    id="{{ id }}-tabpanel"
-                                    tabindex="0"
-                                    role="tabpanel"
-                                    aria-labelledby="{{ id }}-tab-btn"
-                                    aria-hidden="true">
-                                    {{# location-dropdown-list }}
-                                    <li class="c-global-nav_list-item {{ class-modifier }}"
-                                        id=""
-                                        role="listitem"
-                                    >
-                                        {{#if link}}
-                                            <a id="{{ id }}"
-                                               class="c-global-nav_list-link {{ class-modifier }}"
-                                               href="{{url}}"
-                                               role="link">
-                                                {{ label }}
-                                            </a>
-                                        {{/if}}
-                                    </li>
-                                    {{/ location-dropdown-list }}
-                                </ul>
-                                {{/if}}
+                                    <ul id="{{ id }}"
+                                        class="c-global-nav_list {{ class-modifier }}"
+                                        tabindex="0"
+                                        role="tabpanel"
+                                        aria-labelledby="{{ id }}-tab-btn"
+                                        aria-hidden="true">
+                                        {{# location-dropdown-list }}
+                                        <li class="c-global-nav_list-item {{ class-modifier }}"
+                                            id=""
+                                            role="listitem"
+                                        >
+                                            {{#if link}}
+                                                <a id="{{ id }}"
+                                                   class="c-global-nav_list-link {{ class-modifier }}"
+                                                   href="{{url}}"
+                                                   role="link">
+                                                    {{ label }}
+                                                </a>
+                                            {{/if}}
+                                        </li>
+                                        {{/ location-dropdown-list }}
+                                    </ul>
+                                {{/if}} <!--location-dropdown-list-->
                             </li>
                         {{/ dropdown-list }}
                     </ul>

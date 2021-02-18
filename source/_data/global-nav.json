@@ -24,7 +24,7 @@
               "id": "cengage-global-business",
               "heading": "true",
               "heading-level": "h3",
-              "class-modifier" : ""
+              "class-modifier" : "c-global-nav_dropdown-title--global-business"
             },
             {
               "label": "ed2go",
@@ -69,7 +69,7 @@
           "button": true,
           "link" : false,
           "id": "change-location",
-          "class-modifier": "c-global-nav_dropdown-list--change-location",
+          "class-modifier": "c-global-nav_dropdown-list--change-location c-global-nav_dropdown-list--active",
           "icon": true,
           "icon-modifier": "c-global-nav_globe-icon",
           "dropdown-list": [
@@ -82,7 +82,7 @@
             },
             {
               "label": "North American",
-              "id": "change-location",
+              "id": "north-american-location",
               "heading": "true",
               "heading-level": "h4",
               "class-modifier" : "c-global-nav_header--location",
@@ -109,7 +109,7 @@
             },
             {
               "label": "South America",
-              "id": "south-america",
+              "id": "south-america-location",
               "heading": "true",
               "heading-level": "h4",
               "class-modifier" : "c-global-nav_header--location",
@@ -133,26 +133,38 @@
                   "class-modifier" : "c-global-nav_link--location"
                 },
                 {
-                  "label": "Caribbean",
+                  "label": "Chile",
                   "id": "caribbean",
                   "heading": "true",
                   "heading-level": "h4",
                   "class-modifier" : "c-global-nav_header--location"
                 },
                 {
-                  "label": "Bahamas",
+                  "label": "Costa Rica",
                   "url": "./Leadership",
                   "link":"true",
                   "class-modifier" : "c-global-nav_link--location"
                 },
                 {
-                  "label": "Bermuda",
+                  "label": "El Salvador",
                   "url": "link.inclusion-diversity",
                   "link":"true",
                   "class-modifier" : "c-global-nav_link--location"
                 },
                 {
-                  "label": "Cuba",
+                  "label": "Equador",
+                  "url": "link.pages-category-on-sale",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Guyana",
+                  "url": "link.inclusion-diversity",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Peru",
                   "url": "link.pages-category-on-sale",
                   "link":"true",
                   "class-modifier" : "c-global-nav_link--location"
@@ -161,7 +173,7 @@
             },
             {
               "label": "Europe",
-              "id": "caribbean",
+              "id": "europe-location",
               "heading": "true",
               "heading-level": "h4",
               "class-modifier" : "c-global-nav_header--location",
@@ -183,12 +195,72 @@
                   "url": "link.pages-category-on-sale",
                   "link":"true",
                   "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "France",
+                  "url":"./link",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Italia",
+                  "url": "link.pages-category-on-sale",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Liecthenstein",
+                  "url":"./link",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Nederland",
+                  "url": "link.pages-category-on-sale",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Norge",
+                  "url":"./link",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Österreich",
+                  "url": "link.pages-category-on-sale",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Portugal",
+                  "url":"./link",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Sverige",
+                  "url": "link.pages-category-on-sale",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "Schweiz",
+                  "url":"./link",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
+                },
+                {
+                  "label": "United Kingdom",
+                  "url": "link.pages-category-on-sale",
+                  "link":"true",
+                  "class-modifier" : "c-global-nav_link--location"
                 }
               ]
             },
             {
               "label": "Middle East & Africa",
-              "id": "caribbean",
+              "id": "middle-east-&-africa",
               "heading": "true",
               "heading-level": "h4",
               "class-modifier" : "c-global-nav_header--location",
@@ -239,7 +311,7 @@
             },
             {
               "label": "Asia Pacific + Oceania",
-              "id": "caribbean",
+              "id": "asia-pacific-oceania-location",
               "heading": "true",
               "heading-level": "h4",
               "class-modifier" : "c-global-nav_header--location",
