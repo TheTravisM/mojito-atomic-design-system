@@ -28,7 +28,6 @@
 		},
 		{
 			"styleModifier": "c-btn--text",
-			"buttonTag": true,
 			"buttonText": "Button"
 		}
     ]

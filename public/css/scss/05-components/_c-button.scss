@@ -27,16 +27,18 @@
 
 .c-btn--homepage,
 .c-btn--homepage:visited {
+  padding: 0 105px 0 0;
   &:hover, &:focus {
     background: none;
+    padding: 0 90px 0 15px;
   }
   &::after {
     position: absolute;
-    right: -48px;
+    right: 13px;
     top: 16px;
-    content: "→";
-    height: 16px;
-    width: 48px;
+    //content: ">";
+    height: 2px;
+    width: 62px;
     border-bottom: 2px solid var(--color-spearmint, #81B39B);
     text-align: right;
   }
@@ -47,40 +49,43 @@
     height: 34px;
     width: 35px;
     position: absolute;
-    right: -64px;
+    right: 0;
     border: 2px solid var(--color-spearmint, #81B39B);
   }
   &:hover::before {
     height: 100%;
-    width: calc(100% + 64px);
+    width: 100%;
   }
 }
 
 .c-btn--primary,
 .c-btn--primary:visited {
+  padding: 0 51px 0 0;
   &:hover, &:focus {
+    padding: 0 36px 0 15px;
     background: none;
     color: var(--color-terra-cotta, #E07A5F);
     border-color: var(--color-terra-cotta, #E07A5F);
   }
   &::after {
-    content: "→";
+    content: "";
     position: absolute;
-    right: -16px;
-    height: 16px;
+    right: 11px;
+    top: 16px;
+    height: 2px;
     width: 16px;
     border-bottom: 2px solid var(--color-spearmint, #81B39B);
   }
   &::before {
     content: "";
     position: absolute;
-    right: -32px;
+    right: 0;
     height: 34px;
     width: 35px;
     border: 2px solid var(--color-spearmint, #81B39B);
   }
   &:hover::before {
-    width: calc(100% + 32px);
+    width: 100%;
     transition: all .5s ease-out;
   }
 }

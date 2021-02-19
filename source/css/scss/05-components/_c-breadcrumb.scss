@@ -9,12 +9,12 @@
   flex-direction: row;
   width: 100%;
 }
+.c-breadcrumb_list-item { }
 .c-breadcrumb_link { }
 .c-breadcrumb_label { }
 
 /* Add a slash symbol (/) before/behind each list item */
-.c-breadcrumb_list li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
+.c-breadcrumb_list .c-breadcrumb_list-item+.c-breadcrumb_list-item:before {
+  padding: 0 6px 0 8px;
+  content: "/";
 }

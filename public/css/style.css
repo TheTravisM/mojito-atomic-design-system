@@ -2650,19 +2650,23 @@ span.incorrect {
   transition: all 0.5s ease-out;
 }
 
+.c-btn--homepage,
+.c-btn--homepage:visited {
+  padding: 0 105px 0 0;
+}
 .c-btn--homepage:hover, .c-btn--homepage:focus,
 .c-btn--homepage:visited:hover,
 .c-btn--homepage:visited:focus {
   background: none;
+  padding: 0 90px 0 15px;
 }
 .c-btn--homepage::after,
 .c-btn--homepage:visited::after {
   position: absolute;
-  right: -48px;
+  right: 13px;
   top: 16px;
-  content: "→";
-  height: 16px;
-  width: 48px;
+  height: 2px;
+  width: 62px;
   border-bottom: 2px solid var(--color-spearmint, #81B39B);
   text-align: right;
 }
@@ -2673,28 +2677,34 @@ span.incorrect {
   height: 34px;
   width: 35px;
   position: absolute;
-  right: -64px;
+  right: 0;
   border: 2px solid var(--color-spearmint, #81B39B);
 }
 .c-btn--homepage:hover::before,
 .c-btn--homepage:visited:hover::before {
   height: 100%;
-  width: calc(100% + 64px);
+  width: 100%;
 }
 
+.c-btn--primary,
+.c-btn--primary:visited {
+  padding: 0 51px 0 0;
+}
 .c-btn--primary:hover, .c-btn--primary:focus,
 .c-btn--primary:visited:hover,
 .c-btn--primary:visited:focus {
+  padding: 0 36px 0 15px;
   background: none;
   color: var(--color-terra-cotta, #E07A5F);
   border-color: var(--color-terra-cotta, #E07A5F);
 }
 .c-btn--primary::after,
 .c-btn--primary:visited::after {
-  content: "→";
+  content: "";
   position: absolute;
-  right: -16px;
-  height: 16px;
+  right: 11px;
+  top: 16px;
+  height: 2px;
   width: 16px;
   border-bottom: 2px solid var(--color-spearmint, #81B39B);
 }
@@ -2702,14 +2712,14 @@ span.incorrect {
 .c-btn--primary:visited::before {
   content: "";
   position: absolute;
-  right: -32px;
+  right: 0;
   height: 34px;
   width: 35px;
   border: 2px solid var(--color-spearmint, #81B39B);
 }
 .c-btn--primary:hover::before,
 .c-btn--primary:visited:hover::before {
-  width: calc(100% + 32px);
+  width: 100%;
   transition: all 0.5s ease-out;
 }
 
@@ -2895,6 +2905,7 @@ a.c-btn--text[href$=".mp4"]:after {
 
 .c-footer-nav_list {
   display: grid;
+  grid-template-rows: masonry;
   justify-content: start;
   width: 100%;
   grid-gap: 16px;
@@ -2920,6 +2931,9 @@ a.c-btn--text[href$=".mp4"]:after {
   font-size: 14px;
   line-height: 40px;
   position: relative;
+}
+.c-footer-nav_link:hover, .c-footer-nav_link:focus, .c-footer-nav_link:active {
+  color: var(--color-almost-black, #1D1D1E);
 }
 
 .c-footer-nav_link[href^="#"] {
@@ -3677,10 +3691,9 @@ button.c-global-nav_link::after {
 }
 
 /* Add a slash symbol (/) before/behind each list item */
-.c-breadcrumb_list li + li:before {
-  padding: 8px;
-  color: black;
-  content: "/ ";
+.c-breadcrumb_list .c-breadcrumb_list-item + .c-breadcrumb_list-item:before {
+  padding: 0 6px 0 8px;
+  content: "/";
 }
 
 /* -- ------------  -- */

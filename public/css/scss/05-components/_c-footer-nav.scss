@@ -10,6 +10,7 @@
 
 .c-footer-nav_list {
   display: grid;
+  grid-template-rows: masonry;
   justify-content: start;
   width: 100%;
   grid-gap: 16px;
@@ -35,7 +36,15 @@
   font-size: 14px;
   line-height: 40px;
   position: relative;
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-almost-black, #1D1D1E);
+  }
 }
+
+.c-footer-nav_link:hover,
+.c-footer-nav_link:focus { }
 
 .c-footer-nav_link[href^="#"] {
   color: lime;
