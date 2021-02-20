@@ -1,0 +1,28 @@
+/* -- ---------------------  -- */
+/* -- UTILITIES : VISIBILITY -- */
+/* -- ---------------------  -- */
+/**
+ * Is Visibly Hidden
+ * 1) Completely remove from the flow but leave available to screen readers.
+ */
+.u-screen-reader-text {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  word-wrap: normal !important;
+}
+
+/**
+ * Is Hidden
+ * 1) Completely remove from the flow and screen readers.
+ */
+.u-hidden {
+  display: none !important;
+  visibility: hidden !important;
+}

@@ -1,0 +1,127 @@
+
+/* -- ----------------------  -- */
+/* -- [ UTILITIES : MARGIN ] -- */
+/* -- ---------------------  -- */
+
+.u-margin--0 {
+  margin: var(--spacing-0, 0px);
+}
+.u-margin--extra-small {
+  margin: var(--spacing-extra-small, 8px);
+}
+.u-margin--small {
+  margin: var(--spacing-small, 16px);
+}
+.u-margin--medium {
+  margin: var(--spacing-medium, 32px);
+}
+.u-margin--large {
+  margin: var(--spacing-large, 72px);
+}
+.u-margin--extra-large {
+  margin: var(--spacing-extra-large, 120px);
+}
+
+/*-- Margin Auto --*/
+.u-margin-auto { margin-left: auto; margin-right: auto; }
+
+.u-margin-left { margin-left: auto; };
+
+.u-margin-right { margin-right: auto; };
+
+/*-- Margin Top --*/
+.u-margin-top--0 {
+  margin-bottom: var(--spacing-0, 0px);
+}
+
+.u-margin-top--extra-small {
+  margin-bottom: var(--spacing-extra-small, 8px);
+}
+
+.u-margin-top--small {
+  margin-bottom: var(--spacing-small, 16px);
+}
+
+.u-margin-top--medium {
+  margin-bottom: var(--spacing-medium, 32px);
+}
+
+.u-margin-top--large {
+  margin-bottom: var(--spacing-large, 72px);
+}
+
+.u-margin-top--extra-large {
+  margin-bottom: var(--spacing-extra-large, 120px);
+}
+/*-- Margin Bottom --*/
+.u-margin-bottom--0 {
+  margin-bottom: var(--spacing-0, 0px);
+}
+
+.u-margin-bottom--extra-small {
+  margin-bottom: var(--spacing-extra-small, 8px);
+}
+
+.u-margin-bottom--small {
+  margin-bottom: var(--spacing-small, 16px);
+}
+
+.u-margin-bottom--medium {
+  margin-bottom: var(--spacing-medium, 32px);
+}
+
+.u-margin-bottom--large {
+  margin-bottom: var(--spacing-large, 72px);
+}
+
+.u-margin-bottom--extra-large {
+  margin-bottom: var(--spacing-extra-large, 120px);
+}
+/*-- Margin Left --*/
+.u-margin-left--0 {
+  margin-bottom: var(--spacing-0, 0px);
+}
+
+.u-margin-left--extra-small {
+  margin-bottom: var(--spacing-extra-small, 8px);
+}
+
+.u-margin-left--small {
+  margin-bottom: var(--spacing-small, 16px);
+}
+
+.u-margin-left--medium {
+  margin-bottom: var(--spacing-medium, 32px);
+}
+
+.u-margin-left--large {
+  margin-bottom: var(--spacing-large, 72px);
+}
+
+.u-margin-left--extra-large {
+  margin-bottom: var(--spacing-extra-large, 120px);
+}
+/*-- Margin Right --*/
+.u-margin-right--0 {
+  margin-bottom: var(--spacing-0, 0px);
+}
+
+.u-margin-right--extra-small {
+  margin-bottom: var(--spacing-extra-small, 8px);
+}
+
+.u-margin-right--small {
+  margin-bottom: var(--spacing-small, 16px);
+}
+
+.u-margin-right--medium {
+  margin-bottom: var(--spacing-medium, 32px);
+}
+
+.u-margin-right--large {
+  margin-bottom: var(--spacing-large, 72px);
+}
+
+.u-margin-right--extra-large {
+  margin-bottom: var(--spacing-extra-large, 120px);
+}

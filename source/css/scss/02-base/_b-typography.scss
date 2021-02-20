@@ -1,0 +1,144 @@
+/* --  -----------------------  -- */
+/* -- [ ELEMENTS : TYPOGRAPHY ] -- */
+/* --  -----------------------  -- */
+/**
+ * Simple default styles for headings 1 through 6. Anything more opinionated
+ * than simple font-size changes should likely be applied via classes (see:
+ * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
+ */
+
+// We have all of our heading font sizes defined here. Passing these pixel
+// values into our `inuit-font-size()` mixin will generate a rem-based
+// `font-size` with a pixel fallback, as well as generating a `line-height` that
+// will sit on our baseline grid.
+html {
+  min-height: 100vh;
+}
+
+
+body {
+  min-height: 100vh;
+  color: var(--color-almost-black, #1D1D1E);
+  font-family: var(--font-family-primary);
+  font-family: 'Work Sans', 'HelveticaNeue', 'Helvetica Neue',Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-rendering: optimizeLegibility;
+}
+
+.serif {
+  font-family: 'Cordale', serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile First Typography */
+
+h1, .h1 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+
+}
+
+h2, .h2 {
+  font-size: 32px;
+  line-height: 50px;
+  font-weight: 600;
+
+}
+
+h3, .h3 {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 600;
+
+}
+
+h4, .h4 {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 600;
+
+}
+
+h5, .h5 {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 600;
+
+}
+
+p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+a {
+  color: var(--color-almost-black, #1D1D1E);
+  text-decoration: none;
+}
+
+b,
+strong{
+  font-weight: 700;
+}
+
+label {
+  font-size: 14px;
+  line-height: 40px;
+}
+blockquote {
+  padding-left: 16px;
+  margin-bottom: 16px;
+}
+
+span.correct {
+  color: var(--color-success-text, #4a7628);
+}
+
+span.incorrect {
+  color: var(--color-error-text, #b10f00);
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  h1, .h1 {
+    font-size: 95px;
+    line-height: 153px;
+  }
+
+  h2, .h2 {
+    font-size: 76px;
+    line-height: 89px;
+  }
+
+  h3, .h3 {
+    font-size: 56px;
+    line-height: 90px;
+  }
+
+  h4, .h4 {
+    font-size: 40px;
+    line-height: 64px;
+  }
+
+  h5, .h5 {
+    font-size: 32px;
+    line-height: 51px;
+  }
+
+  h6, .h6 {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+
+}

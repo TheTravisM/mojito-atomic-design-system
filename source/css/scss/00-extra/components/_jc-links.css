@@ -1,0 +1,47 @@
+/* -- Links -- */
+
+/* stylelint-disable */
+a {
+	color: var(--color-link);
+}
+/* stylelint-enable */
+
+a:visited {
+	color: var(--color-link-visited);
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: var(--color-link-active);
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+.jc-link {
+	text-decoration: none;
+}
+
+.jc-link--prime,
+.jc-link--prime:visited {
+	color: var(--jc-color-red-500, #F5424B); /* Red 500 */
+	text-decoration: none;
+}
+
+.jc-link--prime:hover,
+.jc-link--prime:focus,
+.jc-link--prime:active {
+	color: var(--jc-color-red-700, #C30009); /* Red 700 */
+}
+
+.jc-link--prime:focus {
+	outline: thin dotted var(--jc-color-red-700, #C30009); /* Red 700 */
+}
+

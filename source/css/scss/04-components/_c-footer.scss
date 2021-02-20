@@ -1,0 +1,95 @@
+
+/* -- -----------------  -- */
+/* -- [ COMPONENTS : FOOT ] -- */
+/* -- ----------------  -- */
+
+.c-global-footer {
+  display: grid;
+  padding: 51px 22px 0 22px;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  width: 100%;
+  font-size: 14px;
+  color: var(--color-primary-blue, #003865);
+}
+
+
+.c-global-footer_container {
+  display: grid;
+  width: 100%;
+  max-width: 1081px;
+  grid-template-areas:
+    "logo"
+    "nav"
+    "aside";
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+}
+
+.c-logo--footer {
+  grid-area: logo;
+  margin-bottom: 60px;
+}
+.c-footer-nav {
+  grid-area: nav;
+  margin-bottom: 24px;
+}
+
+.c-footer-bottom {
+  //grid-area: aside;
+  //display: grid;
+  //grid-template-areas:
+  //  "footer-social"
+  //  "footer-hr"
+  //  "footer-copyright";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.footer_hr {
+  flex: 1 100%;
+  border-top: 1px solid #E1E7E8;
+  width: 100%;
+  margin-bottom: 24px;
+
+}
+
+.c-footer_copyright {
+  flex: 1 100%;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.c-social-list {
+  flex: 1 100%;
+  display: grid;
+  grid-gap: 7px;
+  grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
+  margin-bottom: 24px;
+
+}
+
+/* -- Nav Order  --*/
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .c-footer-bottom {
+    flex-direction: row;
+  }
+  .footer_hr {
+    order: 1;
+  }
+  .c-footer_copyright {
+    order: 2;
+    flex: auto;
+  }
+  .c-social-list {
+    order: 3;
+    max-width: 343px;
+  }
+}
+
+
+

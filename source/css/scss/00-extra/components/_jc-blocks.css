@@ -1,0 +1,53 @@
+/* -- Blocks -- */
+
+.jc-block-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	justify-content: space-around;
+	justify-items: center;
+	align-items: center;
+	max-width: 960px;
+	width: 100%;
+}
+
+.jc-block {
+	display: flex;
+	margin: 20px;
+}
+
+.jc-block_img {
+
+}
+
+.jc-block-list--appeared-on .jc-block_img {
+	width: auto;
+	height: auto;
+}
+
+.jc-block_img--abc {
+	max-height: 52px;
+	max-width: 53px;
+}
+
+.jc-block_img--espn {
+	max-height: 40px;
+	max-width: 90px;
+}
+
+.jc-block_img--ironman {
+	max-width: 126px;
+	max-height: 32px;
+}
+
+.jc-block_img--muscle-fitness {
+	max-width: 140px;
+	max-height: 43px;
+}
+
+.jc-block_img--nbc {
+	max-height: 56px;
+	max-width: 57px;
+}
+

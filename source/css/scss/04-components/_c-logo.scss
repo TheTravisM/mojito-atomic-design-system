@@ -1,0 +1,47 @@
+
+/* -- -----------------  -- */
+/* -- [ COMPONENTS : LOGO -- */
+/* -- ----------------  -- */
+
+
+
+.c-logo { }
+.c-logo--header {
+    line-height: 0;
+    a {
+        padding: 24px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .c-logo_svg {
+        width: 175px;
+        height: 40px;
+        path {
+            fill: var(--color-almost-black, #1D1D1E);
+        }
+    }
+}
+.c-logo--footer {
+    .c-logo_svg {
+        width: 202px;
+        height: 44px;
+        path {
+            fill: var(--color-primary-blue, #003865);
+        }
+    }
+}
+
+/* Desktop and Up */
+@media (min-width: 576px) {
+    .c-logo--header {
+        .c-logo_svg {
+
+        }
+    }
+    .c-logo--footer {
+        .c-logo_svg {
+
+        }
+    }
+}

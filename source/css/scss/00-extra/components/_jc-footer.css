@@ -1,0 +1,107 @@
+/*--------------------------------------------------------------
+# JC - Footer
+--------------------------------------------------------------*/
+
+.jc-footer {
+	/* --  For now */
+	grid-column: span 2;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	flex-direction: column;
+	background: #F1F1F1;
+	background: var(--jc-color-gray-100, #F1F1F1); /* Grey 100 */
+	font-size: 18px;
+	line-height: 28px;
+	color: #686868; /* Grey 600 */
+	color: var(--jc-color-gray-600, #686868); /* Grey 600 */
+	width: 100%;
+	max-width: 100vw;
+	margin: 0 auto;
+}
+
+.jc-footer_container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 48px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+/*.jc-footer::before,*/
+/*.jc-footer::after {*/
+/*	content: "";*/
+/*	height: 100%;*/
+/*	background: var(--jc-color-gray-100, #F1F1F1); !* Grey 100 *!*/
+/*	left: -50%;*/
+/*	width: 100%;*/
+/*	position: absolute;*/
+/*	z-index: -1;*/
+/*	top: 0;*/
+/*}*/
+
+/*.jc-footer::after {*/
+/*	left: initial;*/
+/*	right: -50%;*/
+/*}*/
+
+.jc-footer-nav {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: start;
+}
+
+.jc-footer-nav_ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	width: 348px;
+	margin: 0;
+	padding: 0;
+}
+
+.jc-footer-nav_li {
+	display: inline-flex;
+}
+
+.jc-footer-nav_link,
+.jc-footer-nav_link:visited {
+	font-family: Overpass;
+	font-size: 18px;
+	height: 28px;
+	margin: 16px;
+	color: #686868; /* Grey 600 */
+	color: var(--jc-color-gray-600, #686868);  /* Grey 600 */
+	text-decoration: none;
+	align-items: center;
+	justify-content: left;
+}
+
+.jc-footer-nav_link:hover,
+.jc-footer-nav_link:focus,
+.jc-footer-nav_link:active {
+	color: #F5424B; /* Red 500 */
+	color: var(--jc-color-red-500, #F5424B); /* Red 500 */
+}
+
+.jc-footer_copy-right {
+	font-size: 18px;
+	height: 28px;
+	margin: 16px;
+	color: #A5A5A5; /* Grey 400 */
+	color: var(--jc-color-gray-400, #A5A5A5);  /* Grey 400 */
+}
+
+/* Styles for the footer wigetized area */
+.footer-widgets-area {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 40px;
+}
+
+.footer-widgets-area * {
+	min-width: 0;
+}
