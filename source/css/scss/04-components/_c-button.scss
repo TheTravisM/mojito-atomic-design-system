@@ -4,7 +4,8 @@
 /* -- [ COMPONENTS : BUTTONS ] -- */
 /* -- -----------------------  -- */
 
-.c-btn {
+.c-btn,
+.c-btn:visited {
   display: inline-flex;
   position: relative;
   padding: 0 15px;
@@ -15,7 +16,7 @@
   line-height: 34px;
   cursor: pointer;
   transition: all 1s ease-out;
-  &:hover, &:focus {
+  &:hover, &:focus, &:active {
   }
   &::before,&::after {
     content: "";
@@ -28,7 +29,7 @@
 .c-btn--homepage,
 .c-btn--homepage:visited {
   padding: 0 105px 0 0;
-  &:hover, &:focus {
+  &:hover, &:focus, &:active {
     background: none;
     padding: 0 90px 0 15px;
   }
@@ -61,7 +62,7 @@
 .c-btn--primary,
 .c-btn--primary:visited {
   padding: 0 51px 0 0;
-  &:hover, &:focus {
+  &:hover, &:focus, &:active {
     padding: 0 36px 0 15px;
     background: none;
     color: var(--color-terra-cotta, #E07A5F);
@@ -94,7 +95,7 @@
 .c-btn--secondary:visited {
   color: var(--color-almost-black, #1D1D1E);
   font-size: 16px;
-  &:hover, &:focus {
+  &:hover, &:focus, &:active {
     background: none;
     color: var(--color-terra-cotta, #E07A5F);
     border-color: var(--color-terra-cotta, #E07A5F);
@@ -104,7 +105,7 @@
 .c-btn--text,
 .c-btn--text:visited {
   color: var(--color-primary-blue, #003865);
-  &:hover, &:focus {
+  &:hover, &:focus, &:active {
     background: none;
     color: var(--color-terra-cotta, #E07A5F);
     border-color: var(--color-terra-cotta, #E07A5F);

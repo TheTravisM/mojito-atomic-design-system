@@ -1,0 +1,34 @@
+{
+  "promoTag" : true,
+  "promoText" : "Button",
+  "promoGroup" : [
+    {
+      "buttonTag": true,
+      "buttonText": "Button"
+    },
+    {
+      "styleModifier": "c-btn--bare",
+      "buttonTag": true,
+      "buttonText": "Button"
+    },
+    {
+      "styleModifier": "c-btn--homepage",
+      "buttonTag": true,
+      "buttonText": "Button"
+    },
+    {
+      "styleModifier": "c-btn--primary",
+      "buttonTag": true,
+      "buttonText": "Button"
+    },
+    {
+      "styleModifier": "c-btn--secondary",
+      "buttonTag": true,
+      "buttonText": "Button"
+    },
+    {
+      "styleModifier": "c-btn--text",
+      "buttonText": "Button"
+    }
+  ]
+}

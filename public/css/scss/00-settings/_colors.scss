@@ -36,4 +36,14 @@
   --color-success-text: #4a7628;
   --color-error-background: #f4b6b1;
   --color-error-text: #b10f00;
+
+  /* -- Text Color -- */
+  --text-color-dark: var(--color-almost-black, #1D1D1E);
+  --text-color-light: var(--color-white, #FFF);
+  --text-color-blue: var(--color-primary-blue, #003865);
+
+  /* -- Link Color -- */
+  --color-link: var(--color-almost-black, #1D1D1E);
+  --color-link-hover: var(--color-primary-blue, #003865);
+
 }

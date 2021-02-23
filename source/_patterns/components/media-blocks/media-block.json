@@ -1,0 +1,13 @@
+{
+  "mediaBlockClassModifier": "",
+  "backgroundColor": "",
+  "mediaBlockImgSrc": "http://www.fillmurray.com/400/400",
+  "mediaBlockImgAlt": "this is the alt text",
+  "mediaBlockFigCaptionText": "this is the fig caption text",
+  "mediaBlockHeader": true,
+  "mediaBlockTitle": "This is the title",
+  "mediaBlockCopy": "This is the content",
+  "buttons": true,
+  "buttonClass": "c-btn--homepage",
+  "linkUrl": "google.com"
+}

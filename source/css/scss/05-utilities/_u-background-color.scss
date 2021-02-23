@@ -1,0 +1,34 @@
+/* -- -------------------------------  -- */
+/* -- [ UTILITIES : BACKGROUND COLOR ] -- */
+/* -- -------------------------------  -- */
+
+/* -- Primary -- */
+.u-bg--almost-black { background-color:  var(--color-almost-black, #1D1D1E) !important; }
+.u-bg--white        { background-color:  var(--color-white, #FFF) !important; }
+.u-bg--primary-blue { background-color:  var(--color-primary-blue, #003865) !important; }
+
+/* -- Highlights -- */
+.u-bg--plum        { background-color:  var(--color-plum, #3D405B) !important; }
+.u-bg--straw       { background-color:  var(--color-straw, #F2CD8F) !important; }
+.u-bg--sand        { background-color:  var(--color-sand, #F4F1DE) !important; }
+.u-bg--terra-cotta { background-color:  var(--color-terra-cotta, #E07A5F) !important; }
+.u-bg--spearmint   { background-color:  var(--color-spearmint, #81B39B) !important; }
+
+/* -- Neutrals -- */
+.u-bg--light-gray     { background-color:  var(--color-light-gray, #F7F7F7) !important; }
+.u-bg--light-plum     { background-color:  var(--color-light-plum, #F9F9FB) !important; }
+.u-bg--spearmint-lite { background-color:  var(--color-spearmint-lite, #EAF9F2) !important; }
+.u-bg--stone          { background-color:  var(--color-stone, #E5EAED) !important; }
+.u-bg--grahite        { background-color:  var(--color-grahite, #7D7D7D) !important; }
+
+/* -- Cengage Logo Colors -- */
+.u-bg--blue-1 { background-color:  var(--color-blue-1, #003865) !important; }
+.u-bg--blue-2 { background-color:  var(--color-blue-2, #006298) !important; }
+.u-bg--blue-3 { background-color:  var(--color-blue-3, #0085CA) !important; }
+.u-bg--blue-4 { background-color:  var(--color-blue-4, #00A9E0) !important; }
+.u-bg--blue-5 { background-color:  var(--color-blue-5, #71C5E8) !important; }
+
+/* -- Utility Colors -- */
+.u-bg--focus   { background-color:  var(--color-focus-background, #90Cef1) !important; }
+.u-bg--success { background-color:  var(--color-success-background, #dcedc2) !important; }
+.u-bg--error   { background-color:  var(--color-error-background, #f4b6b1) !important; }

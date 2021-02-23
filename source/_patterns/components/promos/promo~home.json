@@ -1,0 +1,14 @@
+{
+  "promoClassModifier": "c-promo--homepage",
+  "promoMediaAlign": "c-promo--media-left",
+  "backgroundColor": "",
+  "promoImgSrc": "http://www.fillmurray.com/200/600",
+  "promoImgAlt": "this is the alt text",
+  "promoFigCaptionText": "this is the fig caption text",
+  "promoHeader": true,
+  "promoTitle": "This is the title",
+  "promoCopy": "This is the content",
+  "buttons": true,
+  "buttonClass": "c-btn--homepage",
+  "linkUrl": "google.com"
+}

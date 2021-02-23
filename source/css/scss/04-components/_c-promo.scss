@@ -1,0 +1,75 @@
+.c-promo {
+  width: 100%;
+  &_container {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 24px;
+  }
+  &_figure {
+    position: relative;
+    margin: 0;
+  }
+  &_figcaption {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    word-wrap: normal !important;
+  }
+  &_body {
+    flex: auto;
+  }
+}
+
+.c-promo--homepage {
+  padding-bottom: 48px;
+  .c-promo_container {
+    grid-gap: 48px;
+  }
+  .c-promo_figure:after {
+    content: "";
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    background-color: pink;
+    z-index: -1;
+  }
+  &.c-promo--media-right .c-promo_figure:after {
+    left: -24px;
+  }
+  &:nth-child(1) figure:after {
+    background-color: pink;
+  }
+  &:nth-child(2) figure:after{
+    background-color: lightgreen;
+  }
+  &:nth-child(3) figure:after{
+    background-color: lightblue;
+  }
+}
+
+.c-promo--primary { }
+
+.c-promo--secondary { }
+
+.c-promo--hero {
+  padding: 24px 0;
+  background-color: #4a7628;
+}
+
+.c-promo--media-left {
+  .c-promo_aside { order: 1; }
+  .c-promo_body { order: 2; }
+}
+.c-promo--media-right {
+  .c-promo_aside { order: 2; }
+  .c-promo_body { order: 1; }
+}

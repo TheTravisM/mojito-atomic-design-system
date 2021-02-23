@@ -1,0 +1,45 @@
+{
+  "buttonTag" : true,
+  "buttonText" : "Button",
+  "media-block-list" : [
+    {
+      "mediaBlockClassModifier": "",
+      "backgroundColor": "",
+      "mediaBlockImgSrc": "http://www.fillmurray.com/400/400",
+      "mediaBlockImgAlt": "this is the alt text",
+      "mediaBlockFigCaptionText": "this is the fig caption text",
+      "mediaBlockHeader": true,
+      "mediaBlockTitle": "1 This is the title",
+      "mediaBlockCopy": "This is the content",
+      "buttons": true,
+      "buttonClass": "c-btn--homepage",
+      "linkUrl": "google.com"
+    },
+    {
+      "mediaBlockClassModifier": "",
+      "backgroundColor": "",
+      "mediaBlockImgSrc": "http://www.fillmurray.com/400/400",
+      "mediaBlockImgAlt": "this is the alt text",
+      "mediaBlockFigCaptionText": "this is the fig caption text",
+      "mediaBlockHeader": true,
+      "mediaBlockTitle": "2 This is the title",
+      "mediaBlockCopy": "This is the content",
+      "buttons": true,
+      "buttonClass": "c-btn--homepage",
+      "linkUrl": "google.com"
+    },
+    {
+      "mediaBlockClassModifier": "",
+      "backgroundColor": "",
+      "mediaBlockImgSrc": "http://www.fillmurray.com/400/400",
+      "mediaBlockImgAlt": "this is the alt text",
+      "mediaBlockFigCaptionText": "this is the fig caption text",
+      "mediaBlockHeader": true,
+      "mediaBlockTitle": "3 This is the title",
+      "mediaBlockCopy": "This is the content",
+      "buttons": true,
+      "buttonClass": "c-btn--homepage",
+      "linkUrl": "google.com"
+    }
+  ]
+}

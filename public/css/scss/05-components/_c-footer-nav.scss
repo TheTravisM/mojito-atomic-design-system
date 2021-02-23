@@ -30,7 +30,8 @@
   line-height: 29px;
 }
 
-.c-footer-nav_link {
+.c-footer-nav_link,
+.c-footer-nav_link:visited {
   color: var(--color-primary-blue, #003865);
   font-weight: 400;
   font-size: 14px;

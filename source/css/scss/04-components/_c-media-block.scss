@@ -1,0 +1,23 @@
+.c-media-block {
+  display: flex;
+  flex-direction: column;
+  &_aside { }
+  &_figure {
+    margin: 0;
+  }
+  &_figurecaption { }
+  &_body {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+  }
+  &_header { }
+  &_title { }
+  &_copy { }
+  &_footer { }
+}
+.c-media-block--list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
