@@ -9,13 +9,14 @@
   display: inline-flex;
   position: relative;
   padding: 0 15px;
+  background: none;
   color: var(--color-almost-black, #1D1D1E);
   font-size: 20px;
   font-weight: 600;
   font-family: 'Work Sans', 'HelveticaNeue', 'Helvetica Neue', Arial, sans-serif;
   line-height: 34px;
   cursor: pointer;
-  transition: all 1s ease-out;
+  transition: all .5s ease-in-out;
   &:hover, &:focus, &:active {
   }
   &::before,&::after {
@@ -64,9 +65,6 @@
   padding: 0 51px 0 0;
   &:hover, &:focus, &:active {
     padding: 0 36px 0 15px;
-    background: none;
-    color: var(--color-terra-cotta, #E07A5F);
-    border-color: var(--color-terra-cotta, #E07A5F);
   }
   &::after {
     content: "";
@@ -87,7 +85,6 @@
   }
   &:hover::before {
     width: 100%;
-    transition: all .5s ease-out;
   }
 }
 
@@ -135,7 +132,10 @@ a.c-btn[href^="//"]:not([href*="cengage.com"]):after {
 a.c-btn--text[href$=".pdf"]:after,
 a.c-btn--text[href$=".pdf"][data-size]:after,
 a.c-btn--text[href$=".doc"]:after {
-  content: "PDF-Icon.svg";
+  display: inline-block;
+  height: 20px;
+  width: 16px;
+  content: url("../../../icons/pdf-icon.svg");
 }
 
 /*	Email Link

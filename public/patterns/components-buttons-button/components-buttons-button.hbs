@@ -1,8 +1,7 @@
 
 <!--/* https://codepen.io/JackSamurai/pen/qBqbvmK?editors=1100 */-->
 
-<{{#if buttonTag }}button{{/ if }}
-  {{#if linkTag }}a href="{{ url }}"{{/ if }}
+<{{#if buttonTag }}button{{/ if }}{{#if linkTag }}a href="{{ url }}"{{/ if }}
   class="c-btn {{ styleModifier }}" data-ui-component="c-btn"
   {{# buttonTitle}}title="{{ buttonTitle }}"{{/ buttonTitle}}
   {{# buttonIsToggle }} data-btn-icon-swap="{{ iconPath }}{{ buttonIconSwap }}"{{/ buttonIsToggle }}>

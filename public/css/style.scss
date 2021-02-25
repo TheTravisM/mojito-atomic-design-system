@@ -15,28 +15,25 @@
 @import "scss/abstracts/variables";
 @import "scss/abstracts/mixins";
 @import "scss/abstracts/colors";
-@import "scss/abstracts/typography";
-
+//@import "scss/abstracts/typography";
 /*------------------------------------*\
     #BASE
 \*------------------------------------*/
-@import "scss/base/reset";
-@import "scss/base/body";
-@import "scss/base/links";
-@import "scss/base/lists";
-@import "scss/base/headings";
-@import "scss/base/forms";
+//@import "scss/base/reset";
+//@import "scss/base/body";
+//@import "scss/base/links";
+//@import "scss/base/lists";
+//@import "scss/base/headings";
+//@import "scss/base/forms";
 //@import "scss/base/buttons";
-@import "scss/base/main";
-@import "scss/base/media";
-@import "scss/base/text";
-@import "scss/base/table";
-
+//@import "scss/base/main";
+//@import "scss/base/media";
+//@import "scss/base/text";
+//@import "scss/base/table";
 /*------------------------------------*\
     #LAYOUT
 \*------------------------------------*/
-@import "scss/layout/layout";
-
+//@import "scss/layout/layout";
 /*------------------------------------*\
     #COMPONENTS
 \*------------------------------------*/
@@ -51,7 +48,7 @@
 //@import "scss/components/footer";
 //@import "scss/components/footer-nav";
 //@import "scss/components/header";
-@import "scss/components/logo";
+//@import "scss/components/logo";
 @import "scss/components/icon";
 @import "scss/components/input";
 @import "scss/components/page-header";
@@ -68,7 +65,7 @@
 /*------------------------------------*\
     #UTILITIES
 \*------------------------------------*/
-@import "scss/utilities/visibility";
-@import "scss/utilities/spacing";
- 
+//@import "scss/utilities/visibility";
+//@import "scss/utilities/spacing";
+
 @import "corp-style";

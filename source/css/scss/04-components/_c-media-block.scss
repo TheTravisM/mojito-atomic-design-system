@@ -1,6 +1,13 @@
+
+/* -- ---------------------------  -- */
+/* -- [ COMPONENTS : MEDIA BLOCK ] -- */
+/* -- ---------------------------  -- */
+
 .c-media-block {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 344px;
   &_aside { }
   &_figure {
     margin: 0;
@@ -11,13 +18,23 @@
     flex-direction: column;
     flex: auto;
   }
-  &_header { }
-  &_title { }
-  &_copy { }
-  &_footer { }
+  &_header {
+    margin-top: 24px;
+  }
+  &_title {
+
+  }
+  &_copy {
+    margin-top: 16px;
+  }
+  &_footer {
+    margin-top: 24px;
+  }
 }
-.c-media-block--list {
+
+.c-media-block-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 24px;
 }

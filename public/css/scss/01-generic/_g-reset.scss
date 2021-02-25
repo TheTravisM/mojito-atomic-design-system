@@ -3,47 +3,46 @@
    ========================================================================== */
 
 /**
+ * Border-Box http:/paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+* {
+  box-sizing: border-box;
+}
+
+/**
  * A very simple reset that sits on top of Normalize.css.
  */
-
- body,
- h1, h2, h3, h4, h5, h6,
- blockquote, p, pre,
- dl, dd, ol, ul,
- figure,
- hr,
- fieldset, legend {
-   margin:  0;
-   padding: 0;
+html,
+body,
+div,
+object,
+iframe,
+h1, h2, h3, h4, h5, h6, p,
+blockquote, ol, ul, li,
+form, legend, label, table,
+header, footer, nav, section, main, article, figure {
+    margin:  0;
+    padding: 0;
  }
-
-
 
  /**
   * Remove trailing margins from nested lists.
   */
 
  li > {
-
    ol,
    ul {
      margin-bottom: 0;
    }
-
  }
-
-
 
  /**
   * Remove default table spacing.
   */
-
  table {
    border-collapse: collapse;
    border-spacing: 0;
  }
-
-
 
  /**
   * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
@@ -54,3 +53,10 @@
    min-width: 0; /* [1] */
    border: 0;
  }
+
+/**
+* 1) Set HTML5 elements to display: block
+*/
+header, footer, nav, section, article, figure {
+  display: block;
+}

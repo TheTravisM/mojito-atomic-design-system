@@ -7,7 +7,7 @@
   margin: var(--spacing-0, 0px);
 }
 .u-margin--extra-small {
-  margin: var(--spacing-extra-small, 8px);
+  margin: var(--spacing-x-small, 8px);
 }
 .u-margin--small {
   margin: var(--spacing-small, 16px);
@@ -19,7 +19,7 @@
   margin: var(--spacing-large, 72px);
 }
 .u-margin--extra-large {
-  margin: var(--spacing-extra-large, 120px);
+  margin: var(--spacing-x-large, 120px);
 }
 
 /*-- Margin Auto --*/
@@ -35,7 +35,7 @@
 }
 
 .u-margin-top--extra-small {
-  margin-bottom: var(--spacing-extra-small, 8px);
+  margin-bottom: var(--spacing-x-small, 8px);
 }
 
 .u-margin-top--small {
@@ -51,7 +51,7 @@
 }
 
 .u-margin-top--extra-large {
-  margin-bottom: var(--spacing-extra-large, 120px);
+  margin-bottom: var(--spacing-x-large, 120px);
 }
 /*-- Margin Bottom --*/
 .u-margin-bottom--0 {
@@ -59,7 +59,7 @@
 }
 
 .u-margin-bottom--extra-small {
-  margin-bottom: var(--spacing-extra-small, 8px);
+  margin-bottom: var(--spacing-x-small, 8px);
 }
 
 .u-margin-bottom--small {
@@ -75,7 +75,7 @@
 }
 
 .u-margin-bottom--extra-large {
-  margin-bottom: var(--spacing-extra-large, 120px);
+  margin-bottom: var(--spacing-x-large, 120px);
 }
 /*-- Margin Left --*/
 .u-margin-left--0 {
@@ -83,7 +83,7 @@
 }
 
 .u-margin-left--extra-small {
-  margin-bottom: var(--spacing-extra-small, 8px);
+  margin-bottom: var(--spacing-x-small, 8px);
 }
 
 .u-margin-left--small {
@@ -99,7 +99,7 @@
 }
 
 .u-margin-left--extra-large {
-  margin-bottom: var(--spacing-extra-large, 120px);
+  margin-bottom: var(--spacing-x-large, 120px);
 }
 /*-- Margin Right --*/
 .u-margin-right--0 {
@@ -107,7 +107,7 @@
 }
 
 .u-margin-right--extra-small {
-  margin-bottom: var(--spacing-extra-small, 8px);
+  margin-bottom: var(--spacing-x-small, 8px);
 }
 
 .u-margin-right--small {
@@ -123,5 +123,5 @@
 }
 
 .u-margin-right--extra-large {
-  margin-bottom: var(--spacing-extra-large, 120px);
+  margin-bottom: var(--spacing-x-large, 120px);
 }

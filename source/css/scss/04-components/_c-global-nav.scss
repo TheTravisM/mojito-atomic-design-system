@@ -1,7 +1,7 @@
 
-/* -- -----------------------------  -- */
+/* -- -------------------------------  -- */
 /* -- [ COMPONENTS : GLOBAL NAVIGATION -- */
-/* -- -----------------------------  -- */
+/* -- -------------------------------  -- */
 
 .c-global-nav {
   padding: 0 0 24px 0;
@@ -16,7 +16,6 @@
   display: flex;
   flex-direction: column;
 }
-
 
 .c-global-nav_link {
   display: flex;
@@ -99,7 +98,7 @@ button.c-global-nav_link {
   display: flex;
   height: 40px;
   padding: 0 24px;
-  margin: 22px 0 24px;
+  margin: 0 0 24px;
   cursor: pointer;
   align-items: center;
   font-size: 14px;
@@ -256,5 +255,4 @@ button.c-global-nav_link {
   #change-location-tabpanel .c-global-nav_list {
     flex-direction: column;
   }
-
 }

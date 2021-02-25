@@ -2,51 +2,66 @@
 /* -- -------------  -- */
 /* -- [ TYPOGRAPHY ] -- */
 /* -- -------------  -- */
+/*
+16px 1rem
+20px 1.25rem
+24px 1.5rem
+25px 1.563rem
+29px 1.813rem
+32px 2rem
+38px 2.375rem
+40px 2.5rem
+50px 3.125rem
+76px 4.75rem
+95px 5.938rem
+153px 9.563rem
+
+*/
 
 :root {
   --font-family-primary: "Work Sans", "HelveticaNeue", "Helvetica Neue","Arial" sans-serif;
   --font-family-headings: var(--font-family-primary);
 
   --h1-font-size: 40px;
-  --h1-line-height: 50px;
+  --h1-line-height: 1.25; /* 50px */
   --h1-font-weight: 600;
-  --h1-font-family: --font-family-headings;
+  --h1-font-family: var(--font-family-headings);
 
   --h2-font-size: 32px;
-  --h2-line-height: 50px;
+  --h2-line-height: 1.5635; /* 50px */
   --h2-font-weight: 600;
 
   --h3-font-size: 24px;
-  --h3-line-height: 38px;
+  --h3-line-height: 1.583; /* 38px */
   --h3-font-weight: 600;
 
   --h4-font-size: 20px;
-  --h4-line-height: 29px;
+  --h4-line-height: 1.45; /* 29px */
   --h4-font-weight: 600;
 
   --h5-font-size: 16px;
-  --h5-line-height: 25px;
+  --h5-line-height: 1.5625; /* 25px */
   --h5-font-weight: 600;
 
   --p-font-size: 16px;
-  --p-line-height: 25px;
+  --p-line-height: 1.5625; /* 25px */
   --p-line-weight: 400;
 
   @media (min-width: 576px) {
       --h1-font-size: 95px;
-      --h1-line-height: 153px;
+      --h1-line-height: 1.6105; /* 153px */
 
       --h2-font-size: 76px;
-      --h2-line-height: 89px;
+      --h2-line-height: 1.17105; /* 89px */
 
       --h3-font-size: 56px;
-      --h3-line-height: 90px;
+      --h3-line-height: 1.60714; /* 90px */
 
       --h4-font-size: 40px;
-      --h4-line-height: 64px;
+      --h4-line-height: 1.6; /* 64px */;
 
       --h5-font-size: 32px;
-      --h5-line-height: 51px;
+      --h5-line-height: 1.59375; /*51px*/;
   }
 }
 
@@ -64,24 +79,4 @@ $font-style-normal: normal;
       line-height: 38px;
     }
 
-**
- * Font Sizing
- *
-$font-size-sm: 0.75rem;
-$font-size-sm-2: 0.85rem;
-$font-size-med: 1rem;
-$font-size-med-2: 1.2rem;
-$font-size-large: 2rem;
-$font-size-xl: 3rem;
-$font-size-xxl: 4rem;
-
-/**
- * Line Height
- *
-$line-height-sm: 0.8;
-$line-height-sm-2: 0.9;
-$line-height-med: 1;
-$line-height-med-2: 1.2;
-$line-height-large: 1.6;
-$line-height-xl: 1.8;
 */

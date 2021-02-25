@@ -1,10 +1,17 @@
-.c-promo {
+
+/* -- ----------------------- -- */
+/* -- [ COMPONENTS : Promos ] -- */
+/* -- ----------------------- -- */
+
+.c-promo-wrapper {
   width: 100%;
-  &_container {
+  display: flex;
+  flex-direction: row;
+}
+.c-promo {
     display: flex;
     flex-direction: row;
     grid-gap: 24px;
-  }
   &_figure {
     position: relative;
     margin: 0;
@@ -26,16 +33,43 @@
   }
 }
 
+.c-promo--media-left {
+  .c-promo_aside { order: 1; }
+  .c-promo_body { order: 2; }
+}
+.c-promo--media-right {
+  .c-promo_aside { order: 2; }
+  .c-promo_body { order: 1; }
+}
+
+
+/* -- --------------------- -- */
+/* -- [ Promos : Homepage ] -- */
+/* -- --------------------- -- */
+
 .c-promo--homepage {
   padding-bottom: 48px;
   .c-promo_container {
     grid-gap: 48px;
   }
+  .c-promo_body {
+    margin: auto 0;
+  }
+  .c-promo_title {
+    font-weight: 400;
+  }
+  .c-promo_copy {
+    margin-left: var(--spacing-medium, 32px);
+    margin-top: var(--spacing-medium, 32px);
+  }
+  .c-promo_footer {
+    margin-top: var(--spacing-medium, 32px);
+  }
   .c-promo_figure:after {
     content: "";
     position: absolute;
     left: 24px;
-    top: 24px;
+    top: 12px;
     height: 100%;
     width: 100%;
     display: inline-block;
@@ -45,31 +79,54 @@
   &.c-promo--media-right .c-promo_figure:after {
     left: -24px;
   }
-  &:nth-child(1) figure:after {
-    background-color: pink;
+  &:nth-child(1) {
+    .c-promo_figure:after {
+      background-color: var(--color-spearmint, #81B39B);
+    }
+    .c-btn--homepage {
+      &::before,
+      &::after {
+        border-color: var(--color-spearmint, #81B39B);
+      }
+    }
   }
-  &:nth-child(2) figure:after{
-    background-color: lightgreen;
+  &:nth-child(2)  {
+    .c-promo_figure:after {
+      background-color: var(--color-plum, #3D405B);
+    }
+    .c-btn--homepage {
+      &::before,
+      &::after {
+        border-color: var(--color-plum, #3D405B);
+      }
+    }
   }
-  &:nth-child(3) figure:after{
-    background-color: lightblue;
+  &:nth-child(3) {
+    .c-promo_figure:after {
+      background-color: var(--color-terra-cotta, #E07A5F);
+    }
+    .c-btn--homepage {
+      &::before, &::after {
+        border-color: var(--color-terra-cotta, #E07A5F);
+      }
+    }
   }
 }
 
+/* -- -------------------- -- */
+/* -- [ Promos : Primary ] -- */
+/* -- -------------------- -- */
 .c-promo--primary { }
 
+/* -- ---------------------- -- */
+/* -- [ Promos : Secondary ] -- */
+/* -- ---------------------- -- */
 .c-promo--secondary { }
 
+/* -- ----------------- -- */
+/* -- [ Promos : HERO ] -- */
+/* -- ----------------- -- */
 .c-promo--hero {
   padding: 24px 0;
-  background-color: #4a7628;
 }
 
-.c-promo--media-left {
-  .c-promo_aside { order: 1; }
-  .c-promo_body { order: 2; }
-}
-.c-promo--media-right {
-  .c-promo_aside { order: 2; }
-  .c-promo_body { order: 1; }
-}

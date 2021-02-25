@@ -1,7 +1,7 @@
 
-/* -- -----------------  -- */
+/* -- --------------------  -- */
 /* -- [ COMPONENTS : FOOT ] -- */
-/* -- ----------------  -- */
+/* -- --------------------  -- */
 
 .c-global-footer {
   display: grid;
@@ -12,7 +12,6 @@
   font-size: 14px;
   color: var(--color-primary-blue, #003865);
 }
-
 
 .c-global-footer_container {
   display: grid;
@@ -36,12 +35,6 @@
 }
 
 .c-footer-bottom {
-  //grid-area: aside;
-  //display: grid;
-  //grid-template-areas:
-  //  "footer-social"
-  //  "footer-hr"
-  //  "footer-copyright";
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -69,7 +62,6 @@
   grid-gap: 7px;
   grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
   margin-bottom: 24px;
-
 }
 
 /* -- Nav Order  --*/

@@ -28,3 +28,8 @@ body {
   line-height: 22px;
   text-rendering: optimizeLegibility;
 }
+
+main[role="main"] {
+  display: block;
+  flex: 1 0 auto;
+}

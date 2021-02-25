@@ -14,7 +14,7 @@
 @import 'scss/02-base/00-base';
 
 // 03 Layout: Unclassed HTML elements (Type selectors) */
-@import 'scss/02-base/00-base';
+@import 'scss/03-layouts/00-layout';
 
 // 04 COMPONENTS: Designed components
 // c-: Signify that something is a Component. This is a concrete, implementation-specific piece of UI. All of the changes you make to its styles should be detectable in the context you’re currently looking at. Modifying these styles should be safe and have no side effects. */
@@ -30,4 +30,4 @@
 // Do not import pages
 // Link to the page specifically
 // TODO: remove imports after corp is built
-@import 'scss/06-pages/000-pages';
+//@import 'scss/06-pages/00-pages';

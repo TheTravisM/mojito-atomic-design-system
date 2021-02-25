@@ -1,4 +1,6 @@
 {
   "styleModifier": "c-btn--text",
+  "buttonTag" : false,
+  "linkTag" : true,
   "url" : "www.link.pdf"
 }

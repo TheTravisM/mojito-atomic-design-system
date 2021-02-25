@@ -102,7 +102,7 @@ settings: Global variables, site-wide settings, config switches, etc.
   --spacing-small: 16px;
   --spacing-medium: 32px;
   --spacing-large: 72px;
-  --spacing-extra-large: 120px;
+  --spacing-x-large: 120px;
 }
 
 /*------------------------------------*\

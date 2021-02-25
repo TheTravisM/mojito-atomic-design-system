@@ -1,6 +1,7 @@
-// -- --------------------- -- //
-// -- [ SETTINGS : COLORS ] -- //
-// -- --------------------- -- //
+
+/* -- --------------------- -- */
+/* -- [ SETTINGS : COLORS ] -- */
+/* -- --------------------- -- */
 
 :root {
   /* -- Primary -- */
@@ -37,7 +38,7 @@
   --color-error-background: #f4b6b1;
   --color-error-text: #b10f00;
 
-  /* -- Text Color -- */
+  /* -- Global Text Color -- */
   --text-color-dark: var(--color-almost-black, #1D1D1E);
   --text-color-light: var(--color-white, #FFF);
   --text-color-blue: var(--color-primary-blue, #003865);
@@ -45,5 +46,25 @@
   /* -- Link Color -- */
   --color-link: var(--color-almost-black, #1D1D1E);
   --color-link-hover: var(--color-primary-blue, #003865);
+  --color-link-active: var(--color-primary-blue, #003865);
+  --color-link-visited: var(--color-almost-black, #1D1D1E);
 
+  /* -- Buttons -- */
+
+  /*-- Forms -- */
+  --color-form-text: var();
+  --color-form-background: var();
+  --color-form-border: var();
+
+  --color-form-text-focus: var();
+  --color-form-background-focus: var(--color-focus-background, #90Cef1);
+  --color-form-border-focus: var(--color-focus-border, #90Cef1);
+
+  --color-form-text-error: var(--color-error-text, #b10f00);
+  --color-form-background-error: var(--color-error-background, #f4b6b1);
+  --color-form-border-error: var();
+
+  --color-form-label: var();
+  --color-form-info: var();
+  --color-form-placeholder-text: var();
 }

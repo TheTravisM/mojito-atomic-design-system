@@ -7,6 +7,7 @@
  * 1) Caps the width of the content to the maximum width
  *    and centers the container
  */
+/*
 .l-container {
 	max-width: $l-max-width;
 	padding: 0 $spacing;
@@ -25,7 +26,7 @@
  *
  * 1) This caps the width of text passages
  *    to achieve a comfortable line length
- */
+ *
 .l-linelength-container {
     max-width: $l-linelength-width;
 }
@@ -37,7 +38,7 @@
 
 /**
  * 2 column layout
- */
+ *
 .l-page-layout--two-column {
 	display: flex;
 	flex-direction: column;
@@ -58,7 +59,7 @@
 
 /**
  * Sidebar
- */
+ *
 .l-page-layout__secondary {
 
 	.l-page-layout--two-column & {
@@ -78,7 +79,7 @@
 	}
 }
 
-
+*/
 
 /*------------------------------------*\
     #GRID
@@ -86,7 +87,7 @@
 
 /**
  * Grid Container
- */
+ *
 .l-grid {
 	display: flex;
 	flex-wrap: wrap;
@@ -101,7 +102,8 @@
 
 /**
  * Grid Item
- */
+ *
 .l-grid__item {
 	display: flex;
 }
+*/

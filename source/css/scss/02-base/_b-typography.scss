@@ -74,6 +74,7 @@ p {
   font-size:   var(--p-font-size,   16px);
   line-height: var(--p-line-height, 25px);
   font-weight: var(--p-font-weight, 400);
+  margin-bottom: var(--spacing-small, 16px);
 }
 
 a,
@@ -92,10 +93,6 @@ strong{
   font-weight: 700;
 }
 
-label {
-  font-size: 14px;
-  line-height: 40px;
-}
 blockquote {
   padding-left: 16px;
   margin-bottom: 16px;
