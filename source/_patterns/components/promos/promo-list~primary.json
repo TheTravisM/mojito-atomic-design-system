@@ -3,22 +3,23 @@
   "buttonText" : "Button",
   "promo-list" : [
     {
-      "promoClassModifier": "c-promo--hero",
+      "promoClassModifier": "c-promo--primary",
       "promoMediaAlign": "c-promo--media-left",
-      "backgroundColor": "u-bg--spearmint-lite",
+      "backgroundColor": "",
       "promoImgSrc": "http://www.fillmurray.com/252/535",
       "promoImgAlt": "this is the alt text",
+      "promoFigCaptionText": "this is the fig caption text",
       "promoHeader": true,
-      "promoTitle": "Promo Hero H3 Title",
+      "promoTitle": "H3 Headline This is the title",
       "promoCopy": "This is the content",
       "buttons": true,
       "buttonClass": "c-btn--primary",
       "linkUrl": "google.com"
     },
     {
-      "promoClassModifier": "c-promo--hero",
+      "promoClassModifier": "c-promo--primary",
       "promoMediaAlign": "c-promo--media-right",
-      "backgroundColor": "u-bg--light-gray",
+      "backgroundColor": "",
       "promoImgSrc": "http://www.fillmurray.com/200/600",
       "promoImgAlt": "this is the alt text",
       "promoFigCaptionText": "this is the fig caption text",
@@ -30,9 +31,9 @@
       "linkUrl": "google.com"
     },
     {
-      "promoClassModifier": "c-promo--hero",
+      "promoClassModifier": "c-promo--primary",
       "promoMediaAlign": "c-promo--media-left",
-      "backgroundColor": "u-bg--light-plum",
+      "backgroundColor": "",
       "promoImgSrc": "http://www.fillmurray.com/200/600",
       "promoImgAlt": "this is the alt text",
       "promoFigCaptionText": "this is the fig caption text",

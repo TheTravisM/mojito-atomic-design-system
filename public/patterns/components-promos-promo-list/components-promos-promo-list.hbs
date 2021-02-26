@@ -1,9 +1,11 @@
-<ul class="c-promo-list {{ styleModifier }}">
+<main role="main">
+    <section class="l-container c-promo-wrapper {{ styleModifier }}">
 
-    {{#each promo-list }}
-    <li class="c-promo-list_item">
-        {{> components-promo }}
-    </li>
-    {{/ each }}
+        {{#each promo-list }}
 
-</ul><!--end c-btn-group-->
+            {{> components-promo }}
+
+        {{/ each }}
+
+    </section>
+</main>

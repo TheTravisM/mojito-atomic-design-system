@@ -1,23 +1,24 @@
-<div class="c-promo-wrapper  {{backgroundColor}}">
-    <article class="c-promo l-container {{promoMediaAlign}} {{promoClassModifier}}">
-        <aside class="c-promo_aside">
-            <figure class="c-promo_figure">
-                <img class="c-promo_img" src="{{promoImgSrc}}" alt="{{promoImgAlt}}" loading="lazy"/>
-                <figcaption class="c-promo_figcaption">
-                    {{promoFigCaptionText}}
-                </figcaption>
-            </figure>
-        </aside>
-        <section class="c-promo_body">
-            <header class="c-promo_header">
-                <h3 class="c-promo_title">{{promoTitle}}</h3>
-            </header>
-            <div class="c-promo_copy">
-                {{promoCopy}}
-            </div>
-            <footer class="c-promo_footer">
-                <a class="c-btn {{buttonClass}}" href="">link text</a>
-            </footer>
-        </section>
-    </article>
-</div>
+
+<article class="c-promo {{promoMediaAlign}} {{promoClassModifier}} {{backgroundColor}}">
+    <aside class="c-promo_aside">
+        <picture class="c-promo_picture">
+            <source media="{{media-width}}" srcset="{{largeImgSrc}}"/>
+            <source media="{{media-width}}" srcset="{{smallImgSrc}}"/>
+            <img class="c-promo_img" src="{{promoImgSrc}}" alt="{{promoImgAlt}}" loading="lazy"/>
+        </picture>
+    </aside>
+    <section class="c-promo_body">
+        <header class="c-promo_header">
+            <h3 class="c-promo_title">{{promoTitle}}</h3>
+        </header>
+        <div class="c-promo_copy">
+            {{promoCopy}}
+        </div>
+        <footer class="c-promo_footer">
+            <a class="c-btn {{buttonClass}}" href="">
+                {{buttonText}}
+            </a>
+        </footer>
+    </section>
+</article>
+

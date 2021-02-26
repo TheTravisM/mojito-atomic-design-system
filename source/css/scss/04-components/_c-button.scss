@@ -119,7 +119,7 @@ a.c-btn:not([href^=".."]),
 a.c-btn[href^="http://"]:not([href*="cengage.com"]):after,
 a.c-btn[href^="https://"]:not([href*="cengage.com"]):after,
 a.c-btn[href^="//"]:not([href*="cengage.com"]):after {
-  color: var(--color-terra-cotta, #E07A5F);
+  //color: var(--color-terra-cotta, #E07A5F);
 }
 
 /* Text Icon Links */
