@@ -1,0 +1,18 @@
+.c-accordion {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+}
+.c-accordion_btn {
+  position: relative;
+  background: gray;
+}
+.c-accordion_btn:after {
+  position: relative;
+  content: "asdfads";
+}
+.c-accordion_body {
+  border: 1px solid #009;
+}
+
+/*# sourceMappingURL=c-accordion.css.map */

@@ -1,0 +1,18 @@
+.c-accordion {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  &_item { }
+  &_title { }
+  &_btn {
+    position: relative;
+    background: gray;
+    &:after {
+      position: relative;
+      content: "asdfads"
+    }
+  }
+  &_body {
+    border: 1px solid #009;
+  }
+}
