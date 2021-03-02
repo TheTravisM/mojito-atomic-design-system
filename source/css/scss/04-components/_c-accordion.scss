@@ -1,18 +1,38 @@
+
+
 .c-accordion {
   display: flex;
   flex-direction: column;
+  margin: 0 12px;
   border: 1px solid #ccc;
-  &_item { }
-  &_title { }
+  &_item {
+    border-top: 1px solid #ccc;
+  }
+  &_title {
+
+  }
   &_btn {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    padding: 0 48px;
     position: relative;
-    background: gray;
+    align-items: center;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 600;
     &:after {
-      position: relative;
-      content: "asdfads"
+      position: absolute;
+      content: "";
+      right: 48px;
+      height: 24px;
+      width: 24px;
+      border: 1px solid black;
+      border-width: 2px 2px 0 0;
     }
   }
   &_body {
-    border: 1px solid #009;
+    margin: 48px;
+    border: 1px solid #efefef;
   }
 }

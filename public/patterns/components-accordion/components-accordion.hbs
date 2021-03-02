@@ -1,0 +1,32 @@
+{{#accordionList}}
+    <h4>title</h4>
+    <div class="c-accordion {{class-modifier}}" id="{{accordion-ID}}" role="tablist" aria-multiselectable="true">
+
+        {{#each accordion-list }}
+            <div class="c-accordion_item">
+
+                <!-- Accordion Header Button For Accordion -->
+                <h5 class="c-accordion_title" role="tab" id="{{item-ID}}">
+                    <button class="c-accordion_btn"
+                            aria-expanded="false"
+                            data-toggle="collapse"
+                            data-parent="#{{accordion-ID}}"
+                            href="#{{tabpanel-ID}}"
+                            aria-controls="{{tabpanel-ID}}">
+                        {{title}}
+                    </button><!-- End Button --->
+                </h5><!-- c-accordion_title --->
+
+                <!-- Accordion  Body -->
+                <div class="c-accordion_body"
+                     id="{{tabpanel-ID}}"
+                     role="tabpanel"
+                     aria-labelledby="{{item-ID}}">
+                    {{accordion-copy}}
+                </div><!-- END Body -->
+
+            </div><!-- End c-accordion_item -->
+        {{/each}}
+
+    </div>
+{{/accordionList}}

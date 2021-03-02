@@ -13,7 +13,7 @@
         },
         {
           "listHeader" : "Global Business",
-          "id": "global-business",
+          "id": "global-business-menu",
           "class-modifier" : "",
           "button": true,
           "link" : false,
@@ -21,10 +21,9 @@
           "dropdown-list": [
             {
               "label": "Cengage Global Business",
-              "id": "cengage-global-business",
               "heading": "true",
               "heading-level": "h3",
-              "class-modifier" : "c-global-nav_dropdown-title--global-business"
+              "class-modifier" : "c-global-business-menu_title"
             },
             {
               "label": "ed2go",
@@ -68,17 +67,16 @@
           "listHeader" : "USA",
           "button": true,
           "link" : false,
-          "id": "change-location",
-          "class-modifier": "c-global-nav_dropdown-list--change-location",
+          "id": "change-location-menu",
           "icon": true,
           "icon-modifier": "c-global-nav_globe-icon",
           "dropdown-list": [
             {
               "label": "Change Location",
-              "id": "change-location",
+              "id": "change-location-menu",
               "heading": "true",
               "heading-level": "h3",
-              "class-modifier" : ""
+              "class-modifier" : "c-change-location-menu_tabpanel-title"
             },
             {
               "label": "North American",

@@ -5,11 +5,11 @@
 <nav id="c-global-navigation" class="c-global-nav">
     <ul class="c-global-nav_list">
         {{# global-nav-list}}
-            <li class="c-global-nav_list-item">
+            <li id={{id}}-list-item class="c-global-nav_list-item c-{{id}}">
                 {{#if button }}
                     <button
                         id="{{ id }}-tab-btn"
-                        class="c-global-nav_link c-global-nav_tab-btn {{ class-modifier }}"
+                        class="c-global-nav_link c-global-nav_tab-btn c-{{id}}_btn"
                         data-toggle="tab"
                         role="tab"
                         aria-controls="{{ id }}-tabpanel"
@@ -33,7 +33,7 @@
                 {{/ if }}
 
                 {{#if dropdown-list }}
-                    <ul class="c-global-nav_dropdown-list {{ class-modifier }}"
+                    <ul class="c-global-nav_dropdown-list c-{{id}}_list {{ class-modifier }}"
                         id="{{ id }}-tabpanel"
                         tabindex="0"
                         role="tabpanel"
@@ -50,10 +50,8 @@
                             <span class="u-screen-reader-text">Toggle {{ listHeader }} Menu</span>
                         </button>
                         {{# dropdown-list }}
-                            <li
-                               class="c-global-nav_dropdown-list-item"
-                                role="listitem"
-                            >
+                            <li class="c-global-nav_dropdown-list-item c-{{id}}_dropdown-list-item"
+                                role="listitem">
                                 {{# if heading}}
                                     <{{heading-level}}
                                         id=""
@@ -66,7 +64,7 @@
 
                                 {{#if link}}
                                     <a id="{{ id }}"
-                                       class="c-global-nav_dropdown-list-link {{ class-modifier }}"
+                                       class="c-global-nav_dropdown-list-link {{ class-modifier }} c-{{id}}_dropdown-list-link"
                                        href="{{url}}"
                                        role="link">
                                         {{ label }}
@@ -81,7 +79,7 @@
                                         aria-labelledby="{{ id }}-tab-btn"
                                         aria-hidden="true">
                                         {{# location-dropdown-list }}
-                                        <li class="c-global-nav_list-item {{ class-modifier }}"
+                                        <li class="c-global-nav_list-item"
                                             id=""
                                             role="listitem"
                                         >

@@ -16,7 +16,9 @@ $breakpoints: (
         xl:  $breakpoint-xl
 ) !default;
 
-
+:root {
+  --breakpoint-small: 576px;
+}
 
 /*
 // X-Small devices (portrait phones, less than 576px)

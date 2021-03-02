@@ -1,0 +1,33 @@
+{
+  "accordionList" : {
+    "accordion-ID" : "AccordionID",
+    "class-modifier" : "",
+    "accordion-list" : [
+      {
+        "item-ID": "id-one",
+        "tabpanel-ID" : "tabpanel-one",
+        "accordion-ID" : "AccordionID",
+        "title": "Title One",
+        "accordion-copy": "Here is the copy for accordion 1"
+      },    {
+        "item-ID": "id-two",
+        "tabpanel-ID" : "tabpanel-two",
+        "accordion-ID" : "AccordionID",
+        "title": "Title Two",
+        "accordion-copy": "Here is the copy for accordion 2"
+      },    {
+        "item-ID": "id-three",
+        "tabpanel-ID" : "tabpanel-three",
+        "accordion-ID" : "AccordionID",
+        "title": "Title three",
+        "accordion-copy": "Here is the copy for accordion 3"
+      },    {
+        "item-ID": "id-four",
+        "tabpanel-ID" : "tabpanel-four",
+        "accordion-ID" : "AccordionID",
+        "title": "Title Four",
+        "accordion-copy": "Here is the copy for accordion 4"
+      }
+    ]
+  }
+}
