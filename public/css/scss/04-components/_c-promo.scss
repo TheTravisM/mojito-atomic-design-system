@@ -29,30 +29,28 @@
     flex: auto;
     order: 2;
   }
-}
-
-.c-promo--media-left {
-  .c-promo_aside { order: 1; }
-  .c-promo_body { order: 2; }
-}
-.c-promo--media-right {
-  .c-promo_aside { order: 1; }
-  .c-promo_body { order: 2; }
-}
-
-// Small devices (landscape phones, 576px and down )
-@media (max-width: 576px) {
-  .c-promo {
-
+  &--media-left {
+    .c-promo_aside { order: 1; }
+    .c-promo_body { order: 2; }
+  }
+  &--media-right {
+    .c-promo_aside { order: 1; }
+    .c-promo_body { order: 2; }
   }
 }
 
-// Small devices (landscape phones, 576px and Up )
-
+/* -- [ PROMO -- Small devices (landscape phones, 576px and Up ) */
 @media (min-width: 576px) {
   .c-promo {
     display: flex;
     flex-direction: row;
+    &_aside { }
+    &_picture { }
+    &_img { }
+    &_body { }
+    &_title { }
+    &_copy { }
+    &_footer { }
     &--media-left {
       .c-promo_aside { order: 1; }
       .c-promo_body { order: 2; }
@@ -75,33 +73,32 @@
     &_aside {
       order: 2;
     }
-
-    &_picture:after {
-      content: "";
-      position: absolute;
-      left: 24px;
-      top: 24px;
-      height: 100%;
-      width: 100%;
-      display: inline-block;
-      background-color: pink;
-      z-index: -1;
+    &_picture {
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 24px;
+        top: 24px;
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        background-color: var(--color-spearmint, #81B39B);
+        z-index: -1;
+      }
     }
-
+    &_img { }
     &_body {
       margin: auto 0;
       order: 1;
     }
-
     &_header {
       max-width: 440px;
     }
-
     &_title {
       line-height: 1.5;
       font-weight: 400;
     }
-
     &_copy {
       max-width: 500px;
       margin-left: var(--spacing-large, 72px);
@@ -109,21 +106,16 @@
       font-size: 20px;
       line-height: 2;
     }
-
     &_footer {
       margin-left: var(--spacing-large, 72px);
       margin-top: var(--spacing-large, 72px);
     }
   }
   &:nth-child(2n+1) {
-    .c-promo_picture:after {
-      left: 24px;
-    }
+    .c-promo_picture:after { left: 24px; }
   }
   &:nth-child(2n) {
-    .c-promo_picture:after {
-      left: -24px;
-    }
+    .c-promo_picture:after { left: -24px; }
   }
   &:nth-child(3n+1) {
     .c-promo_picture:after {
@@ -164,10 +156,17 @@
 }
 
 // Small devices (landscape phones, 576px and Up )
-
 @media (min-width: 576px) {
   .c-promo--homepage {
-    .c-promo {  }
+    .c-promo {
+      &_aside { }
+      &_picture { }
+      &_img { }
+      &_body { }
+      &_title { }
+      &_copy { }
+      &_footer { }
+    }
     &:nth-child(2n+1) {
       .c-promo_aside { order: 1; }
       .c-promo_body { order: 2; }
@@ -179,28 +178,90 @@
   }
 }
 
-
 /* -- -------------------- -- */
 /* -- [ Promos : Primary ] -- */
 /* -- -------------------- -- */
 .c-promo--primary {
   .c-promo {
+    &_aside { }
+    &_picture { }
+    &_img { }
     &_body { }
     &_title { }
     &_copy { }
     &_footer { }
   }
 }
+/* -- [ Primary -- Small devices (landscape phones, 576px and Up ) */
+@media (min-width: 576px) {
+  .c-promo--primary {
+    .c-promo {
+      &_aside { }
+      &_picture { }
+      &_img { }
+      &_body { }
+      &_title { }
+      &_copy { }
+      &_footer { }
+    }
+  }
+}
 
 /* -- ---------------------- -- */
 /* -- [ Promos : Secondary ] -- */
 /* -- ---------------------- -- */
-.c-promo--secondary { }
+.c-promo--secondary {
+  .c-promo {
+    &_aside { }
+    &_picture { }
+    &_img { }
+    &_body { }
+    &_title { }
+    &_copy { }
+    &_footer { }
+  }
+}
+/* -- [ Secondary -- Small devices (landscape phones, 576px and Up ) */
+@media (min-width: 576px) {
+  .c-promo--secondary {
+    .c-promo {
+      &_aside { }
+      &_picture { }
+      &_img { }
+      &_body { }
+      &_title { }
+      &_copy { }
+      &_footer { }
+    }
+  }
+}
 
 /* -- ----------------- -- */
 /* -- [ Promos : HERO ] -- */
 /* -- ----------------- -- */
 .c-promo--hero {
   padding: 24px 0;
+  .c-promo {
+    &_aside { }
+    &_picture { }
+    &_img { }
+    &_body { }
+    &_title { }
+    &_copy { }
+    &_footer { }
+  }
 }
-
+/* -- [ HERO -- Small devices (landscape phones, 576px and Up ) */
+@media (min-width: 576px) {
+  .c-promo--secondary {
+    .c-promo {
+      &_aside { }
+      &_picture { }
+      &_img { }
+      &_body { }
+      &_title { }
+      &_copy { }
+      &_footer { }
+    }
+  }
+}

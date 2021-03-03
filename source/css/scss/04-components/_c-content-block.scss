@@ -1,0 +1,45 @@
+.c-content-block {
+  position: relative;
+}
+
+.c-content-block--home {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 152px;
+  margin-bottom: -70px;
+  text-align: center;
+  z-index: 1;
+  &::before {
+    content: "";
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    bottom: 3px;
+    border: 2px solid #000;
+    border-color: #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  &::after {
+    content: "";
+    height: 200px;
+    margin-top: 50px;
+    border: 2px solid #000;
+    border-width: 0 2px 0 0;
+  }
+  .c-content-block {
+    &_title {
+      font-size: 90px;
+      font-weight: 600;
+      line-height: 110px;
+    }
+    &_copy {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 40px;
+    }
+  }
+}
