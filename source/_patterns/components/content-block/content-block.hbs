@@ -1,0 +1,25 @@
+<article class="c-content-block {{blockModifier}}">
+
+    {{#if title}}
+        <header class="c-content-block_header">
+            <{{headingLevel}} class="c-content-block_title">
+                {{title}}
+            </{{headingLevel}}>
+        </header>
+    {{/if}}
+
+    {{#if copy}}
+        <section class="c-content-block_copy">
+            {{copy}}
+        </section>
+    {{/if}}
+
+    {{#if buttons}}
+        <footer class="c-content-block_footer">
+            <a class="c-btn {{buttonClass}}" href="{{linkUrl}}" role="link">
+                {{linkText}}
+            </a>
+        </footer>
+    {{/if}}
+
+</article>

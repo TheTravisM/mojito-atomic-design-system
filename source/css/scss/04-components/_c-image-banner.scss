@@ -4,83 +4,112 @@
   &_img { }
 }
 
+
 .c-image-banner--home {
   min-width: 1390px;
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-self: center;
   align-items: center;
   margin-top: 0;
-  margin-bottom: var(--spacing-large, 72px);
+  margin-bottom: 25px;
   grid-gap: 60px;
   .c-image-banner {
     &_picture {
       position: relative;
-      &:after {
-        content: "";
-        position: absolute;
-        top: 10px;
-        height: 100%;
+      display: none;
+      &:nth-of-type(5n+3) {
+        display: flex;
         width: 100%;
-        display: inline-block;
-        background-color: pink;
-        z-index: -1;
-      }
-      &:nth-of-type(5n+1){
-        height: 492px;
-        width: 192px;
-        top: 60px;
-        &::after {
-          background-color: var(--color-straw, #F2CD8F);
-          left: 10px;
-        }
-      }
-      &:nth-of-type(5n+2) {
-        height: 390px;
-        width: 117px;
-        top: -70px;
-        &::after {
-          background-color: var(--color-terra-cotta, #E07A5F);
-          left: 10px;
-        }
-      }
-      &:nth-of-type(5n+3){
-        height: 808px;
-        width: 527px;
-        &::after {
-          background-color: var(--color-plum, #3D405B);
-          width: calc(100% + 20px);
-          left: -10px;
-        }
-      }
-      &:nth-of-type(5n+4){
-        height: 451px;
-        width: 117px;
-        top: 80px;
-        &::after {
-          background-color: var(--color-spearmint, #81B39B);
-          right: 10px;
-        }
-      }
-      &:nth-of-type(5n+5){
-        height: 440px;
-        width: 193px;
-        top: 30px;
-        &::after {
-          background-color: var(--color-straw, #F2CD8F);
-          right: 10px;
-        }
+        max-width: calc(100vw - 90px);
+        min-height: 443px;
+        height: auto;
+        max-height: 100vh;
       }
     }
     &_img {
-      display: flex;
       height: auto;
       min-height: 100%;
       width: auto;
       min-width: 100%;
+      max-width: initial;
+      display: flex;
       position: relative;
       object-fit: cover;
+    }
+  }
+}
+// Small devices (landscape phones, 576px and Up )
+@media (min-width: 576px) {
+
+  .c-image-banner--home {
+    margin-top: 0;
+    margin-bottom: 70px;
+    grid-gap: 60px;
+
+    .c-image-banner {
+      &_picture {
+        display: flex;
+        &:after {
+          content: "";
+          position: absolute;
+          top: 10px;
+          height: 100%;
+          width: 100%;
+          display: inline-block;
+          background-color: pink;
+          z-index: -1;
+        }
+        &:nth-of-type(5n+1) {
+          height: 492px;
+          width: 192px;
+          top: 60px;
+          &::after {
+            background-color: var(--color-straw, #F2CD8F);
+            left: 10px;
+          }
+        }
+        &:nth-of-type(5n+2) {
+          height: 390px;
+          width: 117px;
+          top: -70px;
+          &::after {
+            background-color: var(--color-terra-cotta, #E07A5F);
+            left: 10px;
+          }
+        }
+        &:nth-of-type(5n+3) {
+          height: 808px;
+          width: 527px;
+
+          &::after {
+            background-color: var(--color-plum, #3D405B);
+            width: calc(100% + 20px);
+            left: -10px;
+          }
+        }
+        &:nth-of-type(5n+4) {
+          height: 451px;
+          width: 117px;
+          top: 80px;
+          &::after {
+            background-color: var(--color-spearmint, #81B39B);
+            right: 10px;
+          }
+        }
+        &:nth-of-type(5n+5) {
+          height: 440px;
+          width: 193px;
+          top: 30px;
+          &::after {
+            background-color: var(--color-straw, #F2CD8F);
+            right: 10px;
+          }
+        }
+      }
+      &_img { }
     }
   }
 }

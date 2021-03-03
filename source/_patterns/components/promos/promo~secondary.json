@@ -1,12 +1,12 @@
 {
-  "promoClassModifier": "c-promo--secondary",
-  "promoMediaAlign": "c-promo--media-left",
-  "promoImgSrc": "http://www.fillmurray.com/200/600",
-  "promoImgAlt": "this is the alt text",
+  "classModifier": "c-promo--secondary",
+  "mediaAlign": "c-promo--media-left",
+  "imgSrc": "http://www.fillmurray.com/200/600",
+  "imgAltText": "this is the alt text",
   "promoFigCaptionText": "this is the fig caption text",
   "promoHeader": true,
-  "promoTitle": "This is the Secondary Promo Title",
-  "promoCopy": "This is the content",
+  "title": "This is the Secondary Promo Title",
+  "copy": "This is the content",
   "buttons": true,
   "buttonClass": "c-btn--secondary",
   "linkUrl": "google.com"
