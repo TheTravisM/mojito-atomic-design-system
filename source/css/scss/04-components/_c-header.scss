@@ -71,7 +71,14 @@
   }
   #c-header-logo {
     align-items: flex-end;
+    align-self: flex-end;
+    height: auto;
+    margin: 0;
+    .c-logo_link {
+      padding: 0;
+    }
   }
+
 
   .header-nav-tabpanel {
     height: auto;

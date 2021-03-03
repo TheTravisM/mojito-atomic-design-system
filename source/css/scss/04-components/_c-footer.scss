@@ -4,6 +4,7 @@
 /* -- --------------------  -- */
 
 .c-global-footer {
+  position: relative;
   display: grid;
   padding: 51px 22px 0 22px;
   justify-content: center;
@@ -14,6 +15,7 @@
 }
 
 .c-global-footer_container {
+  position: relative;
   display: grid;
   width: 100%;
   max-width: 1081px;
@@ -27,7 +29,6 @@
 
 .c-logo--footer {
   grid-area: logo;
-  margin-bottom: 60px;
 }
 .c-footer-nav {
   grid-area: nav;
