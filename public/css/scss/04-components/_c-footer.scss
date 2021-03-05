@@ -65,10 +65,15 @@
   grid-gap: 7px;
   grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
   margin-bottom: 24px;
+  a.hst-fab {
+    position:absolute;
+    top: 10px !important;
+    right: 10px !important;
+  }
   .hst-fab {
     position:absolute;
-    top: 10px;
-    right: 10px
+    top: 10px !important;
+    right: 10px !important;
   }
 }
 
