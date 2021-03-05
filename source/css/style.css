@@ -2615,16 +2615,6 @@ a.c-btn--text[href$=".mp4"]:after {
   grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
   margin-bottom: 24px;
 }
-.c-social-list a.hst-fab {
-  position: absolute;
-  top: 10px !important;
-  right: 10px !important;
-}
-.c-social-list .hst-fab {
-  position: absolute;
-  top: 10px !important;
-  right: 10px !important;
-}
 
 /* -- Nav Order  --*/
 @media (min-width: 576px) {
