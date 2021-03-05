@@ -1,0 +1,72 @@
+{
+  "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
+  "backgroundColor": "",
+  "button-list" : [
+    {
+      "buttonTag":true,
+      "linkTag":false,
+      "classModifier": "c-btn--homepage",
+      "id": "id",
+      "prependHtml": "",
+      "appendHtml": "",
+      "title": "title",
+      "text": "Button",
+      "linkUrl": "www.google.com"
+    },
+    {
+      "buttonTag":true,
+      "linkTag":false,
+      "classModifier": "c-btn--primary",
+      "id": "id",
+      "prependHtml": "",
+      "appendHtml": "",
+      "title": "title",
+      "text": "Button",
+      "linkUrl": "/internal/internal"
+    },
+    {
+      "buttonTag":true,
+      "linkTag":false,
+      "classModifier": "c-btn--primary",
+      "id": "id",
+      "prependHtml": "",
+      "appendHtml": "",
+      "title": "title",
+      "text": "Button",
+      "linkUrl": "www.external.com"
+    },
+    {
+      "buttonTag":true,
+      "linkTag":false,
+      "classModifier": "c-btn--primary-external",
+      "id": "id",
+      "prependHtml": "",
+      "appendHtml": "",
+      "title": "title",
+      "text": "Button",
+      "linkUrl": "www.google.com"
+    },
+    {
+      "buttonTag":true,
+      "linkTag":false,
+      "classModifier": "c-btn--secondary",
+      "id": "id",
+      "prependHtml": "",
+      "appendHtml": "",
+      "title": "title",
+      "text": "Our Vision",
+      "linkUrl": ""
+    },
+    {
+      "buttonTag":true,
+      "linkTag":false,
+      "classModifier": "c-btn--text",
+      "id": "id",
+      "prependHtml": "",
+      "appendHtml": "",
+      "title": "title",
+      "text": "Our Vision",
+      "linkUrl": ""
+    }
+  ]
+}

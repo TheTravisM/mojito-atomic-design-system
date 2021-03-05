@@ -1,4 +1,4 @@
 {
-  "styleModifier": "c-btn--external-link",
+  "classModifier": "c-btn--external-link",
   "url" : "www.google.com"
 }

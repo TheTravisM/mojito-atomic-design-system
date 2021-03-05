@@ -1,24 +1,43 @@
 
 <!--/* https://codepen.io/JackSamurai/pen/qBqbvmK?editors=1100 */-->
 
-<{{#if buttonTag }}button{{/ if }}{{#if linkTag }}a href="{{ url }}"{{/ if }}
-  class="c-btn {{ styleModifier }}" data-ui-component="c-btn"
-  {{# buttonTitle}}title="{{ buttonTitle }}"{{/ buttonTitle}}
-  {{# buttonIsToggle }} data-btn-icon-swap="{{ iconPath }}{{ buttonIconSwap }}"{{/ buttonIsToggle }}>
 
-    <div class="c-btn__inner">
+{{#if buttonTag }}
+    <button class="c-btn {{ classModifier }}"
+        {{#if id}}id="{{id}}"{{/if}}
+        {{#if url}}href="{{ url }}"{{/ if }}
+        {{#if buttonTitle}}title="{{ buttonTitle }}"{{/if}}>
+        {{#if prependHtml}}
+            {{{prependHtml}}}
+        {{/if}}
 
-        {{#if buttonIcon }}
-        <svg class="c-btn_icon">
-            <use href="{{ iconPath }}#{{ buttonIcon }}"></use>
-        </svg>
+        {{#if text }}
+            {{ text }}
         {{/ if }}
 
-        {{#if buttonText }}
-        {{ buttonText }}
+        {{#if appendHtml }}
+            {{{appendHtml}}}
         {{/ if }}
 
-    </div><!--end c-btn__inner-->
+    </button><!-- end c-btn -->
+{{/if}}
 
-</{{#if buttonTag }}button{{/ if }}
-{{#if linkTag }}a{{/ if }}><!-- end c-btn -->
+
+{{#if linkTag }}
+    <a {{#if url}}href="{{ url }}"{{/ if }}
+        {{#if id}}id="{{id}}"{{/if}}
+        class="c-btn {{ classModifier }}">
+        {{#if prepend}}
+            {{{prepend}}}
+        {{/if}}
+
+        {{#if text }}
+            {{ text }}
+        {{/ if }}
+
+        {{#if apend }}
+            {{{apend}}}
+        {{/ if }}
+
+    </a><!-- end c-btn -->
+{{/if}}

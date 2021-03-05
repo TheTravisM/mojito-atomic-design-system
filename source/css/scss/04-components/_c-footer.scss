@@ -64,6 +64,10 @@
   grid-gap: 7px;
   grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
   margin-bottom: 24px;
+  .hst-fab {
+    top: 10px;
+    right: 10px
+  }
 }
 
 /* -- Nav Order  --*/

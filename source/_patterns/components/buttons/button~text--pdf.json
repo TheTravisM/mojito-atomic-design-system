@@ -1,6 +1,12 @@
 {
-  "styleModifier": "c-btn--text",
-  "buttonTag" : false,
-  "linkTag" : true,
+  "buttonTag":true,
+  "linkTag":false,
+  "id": "id",
+  "prependHtml": "",
+  "appendHtml": "",
+  "title": "title",
+  "text": "Button",
+  "linkUrl": "",
+  "classModifier": "c-btn--text c-btn--text-pdf",
   "url" : "www.link.pdf"
 }
