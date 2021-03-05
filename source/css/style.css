@@ -2591,7 +2591,7 @@ a.c-btn--text[href$=".mp4"]:after {
   flex-wrap: wrap;
   flex-flow: row wrap;
   justify-content: space-between;
-  position: absolute;
+  position: relative;
 }
 
 .footer_hr {
