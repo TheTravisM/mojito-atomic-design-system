@@ -4,6 +4,7 @@ main[role="main"] {
           [viewport-start] minmax(12px, 1fr)
           [container-start] minmax(0, 1080px) [container-end]
           minmax(12px, 1fr) [viewport-end];
+  overflow-x: hidden;
 }
 
 

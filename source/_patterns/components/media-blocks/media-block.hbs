@@ -10,9 +10,9 @@
     <section class="c-media-block_body">
         {{#if title}}
             <header class="c-media-block_header">
-                <{{headingLevel}} class="c-media-block_title">
+                <{{#if headingLevel}}{{headingLevel}}{{else}}h4{{/if}} class="c-media-block_title">
                     {{title}}
-                </{{headingLevel}}>
+                </{{#if headingLevel}}{{headingLevel}}{{else}}h4{{/if}}>
             </header>
         {{/if}}
 

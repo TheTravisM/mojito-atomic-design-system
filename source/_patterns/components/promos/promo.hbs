@@ -10,11 +10,13 @@
     <section class="c-promo_body">
         {{#if title}}
             <header class="c-promo_header">
-                <{{headingLevel}} class="c-promo_title">
+                <{{#if headingLevel}}{{headingLevel}}{{else}}h4{{/if}} class="c-promo_title">
                     {{title}}
-                </{{headingLevel}}>
+                </{{#if headingLevel}}{{headingLevel}}{{else}}h4{{/if}}>
             </header>
         {{/if}}
+
+
 
         {{#if htmlText}}
             <div class="c-promo_copy">
@@ -29,6 +31,7 @@
                 </a>
             </footer>
         {{/if}}
-    </section>
+
+    </section><!-- End Promo Body -->
 </article>
 
