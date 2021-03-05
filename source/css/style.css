@@ -2591,6 +2591,7 @@ a.c-btn--text[href$=".mp4"]:after {
   flex-wrap: wrap;
   flex-flow: row wrap;
   justify-content: space-between;
+  position: absolute;
 }
 
 .footer_hr {
@@ -2615,6 +2616,7 @@ a.c-btn--text[href$=".mp4"]:after {
   margin-bottom: 24px;
 }
 .c-social-list .hst-fab {
+  position: absolute;
   top: 10px;
   right: 10px;
 }
