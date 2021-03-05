@@ -1,0 +1,18 @@
+{
+  "promo-list" : [
+    {
+      "classModifier": "c-promo--leadership",
+      "mediaAlign": "",
+      "backgroundColor": "",
+      "imgSrc": "https://embed.widencdn.net/img/cengage/ivivspdfoo/600px@1x/webpromo-m-hansen.jpg",
+      "imgAltText": "this is the alt text",
+      "headingLevel": "h1",
+      "title": "Michael became CEO of Cengage in September of 2012. ",
+      "htmlText": "Connect With Michael",
+      "buttons": true,
+      "buttonClass": "c-btn--primary",
+      "buttonText": "button",
+      "linkUrl": "google.com"
+    }
+  ]
+}

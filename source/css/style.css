@@ -2275,6 +2275,7 @@ main[role=main] {
   transition: all 0.5s ease-out;
 }
 
+/* -- [ HOMEPAGE ] -- */
 .c-btn--homepage,
 .c-btn--homepage:visited {
   padding: 0 105px 0 0;
@@ -2312,6 +2313,7 @@ main[role=main] {
   width: 100%;
 }
 
+/* -- [ PRIMARY ] -- */
 .c-btn--primary,
 .c-btn--primary:visited {
   padding: 0 51px 0 0;
@@ -2324,14 +2326,15 @@ main[role=main] {
 }
 .c-btn--primary::after,
 .c-btn--primary:visited::after {
+  height: 14px;
+  width: 16px;
   content: "";
+  position: absolute;
   -webkit-mask: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 41.7'%3E%3Cpath d='M50,20.8c0,0.8-0.3,1.5-0.9,2L29.7,40.9c-0.5,0.5-1.2,0.7-1.9,0.7c-0.7,0-1.5-0.3-2-0.9 c-1-1.1-1-2.9,0.1-3.9l14.4-13.4L2.8,23.8c0,0,0,0,0,0C1.3,23.8,0,22.5,0,21c0-1.5,1.2-2.8,2.8-2.8L40,17.9L25.9,4.8 c-1.1-1-1.2-2.8-0.1-3.9c1-1.1,2.8-1.2,3.9-0.1l19.4,18.1C49.7,19.3,50,20.1,50,20.8z'/%3E%3C/svg%3E%0A") no-repeat 50% 50%;
   mask: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 41.7'%3E%3Cpath d='M50,20.8c0,0.8-0.3,1.5-0.9,2L29.7,40.9c-0.5,0.5-1.2,0.7-1.9,0.7c-0.7,0-1.5-0.3-2-0.9 c-1-1.1-1-2.9,0.1-3.9l14.4-13.4L2.8,23.8c0,0,0,0,0,0C1.3,23.8,0,22.5,0,21c0-1.5,1.2-2.8,2.8-2.8L40,17.9L25.9,4.8 c-1.1-1-1.2-2.8-0.1-3.9c1-1.1,2.8-1.2,3.9-0.1l19.4,18.1C49.7,19.3,50,20.1,50,20.8z'/%3E%3C/svg%3E%0A") no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
   display: inline-block;
-  height: 14px;
-  width: 16px;
   background-color: var(--color-spearmint, #81B39B);
   align-self: center;
   right: 11px;
@@ -2349,6 +2352,7 @@ main[role=main] {
 .c-btn--primary:visited:hover::before {
   width: 100%;
 }
+/* -- [ SECONDARY ] -- */
 .c-btn--secondary,
 .c-btn--secondary:visited {
   color: var(--color-almost-black, #1D1D1E);
@@ -2375,15 +2379,12 @@ main[role=main] {
   border-color: var(--color-terra-cotta, #E07A5F);
 }
 
+/* -- [ EXTERNAL ] -- */
 /*	External Links
 	A tags that do not start with
 	Not  Internal links  : links that do not start with
 */
-a.c-btn--text:not([href^="/"]):after,
-a.c-btn--text:not([href^=".."]):after,
-a.c-btn--text[href^="http://"]:not([href*="cengage.com"]):after,
-a.c-btn--text[href^="https://"]:not([href*="cengage.com"]):after,
-a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
+.c-btn--external-link::after {
   content: "";
   -webkit-mask: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath d='M49.8,1.8c-0.3-0.7-0.9-1.3-1.6-1.6C47.8,0.1,47.5,0,47.1,0H27.5c-1.6,0-2.9,1.3-2.9,2.9s1.3,2.9,2.9,2.9H40 L0.9,45c-1.1,1.1-1.1,3,0,4.1c0.5,0.6,1.3,0.9,2,0.9s1.5-0.3,2.1-0.9L44.2,10v12.6c0,1.6,1.3,2.9,2.9,2.9c1.6,0,2.9-1.3,2.9-2.9V2.9 C50,2.5,49.9,2.2,49.8,1.8z'/%3E%3C/svg%3E") no-repeat 50% 50%;
   mask: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath d='M49.8,1.8c-0.3-0.7-0.9-1.3-1.6-1.6C47.8,0.1,47.5,0,47.1,0H27.5c-1.6,0-2.9,1.3-2.9,2.9s1.3,2.9,2.9,2.9H40 L0.9,45c-1.1,1.1-1.1,3,0,4.1c0.5,0.6,1.3,0.9,2,0.9s1.5-0.3,2.1-0.9L44.2,10v12.6c0,1.6,1.3,2.9,2.9,2.9c1.6,0,2.9-1.3,2.9-2.9V2.9 C50,2.5,49.9,2.2,49.8,1.8z'/%3E%3C/svg%3E") no-repeat 50% 50%;
@@ -2397,6 +2398,7 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
   align-self: center;
 }
 
+/* -- [ EXTERNAL ] -- */
 /* Text Icon Links */
 /*	Target Media Links – PDF and Doc Files
 	Targets only text buttons
@@ -2555,6 +2557,7 @@ a.c-btn--text[href$=".mp4"]:after {
 }
 
 .c-social-list {
+  position: relative;
   flex: 1 100%;
   display: grid;
   grid-gap: 7px;
@@ -2586,6 +2589,7 @@ a.c-btn--text[href$=".mp4"]:after {
 /* -- [ COMPONENTS : FOOTER NAVIGATION -- */
 /* -- -----------------------------  -- */
 .c-footer-nav {
+  position: relative;
   letter-spacing: 0;
   color: var(--color-primary-blue, #003865);
 }
@@ -3618,6 +3622,9 @@ a.c-btn--text[href$=".mp4"]:after {
   flex-direction: column;
 }
 
+/* -- ---------- -- */
+/* -- [ Promos ] -- */
+/* -- ---------- -- */
 .c-promo {
   display: flex;
   flex-direction: column;
@@ -3734,7 +3741,7 @@ a.c-btn--text[href$=".mp4"]:after {
 }
 .c-promo--homepage:nth-child(3n+2) .c-promo_picture {
   height: 570px;
-  width: 319px;
+  width: 320px;
 }
 .c-promo--homepage:nth-child(3n+2) .c-promo_picture:after {
   background-color: var(--color-plum, #3D405B);
@@ -3743,8 +3750,8 @@ a.c-btn--text[href$=".mp4"]:after {
   border-color: var(--color-plum, #3D405B);
 }
 .c-promo--homepage:nth-child(3n+3) .c-promo_picture {
-  height: 570px;
-  width: 213px;
+  max-height: 570px;
+  max-width: 215px;
 }
 .c-promo--homepage:nth-child(3n+3) .c-promo_picture:after {
   background-color: var(--color-terra-cotta, #E07A5F);
@@ -3753,9 +3760,11 @@ a.c-btn--text[href$=".mp4"]:after {
   border-color: var(--color-terra-cotta, #E07A5F);
 }
 
+/* -- [ Promos : Homepage Small devices (landscape phones, 576px and Up ) */
 @media (min-width: 576px) {
   .c-promo--homepage {
     padding-bottom: 72px;
+    flex-wrap: nowrap;
   }
   .c-promo--homepage .c-promo_picture {
     position: relative;
@@ -3800,8 +3809,8 @@ a.c-btn--text[href$=".mp4"]:after {
     order: 1;
   }
   .c-promo--homepage:nth-child(3n+1) .c-promo_picture {
-    height: 718px;
-    width: 276px;
+    height: 715px;
+    width: 275px;
   }
   .c-promo--homepage:nth-child(3n+1) .c-promo_picture:after {
     background-color: var(--color-spearmint, #81B39B);
@@ -3810,8 +3819,8 @@ a.c-btn--text[href$=".mp4"]:after {
     border-color: var(--color-spearmint, #81B39B);
   }
   .c-promo--homepage:nth-child(3n+2) .c-promo_picture {
-    height: 721px;
-    width: 517px;
+    height: 720px;
+    width: 520px;
   }
   .c-promo--homepage:nth-child(3n+2) .c-promo_picture:after {
     background-color: var(--color-plum, #3D405B);
@@ -3820,8 +3829,8 @@ a.c-btn--text[href$=".mp4"]:after {
     border-color: var(--color-plum, #3D405B);
   }
   .c-promo--homepage:nth-child(3n+3) .c-promo_picture {
-    height: 721px;
-    width: 276px;
+    max-height: 720px;
+    max-width: 275px;
   }
   .c-promo--homepage:nth-child(3n+3) .c-promo_picture:after {
     background-color: var(--color-terra-cotta, #E07A5F);
@@ -3830,10 +3839,196 @@ a.c-btn--text[href$=".mp4"]:after {
     border-color: var(--color-terra-cotta, #E07A5F);
   }
 }
+/* -- ----------------------- -- */
+/* -- [ Promos : Leadership ] -- */
+/* -- ----------------------- -- */
+.c-promo--leadership {
+  flex-direction: column;
+}
+.c-promo--leadership .c-promo_picture {
+  max-height: 424px;
+  max-width: 637px;
+  position: relative;
+}
+.c-promo--leadership .c-promo_picture:after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  background-color: var(--color-straw, #F2CD8F);
+  z-index: -1;
+}
+.c-promo--leadership .c-promo_img {
+  display: flex;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+.c-promo--leadership .c-promo_body {
+  max-width: 637px;
+}
+.c-promo--leadership .c-promo_header {
+  margin-bottom: 32px;
+}
+.c-promo--leadership .c-promo_title {
+  font-size: 24px;
+  line-height: 38px;
+}
+.c-promo--leadership .c-promo_copy {
+  font-size: 16px;
+  line-height: 25px;
+}
+/* -- [ Leadership -- Small devices (landscape phones, 576px and Up ) */
+@media (min-width: 980px) {
+  .c-promo--leadership {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1024px;
+  }
+  .c-promo--leadership .c-promo {
+    margin-bottom: 60px;
+  }
+  .c-promo--leadership .c-promo_picture:after {
+    left: 16px;
+    top: 16px;
+  }
+  .c-promo--leadership .c-promo_body {
+    width: 100%;
+    max-width: 286px;
+  }
+  .c-promo--leadership .c-promo_title {
+    font-size: 32px;
+    line-height: 51px;
+  }
+  .c-promo--leadership .c-promo_copy {
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+}
 /* -- -------------------- -- */
 /* -- [ Promos : Primary ] -- */
 /* -- -------------------- -- */
-/* -- [ Primary -- Small devices (landscape phones, 576px and Up ) */
+.c-promo--primary {
+  padding-bottom: 88px;
+}
+.c-promo--primary .c-promo_aside {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+}
+.c-promo--primary .c-promo_picture {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.c-promo--primary .c-promo_img {
+  display: flex;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+.c-promo--primary .c-promo_body {
+  max-width: 528px;
+  order: 1;
+  margin-bottom: 32px;
+}
+.c-promo--primary .c-promo_header {
+  margin-bottom: 16px;
+  max-width: 440px;
+}
+.c-promo--primary .c-promo_title {
+  font-size: 24px;
+  line-height: 38px;
+}
+.c-promo--primary .c-promo_copy {
+  max-width: 436px;
+  font-size: 16px;
+  line-height: 25px;
+}
+.c-promo--primary .c-promo_footer {
+  margin-left: var(--spacing-large, 72px);
+  margin-top: var(--spacing-large, 72px);
+}
+.c-promo--primary:nth-child(2n+1) .c-promo_picture {
+  align-self: flex-end;
+}
+.c-promo--primary:nth-child(2n) .c-promo_picture {
+  align-self: flex-start;
+}
+.c-promo--primary:nth-child(3n+1) .c-promo_picture {
+  height: 570px;
+  width: 215px;
+}
+.c-promo--primary:nth-child(3n+2) .c-promo_picture {
+  height: 570px;
+  width: 320px;
+}
+.c-promo--primary:nth-child(3n+3) .c-promo_picture {
+  height: 570px;
+  width: 215px;
+}
+
+/* -- [ Primary : Small devices (landscape phones, 576px and Up ) */
+@media (min-width: 576px) {
+  .c-promo--primary {
+    padding-bottom: 16px;
+    justify-content: space-between;
+    grid-column-gap: 32px;
+  }
+  .c-promo--primary .c-promo_body {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+  }
+  .c-promo--primary .c-promo_header {
+    margin-bottom: 32px;
+  }
+  .c-promo--primary .c-promo_title {
+    font-size: 40px;
+    line-height: 64px;
+  }
+  .c-promo--primary .c-promo_copy {
+    align-self: flex-end;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .c-promo--primary:nth-child(2n+1) .c-promo_aside {
+    order: 2;
+  }
+  .c-promo--primary:nth-child(2n+1) .c-promo_body {
+    order: 1;
+  }
+  .c-promo--primary:nth-child(2n) .c-promo_aside {
+    order: 1;
+  }
+  .c-promo--primary:nth-child(2n) .c-promo_body {
+    order: 2;
+  }
+  .c-promo--primary:nth-child(3n+1) .c-promo_picture {
+    height: 720px;
+    width: 275px;
+  }
+  .c-promo--primary:nth-child(3n+2) .c-promo_picture {
+    height: 720px;
+    width: 440px;
+  }
+  .c-promo--primary:nth-child(3n+3) .c-promo_body {
+    max-width: 620px;
+  }
+  .c-promo--primary:nth-child(3n+3) .c-promo_picture {
+    height: 720px;
+    width: 260px;
+  }
+  .c-promo--primary:nth-child(3n+4) .c-promo_picture {
+    height: 610px;
+    width: 350px;
+  }
+}
 /* -- ---------------------- -- */
 /* -- [ Promos : Secondary ] -- */
 /* -- ---------------------- -- */
@@ -3842,9 +4037,87 @@ a.c-btn--text[href$=".mp4"]:after {
 /* -- [ Promos : HERO ] -- */
 /* -- ----------------- -- */
 .c-promo--hero {
-  padding: 24px 0;
+  padding: 52px 0;
+  flex-wrap: wrap;
 }
+.c-promo--hero .c-promo_aside {
+  order: 2;
+}
+.c-promo--hero .c-promo_picture {
+  position: relative;
+}
+.c-promo--hero .c-promo_img {
+  display: flex;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+.c-promo--hero .c-promo_body {
+  order: 1;
+}
+.c-promo--hero .c-promo_header {
+  margin-bottom: 32px;
+}
+.c-promo--hero .c-promo_title {
+  font-size: 32px;
+  line-height: 47px;
+  font-weight: 600;
+}
+.c-promo--hero .c-promo_copy {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+.c-promo--hero .c-promo_copy q {
+  font-size: 24px;
+  line-height: 38px;
+  margin-bottom: 16px;
+}
+.c-promo--hero .c-promo_copy cite {
+  font-size: 16px;
+  line-height: 25px;
+  font-style: normal;
+}
+.c-promo--hero .c-promo_copy cite:before {
+  content: "— ";
+}
+.c-promo--hero .c-promo_footer {
+  margin-bottom: 32px;
+}
+
 /* -- [ HERO -- Small devices (landscape phones, 576px and Up ) */
+@media (min-width: 576px) {
+  .c-promo--hero {
+    justify-content: space-between;
+  }
+  .c-promo--hero .c-promo_aside {
+    order: 1;
+  }
+  .c-promo--hero .c-promo_picture {
+    height: 535px;
+    width: 252px;
+  }
+  .c-promo--hero .c-promo_body {
+    order: 2;
+    max-width: 712px;
+  }
+  .c-promo--hero .c-promo_header {
+    margin-bottom: 32px;
+  }
+  .c-promo--hero .c-promo_title {
+    font-size: 56px;
+    line-height: 90px;
+  }
+  .c-promo--hero .c-promo_copy q {
+    font-size: 40px;
+    line-height: 64px;
+    margin-bottom: 16px;
+  }
+  .c-promo--hero .c-promo_copy cite {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
 /* -- ------------  -- */
 /* -- [ UTILITIES ] -- */
 /* -- ------------  -- */

@@ -1,44 +1,18 @@
 {
+  "containerModifier": "l-container--full",
+  "backgroundColor": "u-bg--spearmint-lite",
   "promo-list" : [
     {
       "classModifier": "c-promo--hero",
       "mediaAlign": "c-promo--media-left",
-      "backgroundColor": "u-bg--spearmint-lite",
-      "imgSrc": "http://www.fillmurray.com/252/535",
+      "imgSrc": "http://news.cengage.com/wp-content/uploads/2019/06/MHansen-2019-bust-smaller.png",
       "imgAltText": "this is the alt text",
-      "promoHeader": true,
-      "title": "Promo Hero H3 Title",
-      "copy": "This is the content",
+      "headingLevel": "h3",
+      "title": "Leadership",
+      "htmlText": "<h4><q>Our culture is built to create leaders at all levels who make decisions with real impact.</q></h4><p><cite>Brave New World</cite></p>",
       "buttons": true,
-      "buttonClass": "c-btn--primary",
-      "linkUrl": "google.com"
-    },
-    {
-      "classModifier": "c-promo--hero",
-      "mediaAlign": "c-promo--media-right",
-      "backgroundColor": "u-bg--light-gray",
-      "imgSrc": "http://www.fillmurray.com/200/600",
-      "imgAltText": "this is the alt text",
-      "promoFigCaptionText": "this is the fig caption text",
-      "promoHeader": true,
-      "title": "This is the title",
-      "copy": "This is the content",
-      "buttons": true,
-      "buttonClass": "c-btn--primary",
-      "linkUrl": "google.com"
-    },
-    {
-      "classModifier": "c-promo--hero",
-      "mediaAlign": "c-promo--media-left",
-      "backgroundColor": "u-bg--light-plum",
-      "imgSrc": "http://www.fillmurray.com/200/600",
-      "imgAltText": "this is the alt text",
-      "promoFigCaptionText": "this is the fig caption text",
-      "promoHeader": true,
-      "title": "This is the title",
-      "copy": "This is the content",
-      "buttons": true,
-      "buttonClass": "c-btn--primary",
+      "buttonClass": "c-btn--secondary",
+      "buttonText": "meet our leadership",
       "linkUrl": "google.com"
     }
   ]

@@ -1,48 +1,44 @@
 {
-  "buttonTag" : true,
-  "buttonText" : "Button",
   "promo-list" : [
     {
       "classModifier": "c-promo--primary",
-      "mediaAlign": "c-promo--media-left",
       "backgroundColor": "",
-      "imgSrc": "http://www.fillmurray.com/252/535",
+      "imgSrc": "http://www.fillmurray.com/270/710",
       "imgAltText": "this is the alt text",
-      "promoFigCaptionText": "this is the fig caption text",
-      "promoHeader": true,
-      "title": "H3 Headline This is the title",
-      "copy": "This is the content",
-      "buttons": true,
-      "buttonClass": "c-btn--primary",
-      "linkUrl": "google.com"
+      "headingLevel": "h3",
+      "title": "Students",
+      "htmlText": "We're on a mission to make every student a confident learner. Our flexible tools give you access to learning where and when you need it, so you can work toward achieving your dreams. ",
+      "buttons": false
     },
     {
       "classModifier": "c-promo--primary",
-      "mediaAlign": "c-promo--media-right",
       "backgroundColor": "",
-      "imgSrc": "http://www.fillmurray.com/200/600",
+      "imgSrc": "http://www.fillmurray.com/500/720",
       "imgAltText": "this is the alt text",
-      "promoFigCaptionText": "this is the fig caption text",
-      "promoHeader": true,
-      "title": "This is the title",
-      "copy": "This is the content",
-      "buttons": true,
-      "buttonClass": "c-btn--primary",
-      "linkUrl": "google.com"
+      "headingLevel": "h3",
+      "title": "Educators",
+      "htmlText": "We're united with you in our commitment to put the student at the center of everything we do. By working closely with educators to develop student-focused solutions and offering unparalleled support, we help you cultivate capable learners. ",
+      "buttons": false
     },
     {
       "classModifier": "c-promo--primary",
-      "mediaAlign": "c-promo--media-left",
       "backgroundColor": "",
-      "imgSrc": "http://www.fillmurray.com/200/600",
+      "imgSrc": "http://www.fillmurray.com/275/725",
       "imgAltText": "this is the alt text",
-      "promoFigCaptionText": "this is the fig caption text",
-      "promoHeader": true,
-      "title": "This is the title",
-      "copy": "This is the content",
-      "buttons": true,
-      "buttonClass": "c-btn--primary",
-      "linkUrl": "google.com"
+      "headingLevel": "h3",
+      "title": "Librarians",
+      "htmlText": "Information must be accessible to be valuable. You are curators of essential educational materials and, supported by our content and digital tools, we can help you promote engagement and discovery.",
+      "buttons": false
+    },
+    {
+      "classModifier": "c-promo--primary",
+      "backgroundColor": "",
+      "imgSrc": "http://www.fillmurray.com/270/710",
+      "imgAltText": "this is the alt text",
+      "headingLevel": "h3",
+      "title": "Employees",
+      "htmlText": "At Cengage, our culture is defined by accountability to and for each other. We pragmatically and boldly challenge the status quo to advance the way students learn. Together, we improve the lives of millions of learners, globally, every day—one student at a time.",
+      "buttons": false
     }
   ]
 }

@@ -10,12 +10,12 @@
       "mediaBlockImgSrc": "http://www.fillmurray.com/344/344",
       "mediaBlockImgAlt": "this is the alt text",
       "mediaBlockFigCaptionText": "this is the fig caption text",
-      "mediaBlockHeader": true,
-      "mediaHeadingLevel": "h6",
-      "mediaBlockTitle": "1 This is the title",
-      "mediaBlockCopy": "This is the content",
+      "headingLevel": "h6",
+      "title": "1 This is the title",
+      "htmlText": "This is the content",
       "buttons": true,
       "buttonClass": "c-btn--primary",
+      "buttonText": "button",
       "linkUrl": "google.com"
     },
     {
@@ -24,12 +24,12 @@
       "mediaBlockImgSrc": "http://www.fillmurray.com/344/344",
       "mediaBlockImgAlt": "this is the alt text",
       "mediaBlockFigCaptionText": "this is the fig caption text",
-      "mediaBlockHeader": true,
-      "mediaHeadingLevel": "h6",
-      "mediaBlockTitle": "2 This is the title",
-      "mediaBlockCopy": "This is the content",
+      "headingLevel": "h6",
+      "title": "2 This is the title",
+      "htmlText": "This is the content",
       "buttons": true,
       "buttonClass": "c-btn--primary",
+      "buttonText": "button",
       "linkUrl": "google.com"
     },
     {
@@ -38,12 +38,12 @@
       "mediaBlockImgSrc": "http://www.fillmurray.com/344/344",
       "mediaBlockImgAlt": "this is the alt text",
       "mediaBlockFigCaptionText": "this is the fig caption text",
-      "mediaBlockHeader": true,
-      "mediaHeadingLevel": "h6",
-      "mediaBlockTitle": "3 This is the title",
-      "mediaBlockCopy": "This is the content",
+      "headingLevel": "h6",
+      "title": "3 This is the title",
+      "htmlText": "This is the content",
       "buttons": true,
       "buttonClass": "c-btn--primary",
+      "buttonText": "button",
       "linkUrl": "google.com"
     }
   ]
