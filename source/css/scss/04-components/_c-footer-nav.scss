@@ -33,12 +33,13 @@
 
 .c-footer-nav_link,
 .c-footer-nav_link:visited {
-  color: var(--color-primary-blue, #003865);
-  font-weight: 400;
-  font-size: 14px;
+  display: flex;
   line-height: 26px;
   margin: 7px 0;
   position: relative;
+  color: var(--color-primary-blue, #003865);
+  font-weight: 400;
+  font-size: 14px;
   &:hover,
   &:focus,
   &:active {
