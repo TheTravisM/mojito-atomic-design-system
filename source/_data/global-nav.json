@@ -28,26 +28,22 @@
             {
               "label": "ed2go",
               "url": "https://www.ed2go.com",
-              "link" : true,
-              "class-modifier" : "c-btn--external-link"
+              "link" : true
             },
             {
               "label": "Gale",
               "url": "https://www.gale.com",
-              "link" : true,
-              "class-modifier" : "c-btn--external-link"
+              "link" : true
             },
             {
               "label": "Higher Ed (U.S.)",
               "url": "https://www.higher-ed.com",
-              "link" : true,
-              "class-modifier" : "c-btn--external-link"
+              "link" : true
             },
             {
               "label": "Milady",
               "url": "https://www.milady.com",
-              "link" : true,
-              "class-modifier" : "c-btn--external-link"
+              "link" : true
             },
             {
               "label": "National Geographic Learning - K12",
