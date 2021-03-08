@@ -11,7 +11,7 @@
       "appendHtml": "",
       "title": "title",
       "text": "Button",
-      "linkUrl": "www.google.com"
+      "url": "www.google.com"
     },
     {
       "buttonTag":true,
@@ -22,7 +22,7 @@
       "appendHtml": "",
       "title": "title",
       "text": "Button",
-      "linkUrl": "/internal/internal"
+      "url": "/internal/internal"
     },
     {
       "buttonTag":true,
@@ -33,7 +33,18 @@
       "appendHtml": "",
       "title": "title",
       "text": "Button",
-      "linkUrl": "www.external.com"
+      "url": "www.external.com"
+    },
+    {
+      "buttonTag":true,
+      "linkTag":false,
+      "classModifier": "c-btn--primary",
+      "id": "id",
+      "prependHtml": "",
+      "appendHtml": "",
+      "title": "title",
+      "text": "Button",
+      "url": "www.cengage.com"
     },
     {
       "buttonTag":true,
@@ -44,7 +55,7 @@
       "appendHtml": "",
       "title": "title",
       "text": "Button",
-      "linkUrl": "www.google.com"
+      "url": "www.google.com"
     },
     {
       "buttonTag":true,
@@ -55,7 +66,7 @@
       "appendHtml": "",
       "title": "title",
       "text": "Our Vision",
-      "linkUrl": ""
+      "url": ""
     },
     {
       "buttonTag":true,
@@ -66,7 +77,7 @@
       "appendHtml": "",
       "title": "title",
       "text": "Our Vision",
-      "linkUrl": ""
+      "url": ""
     }
   ]
 }

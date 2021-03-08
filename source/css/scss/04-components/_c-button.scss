@@ -9,7 +9,6 @@
   display: inline-flex;
   position: relative;
   align-self: baseline;
-  padding: 0 15px;
   background: none;
   color: var(--color-almost-black, #1D1D1E);
   font-size: 20px;
@@ -19,8 +18,15 @@
   cursor: pointer;
   transition: all .5s ease-in-out;
   &:hover, &:focus, &:active {
+    color: var(--color-primary-blue, #003865);
   }
-  &::before,&::after {
+  &:focus {
+    background-color: rgba(144,206,241,0.25);
+    outline: 3px double #90CEF1;
+    outline-offset: 2px;
+  }
+  &::before,
+  &::after {
     content: "";
     transition: all .5s ease-out;
   }
@@ -39,13 +45,11 @@
     position: absolute;
     right: 13px;
     top: 16px;
-    //content: ">";
     height: 2px;
     width: 62px;
     border-bottom: 2px solid var(--color-spearmint, #81B39B);
     text-align: right;
   }
-  &:hover::after { }
   &::before {
     content: "";
     top: 0;
@@ -55,7 +59,8 @@
     right: 0;
     border: 2px solid var(--color-spearmint, #81B39B);
   }
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     height: 100%;
     width: 100%;
   }
@@ -68,15 +73,6 @@
   padding: 0 51px 0 0;
   &:hover, &:focus, &:active {
     padding: 0 36px 0 15px;
-  }
-  &::after {
-    //content: "";
-    //position: absolute;
-    //right: 11px;
-    //top: 16px;
-    //height: 2px;
-    //width: 16px;
-    //border-bottom: 2px solid var(--color-spearmint, #81B39B);
   }
   &::after {
     height: 14px;
@@ -100,35 +96,18 @@
     width: 35px;
     border: 2px solid var(--color-spearmint, #81B39B);
   }
-  &:hover::before {
-    width: 100%;
-  }
-  .c-btn_icon {
-
-  }
-  &:not([href^="/"])::before,
-  &:not([href^=".."])::before,
-  &:not([href^="/"])::after,
-  &:not([href^=".."])::after {
-    border-color: var(--color-terra-cotta, #E07A5F);
-  }
+  &:hover::before,
+  &:focus::before { width: 100%; }
 }
 
 /* -- [ PRIMARY - External ] -- */
 .c-btn--primary-external,
-.c-btn--primary-external:visited {
+.c-btn--primary-external:visited,
+.c-btn--primary[href*="http"]:not([href*="cengage.com"]),
+.c-btn--primary[href*="www"]:not([href*="cengage.com"]) {
   padding: 0 51px 0 0;
   &:hover, &:focus, &:active {
     padding: 0 36px 0 15px;
-  }
-  &::after {
-    //content: "";
-    //position: absolute;
-    //right: 11px;
-    //top: 16px;
-    //height: 2px;
-    //width: 16px;
-    //border-bottom: 2px solid var(--color-spearmint, #81B39B);
   }
   &::after {
     height: 14px;
@@ -152,12 +131,8 @@
     width: 35px;
     border: 2px solid var(--color-terra-cotta, #E07A5F);
   }
-  &:hover::before {
-    width: 100%;
-  }
-  .c-btn_icon {
-
-  }
+  &:hover::before,
+  &:focus::before { width: 100%; }
 }
 
 
@@ -165,13 +140,47 @@
 
 .c-btn--secondary,
 .c-btn--secondary:visited {
-  color: var(--color-almost-black, #1D1D1E);
+  color: var(--color-primary-blue, #003865);
   font-size: 16px;
-  &:hover, &:focus, &:active {
-    background: none;
-    border-color: var(--color-terra-cotta, #E07A5F);
+  line-height: 24px;
+  font-weight: 600;
+  padding-right: 40px;
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-almost-black, #1D1D1E);
+    &::before,
+    &::after {
+      border-color: var(--color-almost-black, #1D1D1E);
+    }
   }
+  &:focus {
+    background-color: rgba(144,206,241,0.25);
+    outline: 1px solid #90CEF1;
+  }
+  &::before {
+    position: absolute;
+    right: 0px;
+    top: 11px;
+    height: 2px;
+    width: 33px;
+    border-bottom: 2px solid var(--color-primary-blue, #003865);
+    text-align: right;
+  }
+  &::after {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: 7px;
+    right: 1px;
+    border: 2px solid var(--color-primary-blue, #003865);
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+  }
+
 }
+
+
 
 /* -- [ TEXT ] -- */
 .c-btn--text,

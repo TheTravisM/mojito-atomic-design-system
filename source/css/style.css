@@ -2260,7 +2260,6 @@ main[role=main] {
   display: inline-flex;
   position: relative;
   align-self: baseline;
-  padding: 0 15px;
   background: none;
   color: var(--color-almost-black, #1D1D1E);
   font-size: 20px;
@@ -2269,6 +2268,18 @@ main[role=main] {
   line-height: 34px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+}
+.c-btn:hover, .c-btn:focus, .c-btn:active,
+.c-btn:visited:hover,
+.c-btn:visited:focus,
+.c-btn:visited:active {
+  color: var(--color-primary-blue, #003865);
+}
+.c-btn:focus,
+.c-btn:visited:focus {
+  background-color: rgba(144, 206, 241, 0.25);
+  outline: 3px double #90CEF1;
+  outline-offset: 2px;
 }
 .c-btn::before, .c-btn::after,
 .c-btn:visited::before,
@@ -2309,8 +2320,9 @@ main[role=main] {
   right: 0;
   border: 2px solid var(--color-spearmint, #81B39B);
 }
-.c-btn--homepage:hover::before,
-.c-btn--homepage:visited:hover::before {
+.c-btn--homepage:hover::before, .c-btn--homepage:focus::before,
+.c-btn--homepage:visited:hover::before,
+.c-btn--homepage:visited:focus::before {
   height: 100%;
   width: 100%;
 }
@@ -2350,31 +2362,35 @@ main[role=main] {
   width: 35px;
   border: 2px solid var(--color-spearmint, #81B39B);
 }
-.c-btn--primary:hover::before,
-.c-btn--primary:visited:hover::before {
+.c-btn--primary:hover::before, .c-btn--primary:focus::before,
+.c-btn--primary:visited:hover::before,
+.c-btn--primary:visited:focus::before {
   width: 100%;
-}
-.c-btn--primary:not([href^="/"])::before, .c-btn--primary:not([href^=".."])::before, .c-btn--primary:not([href^="/"])::after, .c-btn--primary:not([href^=".."])::after,
-.c-btn--primary:visited:not([href^="/"])::before,
-.c-btn--primary:visited:not([href^=".."])::before,
-.c-btn--primary:visited:not([href^="/"])::after,
-.c-btn--primary:visited:not([href^=".."])::after {
-  border-color: var(--color-terra-cotta, #E07A5F);
 }
 
 /* -- [ PRIMARY - External ] -- */
 .c-btn--primary-external,
-.c-btn--primary-external:visited {
+.c-btn--primary-external:visited,
+.c-btn--primary[href*=http]:not([href*="cengage.com"]),
+.c-btn--primary[href*=www]:not([href*="cengage.com"]) {
   padding: 0 51px 0 0;
 }
 .c-btn--primary-external:hover, .c-btn--primary-external:focus, .c-btn--primary-external:active,
 .c-btn--primary-external:visited:hover,
 .c-btn--primary-external:visited:focus,
-.c-btn--primary-external:visited:active {
+.c-btn--primary-external:visited:active,
+.c-btn--primary[href*=http]:not([href*="cengage.com"]):hover,
+.c-btn--primary[href*=http]:not([href*="cengage.com"]):focus,
+.c-btn--primary[href*=http]:not([href*="cengage.com"]):active,
+.c-btn--primary[href*=www]:not([href*="cengage.com"]):hover,
+.c-btn--primary[href*=www]:not([href*="cengage.com"]):focus,
+.c-btn--primary[href*=www]:not([href*="cengage.com"]):active {
   padding: 0 36px 0 15px;
 }
 .c-btn--primary-external::after,
-.c-btn--primary-external:visited::after {
+.c-btn--primary-external:visited::after,
+.c-btn--primary[href*=http]:not([href*="cengage.com"])::after,
+.c-btn--primary[href*=www]:not([href*="cengage.com"])::after {
   height: 14px;
   width: 16px;
   content: "";
@@ -2389,7 +2405,9 @@ main[role=main] {
   right: 11px;
 }
 .c-btn--primary-external::before,
-.c-btn--primary-external:visited::before {
+.c-btn--primary-external:visited::before,
+.c-btn--primary[href*=http]:not([href*="cengage.com"])::before,
+.c-btn--primary[href*=www]:not([href*="cengage.com"])::before {
   content: "";
   position: absolute;
   right: 0;
@@ -2397,22 +2415,65 @@ main[role=main] {
   width: 35px;
   border: 2px solid var(--color-terra-cotta, #E07A5F);
 }
-.c-btn--primary-external:hover::before,
-.c-btn--primary-external:visited:hover::before {
+.c-btn--primary-external:hover::before, .c-btn--primary-external:focus::before,
+.c-btn--primary-external:visited:hover::before,
+.c-btn--primary-external:visited:focus::before,
+.c-btn--primary[href*=http]:not([href*="cengage.com"]):hover::before,
+.c-btn--primary[href*=http]:not([href*="cengage.com"]):focus::before,
+.c-btn--primary[href*=www]:not([href*="cengage.com"]):hover::before,
+.c-btn--primary[href*=www]:not([href*="cengage.com"]):focus::before {
   width: 100%;
 }
+
 /* -- [ SECONDARY ] -- */
 .c-btn--secondary,
 .c-btn--secondary:visited {
-  color: var(--color-almost-black, #1D1D1E);
+  color: var(--color-primary-blue, #003865);
   font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding-right: 40px;
 }
 .c-btn--secondary:hover, .c-btn--secondary:focus, .c-btn--secondary:active,
 .c-btn--secondary:visited:hover,
 .c-btn--secondary:visited:focus,
 .c-btn--secondary:visited:active {
-  background: none;
-  border-color: var(--color-terra-cotta, #E07A5F);
+  color: var(--color-almost-black, #1D1D1E);
+}
+.c-btn--secondary:hover::before, .c-btn--secondary:hover::after, .c-btn--secondary:focus::before, .c-btn--secondary:focus::after, .c-btn--secondary:active::before, .c-btn--secondary:active::after,
+.c-btn--secondary:visited:hover::before,
+.c-btn--secondary:visited:hover::after,
+.c-btn--secondary:visited:focus::before,
+.c-btn--secondary:visited:focus::after,
+.c-btn--secondary:visited:active::before,
+.c-btn--secondary:visited:active::after {
+  border-color: var(--color-almost-black, #1D1D1E);
+}
+.c-btn--secondary:focus,
+.c-btn--secondary:visited:focus {
+  background-color: rgba(144, 206, 241, 0.25);
+  outline: 1px solid #90CEF1;
+}
+.c-btn--secondary::before,
+.c-btn--secondary:visited::before {
+  position: absolute;
+  right: 0px;
+  top: 11px;
+  height: 2px;
+  width: 33px;
+  border-bottom: 2px solid var(--color-primary-blue, #003865);
+  text-align: right;
+}
+.c-btn--secondary::after,
+.c-btn--secondary:visited::after {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  top: 7px;
+  right: 1px;
+  border: 2px solid var(--color-primary-blue, #003865);
+  border-width: 2px 2px 0 0;
+  transform: rotate(45deg);
 }
 
 /* -- [ TEXT ] -- */
