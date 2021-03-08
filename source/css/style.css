@@ -2733,7 +2733,8 @@ a.c-btn--text[href$=".mp4"]:after {
   color: var(--color-primary-blue, #003865);
   font-weight: 400;
   font-size: 14px;
-  line-height: 40px;
+  line-height: 26px;
+  margin: 7px 0;
   position: relative;
 }
 .c-footer-nav_link:hover, .c-footer-nav_link:focus, .c-footer-nav_link:active,
@@ -2741,10 +2742,6 @@ a.c-btn--text[href$=".mp4"]:after {
 .c-footer-nav_link:visited:focus,
 .c-footer-nav_link:visited:active {
   color: var(--color-almost-black, #1D1D1E);
-}
-
-.c-footer-nav_link[href^="#"] {
-  color: lime;
 }
 
 .c-footer-nav_link:not([href^="/"])::after,
