@@ -1,14 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="btn-primary-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 50 41.7" style="enable-background:new 0 0 50 41.7;" xml:space="preserve">
+<svg version="1.1" id="icon-primary-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 18 15" style="enable-background:new 0 0 18 15;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#81B39B;}
+	svg#icon-primary-arrow .arrow-icon{fill:none;stroke:#81B39B;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
 </style>
-<path id="arrow-compound" class="st0" d="M50,20.8c0,0.8-0.3,1.5-0.9,2L29.7,40.9c-0.5,0.5-1.2,0.7-1.9,0.7c-0.7,0-1.5-0.3-2-0.9
-	c-1-1.1-1-2.9,0.1-3.9l14.4-13.4L2.8,23.8c0,0,0,0,0,0C1.3,23.8,0,22.5,0,21c0-1.5,1.2-2.8,2.8-2.8L40,17.9L25.9,4.8
-	c-1.1-1-1.2-2.8-0.1-3.9c1-1.1,2.8-1.2,3.9-0.1l19.4,18.1C49.7,19.3,50,20.1,50,20.8z"/>
+<line id="Path" class="arrow-icon" x1="1" y1="8" x2="16" y2="7.9"/>
+<polyline id="Line" class="arrow-icon" points="10,1 17,7.5 10,14 "/>
 </svg>
-
-
-

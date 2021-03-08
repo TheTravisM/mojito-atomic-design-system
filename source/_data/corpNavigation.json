@@ -22,31 +22,31 @@
       "sublist": [
         {
           "label": "ed2go",
-          "url": "./about"
+          "url": "https://www.external.com"
         },
         {
           "label": "Gale",
-          "url": "./Leadership"
+          "url": "https://www.external.com"
         },
         {
           "label": "Higher Ed (Intl)",
-          "url": "link.inclusion-diversity"
+          "url": "https://www.external.com"
         },
         {
           "label": "Higher Ed (U.S.)",
-          "url": "link.pages-category-on-sale"
+          "url": "https://www.external.com"
         },
         {
           "label": "Milady",
-          "url": "./Leadership"
+          "url": "https://www.external.com"
         },
         {
           "label": "National Geographic Learning K-12",
-          "url": "link.inclusion-diversity"
+          "url": "https://www.external.com"
         },
         {
           "label": "National Geographic Learning ELT",
-          "url": "link.pages-category-on-sale"
+          "url": "https://www.external.com"
         }
       ]
     },
@@ -125,7 +125,7 @@
         },
         {
           "label": "Search Jobs",
-          "url": "./Leadership",
+          "url": "https://www.external.com",
           "linkType" : "--external-link"
         },
         {
