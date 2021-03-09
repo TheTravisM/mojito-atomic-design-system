@@ -7,7 +7,6 @@
   font-size:   var(--h1-font-size,   40px);
   line-height: var(--h1-line-height, 50px);
   font-weight: var(--h1-font-weight, 600);
-  font-family: var(--h1-font-family);
 }
 
 .u-h2 {
@@ -34,7 +33,19 @@
   font-weight: var(--h5-font-weight, 600);
 }
 
+.u-h6 {
+  font-size:   var(--h6-font-size,   16px);
+  line-height: var(--h6-line-height, 25px);
+  font-weight: var(--h6-font-weight, 600);
+}
+
 .u-p {
+  font-size:   var(--p-font-size,   20px);
+  line-height: var(--p-line-height, 32px);
+  font-weight: var(--p-font-weight, 400);
+}
+
+.u-p--small {
   font-size:   var(--p-font-size,   16px);
   line-height: var(--p-line-height, 25px);
   font-weight: var(--p-font-weight, 400);
@@ -42,6 +53,43 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width, 576px) {
+  .u-h1 {
+    font-size:   var(--h1-font-size,   95px);
+    line-height: var(--h1-line-height, 153px);
+  }
 
+  .u-h2 {
+    font-size:   var(--h2-font-size,   76px);
+    line-height: var(--h2-line-height, 89px);
+  }
 
+  .u-h3 {
+    font-size:   var(--h3-font-size,   56px);
+    line-height: var(--h3-line-height, 90px);
+  }
+
+  .u-h4 {
+    font-size:   var(--h4-font-size,   40px);
+    line-height: var(--h4-line-height, 64px);
+  }
+
+  .u-h5 {
+    font-size:   var(--h5-font-size,   32px);
+    line-height: var(--h5-line-height, 51px);
+  }
+
+  .u-h6 {
+    font-size:   var(--h6-font-size,   24px);
+    line-height: var(--h6-line-height, 38px);
+  }
+
+  .u-p {
+    font-size:   var(--p-font-size,   20px);
+    line-height: var(--p-line-height, 32px);
+  }
+
+  .u-p--small {
+    font-size:   var(--p-font-size,   16px);
+    line-height: var(--p-line-height, 25px);
+  }
 }

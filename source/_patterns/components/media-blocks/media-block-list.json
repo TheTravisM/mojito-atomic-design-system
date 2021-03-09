@@ -1,4 +1,7 @@
 {
+  "pageTitle" : "Media Block List",
+  "pageTitleLevel" : "h4",
+  "containerModifier" : "c-media-block-list--leadership",
   "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
   "backgroundColorUtility": "",
   "media-block-list" : [

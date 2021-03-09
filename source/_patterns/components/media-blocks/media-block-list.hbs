@@ -2,7 +2,9 @@
 
     {{#if pageTitle}}
         <div class="l-container u-padding-bottom--medium u-padding-top--medium">
-            <h2>{{pageTitle}}</h2>
+            <{{#if pageTitleLevel}}{{pageTitleLevel}}{{else}}h4{{/if}}>
+                {{pageTitle}}
+            </{{#if pageTitleLevel}}{{pageTitleLevel}}{{else}}h4{{/if}}>
         </div>
     {{/if}}
 

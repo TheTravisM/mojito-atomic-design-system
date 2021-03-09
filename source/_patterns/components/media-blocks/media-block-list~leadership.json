@@ -1,5 +1,6 @@
 {
   "pageTitle" : "Leadership",
+  "pageTitleLevel" : "h2",
   "containerModifier" : "c-media-block-list--leadership",
   "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
   "backgroundColorUtility": "",

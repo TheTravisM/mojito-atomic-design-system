@@ -15,7 +15,6 @@
 76px 4.75rem
 95px 5.938rem
 153px 9.563rem
-
 */
 
 :root {
@@ -43,25 +42,42 @@
   --h5-line-height: 1.5625; /* 25px */
   --h5-font-weight: 600;
 
+  --h6-font-size: 16px;
+  --h6-line-height: 1.5625; /* 25px */
+  --h6-font-weight: 600;
+
   --p-font-size: 16px;
   --p-line-height: 1.5625; /* 25px */
-  --p-line-weight: 400;
+  --p-font-weight: 400;
+
+  --p-small-font-size: 16px;
+  --p-small-line-height: 1.5625; /* 25px */
+  --p-small-font-weight: 400;
 
   @media (min-width: 576px) {
-      --h1-font-size: 95px;
-      --h1-line-height: 1.6105; /* 153px */
+    --h1-font-size: 95px;
+    --h1-line-height: 1.6105; /* 153px */
 
-      --h2-font-size: 76px;
-      --h2-line-height: 1.17105; /* 89px */
+    --h2-font-size: 76px;
+    --h2-line-height: 1.17105; /* 89px */
 
-      --h3-font-size: 56px;
-      --h3-line-height: 1.60714; /* 90px */
+    --h3-font-size: 56px;
+    --h3-line-height: 1.60714; /* 90px */
 
-      --h4-font-size: 40px;
-      --h4-line-height: 1.6; /* 64px */;
+    --h4-font-size: 40px;
+    --h4-line-height: 1.6; /* 64px */;
 
-      --h5-font-size: 32px;
-      --h5-line-height: 1.59375; /*51px*/;
+    --h5-font-size: 32px;
+    --h5-line-height: 1.59375; /*51px*/;
+
+    --h6-font-size: 24px;
+    --h6-line-height: 1.583; /* 38px */
+
+    --p-font-size: 20px;
+    --p-line-height: 32px; /* 25px */
+
+    --p-small-font-size: 20px;
+    --p-small-line-height: 32px; /* 25px */
   }
 }
 

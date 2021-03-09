@@ -1,6 +1,7 @@
 {
   "pageTitle" : "Our Commitment in Action",
-  "containerModifier" : "c-media-block-list--leadership",
+  "pageTitleLevel" : "h4",
+  "containerModifier" : "c-media-block-list--primary",
   "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
   "backgroundColorUtility": "",
   "media-block-list" : [
