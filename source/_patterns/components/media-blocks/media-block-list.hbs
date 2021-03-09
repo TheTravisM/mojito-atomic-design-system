@@ -1,7 +1,16 @@
-<div class="c-media-block--list l-container {{ styleModifier }} {{paddingUtility}} {{backgroundColorUtility}}">
+<main role="main">
 
-    {{#each media-block-list }}
-        {{> components-media-block }}
-    {{/ each }}
+    {{#if pageTitle}}
+        <div class="l-container u-padding-bottom--medium u-padding-top--medium">
+            <h2>{{pageTitle}}</h2>
+        </div>
+    {{/if}}
 
-</div><!--end c-btn-group-->
+    <section class="c-media-block--list l-container {{ containerModifier }} {{paddingUtility}} {{backgroundColorUtility}}">
+
+        {{#each media-block-list }}
+            {{> components-media-block }}
+        {{/ each }}
+
+    </section><!--end container -->
+</main>

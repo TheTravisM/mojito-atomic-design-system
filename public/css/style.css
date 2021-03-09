@@ -3626,14 +3626,32 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
 /* -- ---------------------------  -- */
 /* -- [ COMPONENTS : MEDIA BLOCK ] -- */
 /* -- ---------------------------  -- */
+.c-media-block-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
 .c-media-block {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 344px;
+  position: relative;
 }
-.c-media-block_figure {
+.c-media-block_picture {
+  max-width: 345px;
+  max-height: 231px;
+  position: relative;
+  display: inline-flex;
   margin: 0;
+}
+.c-media-block_img {
+  display: flex;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
 }
 .c-media-block_body {
   display: flex;
@@ -3641,20 +3659,57 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
   flex: auto;
 }
 .c-media-block_header {
-  margin-top: 24px;
-}
-.c-media-block_copy {
-  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .c-media-block_footer {
   margin-top: 24px;
 }
 
-.c-media-block-list {
+/* -- ----------------------- -- */
+/* -- [ Media Block : Leadership ] -- */
+/* -- ----------------------- -- */
+.c-media-block-list--leadership {
+  display: grid;
+  column-gap: 24px;
+  row-gap: 120px;
+  grid-template-columns: repeat(auto-fill, 344px);
+}
+
+.c-media-block--leadership {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 24px;
+  flex-direction: column;
+  position: relative;
+  min-height: 416px;
+}
+.c-media-block--leadership .c-media-block_aside {
+  margin-bottom: 16px;
+}
+.c-media-block--leadership .c-media-block_picture {
+  max-width: 345px;
+  max-height: 231px;
+  position: relative;
+}
+.c-media-block--leadership .c-media-block_img {
+  display: flex;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+.c-media-block--leadership .c-media-block_body {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  position: relative;
+}
+.c-media-block--leadership .c-media-block_header {
+  margin-bottom: 16px;
+}
+.c-media-block--leadership .c-media-block_title {
+  font-size: 24px;
+  line-height: 38px;
+}
+.c-media-block--leadership .c-media-block_footer {
+  margin-top: auto;
 }
 
 /* -- ---------------------------------------  -- */

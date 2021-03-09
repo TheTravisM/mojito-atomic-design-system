@@ -2,39 +2,93 @@
 /* -- ---------------------------  -- */
 /* -- [ COMPONENTS : MEDIA BLOCK ] -- */
 /* -- ---------------------------  -- */
-
-.c-media-block {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 344px;
-  &_aside { }
-  &_figure {
-    margin: 0;
-  }
-  &_figurecaption { }
-  &_body {
-    display: flex;
-    flex-direction: column;
-    flex: auto;
-  }
-  &_header {
-    margin-top: 24px;
-  }
-  &_title {
-
-  }
-  &_copy {
-    margin-top: 16px;
-  }
-  &_footer {
-    margin-top: 24px;
-  }
-}
-
 .c-media-block-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 24px;
 }
+
+.c-media-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 344px;
+  position: relative;
+  &_aside { }
+  &_picture {
+    max-width: 345px;
+    max-height: 231px;
+    position: relative;
+    display: inline-flex;
+    margin: 0;
+  }
+  &_img {
+    display: flex;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+  }
+  &_body {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+  }
+  &_header { margin-bottom: 16px;  }
+  &_title { }
+  &_copy { }
+  &_footer {margin-top: 24px; }
+}
+
+/* -- ----------------------- -- */
+/* -- [ Media Block : Leadership ] -- */
+/* -- ----------------------- -- */
+.c-media-block-list--leadership {
+  display: grid;
+  column-gap: 24px;
+  row-gap: 120px;
+  grid-template-columns: repeat(auto-fill, 344px);
+}
+
+.c-media-block--leadership {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 416px;
+  .c-media-block {
+    &_aside {
+      margin-bottom: 16px;
+    }
+    &_picture {
+      max-width: 345px;
+      max-height: 231px;
+      position: relative;
+    }
+    &_img {
+      display: flex;
+      width: 100%;
+      position: relative;
+      object-fit: cover;
+    }
+    &_body {
+      display: flex;
+      flex-direction: column;
+      flex: auto;
+      position: relative;
+    }
+    &_header {
+      margin-bottom: 16px;
+    }
+    &_title {
+      font-size: 24px;
+      line-height: 38px;
+    }
+    &_copy {
+    }
+    &_footer {
+      margin-top: auto;
+    }
+  }
+}
+
+
