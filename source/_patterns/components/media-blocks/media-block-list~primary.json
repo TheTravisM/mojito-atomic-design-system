@@ -1,0 +1,86 @@
+{
+  "pageTitle" : "Our Commitment in Action",
+  "containerModifier" : "c-media-block-list--leadership",
+  "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
+  "backgroundColorUtility": "",
+  "media-block-list" : [
+    {
+      "mediaBlockClassModifier": "c-media-block--primary",
+      "backgroundColor": "",
+      "mediaBlockImgSrc": "https://news.cengage.com/wp-content/uploads/2018/06/webpromo-m-hansen.jpg",
+      "mediaBlockImgAlt": "this is the alt text",
+      "headingLevel": "h4",
+      "title": "Gale Release",
+      "htmlText": "Gale Case Studies Launches to Help Higher Education Instructors Bring Social Justice Issues to the Forefront of Course Curriculum",
+      "buttons": true,
+      "buttonClass": "c-btn--secondary",
+      "buttonText": "View",
+      "linkUrl": "cengage.com/about/leadership/person-name"
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--primary",
+      "backgroundColor": "",
+      "mediaBlockImgSrc": "https://cdn.theorg.com/570f4343-f1c8-4640-bab5-9158052f7b3c_small.jpg",
+      "mediaBlockImgAlt": "this is the alt text",
+      "headingLevel": "h4",
+      "title": "Gale coverage/press release",
+      "htmlText": "eSchool News: Gale Helps Charleston County School District Integrate Social Emotional Learning",
+      "buttons": true,
+      "buttonClass": "c-btn--secondary",
+      "buttonText": "View",
+      "linkUrl": "cengage.com/about/leadership/person-name"
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--primary",
+      "backgroundColor": "",
+      "mediaBlockImgSrc": "https://cdn.theorg.com/5b133111-b7cf-49bc-85d8-8c05d6869f14_small.jpg",
+      "mediaBlockImgAlt": "this is the alt text",
+      "headingLevel": "h4",
+      "title": "Company statement",
+      "htmlText": "Cengage Statement on Landmark Supreme Court Decision Extending Federal Worker Protections to LGBTQ Americans",
+      "buttons": true,
+      "buttonClass": "c-btn--secondary",
+      "buttonText": "View",
+      "linkUrl": "cengage.com/about/leadership/person-name"
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--primary",
+      "backgroundColor": "",
+      "mediaBlockImgSrc": "https://news.cengage.com/wp-content/uploads/2018/06/webpromo-m-hansen.jpg",
+      "mediaBlockImgAlt": "this is the alt text",
+      "headingLevel": "h4",
+      "title": "Gale Release",
+      "htmlText": "Gale Case Studies Launches to Help Higher Education Instructors Bring Social Justice Issues to the Forefront of Course Curriculum",
+      "buttons": true,
+      "buttonClass": "c-btn--secondary",
+      "buttonText": "View",
+      "linkUrl": "cengage.com/about/leadership/person-name"
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--primary",
+      "backgroundColor": "",
+      "mediaBlockImgSrc": "https://cdn.theorg.com/570f4343-f1c8-4640-bab5-9158052f7b3c_small.jpg",
+      "mediaBlockImgAlt": "this is the alt text",
+      "headingLevel": "h4",
+      "title": "Gale coverage/press release",
+      "htmlText": "eSchool News: Gale Helps Charleston County School District Integrate Social Emotional Learning",
+      "buttons": true,
+      "buttonClass": "c-btn--secondary",
+      "buttonText": "View",
+      "linkUrl": "cengage.com/about/leadership/person-name"
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--primary",
+      "backgroundColor": "",
+      "mediaBlockImgSrc": "https://cdn.theorg.com/5b133111-b7cf-49bc-85d8-8c05d6869f14_small.jpg",
+      "mediaBlockImgAlt": "this is the alt text",
+      "headingLevel": "h4",
+      "title": "Company statement",
+      "htmlText": "Cengage Statement on Landmark Supreme Court Decision Extending Federal Worker Protections to LGBTQ Americans",
+      "buttons": true,
+      "buttonClass": "c-btn--secondary",
+      "buttonText": "View",
+      "linkUrl": "cengage.com/about/leadership/person-name"
+    }
+  ]
+}

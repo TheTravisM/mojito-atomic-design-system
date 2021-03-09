@@ -1,6 +1,4 @@
 {
-  "buttonTag" : true,
-  "buttonText" : "Button",
   "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
   "backgroundColorUtility": "",
   "media-block-list" : [

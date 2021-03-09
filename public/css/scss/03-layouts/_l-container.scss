@@ -7,7 +7,6 @@ main[role="main"] {
   overflow-x: hidden;
 }
 
-
 .l-container {
   display: flex;
   width: 100%;
@@ -24,4 +23,19 @@ main[role="main"] {
       grid-column: container;
     }
   }
+}
+
+/* -- [ 3 Column Grid ] --*/
+
+.l-container--grid-3 {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, 344px);
+}
+
+/* -- [ 4 Column Grid ] --*/
+.l-container--grid-4 {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, 252px);
 }

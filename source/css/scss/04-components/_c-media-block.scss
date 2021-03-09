@@ -40,13 +40,13 @@
   &_footer {margin-top: 24px; }
 }
 
-/* -- ----------------------- -- */
+/* -- ---------------------------- -- */
 /* -- [ Media Block : Leadership ] -- */
-/* -- ----------------------- -- */
+/* -- ---------------------------- -- */
 .c-media-block-list--leadership {
   display: grid;
   column-gap: 24px;
-  row-gap: 120px;
+  row-gap: 72px;
   grid-template-columns: repeat(auto-fill, 344px);
 }
 
@@ -54,7 +54,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 416px;
+  min-height: 384px;
   .c-media-block {
     &_aside {
       margin-bottom: 16px;
@@ -77,18 +77,107 @@
       position: relative;
     }
     &_header {
-      margin-bottom: 16px;
+      margin-bottom: 0;
     }
     &_title {
       font-size: 24px;
       line-height: 38px;
     }
     &_copy {
+      font-size: 20px;
+      line-height: 32px;
     }
     &_footer {
       margin-top: auto;
     }
   }
 }
+/* -- [ Media Block : Leadership -- Small devices (landscape phones, 576px and Up ) */
+@media (min-width: 576px) {
+  .c-media-block-list--leadership { row-gap: 120px; }
 
+  .c-media-block--leadership {
+    min-height: 416px;
+    .c-media-block {
+      &_aside {  }
+      &_picture { }
+      &_img { }
+      &_body { }
+      &_header {  }
+      &_title { }
+      &_copy { }
+      &_footer { }
+    }
+  }
+}
+
+/* -- ---------------------------- -- */
+/* -- [ Media Block : Primary ] -- */
+/* -- ---------------------------- -- */
+.c-media-block-list--primary {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, 344px);
+}
+
+.c-media-block--primary {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 600px;
+  .c-media-block {
+    &_aside {
+      margin-bottom: 12px;
+    }
+    &_picture {
+      min-width: 345px;
+      min-height: 330px;
+      position: relative;
+    }
+    &_img {
+      display: flex;
+      width: 100%;
+      position: relative;
+      object-fit: cover;
+    }
+    &_body {
+      display: flex;
+      flex-direction: column;
+      flex: auto;
+      position: relative;
+    }
+    &_header {
+      margin-bottom: 12px;
+    }
+    &_title {
+      font-size: 24px;
+      line-height: 38px;
+    }
+    &_copy {
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 32px;
+    }
+    &_footer {
+      margin-top: auto;
+    }
+  }
+}
+/* -- [ Media Block : Primary -- Small devices (landscape phones, 576px and Up ) */
+@media (min-width: 576px) {
+  .c-media-block-list--primary {  }
+
+  .c-media-block--primary {
+    .c-media-block {
+      &_aside {  }
+      &_picture { }
+      &_img { }
+      &_body { }
+      &_header {  }
+      &_title { }
+      &_copy { }
+      &_footer { }
+    }
+  }
+}
 

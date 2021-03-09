@@ -2189,6 +2189,20 @@ main[role=main] {
   grid-column: container;
 }
 
+/* -- [ 3 Column Grid ] --*/
+.l-container--grid-3 {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, 344px);
+}
+
+/* -- [ 4 Column Grid ] --*/
+.l-container--grid-4 {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, 252px);
+}
+
 /*------------------------------------*/
 /* -- [ COMPONENTS ] -----------------*/
 /*------------------------------------*/
@@ -3665,13 +3679,13 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
   margin-top: 24px;
 }
 
-/* -- ----------------------- -- */
+/* -- ---------------------------- -- */
 /* -- [ Media Block : Leadership ] -- */
-/* -- ----------------------- -- */
+/* -- ---------------------------- -- */
 .c-media-block-list--leadership {
   display: grid;
   column-gap: 24px;
-  row-gap: 120px;
+  row-gap: 72px;
   grid-template-columns: repeat(auto-fill, 344px);
 }
 
@@ -3679,7 +3693,7 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 416px;
+  min-height: 384px;
 }
 .c-media-block--leadership .c-media-block_aside {
   margin-bottom: 16px;
@@ -3702,16 +3716,82 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
   position: relative;
 }
 .c-media-block--leadership .c-media-block_header {
-  margin-bottom: 16px;
+  margin-bottom: 0;
 }
 .c-media-block--leadership .c-media-block_title {
   font-size: 24px;
   line-height: 38px;
 }
+.c-media-block--leadership .c-media-block_copy {
+  font-size: 20px;
+  line-height: 32px;
+}
 .c-media-block--leadership .c-media-block_footer {
   margin-top: auto;
 }
 
+/* -- [ Media Block : Leadership -- Small devices (landscape phones, 576px and Up ) */
+@media (min-width: 576px) {
+  .c-media-block-list--leadership {
+    row-gap: 120px;
+  }
+
+  .c-media-block--leadership {
+    min-height: 416px;
+  }
+}
+/* -- ---------------------------- -- */
+/* -- [ Media Block : Primary ] -- */
+/* -- ---------------------------- -- */
+.c-media-block-list--primary {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, 344px);
+}
+
+.c-media-block--primary {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 600px;
+}
+.c-media-block--primary .c-media-block_aside {
+  margin-bottom: 12px;
+}
+.c-media-block--primary .c-media-block_picture {
+  min-width: 345px;
+  min-height: 330px;
+  position: relative;
+}
+.c-media-block--primary .c-media-block_img {
+  display: flex;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+.c-media-block--primary .c-media-block_body {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  position: relative;
+}
+.c-media-block--primary .c-media-block_header {
+  margin-bottom: 12px;
+}
+.c-media-block--primary .c-media-block_title {
+  font-size: 24px;
+  line-height: 38px;
+}
+.c-media-block--primary .c-media-block_copy {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+.c-media-block--primary .c-media-block_footer {
+  margin-top: auto;
+}
+
+/* -- [ Media Block : Primary -- Small devices (landscape phones, 576px and Up ) */
 /* -- ---------------------------------------  -- */
 /* -- [ COMPONENTS : Header Primary Navigation -- */
 /* -- ---------------------------------------  -- */
