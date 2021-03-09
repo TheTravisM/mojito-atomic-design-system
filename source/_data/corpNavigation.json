@@ -22,30 +22,37 @@
       "sublist": [
         {
           "label": "ed2go",
-          "url": "https://www.external.com"
+          "url": "https://www.external.com",
+          "classModifier": "c-btn--external-link"
         },
         {
           "label": "Gale",
+          "classModifier": "c-btn--external-link",
           "url": "https://www.external.com"
         },
         {
           "label": "Higher Ed (Intl)",
+          "classModifier": "c-btn--external-link",
           "url": "https://www.external.com"
         },
         {
           "label": "Higher Ed (U.S.)",
+          "classModifier": "c-btn--external-link",
           "url": "https://www.external.com"
         },
         {
           "label": "Milady",
+          "classModifier": "c-btn--external-link",
           "url": "https://www.external.com"
         },
         {
           "label": "National Geographic Learning K-12",
+          "classModifier": "c-btn--external-link",
           "url": "https://www.external.com"
         },
         {
           "label": "National Geographic Learning ELT",
+          "classModifier": "c-btn--external-link",
           "url": "https://www.external.com"
         }
       ]
