@@ -7,6 +7,6 @@
   "title": "title",
   "text": "Button",
   "linkUrl": "",
-  "classModifier": "c-btn--text c-btn--text-pdf",
+  "classModifier": "c-btn c-btn--text c-btn--text-pdf",
   "url" : "www.link.pdf"
 }

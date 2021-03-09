@@ -5,7 +5,7 @@
     {
       "buttonTag":true,
       "linkTag":false,
-      "classModifier": "c-btn--homepage",
+      "classModifier": "c-btn c-btn--homepage",
       "id": "id",
       "prependHtml": "",
       "appendHtml": "",
@@ -16,7 +16,7 @@
     {
       "buttonTag":true,
       "linkTag":false,
-      "classModifier": "c-btn--primary",
+      "classModifier": "c-btn c-btn--primary",
       "id": "id",
       "prependHtml": "",
       "appendHtml": "",
@@ -27,7 +27,7 @@
     {
       "buttonTag":true,
       "linkTag":false,
-      "classModifier": "c-btn--primary",
+      "classModifier": "c-btn c-btn--primary",
       "id": "id",
       "prependHtml": "",
       "appendHtml": "",
@@ -38,7 +38,7 @@
     {
       "buttonTag":true,
       "linkTag":false,
-      "classModifier": "c-btn--primary",
+      "classModifier": "c-btn c-btn--primary",
       "id": "id",
       "prependHtml": "",
       "appendHtml": "",
@@ -49,7 +49,7 @@
     {
       "buttonTag":true,
       "linkTag":false,
-      "classModifier": "c-btn--primary-external",
+      "classModifier": "c-btn c-btn--primary-external",
       "id": "id",
       "prependHtml": "",
       "appendHtml": "",
@@ -60,7 +60,7 @@
     {
       "buttonTag":true,
       "linkTag":false,
-      "classModifier": "c-btn--secondary",
+      "classModifier": "c-btn c-btn--secondary",
       "id": "id",
       "prependHtml": "",
       "appendHtml": "",
@@ -71,13 +71,90 @@
     {
       "buttonTag":true,
       "linkTag":false,
-      "classModifier": "c-btn--text",
+      "classModifier": "c-btn c-btn--text",
       "id": "id",
       "prependHtml": "",
       "appendHtml": "",
       "title": "title",
       "text": "Our Vision",
       "url": ""
+    },
+    {
+      "buttonTag":false,
+      "linkTag":true,
+      "classModifier": "c-btn ",
+      "id": "",
+      "prependHtml": "",
+      "appendHtml": "",
+      "title": "title",
+      "text": "internal text link",
+      "url": "www.cengage.com"
+    },
+    {
+      "buttonTag":false,
+      "linkTag":true,
+      "classModifier": "c-btn ",
+      "id": "",
+      "prependHtml": "",
+      "appendHtml": "",
+      "title": "title",
+      "text": "external text link",
+      "url": "www.external.com"
+    },
+    {
+      "buttonTag":false,
+      "linkTag":true,
+      "classModifier": "c-btn c-btn--text-pdf",
+      "id": "",
+      "prependHtml": "",
+      "appendHtml": "",
+      "title": "title",
+      "text": "Link to PDF",
+      "url": "www.external.com"
+    },
+    {
+      "buttonTag":false,
+      "linkTag":true,
+      "classModifier": "c-btn c-btn--text",
+      "id": "",
+      "prependHtml": "",
+      "appendHtml": "",
+      "title": "title",
+      "text": "Link to PDF",
+      "url": "www.link-ends-with-PDF.pdf"
+    },
+    {
+      "buttonTag":false,
+      "linkTag":true,
+      "classModifier": "c-btn c-btn--text-media",
+      "id": "",
+      "prependHtml": "",
+      "appendHtml": "",
+      "title": "title",
+      "text": "Link to PDF",
+      "url": "somelink"
+    },
+    {
+      "buttonTag":false,
+      "linkTag":true,
+      "classModifier": "c-btn c-btn--text",
+      "id": "",
+      "prependHtml": "",
+      "appendHtml": "",
+      "title": "title",
+      "text": "Link to PDF",
+      "url": "btn-url-ends-with-mp3.mp3"
+    },
+    {
+      "buttonTag":false,
+      "linkTag":true,
+      "classModifier": "c-btn c-btn--text",
+      "id": "",
+      "prependHtml": "",
+      "appendHtml": "",
+      "title": "title",
+      "text": "Link to PDF",
+      "url": "btn-url-ends-with-mp4.mp4"
     }
   ]
 }
