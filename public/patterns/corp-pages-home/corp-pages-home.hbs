@@ -1,0 +1,19 @@
+{{{prependHtml}}}
+
+{{#if pageTitle}}
+    <div class="l-container u-padding-bottom--medium u-padding-top--medium">
+        <{{#if pageTitleLevel}}{{pageTitleLevel}}{{else}}h4{{/if}}>
+            {{pageTitle}}
+        </{{#if pageTitleLevel}}{{pageTitleLevel}}{{else}}h4{{/if}}>
+    </div>
+{{/if}}
+
+<section class="c-media-block--list l-container {{ containerModifier }} {{paddingUtility}} {{backgroundColorUtility}}">
+
+    {{#each media-block-list }}
+        {{> components-media-block }}
+    {{/ each }}
+
+</section><!--end container -->
+
+{{{appendHtml}}}
