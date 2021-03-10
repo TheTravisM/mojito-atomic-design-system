@@ -1,12 +1,16 @@
 
 <article class="c-media-block {{mediaBlockClassModifier}} {{backgroundColor}}">
-    <aside class="c-media-block_aside">
-        <picture class="c-media-block_picture">
-            <source media="{{media-width}}" srcset="{{largeImgSrc}}"/>
-            <source media="{{media-width}}" srcset="{{smallImgSrc}}"/>
-            <img class="c-media-block_img" src="{{mediaBlockImgSrc}}" alt="{{mediaBlockImgAlt}}" loading="lazy"/>
-        </picture>
-    </aside>
+
+    {{#if mediaBlockImgSrc}}
+        <aside class="c-media-block_aside">
+            <picture class="c-media-block_picture">
+                <source media="{{media-width}}" srcset="{{largeImgSrc}}"/>
+                <source media="{{media-width}}" srcset="{{smallImgSrc}}"/>
+                <img class="c-media-block_img" src="{{mediaBlockImgSrc}}" alt="{{mediaBlockImgAlt}}" loading="lazy"/>
+            </picture>
+        </aside>
+    {{/if}}
+
     <section class="c-media-block_body">
         {{#if title}}
             <header class="c-media-block_header">
@@ -29,6 +33,7 @@
                 </a>
             </footer>
         {{/if}}
+
     </section>
 </article>
 

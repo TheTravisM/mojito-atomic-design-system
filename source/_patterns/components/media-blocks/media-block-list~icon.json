@@ -1,0 +1,107 @@
+{
+  "prependHtml" : "<main role='main'>",
+  "appendHtml" : "</main>",
+  "pageTitle" : "Benefits We Offer",
+  "pageTitleLevel" : "h4",
+  "containerModifier" : "c-media-block-list--icon",
+  "paddingUtility": "u-padding-bottom--large u-padding-top--medium",
+  "backgroundColorUtility": "",
+  "media-block-list" : [
+    {
+      "mediaBlockClassModifier": "c-media-block--icon",
+      "mediaBlockImgSrc": "https://embed.widencdn.net/img/cengage/elobrm2ojr/72px@1x/webicon-mindset-fc4c02.ai.png?q=100",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": "<p class='u-p--small'>Medical, dental and vision insurance</p>",
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--icon",
+      "mediaBlockImgSrc": "https://embed.widencdn.net/img/cengage/elobrm2ojr/72px@1x/webicon-mindset-fc4c02.ai.png?q=100",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": "<p class='u-p--small'>Health savings and flexible spending accounts</p>",
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--icon",
+      "mediaBlockImgSrc": "https://embed.widencdn.net/img/cengage/elobrm2ojr/72px@1x/webicon-mindset-fc4c02.ai.png?q=100",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": "<p class='u-p--small'>Short- and long-term disability insurance</p>",
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--icon",
+      "mediaBlockImgSrc": "https://embed.widencdn.net/img/cengage/elobrm2ojr/72px@1x/webicon-mindset-fc4c02.ai.png?q=100",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": "<p class='u-p--small'>Life and AD&D insurance</p>",
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--icon",
+      "mediaBlockImgSrc": "https://embed.widencdn.net/img/cengage/elobrm2ojr/72px@1x/webicon-mindset-fc4c02.ai.png?q=100",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": "<p class='u-p--small'>Dependent life insurance</p>",
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--icon",
+      "mediaBlockImgSrc": "https://embed.widencdn.net/img/cengage/elobrm2ojr/72px@1x/webicon-mindset-fc4c02.ai.png?q=100",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": "<p class='u-p--small'>Individual and family AD&D</p>",
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--icon",
+      "mediaBlockImgSrc": "https://embed.widencdn.net/img/cengage/elobrm2ojr/72px@1x/webicon-mindset-fc4c02.ai.png?q=100",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": "<p class='u-p--small'>Legal expense insurance</p>",
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--icon",
+      "mediaBlockImgSrc": "https://embed.widencdn.net/img/cengage/elobrm2ojr/72px@1x/webicon-mindset-fc4c02.ai.png?q=100",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": "<p class='u-p--small'>Medical, dental and vision insurance</p>",
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--icon",
+      "mediaBlockImgSrc": "https://embed.widencdn.net/img/cengage/elobrm2ojr/72px@1x/webicon-mindset-fc4c02.ai.png?q=100",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": "<p class='u-p--small'>Medical, dental and vision insurance</p>",
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--icon",
+      "mediaBlockImgSrc": "https://embed.widencdn.net/img/cengage/elobrm2ojr/72px@1x/webicon-mindset-fc4c02.ai.png?q=100",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": "<p class='u-p--small'>Medical, dental and vision insurance</p>",
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--icon",
+      "mediaBlockImgSrc": "https://embed.widencdn.net/img/cengage/elobrm2ojr/72px@1x/webicon-mindset-fc4c02.ai.png?q=100",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": "<p class='u-p--small'>Career development coursework</p>",
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--icon",
+      "mediaBlockImgSrc": "https://embed.widencdn.net/img/cengage/elobrm2ojr/72px@1x/webicon-mindset-fc4c02.ai.png?q=100",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": "<p class='u-p--small'>Opportunities to give back to the community</p>",
+      "buttons": false
+    }
+  ]
+}
