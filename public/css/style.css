@@ -2275,16 +2275,20 @@ main[role=main] {
 /* -- [ COMPONENTS : BREADCRUMB ] -- */
 /* -- --------------------------  -- */
 .c-breadcrumb {
+  max-width: 1080px;
+  margin: 52px auto 32px;
   display: flex;
   justify-content: left;
-  width: 100%;
-  margin: 12px 0;
 }
 
 .c-breadcrumb_list {
   display: flex;
   flex-direction: row;
   width: 100%;
+}
+
+.c-breadcrumb_link:hover {
+  color: var(--color-primary-blue, #003865);
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -2361,7 +2365,7 @@ main[role=main] {
 .c-btn--homepage:visited::before {
   content: "";
   top: 0;
-  height: 34px;
+  min-height: 34px;
   width: 35px;
   position: absolute;
   right: 0;
@@ -2808,13 +2812,8 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
   flex-flow: row wrap;
   justify-content: space-between;
   position: relative;
-}
-
-.footer_hr {
-  flex: 1 100%;
   border-top: 1px solid #E1E7E8;
-  width: 100%;
-  margin-bottom: 24px;
+  padding-top: 24px;
 }
 
 .c-footer_copyright {
@@ -3151,6 +3150,7 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
     display: grid;
     width: 1068px;
     max-width: 100vw;
+    grid-template-rows: masonry;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-template-columns: repeat(3, 250px);
   }
@@ -4112,8 +4112,11 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
 .c-promo--homepage:nth-child(3n+1) .c-promo_picture:after {
   background-color: var(--color-spearmint, #81B39B);
 }
-.c-promo--homepage:nth-child(3n+1) .c-btn::before, .c-promo--homepage:nth-child(3n+1) .c-btn::after {
+.c-promo--homepage:nth-child(3n+1) .c-btn::before {
   border-color: var(--color-spearmint, #81B39B);
+}
+.c-promo--homepage:nth-child(3n+1) .c-btn::after {
+  background-color: var(--color-spearmint, #81B39B);
 }
 .c-promo--homepage:nth-child(3n+2) .c-promo_picture {
   height: 570px;
@@ -4122,8 +4125,11 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
 .c-promo--homepage:nth-child(3n+2) .c-promo_picture:after {
   background-color: var(--color-plum, #3D405B);
 }
-.c-promo--homepage:nth-child(3n+2) .c-btn::before, .c-promo--homepage:nth-child(3n+2) .c-btn::after {
+.c-promo--homepage:nth-child(3n+2) .c-btn::before {
   border-color: var(--color-plum, #3D405B);
+}
+.c-promo--homepage:nth-child(3n+2) .c-btn::after {
+  background-color: var(--color-plum, #3D405B);
 }
 .c-promo--homepage:nth-child(3n+3) .c-promo_picture {
   max-height: 570px;
@@ -4132,8 +4138,11 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
 .c-promo--homepage:nth-child(3n+3) .c-promo_picture:after {
   background-color: var(--color-terra-cotta, #E07A5F);
 }
-.c-promo--homepage:nth-child(3n+3) .c-btn::before, .c-promo--homepage:nth-child(3n+3) .c-btn::after {
+.c-promo--homepage:nth-child(3n+3) .c-btn::before {
   border-color: var(--color-terra-cotta, #E07A5F);
+}
+.c-promo--homepage:nth-child(3n+3) .c-btn::after {
+  background-color: var(--color-terra-cotta, #E07A5F);
 }
 
 /* -- [ Promos : Homepage Small devices (landscape phones, 576px and Up ) */

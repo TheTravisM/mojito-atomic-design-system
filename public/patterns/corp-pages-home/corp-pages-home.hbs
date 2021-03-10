@@ -1,19 +1,16 @@
-{{{prependHtml}}}
+{{> components-primary-header }}
 
-{{#if pageTitle}}
-    <div class="l-container u-padding-bottom--medium u-padding-top--medium">
-        <{{#if pageTitleLevel}}{{pageTitleLevel}}{{else}}h4{{/if}}>
-            {{pageTitle}}
-        </{{#if pageTitleLevel}}{{pageTitleLevel}}{{else}}h4{{/if}}>
-    </div>
-{{/if}}
+<main role="main">
+    {{# breadcrumb }}
+        {{> components-breadcrumb }}
+    {{/ breadcrumb }}
 
-<section class="c-media-block--list l-container {{ containerModifier }} {{paddingUtility}} {{backgroundColorUtility}}">
 
-    {{#each media-block-list }}
-        {{> components-media-block }}
-    {{/ each }}
+    {{> components-home-hero-banner }}
 
-</section><!--end container -->
+    {{# promos }}
+        {{> components-promo-list }}
+    {{/promos}}
+</main>
 
-{{{appendHtml}}}
+{{> components-primary-footer }}

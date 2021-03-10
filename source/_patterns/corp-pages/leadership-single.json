@@ -1,0 +1,135 @@
+{
+  "breadcrumb" : {
+    "breadcrumb-list": [
+      {
+        "url": "cengage.com",
+        "label": "Home"
+      },
+      {
+        "url": "cengage.com/about",
+        "label": "About"
+      },
+      {
+        "url": "cengage.com/leadership",
+        "label": "Our Leadership"
+      },
+      {
+        "label": "Michael E. Hansen"
+      }
+    ]
+  },
+  "promo-leadership": {
+    "classModifier": "c-promo--leadership l-container",
+    "mediaAlign": "",
+    "backgroundColor": "",
+    "imgSrc": "https://embed.widencdn.net/img/cengage/ivivspdfoo/600px@1x/webpromo-m-hansen.jpg",
+    "imgAltText": "this is the alt text",
+    "headingLevel": "h1",
+    "title": "Michael became CEO of Cengage in September of 2012. ",
+    "htmlText": "Connect With Michael",
+    "buttons": true,
+    "buttonClass": "c-btn--primary",
+    "buttonText": "button",
+    "linkUrl": "google.com"
+  },
+  "bordOfDirectors": {
+    "pageTitle" : "Board of Directors",
+    "pageTitleLevel" : "h2",
+    "containerModifier" : "c-media-block-list--leadership",
+    "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
+    "backgroundColorUtility": "",
+    "media-block-list" : [
+      {
+        "mediaBlockClassModifier": "c-media-block--leadership",
+        "backgroundColor": "",
+        "mediaBlockImgSrc": "https://news.cengage.com/wp-content/uploads/2018/06/webpromo-m-hansen.jpg",
+        "mediaBlockImgAlt": "this is the alt text",
+        "headingLevel": "h3",
+        "title": "Michael E. Hanson",
+        "htmlText": "Chief Executive Officer",
+        "buttons": true,
+        "buttonClass": "c-btn--primary",
+        "buttonText": "Read Bio",
+        "linkUrl": "cengage.com/about/leadership/person-name"
+      },
+      {
+        "mediaBlockClassModifier": "c-media-block--leadership",
+        "backgroundColor": "",
+        "mediaBlockImgSrc": "https://cdn.theorg.com/570f4343-f1c8-4640-bab5-9158052f7b3c_small.jpg",
+        "mediaBlockImgAlt": "this is the alt text",
+        "headingLevel": "h3",
+        "title": "Fernando Bleichmar",
+        "htmlText": "General Manager, Higher Education and Skills",
+        "buttons": true,
+        "buttonClass": "c-btn--primary",
+        "buttonText": "Read Bio",
+        "linkUrl": "cengage.com/about/leadership/person-name"
+      },
+      {
+        "mediaBlockClassModifier": "c-media-block--leadership",
+        "backgroundColor": "",
+        "mediaBlockImgSrc": "https://cdn.theorg.com/5b133111-b7cf-49bc-85d8-8c05d6869f14_small.jpg",
+        "mediaBlockImgAlt": "this is the alt text",
+        "headingLevel": "h3",
+        "title": "Alexander Broich",
+        "htmlText": "President of Cengage Global Businesses",
+        "buttons": true,
+        "buttonClass": "c-btn--primary",
+        "buttonText": "Read Bio",
+        "linkUrl": "cengage.com/about/leadership/person-name"
+      },
+      {
+        "mediaBlockClassModifier": "c-media-block--leadership",
+        "backgroundColor": "",
+        "mediaBlockImgSrc": "https://cengage.widen.net/img/cengage/exwy9jgcx1/400px@1x/cook-kermit.png?q=100",
+        "mediaBlockImgAlt": "this is the alt text",
+        "headingLevel": "h3",
+        "title": "Kermit Cook",
+        "htmlText": "Chief Operating Officer",
+        "buttons": true,
+        "buttonClass": "c-btn--primary",
+        "buttonText": "Read Bio",
+        "linkUrl": "cengage.com/about/leadership/person-name"
+      },
+      {
+        "mediaBlockClassModifier": "c-media-block--leadership",
+        "backgroundColor": "",
+        "mediaBlockImgSrc": "https://cdn.theorg.com/9b9d3288-d15a-4df9-a196-2ddcfd269b86_small.jpg",
+        "mediaBlockImgAlt": "this is the alt text",
+        "headingLevel": "h3",
+        "title": "George Moore",
+        "htmlText": "Chief Technology Officer",
+        "buttons": true,
+        "buttonClass": "c-btn--primary",
+        "buttonText": "Read Bio",
+        "linkUrl": "cengage.com/about/leadership/person-name"
+      },
+      {
+        "mediaBlockClassModifier": "c-media-block--leadership",
+        "backgroundColor": "",
+        "mediaBlockImgSrc": "https://cdn.theorg.com/97fc98ff-d224-40ed-957b-d5a2cb3dc6a9_small.jpg",
+        "mediaBlockImgAlt": "this is the alt text",
+        "headingLevel": "h3",
+        "title": "Bob Munro",
+        "htmlText": "Chief Financial Officer",
+        "buttons": true,
+        "buttonClass": "c-btn--primary",
+        "buttonText": "Read Bio",
+        "linkUrl": "cengage.com/about/leadership/person-name"
+      },
+      {
+        "mediaBlockClassModifier": "c-media-block--leadership",
+        "backgroundColor": "",
+        "mediaBlockImgSrc": "https://modern-counsel.com/wp-content/uploads/2020/10/Laura-Stevens-Cengage-thumbnail.jpg",
+        "mediaBlockImgAlt": "this is the alt text",
+        "headingLevel": "h3",
+        "title": "Laura Stevens",
+        "htmlText": "Chief Legal Officer",
+        "buttons": true,
+        "buttonClass": "c-btn--primary",
+        "buttonText": "Read Bio",
+        "linkUrl": "cengage.com/about/leadership/person-name"
+      }
+    ]
+  }
+}

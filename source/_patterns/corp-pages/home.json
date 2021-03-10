@@ -1,0 +1,92 @@
+{
+  "pageTitle": {
+    "pageTitleLevel": "h1",
+    "pageTitle" : "homepage"
+  },
+  "promos": {
+    "promo-list" : [
+      {
+        "classModifier": "c-promo--homepage",
+        "backgroundColor": "",
+        "imgSrc": "http://www.fillmurray.com/270/710",
+        "imgAltText": "this is the alt text",
+        "promoFigCaptionText": "this is the fig caption text",
+        "headingLevel": "h2",
+        "title": "Time is now",
+        "htmlText": "Cengage is committed to supporting hundreds of millions of learners who seek an education to improve their lives and achieve their dreams. By providing engaging content through scalable digital solutions, we are driving the reinvention of the education system",
+        "buttons": true,
+        "buttonClass": "c-btn--homepage",
+        "buttonText": "Our Impact",
+        "linkUrl": "google.com"
+      },
+      {
+        "classModifier": "c-promo--homepage",
+        "backgroundColor": "",
+        "imgSrc": "http://www.fillmurray.com/500/720",
+        "imgAltText": "this is the alt text",
+        "promoFigCaptionText": "this is the fig caption text",
+        "headingLevel": "h2",
+        "title": "Built for every learner",
+        "htmlText": "Cengage is committed to supporting hundreds of millions of learners who seek an education to improve their lives and achieve their dreams. By providing engaging content through scalable digital solutions, we are driving the reinvention of the education system",
+        "buttons": true,
+        "buttonClass": "c-btn--homepage",
+        "buttonText": "Our Business",
+        "linkUrl": "google.com"
+      },
+      {
+        "classModifier": "c-promo--homepage",
+        "backgroundColor": "",
+        "imgSrc": "http://www.fillmurray.com/275/725",
+        "imgAltText": "this is the alt text",
+        "headingLevel": "h2",
+        "title": "Find out where you fit in",
+        "htmlText": "At Cengage, we believe that through the power and joy of learning, students can enrich their lives and achieve their dreams _ no matter their age, experience, abilities, or environment. Join Us.",
+        "buttons": true,
+        "buttonClass": "c-btn--homepage",
+        "buttonText": "Careers",
+        "linkUrl": "google.com"
+      },
+      {
+        "classModifier": "c-promo--homepage",
+        "backgroundColor": "",
+        "imgSrc": "http://www.fillmurray.com/270/710",
+        "imgAltText": "this is the alt text",
+        "promoFigCaptionText": "this is the fig caption text",
+        "headingLevel": "h2",
+        "title": "Time is now",
+        "htmlText": "Cengage is committed to supporting hundreds of millions of learners who seek an education to improve their lives and achieve their dreams. By providing engaging content through scalable digital solutions, we are driving the reinvention of the education system",
+        "buttons": true,
+        "buttonClass": "c-btn--homepage",
+        "buttonText": "Our Impact",
+        "linkUrl": "google.com"
+      },
+      {
+        "classModifier": "c-promo--homepage",
+        "backgroundColor": "",
+        "imgSrc": "http://www.fillmurray.com/500/720",
+        "imgAltText": "this is the alt text",
+        "promoFigCaptionText": "this is the fig caption text",
+        "headingLevel": "h2",
+        "title": "Built for every learner",
+        "htmlText": "Cengage is committed to supporting hundreds of millions of learners who seek an education to improve their lives and achieve their dreams. By providing engaging content through scalable digital solutions, we are driving the reinvention of the education system",
+        "buttons": true,
+        "buttonClass": "c-btn--homepage",
+        "buttonText": "Our Business",
+        "linkUrl": "google.com"
+      },
+      {
+        "classModifier": "c-promo--homepage",
+        "backgroundColor": "",
+        "imgSrc": "http://www.fillmurray.com/275/725",
+        "imgAltText": "this is the alt text",
+        "headingLevel": "h2",
+        "title": "Find out where you fit in",
+        "htmlText": "At Cengage, we believe that through the power and joy of learning, students can enrich their lives and achieve their dreams _ no matter their age, experience, abilities, or environment. Join Us.",
+        "buttons": true,
+        "buttonClass": "c-btn--homepage",
+        "buttonText": "Careers",
+        "linkUrl": "google.com"
+      }
+    ]
+  }
+}

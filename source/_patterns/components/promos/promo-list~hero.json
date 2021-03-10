@@ -1,4 +1,6 @@
 {
+  "prependHtml" : "<main role='main'>",
+  "appendHtml" : "</main>",
   "containerModifier": "l-container--full",
   "backgroundColor": "u-bg--spearmint-lite",
   "promo-list" : [

@@ -1,4 +1,6 @@
 {
+  "prependHtml" : "<main role='main'>",
+  "appendHtml" : "</main>",
   "pageTitle" : "Leadership",
   "pageTitleLevel" : "h2",
   "containerModifier" : "c-media-block-list--leadership",

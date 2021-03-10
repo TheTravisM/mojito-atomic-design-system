@@ -1,4 +1,6 @@
 {
+  "prependHtml" : "<main role='main'>",
+  "appendHtml" : "</main>",
   "pageTitle" : "Our Commitment in Action",
   "pageTitleLevel" : "h4",
   "containerModifier" : "c-media-block-list--primary",

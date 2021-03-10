@@ -1,24 +1,17 @@
-<nav class="c-breadcrumb" aria-label="Breadcrumb" >
+<nav class="c-breadcrumb l-container" aria-label="Breadcrumb" >
     <ol class="c-breadcrumb_list">
-        <li class="c-breadcrumb_list-item">
-            <a class="c-breadcrumb_link" href="#">
-                Home
-            </a>
-        </li>
-        <li class="c-breadcrumb_list-item">
-            <a class="c-breadcrumb_link" href="#">
-                About
-            </a>
-        </li>
-        <li class="c-breadcrumb_list-item">
-            <a class="c-breadcrumb_link" href="#">
-                Our Leadership
-            </a>
-        </li>
-        <li class="c-breadcrumb_list-item">
-            <span class="c-breadcrumb_label" aria-current="page">
-                Michael E. Hansen
-            </span>
-        </li>
+        {{#each breadcrumb-list }}
+            <li class="c-breadcrumb_list-item">
+                {{#if url}}
+                    <a class="c-breadcrumb_link" href="{{url}}">
+                        {{label}}
+                    </a>
+                {{else}}
+                    <span class="c-breadcrumb_label" aria-current="page">
+                        {{label}}
+                    </span>
+                {{/if}}
+            </li>
+        {{/each}}
     </ol>
 </nav>

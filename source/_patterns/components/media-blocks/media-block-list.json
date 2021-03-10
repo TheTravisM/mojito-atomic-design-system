@@ -1,14 +1,16 @@
 {
+  "prependHtml" : "<main role='main'>",
+  "appendHtml" : "</main>",
   "pageTitle" : "Media Block List",
   "pageTitleLevel" : "h4",
-  "containerModifier" : "c-media-block-list--leadership",
+  "containerModifier" : "l-container--grid-3",
   "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
   "backgroundColorUtility": "",
   "media-block-list" : [
     {
       "mediaBlockClassModifier": "",
       "backgroundColor": "",
-      "mediaBlockImgSrc": "http://www.fillmurray.com/344/344",
+      "mediaBlockImgSrc": "https://www.fillmurray.com/344/344",
       "mediaBlockImgAlt": "this is the alt text",
       "mediaBlockFigCaptionText": "this is the fig caption text",
       "headingLevel": "h6",
@@ -22,7 +24,7 @@
     {
       "mediaBlockClassModifier": "",
       "backgroundColor": "",
-      "mediaBlockImgSrc": "http://www.fillmurray.com/344/344",
+      "mediaBlockImgSrc": "https://www.fillmurray.com/344/344",
       "mediaBlockImgAlt": "this is the alt text",
       "mediaBlockFigCaptionText": "this is the fig caption text",
       "headingLevel": "h6",
@@ -36,7 +38,7 @@
     {
       "mediaBlockClassModifier": "",
       "backgroundColor": "",
-      "mediaBlockImgSrc": "http://www.fillmurray.com/344/344",
+      "mediaBlockImgSrc": "https://www.fillmurray.com/344/344",
       "mediaBlockImgAlt": "this is the alt text",
       "mediaBlockFigCaptionText": "this is the fig caption text",
       "headingLevel": "h6",

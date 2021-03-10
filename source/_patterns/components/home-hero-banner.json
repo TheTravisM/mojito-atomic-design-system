@@ -1,0 +1,4 @@
+{
+  "prependHtml" : "<main role='main'>",
+  "appendHtml" : "</main>"
+}

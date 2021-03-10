@@ -67,7 +67,7 @@ a:visited {
   &::before {
     content: "";
     top: 0;
-    height: 34px;
+    min-height: 34px;
     width: 35px;
     position: absolute;
     right: 0;

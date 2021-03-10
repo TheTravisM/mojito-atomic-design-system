@@ -1,4 +1,6 @@
 {
+  "prependHtml" : "<main role='main'>",
+  "appendHtml" : "</main>",
   "promo-list" : [
     {
       "classModifier": "c-promo--homepage",

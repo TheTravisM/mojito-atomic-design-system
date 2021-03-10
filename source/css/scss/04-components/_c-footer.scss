@@ -42,14 +42,16 @@
   flex-flow: row wrap;
   justify-content: space-between;
   position: relative;
+  border-top: 1px solid #E1E7E8;
+  padding-top: 24px;
 }
 
-.footer_hr {
-  flex: 1 100%;
-  border-top: 1px solid #E1E7E8;
-  width: 100%;
-  margin-bottom: 24px;
-}
+//.footer_hr {
+//  flex: 1 100%;
+//  border-top: 1px solid #E1E7E8;
+//  width: 100%;
+//  margin-bottom: 24px;
+//}
 
 .c-footer_copyright {
   flex: 1 100%;

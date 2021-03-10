@@ -1,6 +1,6 @@
 {
-  "buttonTag" : true,
-  "buttonText" : "Button",
+  "prependHtml" : "<main role='main'>",
+  "appendHtml" : "</main>",
   "promo-list" : [
     {
       "classModifier": "c-promo--secondary",
