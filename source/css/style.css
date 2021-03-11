@@ -4921,27 +4921,27 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
 
 /*-- padding Top --*/
 .u-padding-top--0 {
-  margin-top: var(--spacing-0, 0px) !important;
+  padding-top: var(--spacing-0, 0px) !important;
 }
 
 .u-padding-top--extra-small {
-  margin-top: var(--spacing-x-small, 8px) !important;
+  padding-top: var(--spacing-x-small, 8px) !important;
 }
 
 .u-padding-top--small {
-  margin-top: var(--spacing-small, 16px) !important;
+  padding-top: var(--spacing-small, 16px) !important;
 }
 
 .u-padding-top--medium {
-  margin-top: var(--spacing-medium, 32px) !important;
+  padding-top: var(--spacing-medium, 32px) !important;
 }
 
 .u-padding-top--large {
-  margin-top: var(--spacing-large, 72px) !important;
+  padding-top: var(--spacing-large, 72px) !important;
 }
 
 .u-padding-top--extra-large {
-  margin-top: var(--spacing-x-large, 120px) !important;
+  padding-top: var(--spacing-x-large, 120px) !important;
 }
 
 /*-- padding Bottom --*/
@@ -4971,52 +4971,52 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
 
 /*-- Padding Left --*/
 .u-padding-left--0 {
-  margin-left: var(--spacing-0, 0px) !important;
+  padding-left: var(--spacing-0, 0px) !important;
 }
 
 .u-padding-left--extra-small {
-  margin-left: var(--spacing-x-small, 8px) !important;
+  padding-left: var(--spacing-x-small, 8px) !important;
 }
 
 .u-padding-left--small {
-  margin-left: var(--spacing-small, 16px) !important;
+  padding-left: var(--spacing-small, 16px) !important;
 }
 
 .u-padding-left--medium {
-  margin-left: var(--spacing-medium, 32px) !important;
+  padding-left: var(--spacing-medium, 32px) !important;
 }
 
 .u-padding-left--large {
-  margin-left: var(--spacing-large, 72px) !important;
+  padding-left: var(--spacing-large, 72px) !important;
 }
 
 .u-padding-left--extra-large {
-  margin-left: var(--spacing-x-large, 120px) !important;
+  padding-left: var(--spacing-x-large, 120px) !important;
 }
 
 /*-- Padding Right --*/
 .u-padding-right--0 {
-  margin-right: var(--spacing-0, 0px) !important;
+  padding-right: var(--spacing-0, 0px) !important;
 }
 
 .u-padding-right--extra-small {
-  margin-right: var(--spacing-x-small, 8px) !important;
+  padding-right: var(--spacing-x-small, 8px) !important;
 }
 
 .u-padding-right--small {
-  margin-right: var(--spacing-small, 16px) !important;
+  padding-right: var(--spacing-small, 16px) !important;
 }
 
 .u-padding-right--medium {
-  margin-right: var(--spacing-medium, 32px) !important;
+  padding-right: var(--spacing-medium, 32px) !important;
 }
 
 .u-padding-right--large {
-  margin-right: var(--spacing-large, 72px) !important;
+  padding-right: var(--spacing-large, 72px) !important;
 }
 
 .u-padding-right--extra-large {
-  margin-right: var(--spacing-x-large, 120px) !important;
+  padding-right: var(--spacing-x-large, 120px) !important;
 }
 
 /* -- --------------------  -- */
