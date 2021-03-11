@@ -6,10 +6,26 @@
 
 a,
 a:visited {
+  font-weight: 600;
+  color: var(--color-primary-blue, #003865);
   &:hover {
     //text-decoration: underline;
   }
+}
 
+/* -- [ TEXT ] -- */
+a,
+a:visited,
+.c-btn--text,
+.c-btn--text:visited {
+  font-weight: 600;
+  position: relative;
+  color: var(--color-primary-blue, #003865);
+  &:hover, &:focus, &:active {
+    text-decoration: underline;
+    color: var(--color-almost-black, #1D1D1E);
+    border-color: var(--color-terra-cotta, #E07A5F);
+  }
 }
 
 .c-btn,

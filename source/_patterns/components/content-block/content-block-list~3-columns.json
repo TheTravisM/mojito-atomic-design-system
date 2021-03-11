@@ -1,0 +1,34 @@
+{
+  "prependHtml" : "<main role='main'>",
+  "appendHtml" : "</main>",
+  "pageTitle" : "Content List 3 Columns",
+  "pageTitleLevel" : "h3",
+  "containerModifier": "l-container--grid-3",
+  "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
+  "backgroundColor": "",
+  "content-block-list" : [
+    {
+      "blockModifier": "",
+      "backgroundColor": "",
+      "headingLevel": false,
+      "title": false,
+      "htmlText": "<p><b>Emily Featherston</b><br>Senior Public Relations Manager<br><a href='#'>emily.featherston@cengage.com</a></p>",
+      "buttons": false
+
+    },
+    {
+      "blockModifier": "",
+      "backgroundColor": "",
+      "headingLevel": false,
+      "title": false,
+      "htmlText": "<p><b>Emily Featherston</b><br>Senior Public Relations Manager<br><a href='#'>emily.featherston@cengage.com</a></p>",      "buttons": false
+    },
+    {
+      "blockModifier": "",
+      "backgroundColor": "",
+      "headingLevel": false,
+      "title": false,
+      "htmlText": "<p><b>Emily Featherston</b><br>Senior Public Relations Manager<br><a href='#'>emily.featherston@cengage.com</a></p>",      "buttons": false
+    }
+  ]
+}

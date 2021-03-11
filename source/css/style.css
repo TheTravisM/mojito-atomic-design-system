@@ -2138,7 +2138,7 @@ a:visited:active {
 
 b,
 strong {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 blockquote {
@@ -2186,8 +2186,8 @@ span.incorrect {
   }
 
   p {
-    font-size: var(--p-font-size, 24px);
-    line-height: var(--p-line-height, 38px);
+    font-size: var(--p-font-size, 20px);
+    line-height: var(--p-line-height, 32px);
   }
 }
 /*------------------------------------*/
@@ -2217,18 +2217,34 @@ main[role=main] {
   grid-column: container;
 }
 
+/* -- [ 2 Column Grid ] --*/
+.l-container--grid-2 {
+  display: grid;
+  gap: 24px;
+  /* 2 column 1061px - 1 column 689px */
+  /* 2 col 947px - 1 col 623px */
+  /* 2 column 821px - 1 column 544px */
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
 /* -- [ 3 Column Grid ] --*/
 .l-container--grid-3 {
   display: grid;
   gap: 24px;
-  grid-template-columns: repeat(auto-fill, 344px);
+  /* 2 column 1061px - 1 column 689px */
+  /* 2 col 947px - 1 col 623px */
+  /* 2 column 821px - 1 column 544px */
+  grid-template-columns: repeat(auto-fill, minmax(253px, 1fr));
 }
 
 /* -- [ 4 Column Grid ] --*/
 .l-container--grid-4 {
   display: grid;
   gap: 24px;
-  grid-template-columns: repeat(auto-fill, 252px);
+  /* 3 874px - 2 653px - 1 432px */
+  /*grid-template-columns: repeat(auto-fill, minmax(197px, 1fr));
+  /* 3 1080px - 2 column 818px - 1 column 542px */
+  grid-template-columns: repeat(auto-fill, minmax(252px, 1fr));
 }
 
 /*------------------------------------*/
@@ -2301,6 +2317,35 @@ main[role=main] {
 /* -- -----------------------  -- */
 /* -- [ COMPONENTS : BUTTONS ] -- */
 /* -- -----------------------  -- */
+a,
+a:visited {
+  font-weight: 600;
+  color: var(--color-primary-blue, #003865);
+}
+/* -- [ TEXT ] -- */
+a,
+a:visited,
+.c-btn--text,
+.c-btn--text:visited {
+  font-weight: 600;
+  position: relative;
+  color: var(--color-primary-blue, #003865);
+}
+a:hover, a:focus, a:active,
+a:visited:hover,
+a:visited:focus,
+a:visited:active,
+.c-btn--text:hover,
+.c-btn--text:focus,
+.c-btn--text:active,
+.c-btn--text:visited:hover,
+.c-btn--text:visited:focus,
+.c-btn--text:visited:active {
+  text-decoration: underline;
+  color: var(--color-almost-black, #1D1D1E);
+  border-color: var(--color-terra-cotta, #E07A5F);
+}
+
 .c-btn,
 .c-btn:visited {
   display: inline-flex;
@@ -3872,7 +3917,35 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
   margin-top: auto;
 }
 
-/* -- [ Media Block : Primary -- Small devices (landscape phones, 576px and Up ) */
+/* -- [ Media Block : ICON -- Small devices (landscape phones, 576px and Up ) */
+/* -- ---------------------------- -- */
+/* -- [ Media Block : ICON ] -- */
+/* -- ---------------------------- -- */
+.c-media-block-list--logo {
+  max-width: 1048px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, 240px);
+}
+
+.c-media-block--logo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 140px;
+}
+.c-media-block--logo .c-media-block_picture {
+  min-width: auto;
+  min-height: auto;
+  position: relative;
+}
+.c-media-block--logo .c-media-block_img {
+  display: flex;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+/* -- [ Media Block : ICON -- Small devices (landscape phones, 576px and Up ) */
 /* -- ---------------------------------------  -- */
 /* -- [ COMPONENTS : Header Primary Navigation -- */
 /* -- ---------------------------------------  -- */

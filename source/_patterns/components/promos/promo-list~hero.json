@@ -7,7 +7,7 @@
     {
       "classModifier": "c-promo--hero",
       "mediaAlign": "c-promo--media-left",
-      "imgSrc": "http://news.cengage.com/wp-content/uploads/2019/06/MHansen-2019-bust-smaller.png",
+      "imgSrc": "https://news.cengage.com/wp-content/uploads/2019/06/MHansen-2019-bust-smaller.png",
       "imgAltText": "this is the alt text",
       "headingLevel": "h3",
       "title": "Leadership",

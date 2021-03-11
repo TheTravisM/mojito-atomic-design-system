@@ -5,7 +5,7 @@
     {
       "classModifier": "c-promo--homepage",
       "backgroundColor": "",
-      "imgSrc": "http://www.fillmurray.com/270/710",
+      "imgSrc": "https://www.fillmurray.com/270/710",
       "imgAltText": "this is the alt text",
       "promoFigCaptionText": "this is the fig caption text",
       "headingLevel": "h2",
@@ -19,7 +19,7 @@
     {
       "classModifier": "c-promo--homepage",
       "backgroundColor": "",
-      "imgSrc": "http://www.fillmurray.com/500/720",
+      "imgSrc": "https://www.fillmurray.com/500/720",
       "imgAltText": "this is the alt text",
       "promoFigCaptionText": "this is the fig caption text",
       "headingLevel": "h2",
@@ -33,7 +33,7 @@
     {
       "classModifier": "c-promo--homepage",
       "backgroundColor": "",
-      "imgSrc": "http://www.fillmurray.com/275/725",
+      "imgSrc": "https://www.fillmurray.com/275/725",
       "imgAltText": "this is the alt text",
       "headingLevel": "h2",
       "title": "Find out where you fit in",
@@ -46,7 +46,7 @@
     {
       "classModifier": "c-promo--homepage",
       "backgroundColor": "",
-      "imgSrc": "http://www.fillmurray.com/270/710",
+      "imgSrc": "https://www.fillmurray.com/270/710",
       "imgAltText": "this is the alt text",
       "promoFigCaptionText": "this is the fig caption text",
       "headingLevel": "h2",
@@ -60,7 +60,7 @@
     {
       "classModifier": "c-promo--homepage",
       "backgroundColor": "",
-      "imgSrc": "http://www.fillmurray.com/500/720",
+      "imgSrc": "https://www.fillmurray.com/500/720",
       "imgAltText": "this is the alt text",
       "promoFigCaptionText": "this is the fig caption text",
       "headingLevel": "h2",
@@ -74,7 +74,7 @@
     {
       "classModifier": "c-promo--homepage",
       "backgroundColor": "",
-      "imgSrc": "http://www.fillmurray.com/275/725",
+      "imgSrc": "https://www.fillmurray.com/275/725",
       "imgAltText": "this is the alt text",
       "headingLevel": "h2",
       "title": "Find out where you fit in",

@@ -1,0 +1,28 @@
+{
+  "prependHtml" : "<main role='main'>",
+  "appendHtml" : "</main>",
+  "pageTitle" : "Content List 2 Columns",
+  "pageTitleLevel" : "h3",
+  "containerModifier": "l-container--grid-2",
+  "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
+  "backgroundColor": "",
+  "content-block-list" : [
+    {
+      "blockModifier": "",
+      "backgroundColor": "",
+      "headingLevel": false,
+      "title": false,
+      "htmlText": "<p class='u-margin-bottom--medium'><b>Sales</b><br><a href='#'>Find a Sales Consultant</a></p><p class='u-margin-bottom--medium'><b>Rights and Permissions</b><br>Request permission to photocopy, duplicate, republish or otherwise reuse Cengage material.</p><p class='u-margin-bottom--medium'><a href='#'>Request eFiles for students with disabilities.</a></p> <p class='u-margin-bottom--medium'><b>U.S. Instructor & Review Copies</b><br><a href='#'>Email: order.samples@cengage.com</a></p> <p class='u-margin-bottom--medium'><b>Returns via Mail</b><br>Cengage Distribution Center <br>10650 Toebben Dr<br>Location 2<br>Independence, KY 41051</p>",
+      "buttons": false
+
+    },
+    {
+      "blockModifier": "",
+      "backgroundColor": "",
+      "headingLevel": false,
+      "title": false,
+      "htmlText": "<p class='u-margin-bottom--medium'><b>Investor Relations</b><br><a href='#'>investors@cengage.com</a></p> <p class='u-margin-bottom--medium'><b>Corporate Procurement & Sourcing</b><br><a href='#'>pocurement@cengage.com</a></p> <p class='u-margin-bottom--medium'><b>Author Royalties</b><br><a href='#'>ms.royalties@cengage.com</a></p> <p class='u-margin-bottom--medium'><b>Other</b><br><a href='#'>College Stores</a><br><a href='#'>College Stores</a><br><a href='#'>College Stores</a><br><a href='#'>College Stores</a><br><a href='#'>College Stores</a></p>",
+      "buttons": false
+    }
+  ]
+}

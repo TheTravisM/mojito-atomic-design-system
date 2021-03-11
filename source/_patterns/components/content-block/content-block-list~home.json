@@ -1,0 +1,18 @@
+{
+  "prependHtml" : "<main role='main'>",
+  "appendHtml" : "</main>",
+  "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
+  "backgroundColor": "",
+  "content-block-list" : [
+    {
+      "blockModifier": "c-content-block--home",
+      "backgroundColor": "",
+      "headingLevel": "h1",
+      "title": "Learning Transforms Lives",
+      "htmlText": "We enable millions of students in 165 countries and territories to discover the power and joy of learning through engaging digital experiences.",
+      "buttons": false,
+      "buttonClass": "",
+      "linkUrl": ""
+    }
+  ]
+}

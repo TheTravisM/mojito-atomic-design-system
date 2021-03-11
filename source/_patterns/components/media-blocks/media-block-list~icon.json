@@ -2,7 +2,7 @@
   "prependHtml" : "<main role='main'>",
   "appendHtml" : "</main>",
   "pageTitle" : "Benefits We Offer",
-  "pageTitleLevel" : "h4",
+  "pageTitleLevel" : "h3",
   "containerModifier" : "c-media-block-list--icon",
   "paddingUtility": "u-padding-bottom--large u-padding-top--medium",
   "backgroundColorUtility": "",

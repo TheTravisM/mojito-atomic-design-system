@@ -1,7 +1,18 @@
-<div class="l-container {{paddingUtility}} {{backgroundColor}}">
+{{{prependHtml}}}
 
-    {{#each content-block-list }}
-        {{> components-content-block }}
-    {{/ each }}
+    {{#if pageTitle}}
+        <div class="l-container u-padding-bottom--medium u-padding-top--medium">
+            <{{#if pageTitleLevel}}{{pageTitleLevel}}{{else}}h4{{/if}}>
+                {{pageTitle}}
+            </{{#if pageTitleLevel}}{{pageTitleLevel}}{{else}}h4{{/if}}>
+        </div>
+    {{/if}}
 
-</div><!--end c-btn-group-->
+    <div class="l-container {{ containerModifier }} {{paddingUtility}} {{backgroundColor}}">
+
+        {{#each content-block-list }}
+            {{> components-content-block }}
+        {{/ each }}
+
+    </div><!--end c-btn-group-->
+{{{appendHtml}}}

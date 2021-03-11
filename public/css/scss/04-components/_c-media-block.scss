@@ -234,11 +234,64 @@
     }
   }
 }
-/* -- [ Media Block : Primary -- Small devices (landscape phones, 576px and Up ) */
+/* -- [ Media Block : ICON -- Small devices (landscape phones, 576px and Up ) */
 @media (min-width: 576px) {
   .c-media-block-list--icon {  }
 
   .c-media-block--icon {
+    .c-media-block {
+      &_aside {  }
+      &_picture { }
+      &_img { }
+      &_body { }
+      &_header {  }
+      &_title { }
+      &_copy { }
+      &_footer { }
+    }
+  }
+}
+
+/* -- ---------------------------- -- */
+/* -- [ Media Block : ICON ] -- */
+/* -- ---------------------------- -- */
+.c-media-block-list--logo {
+  max-width: 1048px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, 240px);
+}
+
+.c-media-block--logo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 140px;
+  .c-media-block {
+    &_aside { }
+    &_picture {
+      min-width: auto;
+      min-height: auto;
+      position: relative;
+    }
+    &_img {
+      display: flex;
+      width: 100%;
+      position: relative;
+      object-fit: cover;
+    }
+    &_body { }
+    &_header {}
+    &_title {}
+    &_copy { }
+    &_footer {}
+  }
+}
+/* -- [ Media Block : ICON -- Small devices (landscape phones, 576px and Up ) */
+@media (min-width: 576px) {
+  .c-media-block-list--logo {  }
+
+  .c-media-block--logo {
     .c-media-block {
       &_aside {  }
       &_picture { }

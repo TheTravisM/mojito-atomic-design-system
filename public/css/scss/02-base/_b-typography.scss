@@ -96,7 +96,7 @@ a:visited {
 
 b,
 strong{
-  font-weight: 700;
+  font-weight: 600;
 }
 
 blockquote {
@@ -146,8 +146,8 @@ span.incorrect {
   }
 
   p {
-    font-size: var(--p-font-size, 24px);
-    line-height: var(--p-line-height, 38px);
+    font-size: var(--p-font-size, 20px);
+    line-height: var(--p-line-height, 32px);
   }
 
 }

@@ -25,17 +25,36 @@ main[role="main"] {
   }
 }
 
-/* -- [ 3 Column Grid ] --*/
+/* -- [ 2 Column Grid ] --*/
+.l-container--grid-2 {
+  display: grid;
+  gap: 24px;
+  /* 2 column 1061px - 1 column 689px */
+  //grid-template-columns: repeat(auto-fill, minmax(333px, 1fr));
+  /* 2 col 947px - 1 col 623px */
+  //grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* 2 column 821px - 1 column 544px */
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
 
+/* -- [ 3 Column Grid ] --*/
 .l-container--grid-3 {
   display: grid;
   gap: 24px;
-  grid-template-columns: repeat(auto-fill, 344px);
+  /* 2 column 1061px - 1 column 689px */
+  //grid-template-columns: repeat(auto-fill, minmax(333px, 1fr));
+  /* 2 col 947px - 1 col 623px */
+  //grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* 2 column 821px - 1 column 544px */
+  grid-template-columns: repeat(auto-fill, minmax(253px, 1fr));
 }
 
 /* -- [ 4 Column Grid ] --*/
 .l-container--grid-4 {
   display: grid;
   gap: 24px;
-  grid-template-columns: repeat(auto-fill, 252px);
+  /* 3 874px - 2 653px - 1 432px */
+  /*grid-template-columns: repeat(auto-fill, minmax(197px, 1fr));
+  /* 3 1080px - 2 column 818px - 1 column 542px */
+  grid-template-columns: repeat(auto-fill, minmax(252px, 1fr));
 }

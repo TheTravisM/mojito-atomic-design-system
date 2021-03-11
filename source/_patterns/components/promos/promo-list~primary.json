@@ -5,7 +5,7 @@
     {
       "classModifier": "c-promo--primary",
       "backgroundColor": "",
-      "imgSrc": "http://www.fillmurray.com/270/710",
+      "imgSrc": "https://www.fillmurray.com/270/710",
       "imgAltText": "this is the alt text",
       "headingLevel": "h3",
       "title": "Students",
@@ -15,7 +15,7 @@
     {
       "classModifier": "c-promo--primary",
       "backgroundColor": "",
-      "imgSrc": "http://www.fillmurray.com/500/720",
+      "imgSrc": "https://www.fillmurray.com/500/720",
       "imgAltText": "this is the alt text",
       "headingLevel": "h3",
       "title": "Educators",
@@ -25,7 +25,7 @@
     {
       "classModifier": "c-promo--primary",
       "backgroundColor": "",
-      "imgSrc": "http://www.fillmurray.com/275/725",
+      "imgSrc": "https://www.fillmurray.com/275/725",
       "imgAltText": "this is the alt text",
       "headingLevel": "h3",
       "title": "Librarians",
@@ -35,7 +35,7 @@
     {
       "classModifier": "c-promo--primary",
       "backgroundColor": "",
-      "imgSrc": "http://www.fillmurray.com/270/710",
+      "imgSrc": "https://www.fillmurray.com/270/710",
       "imgAltText": "this is the alt text",
       "headingLevel": "h3",
       "title": "Employees",

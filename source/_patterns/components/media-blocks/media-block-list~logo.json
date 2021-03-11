@@ -1,0 +1,107 @@
+{
+  "prependHtml" : "<main role='main'>",
+  "appendHtml" : "</main>",
+  "pageTitle" : false,
+  "pageTitleLevel" : false,
+  "containerModifier" : "c-media-block-list--logo",
+  "paddingUtility": "u-padding-bottom--large u-padding-top--medium",
+  "backgroundColorUtility": "",
+  "media-block-list" : [
+    {
+      "mediaBlockClassModifier": "c-media-block--logo",
+      "mediaBlockImgSrc": "https://www.fillmurray.com/237/52",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": false,
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--logo",
+      "mediaBlockImgSrc": "https://www.fillmurray.com/119/114",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": false,
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--logo",
+      "mediaBlockImgSrc": "https://www.fillmurray.com/344/344",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": false,
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--logo",
+      "mediaBlockImgSrc": "https://www.fillmurray.com/344/344",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": false,,
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--logo",
+      "mediaBlockImgSrc": "https://www.fillmurray.com/344/344",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": false,
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--logo",
+      "mediaBlockImgSrc": "https://www.fillmurray.com/344/344",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": false,
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--logo",
+      "mediaBlockImgSrc": "https://www.fillmurray.com/344/344",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": false,
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--logo",
+      "mediaBlockImgSrc": "https://www.fillmurray.com/344/344",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": false,
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--logo",
+      "mediaBlockImgSrc": "https://www.fillmurray.com/344/344",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": false,
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--logo",
+      "mediaBlockImgSrc": "https://www.fillmurray.com/344/344",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": false,
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--logo",
+      "mediaBlockImgSrc": "https://www.fillmurray.com/344/344",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": false,
+      "buttons": false
+    },
+    {
+      "mediaBlockClassModifier": "c-media-block--logo",
+      "mediaBlockImgSrc": "https://www.fillmurray.com/344/344",
+      "mediaBlockImgAlt": "health",
+      "title": false,
+      "htmlText": false,
+      "buttons": false
+    }
+  ]
+}

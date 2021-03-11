@@ -1,0 +1,36 @@
+{
+  "prependHtml" : "<main role='main'>",
+  "appendHtml" : "</main>",
+  "pageTitle" : "Content List Hero 3 Columns",
+  "pageTitleLevel" : "h3",
+  "containerModifier": "l-container--grid-3",
+  "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
+  "backgroundColor": "u-bg--spearmint",
+  "content-block-list" : [
+    {
+      "blockModifier": "",
+      "backgroundColor": "",
+      "headingLevel": "h5",
+      "title": "Sales",
+      "htmlText": "<a href='#'>Find a Sales Consultant</a><h4>Rights and Permissions</h4><p>Request permission to photocopy, duplicate, republish or otherwise reuse Cengage material.</p><a href='#'>Request eFiles for students with disabilities.</a><h4>U.S. Instructor & Review Copies</h4><a href='#'>Email: order.samples@cengage.com</a><h4>Returns via Mail</h4><p>Cengage Distribution Center <br>10650 Toebben Dr<br>Location 2<br>Independence, KY 41051</p>",
+      "buttons": false
+
+    },
+    {
+      "blockModifier": "",
+      "backgroundColor": "",
+      "headingLevel": false,
+      "title": false,
+      "htmlText": "<a href='#'>Find a Sales Consultant</a><h4>Rights and Permissions</h4><p>Request permission to photocopy, duplicate, republish or otherwise reuse Cengage material.</p><a href='#'>Request eFiles for students with disabilities.</a><h4>U.S. Instructor & Review Copies</h4><a href='#'>Email: order.samples@cengage.com</a><h4>Returns via Mail</h4><p>Cengage Distribution Center <br>10650 Toebben Dr<br>Location 2<br>Independence, KY 41051</p>",
+      "buttons": false
+    },
+    {
+      "blockModifier": "",
+      "backgroundColor": "",
+      "headingLevel": false,
+      "title": false,
+      "htmlText": "<a href='#'>Find a Sales Consultant</a><h4>Rights and Permissions</h4><p>Request permission to photocopy, duplicate, republish or otherwise reuse Cengage material.</p><a href='#'>Request eFiles for students with disabilities.</a><h4>U.S. Instructor & Review Copies</h4><a href='#'>Email: order.samples@cengage.com</a><h4>Returns via Mail</h4><p>Cengage Distribution Center <br>10650 Toebben Dr<br>Location 2<br>Independence, KY 41051</p>",
+      "buttons": false
+    }
+  ]
+}

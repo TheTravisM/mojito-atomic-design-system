@@ -1,9 +1,11 @@
 {
+  "prependHtml" : "<main role='main'>",
+  "appendHtml" : "</main>",
   "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
   "backgroundColor": "",
   "content-block-list" : [
     {
-      "blockModifier": "c-content-block--home",
+      "blockModifier": "c-content-block",
       "backgroundColor": "",
       "headingLevel": "h1",
       "title": "Learning Transforms Lives",
