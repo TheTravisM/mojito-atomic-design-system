@@ -2325,13 +2325,16 @@ main[role=main] {
   width: 100%;
 }
 
+.c-breadcrumb_link {
+  font-weight: 400;
+}
 .c-breadcrumb_link:hover {
   color: var(--color-primary-blue, #003865);
 }
 
 /* Add a slash symbol (/) before/behind each list item */
 .c-breadcrumb_list .c-breadcrumb_list-item + .c-breadcrumb_list-item:before {
-  padding: 0 6px 0 8px;
+  margin: 0 6px 0 8px;
   content: "/";
 }
 
@@ -2365,7 +2368,7 @@ a:visited:active,
 .c-btn--text:visited:active {
   text-decoration: underline;
   color: var(--color-almost-black, #1D1D1E);
-  border-color: var(--color-terra-cotta, #E07A5F);
+  border-color: var(--color-almost-black, #1D1D1E);
 }
 
 .c-btn,
@@ -4099,6 +4102,7 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
   }
   .c-primary-nav_tab-btn::after {
     margin-left: 12px;
+    border-color: var(--color-almost-black, #1D1D1E);
     transform: rotate(135deg);
   }
   .c-primary-nav_link--home, .c-primary-nav_back-btn {

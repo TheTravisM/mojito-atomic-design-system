@@ -131,8 +131,10 @@
         background-color: rgba(0,45,75,0.10);
       }
     }
+    &_tab-btn:hover::after { }
     &_tab-btn::after {
       margin-left: 12px;
+      border-color: var(--color-almost-black, #1D1D1E);
       transform: rotate(135deg);
     }
     &_link--home,
