@@ -2247,6 +2247,27 @@ main[role=main] {
   grid-template-columns: repeat(auto-fill, minmax(252px, 1fr));
 }
 
+/* -- [ 2 Column Flex ] --*/
+.l-container--flex-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* -- [ 3 Column Flex ] --*/
+.l-container--flex-3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* -- [ 4 Column Flex ] --*/
+.l-container--flex-4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 /*------------------------------------*/
 /* -- [ COMPONENTS ] -----------------*/
 /*------------------------------------*/
@@ -2322,6 +2343,7 @@ a:visited {
   font-weight: 600;
   color: var(--color-primary-blue, #003865);
 }
+/* -- --------  -- */
 /* -- [ TEXT ] -- */
 a,
 a:visited,
@@ -2380,6 +2402,7 @@ a:visited:active,
   transition: all 0.5s ease-out;
 }
 
+/* -- -----------  -- */
 /* -- [ HOMEPAGE ] -- */
 .c-btn--homepage,
 .c-btn--homepage:visited {
@@ -2424,6 +2447,7 @@ a:visited:active,
   width: 100%;
 }
 
+/* -- -----------  -- */
 /* -- [ PRIMARY ] -- */
 .c-btn--primary,
 .c-btn--primary:visited {
@@ -2442,9 +2466,8 @@ a:visited:active,
   width: 18px;
   content: url("data:image/svg+xml,%3Csvg version='1.1' id='icon-primary-arrow' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 18 15' style='enable-background:new 0 0 18 15;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E svg%23icon-primary-arrow .arrow-icon%7Bfill:none;stroke:%2381B39B;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;%7D%0A%3C/style%3E%3Cline id='Path' class='arrow-icon' x1='1' y1='8' x2='16' y2='7.9'/%3E%3Cpolyline id='Line' class='arrow-icon' points='10,1 17,7.5 10,14 '/%3E%3C/svg%3E%0A");
   position: absolute;
-  display: inline-flex;
   right: 9px;
-  top: 1px;
+  top: 0;
 }
 .c-btn--primary::before,
 .c-btn--primary:visited::before {
@@ -2462,6 +2485,7 @@ a:visited:active,
   width: 100%;
 }
 
+/* -- -----------  -- */
 /* -- [ PRIMARY - External ] -- */
 .c-btn--primary-external,
 .c-btn--primary-external:visited,
@@ -3133,12 +3157,14 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
   .c-global-nav_link {
     line-height: 40px;
     height: 40px;
-    color: var(--color-almost-black, #1D1D1E);
     padding: 12px;
     margin-left: 24px;
+    color: var(--color-almost-black, #1D1D1E);
+    font-weight: 400;
   }
   .c-global-nav_link:hover {
     background-color: rgba(0, 45, 75, 0.1);
+    text-decoration: none;
   }
   .c-global-nav_tab-btn::after {
     content: "";
@@ -3231,12 +3257,13 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
   z-index: 1000;
   width: 100%;
 }
-
 .c-header--active {
   height: 100vh;
   background-color: #F7F7F7;
 }
-
+.c-header--active .c-header_container {
+  flex: auto;
+}
 .c-header_container {
   display: flex;
   flex-direction: column;
@@ -3244,11 +3271,6 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
   width: 100%;
   max-width: 1080px;
 }
-
-.c-header--active .c-header_container {
-  flex: auto;
-}
-
 .c-header_top-section {
   display: flex;
   flex-direction: row;
@@ -4022,6 +4044,9 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
   color: var(--color-primary-blue, #003865);
   border: 0;
   background: none;
+}
+.c-primary-nav_link:hover, .c-primary-nav_dropdown-link:hover {
+  text-decoration: none;
 }
 .c-primary-nav_dropdown-list {
   top: 0;

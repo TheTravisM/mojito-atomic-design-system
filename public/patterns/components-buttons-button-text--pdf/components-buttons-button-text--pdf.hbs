@@ -6,7 +6,8 @@
     <button class="{{ classModifier }}"
         {{#if id}}id="{{id}}"{{/if}}
         {{#if url}}href="{{ url }}"{{/ if }}
-        {{#if title}}title="{{ title }}"{{/if}}>
+        {{#if title}}title="{{ title }}"{{/if}}
+        type="button">
         {{#if prependHtml}}
             {{{prependHtml}}}
         {{/if}}
@@ -26,7 +27,8 @@
 {{#if linkTag }}
     <a {{#if url}}href="{{ url }}"{{/ if }}
         {{#if id}}id="{{id}}"{{/if}}
-        class="{{ classModifier }}">
+        class="{{ classModifier }}"
+        role="link">
         {{#if prepend}}
             {{{prepend}}}
         {{/if}}

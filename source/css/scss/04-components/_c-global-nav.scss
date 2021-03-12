@@ -215,11 +215,13 @@
     &_link {
       line-height: 40px;
       height: 40px;
-      color: var(--color-almost-black, #1D1D1E);
       padding: 12px;
       margin-left: 24px;
+      color: var(--color-almost-black, #1D1D1E);
+      font-weight: 400;
       &:hover {
         background-color: rgba(0,45,75,0.10);
+        text-decoration: none;
       }
     }
     &_tab-btn{

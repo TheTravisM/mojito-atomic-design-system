@@ -58,3 +58,24 @@ main[role="main"] {
   /* 3 1080px - 2 column 818px - 1 column 542px */
   grid-template-columns: repeat(auto-fill, minmax(252px, 1fr));
 }
+
+/* -- [ 2 Column Flex ] --*/
+.l-container--flex-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* -- [ 3 Column Flex ] --*/
+.l-container--flex-3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* -- [ 4 Column Flex ] --*/
+.l-container--flex-4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
