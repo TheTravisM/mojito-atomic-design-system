@@ -49,8 +49,10 @@
   }
   &.open span.c-header-toggle-btn-text {
     padding-right: 10px;
-    text-align: left;
     margin-right: 0;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
     opacity: 1;
   }
 }

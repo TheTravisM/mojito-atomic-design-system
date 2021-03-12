@@ -2998,13 +2998,14 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
   flex-direction: column;
 }
 .c-global-nav_link {
-  display: flex;
   padding: 0 24px;
   margin-left: 24px;
+  display: flex;
   align-items: center;
   font-size: 16px;
   line-height: 40px;
   cursor: pointer;
+  font-weight: 400;
 }
 .c-global-nav_tab-btn::after {
   position: relative;
@@ -3158,12 +3159,10 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
     background-color: rgba(0, 45, 75, 0.1);
   }
   .c-global-nav_link {
-    line-height: 40px;
     height: 40px;
     padding: 12px;
     margin-left: 24px;
     color: var(--color-almost-black, #1D1D1E);
-    font-weight: 400;
   }
   .c-global-nav_link:hover {
     background-color: rgba(0, 45, 75, 0.1);
@@ -3376,8 +3375,10 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
 }
 .c-header-toggle-btn.open span.c-header-toggle-btn-text {
   padding-right: 10px;
-  text-align: left;
   margin-right: 0;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
   opacity: 1;
 }
 
