@@ -16,6 +16,7 @@
 }
 .c-breadcrumb_list-item { }
 .c-breadcrumb_link {
+  color: var(--color-primary-blue, #003865);
   font-weight: 400;
   &:hover {
     color: var(--color-primary-blue, #003865);
