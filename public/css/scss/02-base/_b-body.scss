@@ -30,6 +30,10 @@ body {
 }
 
 main[role="main"] {
-  display: block;
-  flex: 1 0 auto;
+  display: grid;
+  grid-template-columns:
+          [viewport-start] minmax(12px, 1fr)
+          [container-start] minmax(0, 1080px) [container-end]
+          minmax(12px, 1fr) [viewport-end];
+  overflow-x: hidden;
 }
