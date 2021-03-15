@@ -47,9 +47,7 @@
 .c-footer-nav_link:hover,
 .c-footer-nav_link:focus { }
 
-.c-footer-nav_link[href^="#"] {
-  color: lime;
-}
+.c-footer-nav_link[href^="#"] { }
 
 .c-footer-nav_link:not([href^="/"]),
 .c-footer-nav_link:not([href^=".."]),
