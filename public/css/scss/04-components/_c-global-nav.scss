@@ -125,7 +125,9 @@
       color: var(--color-primary-blue, #003865);
       font-weight: 600;
       text-align: left;
-      &:hover {  }
+      &:hover {
+        text-decoration: none;
+      }
       //&[href*="http"]:not([href*="cengage.com"]),
       //&[href*="www"]:not([href*="cengage.com"]),
       .c-btn--external-link {
@@ -190,6 +192,9 @@
     font-size: 16px;
     line-height: 32px;
     padding-left: 24px;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
