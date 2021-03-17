@@ -3648,11 +3648,6 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
     font-weight: 600;
   }
 }
-/*<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> */
-/*<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>*/
-/* -- -----------------------  -- */
-/* -- [ COMPONENTS : HOME HERO -- */
-/* -- -----------------------  -- */
 .c-image-banner--home {
   min-width: 1390px;
   position: relative;
@@ -4739,6 +4734,10 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
     line-height: 32px;
   }
 }
+.c-timeline {
+  max-width: 915px;
+}
+
 /* -- ------------  -- */
 /* -- [ UTILITIES ] -- */
 /* -- ------------  -- */

@@ -1,18 +1,18 @@
 {
-  "prependHtml" : "<main role='main'>",
-  "appendHtml" : "</main>",
+  "prependHtml" : "<main role='main'><section class='l-container l-container--full u-bg--spearmint-lite'>",
+  "appendHtml" : "</section></main>",
   "pageTitle" : "Content List Hero 2 Columns",
   "pageTitleLevel" : "h3",
   "containerModifier": "l-grid-2",
-  "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
-  "backgroundColor": "u-bg--spearmint",
+  "paddingUtility": "u-padding-bottom--large u-padding-top--large",
+  "backgroundColor": "",
   "content-block-list" : [
     {
       "blockModifier": "",
       "backgroundColor": "",
-      "headingLevel": "h5",
-      "title": "Sales",
-      "htmlText": "<a href='#'>Find a Sales Consultant</a><h4>Rights and Permissions</h4><p>Request permission to photocopy, duplicate, republish or otherwise reuse Cengage material.</p><a href='#'>Request eFiles for students with disabilities.</a><h4>U.S. Instructor & Review Copies</h4><a href='#'>Email: order.samples@cengage.com</a><h4>Returns via Mail</h4><p>Cengage Distribution Center <br>10650 Toebben Dr<br>Location 2<br>Independence, KY 41051</p>",
+      "headingLevel": false,
+      "title": false,
+      "htmlText": "<p><b>General Inquiries and Additional Information for Higher Education, Career and K-12</b><br>Phone: 800-354-9706<br>Mail: 10650 Toebben Drive, Independence, KY 41051</p>",
       "buttons": false
 
     },
@@ -21,7 +21,7 @@
       "backgroundColor": "",
       "headingLevel": false,
       "title": false,
-      "htmlText": "<a href='#'>Find a Sales Consultant</a><h4>Rights and Permissions</h4><p>Request permission to photocopy, duplicate, republish or otherwise reuse Cengage material.</p><a href='#'>Request eFiles for students with disabilities.</a><h4>U.S. Instructor & Review Copies</h4><a href='#'>Email: order.samples@cengage.com</a><h4>Returns via Mail</h4><p>Cengage Distribution Center <br>10650 Toebben Dr<br>Location 2<br>Independence, KY 41051</p>",
+      "htmlText": "<p><b>Support</b><br>Phone: (800) 354-9706<br>Online: <a href='#'>support.cengage.com</a><br>Twitter: @CengageHelp</p>",
       "buttons": false
     }
   ]
