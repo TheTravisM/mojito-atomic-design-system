@@ -2893,18 +2893,7 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
 .c-content-block--leadership {
   max-width: 885px;
   padding: 56px 0;
-  color: red !important;
 }
-.c-content-block--leadership .c-content-block q {
-  font-size: 20px;
-  line-height: 32px;
-  font-weight: 600;
-}
-.c-content-block--leadership .c-content-block cite {
-  font-size: 16px;
-  line-height: 25px;
-}
-
 /* -- [ Content Block : HERO Small devices (landscape phones, 576px and Up )  ] -- */
 /* -- --------------------  -- */
 /* -- [ COMPONENTS : FOOT ] -- */
