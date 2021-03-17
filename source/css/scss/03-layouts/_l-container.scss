@@ -26,7 +26,7 @@ main[role="main"] {
 }
 
 /* -- [ 2 Column Grid ] --*/
-.l-container--grid-2 {
+.l-grid-2 {
   display: grid;
   gap: 24px;
   /* 2 column 1061px - 1 column 689px */
@@ -38,7 +38,7 @@ main[role="main"] {
 }
 
 /* -- [ 3 Column Grid ] --*/
-.l-container--grid-3 {
+.l-grid-3 {
   display: grid;
   gap: 24px;
   /* 2 column 1061px - 1 column 689px */
@@ -50,7 +50,7 @@ main[role="main"] {
 }
 
 /* -- [ 4 Column Grid ] --*/
-.l-container--grid-4 {
+.l-grid-4 {
   display: grid;
   gap: 24px;
   /* 3 874px - 2 653px - 1 432px */
@@ -60,21 +60,21 @@ main[role="main"] {
 }
 
 /* -- [ 2 Column Flex ] --*/
-.l-container--flex-2 {
+.l-flex-2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 /* -- [ 3 Column Flex ] --*/
-.l-container--flex-3 {
+.l-flex-3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 /* -- [ 4 Column Flex ] --*/
-.l-container--flex-4 {
+.l-flex-4 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

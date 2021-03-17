@@ -1,13 +1,16 @@
-{{{prependHtml}}}
 
-    {{#if pageTitle}}
+
+{{#if pageTitle}}
+    <main role="main">
         <div class="l-container u-padding-bottom--medium u-padding-top--medium">
             <{{#if pageTitleLevel}}{{pageTitleLevel}}{{else}}h4{{/if}}>
                 {{pageTitle}}
             </{{#if pageTitleLevel}}{{pageTitleLevel}}{{else}}h4{{/if}}>
         </div>
-    {{/if}}
+    </main>
+{{/if}}
 
+{{{prependHtml}}}
     <div class="l-container {{ containerModifier }} {{paddingUtility}} {{backgroundColor}}">
 
         {{#each content-block-list }}

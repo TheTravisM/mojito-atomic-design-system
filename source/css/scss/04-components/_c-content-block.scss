@@ -87,3 +87,64 @@
   }
 }
 
+/* -- ------------------------ -- */
+/* -- [ Content Block : HERO ] -- */
+/* -- ------------------------ -- */
+.c-content-block--hero {
+  max-width: 885px;
+  padding: 56px 0;
+  q {
+    display: block;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+  cite {
+    margin-top: 16px;
+    display: block;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+/* -- [ Content Block : HERO Small devices (landscape phones, 576px and Up )  ] -- */
+@media (min-width: 576px) {
+  .c-content-block--hero {
+    padding: 120px 0;
+    margin-right: auto;
+    q {
+      font-size: 32px;
+      line-height: 51px;
+    }
+    cite {
+      font-size: 20px;
+      line-height: 32px;
+      &:before { content: "— "; }
+    }
+  }
+}
+
+/* -- ------------------------ -- */
+/* -- [ Content Block : leadership ] -- */
+/* -- ------------------------ -- */
+.c-content-block--leadership {
+  max-width: 885px;
+  padding: 56px 0;
+  color: red!important;
+  .c-content-block {
+    q {
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 600;
+    }
+    cite {
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+}
+/* -- [ Content Block : HERO Small devices (landscape phones, 576px and Up )  ] -- */
+@media (min-width: 576px) {
+  .c-content-block--leadership {
+    .c-content-block { }
+  }
+}

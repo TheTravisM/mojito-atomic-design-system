@@ -1,0 +1,18 @@
+{
+  "prependHtml" : "<main role='main'>",
+  "appendHtml" : "</main>",
+  "paddingUtility": "u-padding-bottom--large u-padding-top--large",
+  "backgroundColor": "",
+  "content-block-list" : [
+    {
+      "blockModifier": "c-content-block--leadership",
+      "backgroundColor": false,
+      "headingLevel": false,
+      "title": false,
+      "htmlText": "<p>Under Michael’s leadership, Cengage has transformed from a print publisher to a company which today is creating some of the most highly rated digital learning products and platforms. Cengage serves learners of all ages, building confidence and momentum and driving measurable success and workplace readiness. Michael also serves as executive co-sponsor for the PRIDE Employee Resource Group at Cengage, an employee-led organization representing LGBTQIA+ employees and allies.</p><p>Michael has built a strong reputation for transforming businesses across many media and information sectors. Prior to joining Cengage, he served as CEO of Elsevier Health Sciences. During his tenure, he developed and implemented a successful print-to-digital transition and accelerated the development of new user-focused products. As President and CEO of Harcourt Assessment, Michael turned an unprofitable testing business into a growing and highly profitable enterprise. He has built a strong reputation for achieving results and driving sustainability through rapid strategic assessment, a relentless focus on measurable execution, and a keen emphasis on cultural change.</p><p>Earlier in his career, Michael served as Executive Vice President of Operational Excellence at Bertelsmann leading the portfolio transformation of this $20B global media company. Michael spent the first 11 years of his career with the Boston Consulting Group in New York, ultimately becoming Partner and Co-Chairman of the e-Business and Media Practice.</p><p>Michael was named one of Fast Company’s Most Creative People in Business in 2020 for his leadership in tackling the affordability crisis in higher education, with the introduction of Cengage Unlimited. Also, he was recognized by Glassdoor as a Top CEO as part of their Employees’ Choice Award in both 2018 and 2019.</p><p>Michael is currently a Board Member of John’s Hopkins Institute for Contemporary German Studies (AICGS) and ProPublica. He holds a Master of Law degree from the University of Bonn in Germany and an MBA from Columbia University in New York. He is based out of New York City.</p>",
+      "buttons": false,
+      "buttonClass": "",
+      "linkUrl": ""
+    }
+  ]
+}

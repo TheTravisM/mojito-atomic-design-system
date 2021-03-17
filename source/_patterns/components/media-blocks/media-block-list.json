@@ -3,7 +3,7 @@
   "appendHtml" : "</main>",
   "pageTitle" : "Media Block List",
   "pageTitleLevel" : "h4",
-  "containerModifier" : "l-container--grid-3",
+  "containerModifier" : "l-grid-3",
   "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
   "backgroundColorUtility": "",
   "media-block-list" : [

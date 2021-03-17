@@ -1,10 +1,10 @@
 {
-  "prependHtml" : "<main role='main'>",
-  "appendHtml" : "</main>",
+  "prependHtml" : "<main role='main'> <section class='l-container l-container--full u-bg--spearmint'>",
+  "appendHtml" : "</section></main>",
   "pageTitle" : "Content List Hero 3 Columns",
   "pageTitleLevel" : "h3",
-  "containerModifier": "l-container--grid-3",
-  "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
+  "containerModifier": "l-grid-3",
+  "paddingUtility": "u-padding-bottom--large u-padding-top--large",
   "backgroundColor": "u-bg--spearmint",
   "content-block-list" : [
     {

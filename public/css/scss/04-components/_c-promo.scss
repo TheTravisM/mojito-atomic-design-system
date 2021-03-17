@@ -517,11 +517,15 @@
       line-height: 25px;
       margin-bottom: 40px;
       q {
+        display: block;
         font-size: 24px;
         line-height: 38px;
-        margin-bottom: 16px;
+        font-weight: 600;
+        text-indent: -15px;
       }
       cite {
+        margin-top: 16px;
+        display: block;
         font-size: 16px;
         line-height: 25px;
         font-style: normal;
@@ -557,7 +561,6 @@
         q {
           font-size: 40px;
           line-height: 64px;
-          margin-bottom: 16px;
         }
         cite {
           font-size: 20px;

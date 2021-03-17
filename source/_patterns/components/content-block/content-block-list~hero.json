@@ -1,15 +1,15 @@
 {
   "prependHtml" : "<main role='main'>",
   "appendHtml" : "</main>",
-  "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
+  "paddingUtility": "l-container--full u-bg--spearmint-lite",
   "backgroundColor": "",
   "content-block-list" : [
     {
-      "blockModifier": "c-content-block",
+      "blockModifier": "c-content-block--hero",
       "backgroundColor": "",
-      "headingLevel": "h1",
-      "title": "Learning Transforms Lives",
-      "htmlText": "We enable millions of students in 165 countries and territories to discover the power and joy of learning through engaging digital experiences.",
+      "headingLevel": false,
+      "title": false,
+      "htmlText": "<q>Being part of an ERG means being able to take a part of my identity that could have been a liability, and turn it into an opportunity for professional achievement. It means having a way to identify and connect with people like me. It provides me with opportunities to hear the voices of allies, and get a better understanding of how much support I do have.</q><cite>Sarah D., Program Manager</cite>",
       "buttons": false,
       "buttonClass": "",
       "linkUrl": ""

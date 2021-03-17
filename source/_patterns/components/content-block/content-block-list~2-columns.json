@@ -3,7 +3,7 @@
   "appendHtml" : "</main>",
   "pageTitle" : "Content List 2 Columns",
   "pageTitleLevel" : "h3",
-  "containerModifier": "l-container--grid-2",
+  "containerModifier": "l-grid-2",
   "paddingUtility": "u-padding-bottom--medium u-padding-top--medium",
   "backgroundColor": "",
   "content-block-list" : [
