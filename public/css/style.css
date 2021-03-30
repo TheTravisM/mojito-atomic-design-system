@@ -1801,6 +1801,16 @@ ol, ul {
   list-style: none;
 }
 
+main ol, main ul {
+  list-style: none;
+  margin-bottom: var(--spacing-small, 16px);
+}
+main li {
+  font-size: var(--p-font-size, 16px);
+  line-height: var(--p-line-height, 25px);
+  margin-bottom: var(--spacing-extra-small, 16px);
+}
+
 /*------------------------------------*\
     #BUTTONS
 \*------------------------------------*/
@@ -2277,41 +2287,6 @@ main[role=main] {
 /* -- -------------------------  -- */
 /* -- [ COMPONENTS : ACCORDION ] -- */
 /* -- -------------------------  -- */
-.c-accordion {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: 0 12px;
-  border: 1px solid #ccc;
-}
-.c-accordion_item {
-  border-top: 1px solid #ccc;
-}
-.c-accordion_btn {
-  display: flex;
-  height: 100px;
-  width: 100%;
-  padding: 0 48px;
-  position: relative;
-  align-items: center;
-  font-size: 24px;
-  line-height: 38px;
-  font-weight: 600;
-}
-.c-accordion_btn:after {
-  position: absolute;
-  content: "";
-  right: 48px;
-  height: 24px;
-  width: 24px;
-  border: 1px solid black;
-  border-width: 2px 2px 0 0;
-}
-.c-accordion_body {
-  margin: 48px;
-  border: 1px solid #efefef;
-}
-
 /* -- --------------------------  -- */
 /* -- [ COMPONENTS : BREADCRUMB ] -- */
 /* -- --------------------------  -- */
@@ -4634,7 +4609,34 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
 /* -- ---------------------- -- */
 /* -- [ Promos : Secondary ] -- */
 /* -- ---------------------- -- */
+.c-promo--secondary {
+  margin-bottom: 72px;
+}
+.c-promo--secondary .c-promo_img {
+  width: 100%;
+  object-fit: cover;
+}
+.c-promo--secondary .c-promo_body {
+  max-width: 530px;
+}
+.c-promo--secondary .c-promo_footer {
+  margin-top: 24px;
+}
+
 /* -- [ Secondary -- Small devices (landscape phones, 576px and Up ) */
+@media (min-width: 576px) {
+  .c-promo--secondary .c-promo_aside {
+    margin: auto 0;
+    width: 164px;
+  }
+  .c-promo--secondary .c-promo_body {
+    margin: auto 0;
+  }
+  .c-promo--secondary .c-promo_copy p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
 /* -- ----------------- -- */
 /* -- [ Promos : HERO ] -- */
 /* -- ----------------- -- */
@@ -4837,6 +4839,46 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
 .u-width-960 {
   width: 100% !important;
   max-width: 960px !important;
+}
+
+.u-width--2-col {
+  max-width: 160px !important;
+}
+
+.u-width--3-col {
+  max-width: 252px !important;
+}
+
+.u-width--4-col {
+  max-width: 344px !important;
+}
+
+.u-width--5-col {
+  max-width: 436px !important;
+}
+
+.u-width--6-col {
+  max-width: 528px !important;
+}
+
+.u-width--6-col {
+  max-width: 620px !important;
+}
+
+.u-width--8-col {
+  max-width: 712px !important;
+}
+
+.u-width--9-col {
+  max-width: 804px !important;
+}
+
+.u-width--10-col {
+  max-width: 896px !important;
+}
+
+.u-width--11-col {
+  max-width: 988px !important;
 }
 
 /* -- ----------------------  -- */
@@ -5155,6 +5197,22 @@ a.c-btn--text[href^="//"]:not([href*="cengage.com"]):after {
 
 .u-text-normal-case {
   text-transform: none !important;
+}
+
+/* -- List Style Type --*/
+.u-list--none {
+  list-style-type: none !important;
+}
+
+.u-list--bullet {
+  list-style-type: disc !important;
+}
+.u-list--bullet li {
+  margin-left: 30px;
+}
+
+.u-list--decimal {
+  list-style-type: decimal !important;
 }
 
 /* -- --------------------------  -- */

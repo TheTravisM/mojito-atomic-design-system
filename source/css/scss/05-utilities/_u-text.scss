@@ -1,0 +1,41 @@
+/* -- --------------------  -- */
+/* -- [ UTILITIES : TEXT ] -- */
+/* -- --------------------  -- */
+
+/* -- Text Align -- */
+.u-text-left    { text-align: left !important; }
+
+.u-text-right   { text-align: right !important; }
+
+.u-text-center  { text-align: center !important; }
+
+.u-text-justify { text-align: justify !important; }
+
+/* -- Text Decoration -- */
+.u-text-underline	 { text-decoration: underline !important; }
+
+.u-text-line-through { text-decoration: line-through !important; }
+
+.u-text-no-underline { text-decoration: none !important; }
+
+/* -- Text Transform --*/
+.u-text-uppercase	{ text-transform: uppercase !important; }
+
+.u-text-lowercase	{ text-transform: lowercase !important; }
+
+.u-text-capitalize	{ text-transform: capitalize !important; }
+
+.u-text-normal-case	{ text-transform: none !important; }
+
+/* -- List Style Type --*/
+
+.u-list--none	 {list-style-type: none !important;}
+
+.u-list--bullet	{
+  list-style-type: disc !important;
+  li {
+    margin-left: 30px;
+  }
+}
+
+.u-list--decimal	{list-style-type: decimal !important;}

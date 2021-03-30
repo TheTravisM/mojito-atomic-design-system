@@ -458,31 +458,54 @@
   }
 }
 
+
+
 /* -- ---------------------- -- */
 /* -- [ Promos : Secondary ] -- */
 /* -- ---------------------- -- */
 .c-promo--secondary {
+  margin-bottom: 72px;
   .c-promo {
     &_aside { }
     &_picture { }
-    &_img { }
-    &_body { }
+    &_img {
+      width: 100%;
+      object-fit: cover;
+    }
+    &_body {
+      max-width: 530px;
+    }
     &_title { }
     &_copy { }
-    &_footer { }
+    &_footer {
+      margin-top: 24px;
+    }
   }
 }
 /* -- [ Secondary -- Small devices (landscape phones, 576px and Up ) */
 @media (min-width: 576px) {
   .c-promo--secondary {
+
     .c-promo {
-      &_aside { }
-      &_picture { }
+      &_aside {
+        margin: auto 0;
+        width: 164px;
+      }
+      &_picture {
+
+      }
       &_img { }
-      &_body { }
+      &_body {
+        margin: auto 0;
+      }
       &_header { }
       &_title { }
-      &_copy { }
+      &_copy {
+        p {
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
       &_footer { }
     }
   }
